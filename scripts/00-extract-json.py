@@ -63,8 +63,10 @@ def extract(
             c_value = item[c.get("key_parent", c["key"])]
             item[f"_{c['alias']}"] = extract(cur, **c, value=c_value)
 
-    final = [ {key:value for key, value in entry.items()
-        if key not in (skip or []) } for entry in raw ]
+    final = [
+        {key: value for key, value in entry.items() if key not in (skip or [])}
+        for entry in raw
+    ]
     if singleton is True:
         assert len(final) == 1
         return final[0]
@@ -96,7 +98,7 @@ def convert_all(
             continue
 
         sub_id = row["FacilityID"]
-        dest = Path("data") / "converted" / f"{sub_id}.json"
+        dest = Path(f"viewer/public/data/submissions/{sub_id}.json")
 
         if overwrite is False and dest.exists():
             continue
