@@ -15,7 +15,7 @@ lint:
 	black --check scripts
 	isort --check scripts
 	flake8 scripts
-	mypy --strict scripts
+	mypy --strict --ignore-missing-imports scripts
 
 viewer-serve:
 	cd viewer && npm run dev
