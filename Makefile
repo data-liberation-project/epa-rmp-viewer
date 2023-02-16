@@ -1,4 +1,7 @@
-.PHONY: venv data/converted
+.PHONY: venv date
+
+date:
+	@date
 
 requirements.txt: requirements.in
 	pip-compile requirements.in
@@ -23,8 +26,11 @@ viewer-serve:
 viewer-build:
 	cd viewer && npm run build
 
-data/converted:
-	python scripts/00-extract-json.py --overwrite
+submissions: date
+	python scripts/00-extract-submissions.py --overwrite
+
+facilities: date
+	python scripts/01-extract-facilities.py
 
 gh-pages:
 	git subtree push --prefix viewer/public origin gh-pages
