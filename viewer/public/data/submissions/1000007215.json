@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "78259",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Scott Rosin",
-  "RMPTitle": "EHS Manager",
   "FTE": 212,
   "OtherEPAFacilityID": "99611TSRLSMILE2",
   "EPAFacilityID": "100000142357",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "1",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008566,
-          "ProcessID": 1000008360,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009343,
@@ -99,76 +87,141 @@
           "ChemicalID": 155,
           "Quantity": 95500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90551,
               "ProcessChemicalID": 1000009343,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90552,
               "ProcessChemicalID": 1000009343,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90553,
               "ProcessChemicalID": 1000009343,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509343,
+          "Process_NAICS_ID": 1000008566,
           "ProcessID": 1000008360,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006818,
+              "Process_NAICS_ID": 1000008566,
+              "SafetyReviewDate": "2009-04-30 00:00:00",
+              "PHA_Date": "2008-05-21 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-09-22 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Add bleeder valve on E-1556 shell side",
+              "OpProceduresReviewDate": "2009-04-23 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-02-26 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "V-1552 Butane side draw drum",
+              "ChangeMgmtDate": "2009-03-17 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-14 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Deisobutanizer\nBasic Process Description\nThis unit processes all of the LPG that is produced in the refinery.  Through the process of distillation, pentane (gasoline) and normal butane are removed from the rest of the LPG.  The normal butane and Pentane are blended into gasoline, the Butane to improve the cold starting ability of engines.  The DIB also produces some fuel gas that is sent to the refinery fuel gas system.  The rest of the LPG is sent to the LPG Unit for further separation.\n\nInspections\nAll process units were involved in a major plant turnaround in April/May 2009. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm). Several process vessels were inspected during a two-week period the date of May 1st was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program.  The calculated volume for this process unit changed from 115,058 lbs.to 95,500 lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007702,
+                  "PreventionProgram3ID": 1000006818,
+                  "ProcessChemicalID": 1000009343
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -178,17 +231,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008567,
-          "ProcessID": 1000008361,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009344,
@@ -196,118 +238,156 @@
           "ChemicalID": 155,
           "Quantity": 57500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90554,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 90555,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 90556,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90557,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 90558,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90559,
               "ProcessChemicalID": 1000009344,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509344,
+          "Process_NAICS_ID": 1000008567,
           "ProcessID": 1000008361,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006819,
+              "Process_NAICS_ID": 1000008567,
+              "SafetyReviewDate": "2009-05-06 00:00:00",
+              "PHA_Date": "2006-03-06 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2006-03-16 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "V-512 isolation (OOS, Out Of Service) dead leg removal",
+              "OpProceduresReviewDate": "2009-02-27 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-02-26 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "T-513 Amine Regeneration Tower",
+              "ChangeMgmtDate": "2009-04-26 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-10 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Amine Unit\n\nBasic Process Description                                                                 The Amine Unit uses a special solvent called amine to absorb hydrogen sulfide out of the LPG and fuel gases that are produced in the Crude Unit, Vacuum Unit, Hydrocracker and Reformer.  The absorption is accomplished in special scrubbing towers located at the southwest corner of the Hydrocracker.  The scrubbed LPG is sent to the DIB Unit for further processing.  The scrubbed fuel gas is piped to the refinery fuel gas system where it is burned in the process heaters and boilers.  The Hydrogen sulfide rich amine is sent to the Amine Regeneration section of the process.  In this section, the hydrogen sulfide is stripped out of the amine and sent to the Sulfur Recovery Unit.  The regenerated amine is cooled and circulated back to through the scrubbers.\n\nInspections\nAll process units (including the Amine) were involved in a major plant turnaround in April / May 2009. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Because many process vessels were inspected during a three-week period the date of May 1st was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program. The calculated volume for this process unit changed from 44,600 lbs. to 57,500 lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007703,
+                  "PreventionProgram3ID": 1000006819,
+                  "ProcessChemicalID": 1000009344
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -317,17 +397,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008568,
-          "ProcessID": 1000008362,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009345,
@@ -335,132 +404,161 @@
           "ChemicalID": 155,
           "Quantity": 846878.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90560,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90561,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90562,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90563,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 90564,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90565,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 90566,
               "ProcessChemicalID": 1000009345,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509345,
+          "Process_NAICS_ID": 1000008568,
           "ProcessID": 1000008362,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006820,
+              "Process_NAICS_ID": 1000008568,
+              "SafetyReviewDate": "2009-05-08 00:00:00",
+              "PHA_Date": "2008-01-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-02-23 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Added SIF (Safety Instr Functions) testing ability",
+              "OpProceduresReviewDate": "2009-05-04 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-23 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "T-103 Stabilizer Tower",
+              "ChangeMgmtDate": "2009-03-19 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-09 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Crude Unit\nBasic Process Description\n     The Crude Unit is the first process in converting crude oil into petroleum products.  This unit takes the oil and heats it to approx. 700 degrees F. and injects it into a tower where, through distillation, products such as diesel and jet fuel are produced.  Also distilled out of the crude oil is a heavier oil called gas oil, which is sent to the Hydrocracker for further processing.\n\nNaphtha and light straight run gasoline are produced as feedstocks for the Reformer and PRIP Units.\n\nLPG, or liquefied petroleum gas, is also distilled out of the crude oil.  This is processed in the Amine Unit to remove hydrogen sulfide from it and then sent on to the DIB and LPG units, which separates the LPG into propane and butane.\n\nPetroleum gases that are produced from the crude oil are sent to the Amine Unit for hydrogen sulfide removal and then used as fuel gas for the refinery heaters and boilers.\n\nAfter distilling all of these products from the crude oil, the residue is removed from the bottom of the distillation tower and sent to the Vacuum Unit for further processing.\n\nInspections\nAll process units (including the crude unit) were involved in a major plant turnaround in April / May 2009. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Because many of the process vessels were inspected during a two-week period the date of May 1st was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity)program. The calculated volume for this process unit changed from 722,152 lbs. to 846,878lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007704,
+                  "PreventionProgram3ID": 1000006820,
+                  "ProcessChemicalID": 1000009345
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -470,17 +568,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008569,
-          "ProcessID": 1000008363,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009346,
@@ -488,146 +575,166 @@
           "ChemicalID": 155,
           "Quantity": 293510.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90567,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 90568,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 90569,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90570,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90571,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90572,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 90573,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90574,
               "ProcessChemicalID": 1000009346,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509346,
+          "Process_NAICS_ID": 1000008569,
           "ProcessID": 1000008363,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006821,
+              "Process_NAICS_ID": 1000008569,
+              "SafetyReviewDate": "2009-05-10 00:00:00",
+              "PHA_Date": "2008-08-12 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-12-19 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Added SIF (Safety Instrumented Functions) testing ability",
+              "OpProceduresReviewDate": "2009-03-17 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-23 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "R-202, R-203, R-204 and R-205,   (4) Reformer Reactors",
+              "ChangeMgmtDate": "2009-03-19 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-10 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Reformer\nBasic Process Description\n       The Reformer takes naphtha produced in the Crude Unit and Hydrocracker and, using a catalyst, converts it into a high-octane gasoline component called reformate.  The unit also produces hydrogen and LPG as by-products.  The hydrogen is piped to the Hydrocracker and Hydrogen Unit; the LPG is sent to the DIB and LPG Units for separation into propane and butane.\n\nInspections\nAll process units (including the reformer) were involved in a major plant turnaround in April/May 2009. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Several process vessels were inspected in the Reformer during a two-week period, the date of May 1st was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program.  The calculated volume for this process unit changed from 99,948 lbs. to 293,510 lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007705,
+                  "PreventionProgram3ID": 1000006821,
+                  "ProcessChemicalID": 1000009346
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -637,17 +744,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008570,
-          "ProcessID": 1000008364,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009347,
@@ -655,118 +751,156 @@
           "ChemicalID": 155,
           "Quantity": 41000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90575,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 90576,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90577,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90578,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90579,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 90580,
               "ProcessChemicalID": 1000009347,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509347,
+          "Process_NAICS_ID": 1000008570,
           "ProcessID": 1000008364,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006822,
+              "Process_NAICS_ID": 1000008570,
+              "SafetyReviewDate": "2009-05-09 00:00:00",
+              "PHA_Date": "2007-05-07 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2007-10-11 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Trip Latches installed on Reboiler (heat source) control valves to E-302 & E-304",
+              "OpProceduresReviewDate": "2008-09-03 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-02-26 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "T-301 Deethanizer Tower, V-301 Feed Drum, V-302 Deeth. Reflux Drum",
+              "ChangeMgmtDate": "2009-03-16 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-09 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "(LPG) Liquefied Petroleum Gas Unit\nBasic Process Description\n      The LPG unit separates the remaining fuel gas from the LPG that has been processed in the DIB Unit.  It then takes the LPG and separates it into Propane and Iso-butane.  The propane is sold as bottle gas.  The Iso-butane is vaporized and used as fuel gas.\n\nInspections\nAll process units (including the LPG unit) were involved in a major plant turnaround in April/May 2009. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Several process vessels were inspected during a two-week period the date of May 1st was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program.  The calculated volume for this process unit changed from 26,741 lbs. to 41,000 lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007706,
+                  "PreventionProgram3ID": 1000006822,
+                  "ProcessChemicalID": 1000009347
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -776,17 +910,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008571,
-          "ProcessID": 1000008365,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009348,
@@ -794,104 +917,151 @@
           "ChemicalID": 155,
           "Quantity": 117300.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90581,
               "ProcessChemicalID": 1000009348,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90582,
               "ProcessChemicalID": 1000009348,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 90583,
               "ProcessChemicalID": 1000009348,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90584,
               "ProcessChemicalID": 1000009348,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90585,
               "ProcessChemicalID": 1000009348,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509348,
+          "Process_NAICS_ID": 1000008571,
           "ProcessID": 1000008365,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006823,
+              "Process_NAICS_ID": 1000008571,
+              "SafetyReviewDate": "2009-05-10 00:00:00",
+              "PHA_Date": "2007-04-18 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-05-12 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Added SIF (Safety Instrumented Functions) testing ability",
+              "OpProceduresReviewDate": "2009-02-25 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-23 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "H-1201 PRIP Unit Feed Heater",
+              "ChangeMgmtDate": "2009-03-03 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-14 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Partial Recycle Isomerization Process (P.R.I.P.)\nBasic Process Description\nThis process takes the light straight run gasoline produced in the Crude Unit and, through a reaction process, converts into a higher-octane gasoline component called isomerate.   Hydrogen from the Hydrogen Unit is used in this process.  A small amount of LPG is also produced as a by-product.\n\nInspections\nAll process units (including the PRIP unit) were involved in a major plant turnaround in May 2003. This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Because all process vessels were inspected during a two-week period the date of May 15th was used as the date of last inspection.\n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which requires modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program.  The calculated volume for this process unit changed from 48,413 lbs. to 117,300 lbs. ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007707,
+                  "PreventionProgram3ID": 1000006823,
+                  "ProcessChemicalID": 1000009348
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -901,17 +1071,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008573,
-          "ProcessID": 1000008367,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009350,
@@ -919,132 +1078,161 @@
           "ChemicalID": 155,
           "Quantity": 163203168.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90586,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90587,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90588,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90589,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 90590,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90591,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 90592,
               "ProcessChemicalID": 1000009350,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000509350,
+          "Process_NAICS_ID": 1000008573,
           "ProcessID": 1000008367,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000006825,
+              "Process_NAICS_ID": 1000008573,
+              "SafetyReviewDate": "2009-06-08 00:00:00",
+              "PHA_Date": "2008-08-12 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-10-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system.",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "TK 63 (gasoline) tank modifications. Naphtha make line re-routing",
+              "OpProceduresReviewDate": "2009-06-08 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-02-26 00:00:00",
+              "EquipmentInspectionDate": "2009-04-22 00:00:00",
+              "EquipmentTested": "Tk 65 (gasoline) floating roof inspection",
+              "ChangeMgmtDate": "2009-03-18 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2008-11-10 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Tank Farm\nBasic Process Description\nThe tank farm is not really a process but is used for the storage of crude oil, finished products that will either be sold as a finished product or blended with other stocks, and products that will be used as stocks for other refinery processes.  Tanks range in size from 310,000 barrels (42 gal.) to less than a 1,000 barrels.\n\nInspections:\nTanks are inspected on a scheduled basis using inspection intervals established by regulatory, industry standards (API,NBIC,ASME),and recognized best practices. Inspection intervals, tracking and completion of Inspections are handled by the refinery MI (Mechanical Integrity)program/group.                                                                                                                                                                                                                          \nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity)program.  The calculated volume for the Tank Farm changed from 971,015,940 lbs. to 163,203,168 lbs. \n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000007709,
+                  "PreventionProgram3ID": 1000006825,
+                  "ProcessChemicalID": 1000009350
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1054,17 +1242,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000009252,
-          "ProcessID": 1000008679,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000010170,
@@ -1072,132 +1249,161 @@
           "ChemicalID": 155,
           "Quantity": 17049.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90544,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90545,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90546,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 90547,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 90548,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90549,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90550,
               "ProcessChemicalID": 1000010170,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000510170,
+          "Process_NAICS_ID": 1000009252,
           "ProcessID": 1000008679,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000007802,
+              "Process_NAICS_ID": 1000009252,
+              "SafetyReviewDate": "2009-04-28 00:00:00",
+              "PHA_Date": "2006-07-31 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2007-05-14 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed hydrant and firewater system",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Detailed Engineering calculations of Toxics and Flammables in unit",
+              "OpProceduresReviewDate": "2009-04-26 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training (CBT)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-23 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "E-1602 Reactor Effluent Exchanger(s)",
+              "ChangeMgmtDate": "2009-04-24 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-09 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Diesel Desulfurization Unit\nBasic process description: \nThe Diesel Desulfurization Unit (DDU) uses a hydrotreating process to remove sulfur from the No. 2 Diesel (DF2) and and Arctic Diesel (DFA) produced in the Crude Unit.To do this,the hydrotreating process converts the sulfur in the diesel to hydrogen sulfide (H2S) that is stripped out of the diesel products in the Fractionation section of the unit.\nThe DDU produces diesel products with a sulfur content below 15 ppm. At this sulfur level, the products meet the Environmental Protection Agency's Ultra Low Sulfur Diesel (ULSD) specification. The two ULSD products made in the DDU are a summer-grade diesel called No. 2-D S15 and a winter-grade diesel called No. 1-D S15. The DDU also produces a sour naphtha product that is piped to the Hydrocracker to be stabilized and a sour offgas that is sweetened in the Amine Unit before being used as fuel gas in the refinery.\n\n\nInspections\nAll process units (including the DDU) were involved in a major plant turnaround in April/May 2009.  This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Many process vessels were inspected during a three-week period the date of May 1st was used as the date of last inspection \n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\n In 2007, Tesoro installed the Distillate Desulfurization Unit at the plant. Although this process before it went on line was calculated by the unit design company and a consultant, to not hold enough toxic or flammable material to meet the definition of an RMP covered process. New detailed engineering calculations now show that it has 17,049 lbs. of flammables, making it an RMP covered process.  ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000008935,
+                  "PreventionProgram3ID": 1000007802,
+                  "ProcessChemicalID": 1000010170
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1207,17 +1413,6 @@
       "FacilityID": 1000007215,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000009553,
-          "ProcessID": 1000009291,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000010514,
@@ -1225,151 +1420,190 @@
           "ChemicalID": 155,
           "Quantity": 326000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 90593,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 90594,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 90595,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 90596,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 90597,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 90598,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 90599,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 90600,
               "ProcessChemicalID": 1000010514,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000510514,
+          "Process_NAICS_ID": 1000009553,
           "ProcessID": 1000009291,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000007632,
+              "Process_NAICS_ID": 1000009553,
+              "SafetyReviewDate": "2009-05-04 00:00:00",
+              "PHA_Date": "2007-03-05 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-05-04 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fixed Hydrant and Firewater system",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Surveillance",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "New E-409 Exchanger (upgrade). Added SIF (Safety Instr Function) testing ability",
+              "OpProceduresReviewDate": "2009-02-10 00:00:00",
+              "TrainingReviewDate": "2008-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-23 00:00:00",
+              "EquipmentInspectionDate": "2009-05-01 00:00:00",
+              "EquipmentTested": "T-401 Stabilizer Tower, T-402 Fractionator Tower, V-404 Stabilizer Receiver",
+              "ChangeMgmtDate": "2009-03-20 00:00:00",
+              "ChangeMgmtReviewDate": "2008-10-28 00:00:00",
+              "PreStartupReviewDate": "2009-05-12 00:00:00",
+              "ComplianceAuditDate": "2007-03-26 00:00:00",
+              "AuditCompletionDate": "2008-12-19 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-04 00:00:00",
+              "HotWorkPermitReviewDate": "2008-05-16 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-01 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Hydrocracker\nBasic Process Description\nThe Hydrocracker takes gas oil, a low value fuel oil produced in the Crude and Vacuum Units, mixes it with hydrogen under high pressure (1500 psig) and temperature.  And sends it through a catalytic reactor that converts it into jet fuel, naphtha, gasoline, LPG, and fuel gas.  The naphtha, also called heavy hydrocrackate or HHC, is sent to the Reformer Unit for further processing.  The LPG and fuel gases contain high concentrations of hydrogen sulfide.  They are sent to the Amine Unit for hydrogen sulfide removal.\n\nInspections\nAll process units (including the Hydrocracker) were involved in a major plant turnaround in April/May 2009.  This is a time in which normally operating processes are shut down for maintenance and inspections (except the tank farm).  Many process vessels were inspected during a three-week period the date of May 1st was used as the date of last inspection \n\nOngoing management \nThe ongoing management of refinery process hazards requires the regular implementation of many PSM/RMP prevention elements.  Changes regularly occur in refinery processes, which require modifications to the process safety information, implementation of the management of change procedure, and require a pre-startup safety review.  Incident Reports are written regularly to document and investigate incidents that resulted in; property damage, environmental contamination, vehicle accidents, and injuries including first aid or incidents that may have resulted in something occurring (such as process upsets).  Incident Reports are considered a key component in our overall prevention program as we focus on learning from small incidents before they become significant.\n\nAs part of this 2009 update, Tesoro recalculated process volumes for each unit using detailed engineering calculations. This was done because we also used these detailed quantities in a facility siting assessment and the RBMI (Risk Based Mechanical Integrity) program.  The calculated volume for this process unit changed from 253,019 lbs. to 326,000 lbs. \n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000008749,
+                  "PreventionProgram3ID": 1000007632,
+                  "ProcessChemicalID": 1000010514
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000007215,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2009-06-04 00:00:00",
+    "ERTrainingDate": "2009-03-04 00:00:00",
+    "CoordinatingAgencyName": "Nikiski Fire Department",
+    "CoordinatingAgencyPhone": "9072834202",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

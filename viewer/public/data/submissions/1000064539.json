@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "GA",
   "OperatorZipCode": "30121",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Ramon Capua",
-  "RMPTitle": "Plant Manager",
   "FTE": 22,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000196922",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "15",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R02",
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000064539,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000082197,
-          "ProcessID": 1000080955,
-          "NAICSCode": "32552",
-          "_desc": {
-            "NAICS_CODE": "32552",
-            "NAICS_DESCRIPTION": "Adhesive Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000100844,
@@ -99,95 +87,170 @@
           "ChemicalID": 155,
           "Quantity": 129000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000088685,
               "ProcessChemicalID": 1000100844,
-              "ChemicalID": 130,
-              "_chemical": {
-                "ChemicalID": 130,
-                "ChemicalName": "Methyl ether  [Methane, oxybis-]",
-                "CASNumber": "115-10-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 130
             },
             {
               "FlamMixChemID": 1000088686,
               "ProcessChemicalID": 1000100844,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000088687,
               "ProcessChemicalID": 1000100844,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000088688,
               "ProcessChemicalID": 1000100844,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000600844,
+          "Process_NAICS_ID": 1000082197,
           "ProcessID": 1000080955,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32552",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000068131,
+              "Process_NAICS_ID": 1000082197,
+              "SafetyReviewDate": "2015-06-25 00:00:00",
+              "PHA_Date": "2015-06-25 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-08-01 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "fire/security alarm",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-06-20 00:00:00",
+              "TrainingReviewDate": "2017-06-20 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 0,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2016-12-01 00:00:00",
+              "EquipmentInspectionDate": "2017-06-22 00:00:00",
+              "EquipmentTested": "Leak checks of pressure vessels (for flammable mixtures)",
+              "ChangeMgmtDate": "2017-02-07 00:00:00",
+              "ChangeMgmtReviewDate": "2017-01-18 00:00:00",
+              "PreStartupReviewDate": "2016-12-01 00:00:00",
+              "ComplianceAuditDate": "2017-01-23 00:00:00",
+              "AuditCompletionDate": "2018-01-15 00:00:00",
+              "IncidentInvestigationDate": "2017-06-21 00:00:00",
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-07-06 00:00:00",
+              "HotWorkPermitReviewDate": "2016-12-01 00:00:00",
+              "ContractorSafetyReviewDate": "2016-12-01 00:00:00",
+              "ContractorSafetyEvalDate": "2017-03-07 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Adhesive Preparation",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000084350,
+                  "PreventionProgram3ID": 1000068131,
+                  "ProcessChemicalID": 1000100844
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000064539,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Bartow County Fire Department",
+    "CoordinatingAgencyPhone": "7703875151",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

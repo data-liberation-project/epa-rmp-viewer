@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "IL",
   "OperatorZipCode": "60013",
   "OperatorZipCodeExt": "2861",
-  "RMPContact": "Curtis Rosing",
-  "RMPTitle": "Regulatory Compliance Manager",
   "FTE": 150,
   "OtherEPAFacilityID": "ILD010238491",
   "EPAFacilityID": "100000083447",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 1000081216,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000102743,
-          "ProcessID": 1000101499,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 1000102744,
-          "ProcessID": 1000101499,
-          "NAICSCode": "339994",
-          "_desc": {
-            "NAICS_CODE": "339994",
-            "NAICS_DESCRIPTION": "Broom, Brush, and Mop Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000127207,
@@ -108,62 +87,143 @@
           "ChemicalID": 155,
           "Quantity": 69000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000110201,
               "ProcessChemicalID": 1000127207,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000110202,
               "ProcessChemicalID": 1000127207,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000102743,
+          "ProcessID": 1000101499,
+          "NAICSCode": "32551",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000085732,
+              "Process_NAICS_ID": 1000102743,
+              "SafetyReviewDate": "2016-11-16 00:00:00",
+              "PHA_Date": "2017-05-18 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2019-09-18 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Gashouse supression system",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Halon system",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Additional safety equipment installed: Dust collection safety upgrade (12/19/2019)",
+              "OpProceduresReviewDate": "2018-11-28 00:00:00",
+              "TrainingReviewDate": "2018-11-28 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-07-17 00:00:00",
+              "EquipmentInspectionDate": "2019-07-15 00:00:00",
+              "EquipmentTested": "T 720 Acetone Tank Inspection",
+              "ChangeMgmtDate": "2019-04-18 00:00:00",
+              "ChangeMgmtReviewDate": "2013-12-03 00:00:00",
+              "PreStartupReviewDate": "2018-10-26 00:00:00",
+              "ComplianceAuditDate": "2016-11-16 00:00:00",
+              "AuditCompletionDate": "2019-09-16 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2019-01-10 00:00:00",
+              "HotWorkPermitReviewDate": "2013-03-11 00:00:00",
+              "ContractorSafetyReviewDate": "2018-02-01 00:00:00",
+              "ContractorSafetyEvalDate": "2019-07-17 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "PSM program for Propellant System",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000106932,
+                  "PreventionProgram3ID": 1000085732,
+                  "ProcessChemicalID": 1000127207
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 1000627207,
+          "Process_NAICS_ID": 1000102744,
           "ProcessID": 1000101499,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "339994",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -173,26 +233,6 @@
       "FacilityID": 1000081216,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000102745,
-          "ProcessID": 1000101500,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 1000102746,
-          "ProcessID": 1000101500,
-          "NAICSCode": "339994",
-          "_desc": {
-            "NAICS_CODE": "339994",
-            "NAICS_DESCRIPTION": "Broom, Brush, and Mop Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000127208,
@@ -200,67 +240,58 @@
           "ChemicalID": 155,
           "Quantity": 590000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000110203,
               "ProcessChemicalID": 1000127208,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000110204,
               "ProcessChemicalID": 1000127208,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000102745,
+          "ProcessID": 1000101500,
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 1000627208,
+          "Process_NAICS_ID": 1000102746,
           "ProcessID": 1000101500,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "339994",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000081216,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2018-03-01 00:00:00",
+    "ERTrainingDate": "2018-11-07 00:00:00",
+    "CoordinatingAgencyName": "Village of Cary Fire Department",
+    "CoordinatingAgencyPhone": "8476390003",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

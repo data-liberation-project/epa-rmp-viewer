@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "PA",
   "OperatorZipCode": "15203",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Doug Jones",
-  "RMPTitle": "Vice President",
   "FTE": 1,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000233053",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "1",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000059189,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000075173,
-          "ProcessID": 1000074013,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000091434,
@@ -99,38 +87,40 @@
           "ChemicalID": 93,
           "Quantity": 11000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 93,
-            "ChemicalName": "Methane",
-            "CASNumber": "74-82-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000591434,
+          "Process_NAICS_ID": 1000075173,
           "ProcessID": 1000074013,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000059189,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2016-03-11 00:00:00",
+    "ERTrainingDate": "2016-03-24 00:00:00",
+    "CoordinatingAgencyName": "McKean County LEPC",
+    "CoordinatingAgencyPhone": "8148875070",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "LA",
   "OperatorZipCode": "70734",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Marc Jones",
-  "RMPTitle": "Safety Manager",
   "FTE": 468,
   "OtherEPAFacilityID": "70734BRDNCLOUIS",
   "EPAFacilityID": "100000133438",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17237,
-          "ProcessID": 16814,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20963,
@@ -99,15 +87,6 @@
           "ChemicalID": 56,
           "Quantity": 70000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,50 +95,130 @@
           "ChemicalID": 62,
           "Quantity": 50000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520963,
+          "Process_NAICS_ID": 17237,
           "ProcessID": 16814,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520964,
-          "ProcessID": 16814,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8820,
+              "Process_NAICS_ID": 17237,
+              "SafetyReviewDate": "1998-11-01 00:00:00",
+              "PHA_Date": "1998-11-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2001-11-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen meters",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-01 00:00:00",
+              "TrainingReviewDate": "1999-02-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 0,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-06-09 00:00:00",
+              "EquipmentTested": "10\" Ammonia Line to Shipping",
+              "ChangeMgmtDate": "1999-06-09 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1999-04-15 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1998-04-16 00:00:00",
+              "InvestigationChangeDate": "1998-04-21 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe remaining items are answered on a individual plant by plant basis.  \n\nThe ammonia plant is one of the eight plants at BCP's Geismar site which is covered by the RMP program.  For the ammonia plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of June 10, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12078,
+                  "PreventionProgram3ID": 8820,
+                  "ProcessChemicalID": 20963
+                },
+                {
+                  "PrimaryKey": 12079,
+                  "PreventionProgram3ID": 8820,
+                  "ProcessChemicalID": 20964
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -169,17 +228,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17238,
-          "ProcessID": 16815,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20965,
@@ -187,15 +235,6 @@
           "ChemicalID": 101,
           "Quantity": 15000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 101,
-            "ChemicalName": "Vinyl chloride  [Ethene, chloro-]",
-            "CASNumber": "75-01-4",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -204,15 +243,6 @@
           "ChemicalID": 62,
           "Quantity": 320000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -221,15 +251,6 @@
           "ChemicalID": 54,
           "Quantity": 330000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 54,
-            "ChemicalName": "Hydrogen chloride (anhydrous) [Hydrochloric acid]",
-            "CASNumber": "7647-01-0",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -238,84 +259,140 @@
           "ChemicalID": 129,
           "Quantity": 38000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 129,
-            "ChemicalName": "Propylene  [1-Propene]",
-            "CASNumber": "115-07-1",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520965,
+          "Process_NAICS_ID": 17238,
           "ProcessID": 16815,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520966,
-          "ProcessID": 16815,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520967,
-          "ProcessID": 16815,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520968,
-          "ProcessID": 16815,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8821,
+              "Process_NAICS_ID": 17238,
+              "SafetyReviewDate": "1998-12-01 00:00:00",
+              "PHA_Date": "1999-03-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2002-03-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 1,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen Meters",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-01 00:00:00",
+              "TrainingReviewDate": "1999-06-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 0,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-05-10 00:00:00",
+              "EquipmentTested": "Cooling Tower Pumps",
+              "ChangeMgmtDate": "1999-05-17 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1999-04-28 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1999-06-01 00:00:00",
+              "InvestigationChangeDate": "1999-06-07 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe vinyl chloride monomer via ethylene plant (VCM-E) is one of the eight plants at BCP's Geismar site which is covered by the RMP program.  For the VCM-E plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of June 10, 1999.  Please note that the most recent process hazard analysis for VCM-E was completed in March 1999.  The results of the PHA are currently undergoing management review, and therefore you will note that in section 7.4.h there are no changes marked as having been completed since the last PHA update.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12080,
+                  "PreventionProgram3ID": 8821,
+                  "ProcessChemicalID": 20965
+                },
+                {
+                  "PrimaryKey": 12081,
+                  "PreventionProgram3ID": 8821,
+                  "ProcessChemicalID": 20966
+                },
+                {
+                  "PrimaryKey": 12082,
+                  "PreventionProgram3ID": 8821,
+                  "ProcessChemicalID": 20967
+                },
+                {
+                  "PrimaryKey": 12083,
+                  "PreventionProgram3ID": 8821,
+                  "ProcessChemicalID": 20968
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -325,17 +402,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17239,
-          "ProcessID": 16816,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20969,
@@ -343,33 +409,125 @@
           "ChemicalID": 101,
           "Quantity": 12000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 101,
-            "ChemicalName": "Vinyl chloride  [Ethene, chloro-]",
-            "CASNumber": "75-01-4",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520969,
+          "Process_NAICS_ID": 17239,
           "ProcessID": 16816,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8822,
+              "Process_NAICS_ID": 17239,
+              "SafetyReviewDate": "1999-02-01 00:00:00",
+              "PHA_Date": "1995-06-01 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2000-06-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen Meters",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-05-01 00:00:00",
+              "TrainingReviewDate": "1999-02-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-05-01 00:00:00",
+              "EquipmentTested": "High Boiler Stripper",
+              "ChangeMgmtDate": "1999-04-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1999-05-01 00:00:00",
+              "InvestigationChangeDate": "1999-05-01 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe vinyl chloride monomer via acetylene plant (VCM-A) is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  For the VCM-A plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of May 14, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12084,
+                  "PreventionProgram3ID": 8822,
+                  "ProcessChemicalID": 20969
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -379,17 +537,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17240,
-          "ProcessID": 16817,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20970,
@@ -397,15 +544,6 @@
           "ChemicalID": 101,
           "Quantity": 372400.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 101,
-            "ChemicalName": "Vinyl chloride  [Ethene, chloro-]",
-            "CASNumber": "75-01-4",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -414,50 +552,130 @@
           "ChemicalID": 62,
           "Quantity": 8500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520970,
+          "Process_NAICS_ID": 17240,
           "ProcessID": 16817,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520971,
-          "ProcessID": 16817,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8823,
+              "Process_NAICS_ID": 17240,
+              "SafetyReviewDate": "1997-04-01 00:00:00",
+              "PHA_Date": "1997-04-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2000-04-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Combustible Gas Meter",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-04-01 00:00:00",
+              "TrainingReviewDate": "1999-03-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-05-01 00:00:00",
+              "EquipmentTested": "Seal Oil Piping",
+              "ChangeMgmtDate": "1999-04-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1998-08-01 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1998-03-01 00:00:00",
+              "InvestigationChangeDate": "1998-08-01 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe polyvinyl chloride plant (PVC) is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  For the PVC plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of May 14, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12085,
+                  "PreventionProgram3ID": 8823,
+                  "ProcessChemicalID": 20970
+                },
+                {
+                  "PrimaryKey": 12086,
+                  "PreventionProgram3ID": 8823,
+                  "ProcessChemicalID": 20971
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -467,17 +685,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17241,
-          "ProcessID": 16818,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20972,
@@ -485,15 +692,6 @@
           "ChemicalID": 1,
           "Quantity": 4600000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 1,
-            "ChemicalName": "Formaldehyde (solution)",
-            "CASNumber": "50-00-0",
-            "Threshold": 15000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -502,50 +700,130 @@
           "ChemicalID": 62,
           "Quantity": 8000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520972,
+          "Process_NAICS_ID": 17241,
           "ProcessID": 16818,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520973,
-          "ProcessID": 16818,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8824,
+              "Process_NAICS_ID": 17241,
+              "SafetyReviewDate": "1998-12-01 00:00:00",
+              "PHA_Date": "1996-04-01 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2001-04-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen Meter and CO meter",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-01 00:00:00",
+              "TrainingReviewDate": "1999-03-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-05-01 00:00:00",
+              "EquipmentTested": "Cooling Tower Pump",
+              "ChangeMgmtDate": "1998-03-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1999-04-01 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe Formaldehyde plant is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  For the Formaldehyde plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of May, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12087,
+                  "PreventionProgram3ID": 8824,
+                  "ProcessChemicalID": 20972
+                },
+                {
+                  "PrimaryKey": 12088,
+                  "PreventionProgram3ID": 8824,
+                  "ProcessChemicalID": 20973
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -555,17 +833,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17242,
-          "ProcessID": 16819,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20974,
@@ -573,15 +840,6 @@
           "ChemicalID": 62,
           "Quantity": 24000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -590,50 +848,130 @@
           "ChemicalID": 93,
           "Quantity": 12800.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 93,
-            "ChemicalName": "Methane",
-            "CASNumber": "74-82-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520974,
+          "Process_NAICS_ID": 17242,
           "ProcessID": 16819,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520975,
-          "ProcessID": 16819,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8825,
+              "Process_NAICS_ID": 17242,
+              "SafetyReviewDate": "1999-02-01 00:00:00",
+              "PHA_Date": "1997-04-01 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2000-04-01 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen meters",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-01-01 00:00:00",
+              "TrainingReviewDate": "1999-02-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-06-01 00:00:00",
+              "EquipmentTested": "Cogeneration II",
+              "ChangeMgmtDate": "1999-04-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1999-06-01 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1996-08-01 00:00:00",
+              "InvestigationChangeDate": "1996-10-01 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe Methanol is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  For the Methanol plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of June, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12089,
+                  "PreventionProgram3ID": 8825,
+                  "ProcessChemicalID": 20974
+                },
+                {
+                  "PrimaryKey": 12090,
+                  "PreventionProgram3ID": 8825,
+                  "ProcessChemicalID": 20975
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -643,17 +981,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17243,
-          "ProcessID": 16820,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20976,
@@ -661,15 +988,6 @@
           "ChemicalID": 62,
           "Quantity": 24000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -678,50 +996,130 @@
           "ChemicalID": 56,
           "Quantity": 26200.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520976,
+          "Process_NAICS_ID": 17243,
           "ProcessID": 16820,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 520977,
-          "ProcessID": 16820,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8826,
+              "Process_NAICS_ID": 17243,
+              "SafetyReviewDate": "1999-02-01 00:00:00",
+              "PHA_Date": "1999-03-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "1999-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-05-01 00:00:00",
+              "TrainingReviewDate": "1999-02-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-05-01 00:00:00",
+              "EquipmentTested": "No. 2 East Injection Pump",
+              "ChangeMgmtDate": "1999-05-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1999-05-01 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe Utilities, Bio, Oxygen plant (Utilities) is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  The Utilities plant is covered by the RMP program based solely on storage of chlorine cylinders used for water treatment.  Therefore, the responses provided below address only the storage of chlorine in cylinders and use of chlorine in regards to water treatment.  \n\nFor the Utilities plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of May, 1999. Please note that the most recent process hazard analysis for Utilities (chlorine cylinder storage and use) was completed in March 1999.  The results of the PHA are currently undergoing management review, and therefore you will note that in section 7.4.h there are no changes marked as having been completed since the last PHA update.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12091,
+                  "PreventionProgram3ID": 8826,
+                  "ProcessChemicalID": 20976
+                },
+                {
+                  "PrimaryKey": 12092,
+                  "PreventionProgram3ID": 8826,
+                  "ProcessChemicalID": 20977
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -731,17 +1129,6 @@
       "FacilityID": 12582,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17244,
-          "ProcessID": 16821,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20978,
@@ -749,33 +1136,125 @@
           "ChemicalID": 56,
           "Quantity": 49100.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520978,
+          "Process_NAICS_ID": 17244,
           "ProcessID": 16821,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 8827,
+              "Process_NAICS_ID": 17244,
+              "SafetyReviewDate": "1999-06-01 00:00:00",
+              "PHA_Date": "1996-07-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "1996-08-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable LEL/Oxygen Meter",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1998-07-01 00:00:00",
+              "TrainingReviewDate": "1999-05-01 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-05-01 00:00:00",
+              "EquipmentInspectionDate": "1999-06-01 00:00:00",
+              "EquipmentTested": "C-6101 CO2 Compressor",
+              "ChangeMgmtDate": "1998-09-01 00:00:00",
+              "ChangeMgmtReviewDate": "1998-03-01 00:00:00",
+              "PreStartupReviewDate": "1993-03-01 00:00:00",
+              "ComplianceAuditDate": "1998-03-01 00:00:00",
+              "AuditCompletionDate": "2000-06-01 00:00:00",
+              "IncidentInvestigationDate": "1999-04-01 00:00:00",
+              "InvestigationChangeDate": "1999-04-01 00:00:00",
+              "ParticipationPlansReviewDate": "1998-12-15 00:00:00",
+              "HotWorkPermitReviewDate": "1996-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "1997-08-01 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Borden Chemicals and Plastics has eight different plants located at its Geismar, Louisiana site which meet the criteria for inclusion in EPA's RMP program.  In addressing the status of the prevention programs at the Geismar site, specific items are answered on either a global or plant-specific basis.  The following items are handled on a facility-wide basis and therefore have the same date for the requested date of the last revision:\n\n- most recent review or revision of maintenance procedures (7.7.a)\n- most recent review or revision of management of change procedures (7.8.b)\n- date of the most recent compliance audit (7.10.a)\n- expected or actual date of completion of all changes resulting from compliance audit (7.10.b)\n- most recent review or revision of employee participation plans (7.12) \n- most recent review or revision of hot work permit procedures (7.13)\n- most recent review or revision of contractor safety procedures (7.14)\n- most recent review or revision of contractor safety performance (7.15)\n\nThe Urea plant is one of the eight plants at BCP's Geismar site that is covered by the RMP program.  For the Urea plant, responses to data fields which request the \"last date\" on which a particular aspect has been addressed were answered as of June, 1999.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12093,
+                  "PreventionProgram3ID": 8827,
+                  "ProcessChemicalID": 20978
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -859,15 +1338,6 @@
           "ChemicalID": 54,
           "QuantityReleased": 832.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 54,
-            "ChemicalName": "Hydrogen chloride (anhydrous) [Hydrochloric acid]",
-            "CASNumber": "7647-01-0",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -950,15 +1420,6 @@
           "ChemicalID": 101,
           "QuantityReleased": 961.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 101,
-            "ChemicalName": "Vinyl chloride  [Ethene, chloro-]",
-            "CASNumber": "75-01-4",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -967,15 +1428,6 @@
           "ChemicalID": 56,
           "QuantityReleased": 2596.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -1058,15 +1510,6 @@
           "ChemicalID": 149,
           "QuantityReleased": 4.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 149,
-            "ChemicalName": "Hydrogen",
-            "CASNumber": "1333-74-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -1149,15 +1592,6 @@
           "ChemicalID": 54,
           "QuantityReleased": 1626.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 54,
-            "ChemicalName": "Hydrogen chloride (anhydrous) [Hydrochloric acid]",
-            "CASNumber": "7647-01-0",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1166,20 +1600,30 @@
           "ChemicalID": 101,
           "QuantityReleased": 1742.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 101,
-            "ChemicalName": "Vinyl chloride  [Ethene, chloro-]",
-            "CASNumber": "75-01-4",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 12582,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1999-06-01 00:00:00",
+    "ERTrainingDate": "1999-06-02 00:00:00",
+    "CoordinatingAgencyName": "Office of Emergency Planning",
+    "CoordinatingAgencyPhone": "2256218360",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

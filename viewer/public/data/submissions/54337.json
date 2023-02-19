@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "WA",
   "OperatorZipCode": "98837",
   "OperatorZipCodeExt": "9505",
-  "RMPContact": "Tore Torvund",
-  "RMPTitle": "President - REC Silicon",
   "FTE": 350,
   "OtherEPAFacilityID": "WAD 980835680",
   "EPAFacilityID": "100000117269",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 54337,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 81250,
-          "ProcessID": 79322,
-          "NAICSCode": "331419",
-          "_desc": {
-            "NAICS_CODE": "331419",
-            "NAICS_DESCRIPTION": "Primary Smelting and Refining of Nonferrous Metal (except Copper and Aluminum)"
-          }
-        },
-        {
-          "Process_NAICS_ID": 81251,
-          "ProcessID": 79322,
-          "NAICSCode": "325188",
-          "_desc": {
-            "NAICS_CODE": "325188",
-            "NAICS_DESCRIPTION": "All Other Basic Inorganic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 105817,
@@ -108,15 +87,6 @@
           "ChemicalID": 152,
           "Quantity": 270000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 152,
-            "ChemicalName": "Silane",
-            "CASNumber": "7803-62-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -125,98 +95,177 @@
           "ChemicalID": 155,
           "Quantity": 710000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 87453,
               "ProcessChemicalID": 105818,
-              "ChemicalID": 152,
-              "_chemical": {
-                "ChemicalID": 152,
-                "ChemicalName": "Silane",
-                "CASNumber": "7803-62-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 152
             },
             {
               "FlamMixChemID": 87454,
               "ProcessChemicalID": 105818,
-              "ChemicalID": 150,
-              "_chemical": {
-                "ChemicalID": 150,
-                "ChemicalName": "Dichlorosilane  [Silane, dichloro-]",
-                "CASNumber": "4109-96-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 150
             },
             {
               "FlamMixChemID": 87455,
               "ProcessChemicalID": 105818,
-              "ChemicalID": 153,
-              "_chemical": {
-                "ChemicalID": 153,
-                "ChemicalName": "Trichlorosilane  [Silane, trichloro-]",
-                "CASNumber": "10025-78-2",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 153
             }
           ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 81250,
+          "ProcessID": 79322,
+          "NAICSCode": "331419",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 46795,
+              "Process_NAICS_ID": 81250,
+              "SafetyReviewDate": "2008-05-15 00:00:00",
+              "PHA_Date": "2008-10-09 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-02-28 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": "Airplane crash into facility (crop duster)",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "Inerting",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 1,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Building Ventillation, Isolation valves, Monitor hydrants",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Process leak detection systems",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 1,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2008-09-30 00:00:00",
+              "TrainingReviewDate": "2008-04-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer-based training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2008-10-31 00:00:00",
+              "EquipmentInspectionDate": "2008-11-04 00:00:00",
+              "EquipmentTested": "Emergency Vent Header (10.1.1) - 3.0 Silane Unit",
+              "ChangeMgmtDate": "2008-08-01 00:00:00",
+              "ChangeMgmtReviewDate": "2008-07-25 00:00:00",
+              "PreStartupReviewDate": "2008-08-01 00:00:00",
+              "ComplianceAuditDate": "2008-03-17 00:00:00",
+              "AuditCompletionDate": "2009-09-01 00:00:00",
+              "IncidentInvestigationDate": "2008-10-29 00:00:00",
+              "InvestigationChangeDate": "2008-11-15 00:00:00",
+              "ParticipationPlansReviewDate": "2006-03-31 00:00:00",
+              "HotWorkPermitReviewDate": "2008-07-30 00:00:00",
+              "ContractorSafetyReviewDate": "2008-12-15 00:00:00",
+              "ContractorSafetyEvalDate": "2008-12-02 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The Renewable Energy Corporation (REC) Silicon L.L.C. facility at Moses Lake, Washington, contains four interconnected production units, a Process Development Facility (PDF) and an adjacent silane module storage area, which includes both NAICS codes.  Note that this facility is covered by 29 CFR 1910.119, so most dates indicated below are the most recent review/revision of the item and not necessarily the date first in compliance.  The last PHA conducted was for the Metal Chloride Dryers (MCD) portion of the process, so the \"date of the last PHA\" is provided for the MCD PHA.  Several PHAs have been conducted to address the other portions of the covered process.  The schedule for conducting the PHAs is summarized in REC Procedure PSM 30.003.  The major hazards, process controls, mitigation systems, and monitoring/detection systems are identified considering all of the PHAs conducted on the covered process.  Note that in all cases, \"major hazards\" were identified as those hazards possible in the absence of process controls, test and inspection programs, and mitigation systems.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 68271,
+                  "PreventionProgram3ID": 46795,
+                  "ProcessChemicalID": 105817
+                },
+                {
+                  "PrimaryKey": 68272,
+                  "PreventionProgram3ID": 46795,
+                  "ProcessChemicalID": 105818
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 605817,
+          "Process_NAICS_ID": 81251,
           "ProcessID": 79322,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 605818,
-          "ProcessID": 79322,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325188",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 54337,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2008-04-11 00:00:00",
+    "ERTrainingDate": "2008-08-13 00:00:00",
+    "CoordinatingAgencyName": "Grant County Dept. of Emergency Mgt",
+    "CoordinatingAgencyPhone": "5097621462",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": "DOSHA regulation WAC 296-67-053"
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

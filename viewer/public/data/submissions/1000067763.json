@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77010",
   "OperatorZipCodeExt": null,
-  "RMPContact": "David Schmidt",
-  "RMPTitle": "Sr. Manager, Midstream Operations",
   "FTE": 0,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000237834",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000067763,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000086188,
-          "ProcessID": 1000085006,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000106069,
@@ -99,118 +87,156 @@
           "ChemicalID": 155,
           "Quantity": 26103.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000092868,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000092869,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000092870,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000092871,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000092872,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000092873,
               "ProcessChemicalID": 1000106069,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000606069,
+          "Process_NAICS_ID": 1000086188,
           "ProcessID": 1000085006,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000071739,
+              "Process_NAICS_ID": 1000086188,
+              "SafetyReviewDate": "2018-02-16 00:00:00",
+              "PHA_Date": "2015-09-21 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2016-02-09 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "drains",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-10-02 00:00:00",
+              "TrainingReviewDate": "2017-10-02 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-10-02 00:00:00",
+              "EquipmentInspectionDate": "2018-01-19 00:00:00",
+              "EquipmentTested": "H2S and flammable gas detectors",
+              "ChangeMgmtDate": "2018-01-10 00:00:00",
+              "ChangeMgmtReviewDate": "2017-10-02 00:00:00",
+              "PreStartupReviewDate": "2017-10-16 00:00:00",
+              "ComplianceAuditDate": "2017-10-02 00:00:00",
+              "AuditCompletionDate": "2018-10-02 00:00:00",
+              "IncidentInvestigationDate": "2018-01-11 00:00:00",
+              "InvestigationChangeDate": "2018-03-16 00:00:00",
+              "ParticipationPlansReviewDate": "2017-10-02 00:00:00",
+              "HotWorkPermitReviewDate": "2017-10-11 00:00:00",
+              "ContractorSafetyReviewDate": "2017-10-11 00:00:00",
+              "ContractorSafetyEvalDate": "2017-10-11 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "ACCIDENTAL RELEASE PREVENTION AND RESPONSE POLICIES\n\n\n\nThe Hawkeye Gas Facility, which is owned and operated by Hess North Dakota Pipelines, LLC, has a long-standing commitment to worker and public safety. This commitment is demonstrated by the investment of significant resources in accident prevention, such as personnel training, mechanical inspection, process control systems and by recognition of safety as a primary factor in the design, installation, operation and maintenance of our processes. However, if an accidental release does occur, trained personnel will respond to control and contain the release if safe to do so.\n\n\n\nThe Hawkeye Gas Facility controls its hazardous materials by: \n\n?    A commitment to OSHA's PSM and HAZWOPER standards, EPA's RMP, and the Department of Transportation's Hazardous Materials Transportation Act regulations which promote and require adherence to process safety activities designed to prevent accidental releases.\n\n\n\n?    Use of the parent company Hess Corporation and the Hawkeye Gas Facility safety, operating, maintenance, emergency response, engineering design and construction policies, procedures and practices designed to prevent accidents and potential releases. \n\n\n\n?    A knowledge of and adherence to applicable industry recognized standards, specifications and recommended practices that address and provide guidance for the proper design, construction, operation and maintenance of facilities containing hazardous materials. \n\n\n\n?    A comprehensive equipment inspection and testing program.\n\n\n\nGENERAL ACCIDENTAL RELEASE PREVENTION PROGRAM\n\n\n\nProcesses at the Hawkeye Gas Facility that are regulated by the Environmental Protection Agency (EPA) Risk Management Program (RMP) regulation are also subject to the Occupational Safety & Health Administration (OSHA) Process Safety Management (PSM) standard. The Hawkeye Gas Facility adheres to all applicable federal and state regulatory statutes.\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000089118,
+                  "PreventionProgram3ID": 1000071739,
+                  "ProcessChemicalID": 1000106069
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -220,17 +246,6 @@
       "FacilityID": 1000067763,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000086217,
-          "ProcessID": 1000085009,
-          "NAICSCode": "211111",
-          "_desc": {
-            "NAICS_CODE": "211111",
-            "NAICS_DESCRIPTION": "Crude Petroleum and Natural Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000106068,
@@ -238,81 +253,165 @@
           "ChemicalID": 155,
           "Quantity": 10821.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000092865,
               "ProcessChemicalID": 1000106068,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000092866,
               "ProcessChemicalID": 1000106068,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000092867,
               "ProcessChemicalID": 1000106068,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000606068,
+          "Process_NAICS_ID": 1000086217,
           "ProcessID": 1000085009,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211111",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000071757,
+              "Process_NAICS_ID": 1000086217,
+              "SafetyReviewDate": "2018-02-16 00:00:00",
+              "PHA_Date": "2015-09-21 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2016-02-09 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "drains",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-10-02 00:00:00",
+              "TrainingReviewDate": "2017-10-02 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-10-02 00:00:00",
+              "EquipmentInspectionDate": "2018-01-19 00:00:00",
+              "EquipmentTested": "H2S and flammable gas detectors",
+              "ChangeMgmtDate": "2018-01-10 00:00:00",
+              "ChangeMgmtReviewDate": "2017-10-02 00:00:00",
+              "PreStartupReviewDate": "2017-10-16 00:00:00",
+              "ComplianceAuditDate": "2017-10-02 00:00:00",
+              "AuditCompletionDate": "2018-10-02 00:00:00",
+              "IncidentInvestigationDate": "2018-01-11 00:00:00",
+              "InvestigationChangeDate": "2018-03-16 00:00:00",
+              "ParticipationPlansReviewDate": "2017-10-02 00:00:00",
+              "HotWorkPermitReviewDate": "2017-10-11 00:00:00",
+              "ContractorSafetyReviewDate": "2017-10-11 00:00:00",
+              "ContractorSafetyEvalDate": "2017-10-11 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "ACCIDENTAL RELEASE PREVENTION AND RESPONSE POLICIES\n\n\n\nThe Hawkeye Gas Facility, which is owned and operated by Hess North Dakota Pipelines, LLC, has a long-standing commitment to worker and public safety. This commitment is demonstrated by the investment of significant resources in accident prevention, such as personnel training, mechanical inspection, process control systems and by recognition of safety as a primary factor in the design, installation, operation and maintenance of our processes. However, if an accidental release does occur, trained personnel will respond to control and contain the release if safe to do so.\n\n\n\nThe Hawkeye Gas Facility controls its hazardous materials by: \n\n?    A commitment to OSHA's PSM and HAZWOPER standards, EPA's RMP, and the Department of Transportation's Hazardous Materials Transportation Act regulations which promote and require adherence to process safety activities designed to prevent accidental releases.\n\n\n\n?    Use of the parent company Hess Corporation and the Hawkeye Gas Facility safety, operating, maintenance, emergency response, engineering design and construction policies, procedures and practices designed to prevent accidents and potential releases. \n\n\n\n?    A knowledge of and adherence to applicable industry recognized standards, specifications and recommended practices that address and provide guidance for the proper design, construction, operation and maintenance of facilities containing hazardous materials. \n\n\n\n?    A comprehensive equipment inspection and testing program.\n\n\n\n\n\nGENERAL ACCIDENTAL RELEASE PREVENTION PROGRAM\n\n\n\nProcesses at the Hawkeye Gas Facility that are regulated by the Environmental Protection Agency (EPA) Risk Management Program (RMP) regulation are also subject to the Occupational Safety & Health Administration (OSHA) Process Safety Management (PSM) standard. The Hawkeye Gas Facility adheres to all applicable federal and state regulatory statutes.\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000089119,
+                  "PreventionProgram3ID": 1000071757,
+                  "ProcessChemicalID": 1000106068
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000067763,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2017-10-22 00:00:00",
+    "ERTrainingDate": "2017-08-24 00:00:00",
+    "CoordinatingAgencyName": "Keene Volunteer Fire Department",
+    "CoordinatingAgencyPhone": "7014211555",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

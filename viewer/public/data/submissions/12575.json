@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CA",
   "OperatorZipCode": "93790",
   "OperatorZipCodeExt": "9050",
-  "RMPContact": "Ken Walls",
-  "RMPTitle": "Facility Manager",
   "FTE": 200,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000132493",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "02",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 12575,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17220,
-          "ProcessID": 16802,
-          "NAICSCode": "325314",
-          "_desc": {
-            "NAICS_CODE": "325314",
-            "NAICS_DESCRIPTION": "Fertilizer (Mixing Only) Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 17221,
-          "ProcessID": 16802,
-          "NAICSCode": "42291",
-          "_desc": {
-            "NAICS_CODE": "42291",
-            "NAICS_DESCRIPTION": "Farm Supplies Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20951,
@@ -108,33 +87,127 @@
           "ChemicalID": 56,
           "Quantity": 52020.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 17220,
+          "ProcessID": 16802,
+          "NAICSCode": "325314",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 520951,
+          "Process_NAICS_ID": 17221,
           "ProcessID": 16802,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42291",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 7036,
+              "Process_NAICS_ID": 17221,
+              "SafetyReviewDate": "1999-06-15 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 1,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": "CAL OSHA UPVSO",
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-06-15 00:00:00",
+              "ChangeCompletionDate": "1999-06-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Remote Manual Shutoff",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-15 00:00:00",
+              "TrainingReviewDate": "1999-06-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-15 00:00:00",
+              "EquipmentInspectionDate": "1999-06-15 00:00:00",
+              "EquipmentTested": "pumps, valves",
+              "ComplianceAuditDate": "1999-06-15 00:00:00",
+              "AuditCompletionDate": "1999-06-15 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "This process includes the 15,000 gallon anhydrous ammonia storage tank which is used to load out fertilizer in retail amounts.  The program applies to the placement of ammonia into trailers.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 7340,
+                  "PreventionProgram2ID": 7036,
+                  "ProcessChemicalID": 20951
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -144,26 +217,6 @@
       "FacilityID": 12575,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17222,
-          "ProcessID": 16803,
-          "NAICSCode": "325314",
-          "_desc": {
-            "NAICS_CODE": "325314",
-            "NAICS_DESCRIPTION": "Fertilizer (Mixing Only) Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 17223,
-          "ProcessID": 16803,
-          "NAICSCode": "42291",
-          "_desc": {
-            "NAICS_CODE": "42291",
-            "NAICS_DESCRIPTION": "Farm Supplies Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20952,
@@ -171,33 +224,127 @@
           "ChemicalID": 56,
           "Quantity": 65025.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 17222,
+          "ProcessID": 16803,
+          "NAICSCode": "325314",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 520952,
+          "Process_NAICS_ID": 17223,
           "ProcessID": 16803,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42291",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 7037,
+              "Process_NAICS_ID": 17223,
+              "SafetyReviewDate": "1999-06-15 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 1,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": "CAL OSHA UPVSO",
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-06-15 00:00:00",
+              "ChangeCompletionDate": "1999-06-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Remote Manual Shutoff",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-15 00:00:00",
+              "TrainingReviewDate": "1999-06-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-15 00:00:00",
+              "EquipmentInspectionDate": "1999-06-15 00:00:00",
+              "EquipmentTested": "pumps, valves",
+              "ComplianceAuditDate": "1999-06-15 00:00:00",
+              "AuditCompletionDate": "1999-06-15 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "This process includes the 12,000 gallon anhydrous ammonia storage tank which is used to load out fertilizer in retail amounts.  The program applies to the placement of ammonia into the tank and to the withdrawal of ammonia into trailers.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 7341,
+                  "PreventionProgram2ID": 7037,
+                  "ProcessChemicalID": 20952
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -207,26 +354,6 @@
       "FacilityID": 12575,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17224,
-          "ProcessID": 16804,
-          "NAICSCode": "325314",
-          "_desc": {
-            "NAICS_CODE": "325314",
-            "NAICS_DESCRIPTION": "Fertilizer (Mixing Only) Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 17225,
-          "ProcessID": 16804,
-          "NAICSCode": "42291",
-          "_desc": {
-            "NAICS_CODE": "42291",
-            "NAICS_DESCRIPTION": "Farm Supplies Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20953,
@@ -234,33 +361,127 @@
           "ChemicalID": 56,
           "Quantity": 10000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 17224,
+          "ProcessID": 16804,
+          "NAICSCode": "325314",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 7038,
+              "Process_NAICS_ID": 17224,
+              "SafetyReviewDate": "1999-06-15 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 1,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": "CAL OSHA UPVSO",
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-06-15 00:00:00",
+              "ChangeCompletionDate": "1999-06-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-15 00:00:00",
+              "TrainingReviewDate": "1999-06-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-15 00:00:00",
+              "EquipmentInspectionDate": "1999-06-15 00:00:00",
+              "EquipmentTested": "pumps, valves",
+              "ComplianceAuditDate": "1999-06-15 00:00:00",
+              "AuditCompletionDate": "1999-06-15 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "This process entails the removal of anhydrous ammonia from the storage tank, the blending with water to convert into a 20% aqueous solution, and the placement of that solution into the aqueous ammonia storage tank.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 7342,
+                  "PreventionProgram2ID": 7038,
+                  "ProcessChemicalID": 20953
+                }
+              ]
+            }
+          ]
         },
         {
-          "ProcessChemicalID": 520953,
+          "Process_NAICS_ID": 17225,
           "ProcessID": 16804,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42291",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -270,26 +491,6 @@
       "FacilityID": 12575,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17226,
-          "ProcessID": 16805,
-          "NAICSCode": "325314",
-          "_desc": {
-            "NAICS_CODE": "325314",
-            "NAICS_DESCRIPTION": "Fertilizer (Mixing Only) Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 17227,
-          "ProcessID": 16805,
-          "NAICSCode": "42291",
-          "_desc": {
-            "NAICS_CODE": "42291",
-            "NAICS_DESCRIPTION": "Farm Supplies Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20954,
@@ -297,33 +498,127 @@
           "ChemicalID": 57,
           "Quantity": 135000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 17226,
+          "ProcessID": 16805,
+          "NAICSCode": "325314",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 7039,
+              "Process_NAICS_ID": 17226,
+              "SafetyReviewDate": "1999-06-15 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 0,
+              "FR_ASTM": 1,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": null,
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-06-15 00:00:00",
+              "ChangeCompletionDate": "1999-06-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-15 00:00:00",
+              "TrainingReviewDate": "1999-06-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-15 00:00:00",
+              "EquipmentInspectionDate": "1999-06-15 00:00:00",
+              "EquipmentTested": "pumps, valves",
+              "ComplianceAuditDate": "1999-06-15 00:00:00",
+              "AuditCompletionDate": "1999-06-15 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "This process includes the 90,000 gallon aqua ammonia storage tank from which retail amounts of fertilizer are taken out.  The program applies to the placement of aqua ammonia into the tank after blending and to the withdrawal of aqua ammonia into trucks or trailers.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 7343,
+                  "PreventionProgram2ID": 7039,
+                  "ProcessChemicalID": 20954
+                }
+              ]
+            }
+          ]
         },
         {
-          "ProcessChemicalID": 520954,
+          "Process_NAICS_ID": 17227,
           "ProcessID": 16805,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42291",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -333,26 +628,6 @@
       "FacilityID": 12575,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17228,
-          "ProcessID": 16806,
-          "NAICSCode": "325314",
-          "_desc": {
-            "NAICS_CODE": "325314",
-            "NAICS_DESCRIPTION": "Fertilizer (Mixing Only) Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 17229,
-          "ProcessID": 16806,
-          "NAICSCode": "42291",
-          "_desc": {
-            "NAICS_CODE": "42291",
-            "NAICS_DESCRIPTION": "Farm Supplies Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20955,
@@ -360,38 +635,151 @@
           "ChemicalID": 56,
           "Quantity": 87785.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 17228,
+          "ProcessID": 16806,
+          "NAICSCode": "325314",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 520955,
+          "Process_NAICS_ID": 17229,
           "ProcessID": 16806,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42291",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 7040,
+              "Process_NAICS_ID": 17229,
+              "SafetyReviewDate": "1999-06-15 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 1,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": "CAL OSHA UPVSO",
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-06-15 00:00:00",
+              "ChangeCompletionDate": "1999-06-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Remote Manual Shutoff",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-06-15 00:00:00",
+              "TrainingReviewDate": "1999-06-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-15 00:00:00",
+              "EquipmentInspectionDate": "1999-06-15 00:00:00",
+              "EquipmentTested": "pumps, valves",
+              "ComplianceAuditDate": "1999-06-15 00:00:00",
+              "AuditCompletionDate": "1999-06-15 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "This process includes the 20,250 gallon anhydrous ammonia storage tank which is used to blend aqua ammonia in retail amounts.  The program appiles to the placement of ammonia into the tank and to the withdrawal of ammonia into the aqua blending process.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 7344,
+                  "PreventionProgram2ID": 7040,
+                  "ProcessChemicalID": 20955
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 12575,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1999-04-02 00:00:00",
+    "ERTrainingDate": "1999-04-02 00:00:00",
+    "CoordinatingAgencyName": "Harris Ranch Firestation",
+    "CoordinatingAgencyPhone": "5599351323",
+    "FR_OSHA1910_38": 0,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 0,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

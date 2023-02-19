@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "LA",
   "OperatorZipCode": "70723",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Jeffrey B Bellelo",
-  "RMPTitle": "Site Manager",
   "FTE": 13,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000193685",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "04",
   "DeregistrationReasonOtherText": "has ceased operations of the covered process",
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000090446,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000113787,
-          "ProcessID": 1000112473,
-          "NAICSCode": "32512",
-          "_desc": {
-            "NAICS_CODE": "32512",
-            "NAICS_DESCRIPTION": "Industrial Gas Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000140535,
@@ -99,67 +87,160 @@
           "ChemicalID": 155,
           "Quantity": 68127.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000123965,
               "ProcessChemicalID": 1000140535,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000123966,
               "ProcessChemicalID": 1000140535,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000640535,
+          "Process_NAICS_ID": 1000113787,
           "ProcessID": 1000112473,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32512",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000095961,
+              "Process_NAICS_ID": 1000113787,
+              "SafetyReviewDate": "2020-09-23 00:00:00",
+              "PHA_Date": "2020-09-23 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 1,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2023-09-23 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-05-07 00:00:00",
+              "TrainingReviewDate": "2020-01-16 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "CBT",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-06-07 00:00:00",
+              "EquipmentInspectionDate": "2019-07-15 00:00:00",
+              "EquipmentTested": "Vessel Internals",
+              "ChangeMgmtDate": "2020-08-25 00:00:00",
+              "ChangeMgmtReviewDate": "2019-06-11 00:00:00",
+              "PreStartupReviewDate": "2019-12-06 00:00:00",
+              "ComplianceAuditDate": "2020-01-13 00:00:00",
+              "AuditCompletionDate": "2020-07-13 00:00:00",
+              "IncidentInvestigationDate": "2010-10-19 00:00:00",
+              "InvestigationChangeDate": "2010-12-28 00:00:00",
+              "ParticipationPlansReviewDate": "2019-12-10 00:00:00",
+              "HotWorkPermitReviewDate": "2019-12-25 00:00:00",
+              "ContractorSafetyReviewDate": "2018-04-17 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-16 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Hydrogen Production Plant",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000119800,
+                  "PreventionProgram3ID": 1000095961,
+                  "ProcessChemicalID": 1000140535
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000090446,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "IES 24 hour emergency services",
+    "CoordinatingAgencyPhone": "8008620466",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "PA",
   "OperatorZipCode": "18034",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Craig J. Romanelli",
-  "RMPTitle": "Phillipsburg Plant Manager",
   "FTE": 264,
   "OtherEPAFacilityID": "08865JTBKR600NO",
   "EPAFacilityID": "100000161095",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 54781,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 81870,
-          "ProcessID": 79919,
-          "NAICSCode": "325188",
-          "_desc": {
-            "NAICS_CODE": "325188",
-            "NAICS_DESCRIPTION": "All Other Basic Inorganic Chemical Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 81871,
-          "ProcessID": 79919,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 106642,
@@ -108,15 +87,6 @@
           "ChemicalID": 57,
           "Quantity": 108300.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -125,15 +95,6 @@
           "ChemicalID": 125,
           "Quantity": 25000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 125,
-            "ChemicalName": "Pentane",
-            "CASNumber": "109-66-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -142,15 +103,6 @@
           "ChemicalID": 92,
           "Quantity": 30000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 92,
-            "ChemicalName": "Ethyl ether  [Ethane, 1,1'-oxybis-]",
-            "CASNumber": "60-29-7",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -159,15 +111,6 @@
           "ChemicalID": 53,
           "Quantity": 157472.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 53,
-            "ChemicalName": "Hydrochloric acid (conc 37% or greater)",
-            "CASNumber": "7647-01-0",
-            "Threshold": 15000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -176,101 +119,147 @@
           "ChemicalID": 56,
           "Quantity": 2000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 81870,
+          "ProcessID": 79919,
+          "NAICSCode": "325188",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 47157,
+              "Process_NAICS_ID": 81870,
+              "SafetyReviewDate": "2009-06-01 00:00:00",
+              "PHA_Date": "2009-02-27 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 0,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Containment/Passive Mitigation",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 1,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2011-03-30 00:00:00",
+              "TrainingReviewDate": "2009-03-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 0,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-04-30 00:00:00",
+              "EquipmentInspectionDate": "2009-05-21 00:00:00",
+              "EquipmentTested": "Sprinkler Risers, Fire Doors",
+              "ChangeMgmtDate": "2009-01-09 00:00:00",
+              "ChangeMgmtReviewDate": "2009-04-15 00:00:00",
+              "PreStartupReviewDate": "2008-05-16 00:00:00",
+              "ComplianceAuditDate": "2009-03-31 00:00:00",
+              "AuditCompletionDate": "2009-12-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-31 00:00:00",
+              "HotWorkPermitReviewDate": "2009-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2009-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2009-03-31 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Distribution/Storage - This process includes indoor warehousing, staging, and shipping areas, and the prevention program applies to all areas in the process.   CONTAINMENT - All distribution/storage areas are inherently spill-containing.  The building walls also provide passive mitigation.  STANDARD OPERATING PROCEDURES - All employees are trained and qualified in safe handling of EHS chemicals.  MANAGEMENT OF CHANGE - Authorization is required for all changes affecting equipment, procedures, or facilities.  EMERGENCY RESPONSE PROGRAM - Comprehensive plan includes employee training, fire and spill response equipment, on-site medical facilities, and procedures for facility drills.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 68834,
+                  "PreventionProgram3ID": 47157,
+                  "ProcessChemicalID": 106642
+                },
+                {
+                  "PrimaryKey": 68835,
+                  "PreventionProgram3ID": 47157,
+                  "ProcessChemicalID": 106643
+                },
+                {
+                  "PrimaryKey": 68836,
+                  "PreventionProgram3ID": 47157,
+                  "ProcessChemicalID": 106644
+                },
+                {
+                  "PrimaryKey": 68837,
+                  "PreventionProgram3ID": 47157,
+                  "ProcessChemicalID": 106645
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 606642,
+          "Process_NAICS_ID": 81871,
           "ProcessID": 79919,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606643,
-          "ProcessID": 79919,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606644,
-          "ProcessID": 79919,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606645,
-          "ProcessID": 79919,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606646,
-          "ProcessID": 79919,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -280,17 +269,6 @@
       "FacilityID": 54781,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 81872,
-          "ProcessID": 79920,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 106647,
@@ -298,15 +276,6 @@
           "ChemicalID": 125,
           "Quantity": 45000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 125,
-            "ChemicalName": "Pentane",
-            "CASNumber": "109-66-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -315,50 +284,130 @@
           "ChemicalID": 92,
           "Quantity": 45000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 92,
-            "ChemicalName": "Ethyl ether  [Ethane, 1,1'-oxybis-]",
-            "CASNumber": "60-29-7",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 606647,
+          "Process_NAICS_ID": 81872,
           "ProcessID": 79920,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606648,
-          "ProcessID": 79920,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 47158,
+              "Process_NAICS_ID": 81872,
+              "SafetyReviewDate": "2009-03-31 00:00:00",
+              "PHA_Date": "2006-08-15 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2010-12-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Foam vapor supression",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 1,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2011-03-30 00:00:00",
+              "TrainingReviewDate": "2009-03-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-04-24 00:00:00",
+              "EquipmentInspectionDate": "2009-06-08 00:00:00",
+              "EquipmentTested": "Bonding and grounding equipment",
+              "ChangeMgmtDate": "2009-06-01 00:00:00",
+              "ChangeMgmtReviewDate": "2009-04-15 00:00:00",
+              "PreStartupReviewDate": "2009-04-22 00:00:00",
+              "ComplianceAuditDate": "2009-03-31 00:00:00",
+              "AuditCompletionDate": "2009-12-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-31 00:00:00",
+              "HotWorkPermitReviewDate": "2009-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "1991-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2009-03-31 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Solvents - This process includes flammable solvent processing and packaging operations, and the prevention program applies to all areas in the process.  STANDARD OPERATING PROCEDURES - All employees are trained and qualified in safe processing operations.  PROCESS VENT FLAME ARRESTERS and NITROGEN INERTING - Used to prevent process fires.  MANAGEMENT OF CHANGE - Authorization is required for all changes affecting equipment, procedures, or facilities.  EMERGENCY RESPONSE PROGRAM - comprehensive plan including employee training, fire, and spill response equipment, on-site medical facilities, and procedures for facility drills.  VENTS AND RELIEF VALVES - prevent unplanned release of chemicals due to process upsets.  ACTIVE MITIGATION EQUIPMENT - consists of foam vapor suppression, prevents fire at the tank truck unloading facility.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 68838,
+                  "PreventionProgram3ID": 47158,
+                  "ProcessChemicalID": 106647
+                },
+                {
+                  "PrimaryKey": 68839,
+                  "PreventionProgram3ID": 47158,
+                  "ProcessChemicalID": 106648
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -368,17 +417,6 @@
       "FacilityID": 54781,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 81873,
-          "ProcessID": 79921,
-          "NAICSCode": "325188",
-          "_desc": {
-            "NAICS_CODE": "325188",
-            "NAICS_DESCRIPTION": "All Other Basic Inorganic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 106649,
@@ -386,15 +424,6 @@
           "ChemicalID": 56,
           "Quantity": 51000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -403,15 +432,6 @@
           "ChemicalID": 57,
           "Quantity": 56370.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -420,72 +440,159 @@
           "ChemicalID": 53,
           "Quantity": 76760.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 53,
-            "ChemicalName": "Hydrochloric acid (conc 37% or greater)",
-            "CASNumber": "7647-01-0",
-            "Threshold": 15000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 606649,
+          "Process_NAICS_ID": 81873,
           "ProcessID": 79921,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606650,
-          "ProcessID": 79921,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 606651,
-          "ProcessID": 79921,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325188",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 47159,
+              "Process_NAICS_ID": 81873,
+              "SafetyReviewDate": "2009-03-31 00:00:00",
+              "PHA_Date": "2008-11-18 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2010-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Remotely activated vapor suppression system",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 1,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2011-03-30 00:00:00",
+              "TrainingReviewDate": "2009-03-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 0,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2009-03-31 00:00:00",
+              "EquipmentInspectionDate": "2009-05-28 00:00:00",
+              "EquipmentTested": "Sprinkler Risers",
+              "ChangeMgmtDate": "2009-04-24 00:00:00",
+              "ChangeMgmtReviewDate": "2009-04-15 00:00:00",
+              "PreStartupReviewDate": "2009-04-22 00:00:00",
+              "ComplianceAuditDate": "2009-03-31 00:00:00",
+              "AuditCompletionDate": "2009-12-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2009-03-31 00:00:00",
+              "HotWorkPermitReviewDate": "2009-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2009-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2009-03-31 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Acids/Salts - This process includes acid and inorganic salt manufacturing and packaging.  The acids business contains equipment for processing and packaging acid and ammonia-based products.  The salts business contains equipment for processing and packaging acid/base salt products.  The prevention programs are outlined by business.  ACIDS - Scrubbers, hi level shutoffs, and excess flow valves are used for process control; remote sensors/foam suppression and dikes are used for mitigation;  vants, relief valves and rupture disks are used to prevent unplanned release due to process upset.  SALTS - scrubbers and excess flow valves are used for process control;  vents, relief valves and rupture disks are used to prevent unplanned release due to process upset.  BOTH - standard operating procedures - all employees are trained and qualified in safe processing operations;  emergency response program - comprehensive plan includes training and procedures.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 68840,
+                  "PreventionProgram3ID": 47159,
+                  "ProcessChemicalID": 106649
+                },
+                {
+                  "PrimaryKey": 68841,
+                  "PreventionProgram3ID": 47159,
+                  "ProcessChemicalID": 106650
+                },
+                {
+                  "PrimaryKey": 68842,
+                  "PreventionProgram3ID": 47159,
+                  "ProcessChemicalID": 106651
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 54781,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2009-03-31 00:00:00",
+    "ERTrainingDate": "2009-12-31 00:00:00",
+    "CoordinatingAgencyName": "Warren County EPC",
+    "CoordinatingAgencyPhone": "9084545500",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

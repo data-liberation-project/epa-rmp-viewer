@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "OK",
   "OperatorZipCode": "73154",
   "OperatorZipCodeExt": "0496",
-  "RMPContact": "Jon Kopec",
-  "RMPTitle": "Specialist - Air",
   "FTE": 2,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000204361",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "3",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R09",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000034837,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000043027,
-          "ProcessID": 1000042645,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000051209,
@@ -99,109 +87,175 @@
           "ChemicalID": 155,
           "Quantity": 136168.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000043758,
               "ProcessChemicalID": 1000051209,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000043759,
               "ProcessChemicalID": 1000051209,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000043760,
               "ProcessChemicalID": 1000051209,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000043761,
               "ProcessChemicalID": 1000051209,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000043762,
               "ProcessChemicalID": 1000051209,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000551209,
+          "Process_NAICS_ID": 1000043027,
           "ProcessID": 1000042645,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000037077,
+              "Process_NAICS_ID": 1000043027,
+              "SafetyReviewDate": "2012-01-31 00:00:00",
+              "PHA_Date": "2012-01-11 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2012-01-12 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Natural Gas Detectors in Compressor Buildings",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2012-01-27 00:00:00",
+              "TrainingReviewDate": "2012-02-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2011-01-29 00:00:00",
+              "EquipmentInspectionDate": "2012-02-10 00:00:00",
+              "EquipmentTested": "Dehydaration System",
+              "ChangeMgmtDate": "2009-05-10 00:00:00",
+              "ChangeMgmtReviewDate": "2012-02-03 00:00:00",
+              "PreStartupReviewDate": "2008-09-20 00:00:00",
+              "ComplianceAuditDate": "2011-09-21 00:00:00",
+              "AuditCompletionDate": "2012-12-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2012-02-03 00:00:00",
+              "HotWorkPermitReviewDate": "2008-10-09 00:00:00",
+              "ContractorSafetyReviewDate": null,
+              "ContractorSafetyEvalDate": "2012-03-21 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The following elements are required prevention program components of OSHA?s PSM directive and Program Level 3 for covered processes as defined by 40 CFR Part 68.48.  All covered processes at Kermit Compressor Station is managed as Program Level 3, under the PSM and RMP regulations.\n\n\n\nThe Standard Operating Procedures (SOPs) are outlined in the Company?s Compliance Program.  With regard to trade secrets, a SOP has not been included as part of the Prevention Program.\n\n\n\nEmployee Participation\n\n\n\nEmployers must develop a written plan of action describing how they will consult with their employees on hazard analysis and other elements of PSM/RMP.  Employers must also provide access to all relevant PSM/RMP information to its employees.\n\nThe full requirements for employee participation are stated in 29 CFR 1910.119(c) and 40 CFR Part 68.83 and the Company?s Compliance Program, Management and Employee Commitment.\n\n\n\nProcess Safety Information (PSI)\n\n\n\nEmployers must maintain written Process Safety Information (PSI) pertaining to the hazardous chemicals used in the covered process that includes toxicity information, Permissible Exposure Levels (PELs), physical data, reactivity data, corrosivity data, thermal and chemical stability data, and hazardous effects from mixing.  Some of this information can be in the form of Material Safety Data Sheets (MSDSs) that meet the requirements of 29 CFR 1910.1200 (g).\n\n\n\nEmployers must also maintain written PSI pertaining to the technology of the covered process that includes Process Flow Diagrams (PFD), process chemistry, safe upper and lower operating limits, maximum intended inventory, and the consequences of process deviation.\n\n\n\nIn addition, detailed written PSI must be maintained for process equipment (e.g., piping, instrumentation, mass balance, electrical, safety, ventilation, etc.) information.  The employer must document that the equipment complies with generally accepted good engineering practices.  In the event that the applicable standards or practices are no longer in use, the employer must document that the equipment is designed, maintained, inspected, tested and operating in a safe manner.\n\n\n\nAn index of all required PSI should be developed including the location of the master files and controlled copies.\n\nThis written PSI shall be compiled prior to performing a process hazard analysis.\n\nThe full requirements for Process Safety Information are stated in 29 CFR 1910.119(d) and 40 CFR Part 68.65.  This facility?s PSI procedures are defined in the Company?s Compliance Program.\n\n\n\nProcess Hazard Analysis (PHA)\n\n \n\nEmployers must perform a Process Hazard Analysis (PHA) in accordance with generally accepted methodologies [i.e., What If Analysis, Failure Mode and Effect Analysis (FMEA), Hazard and Operability (HAZOP), etc.] for each covered process.\n\n\n\nEmployers must also ensure that PHA teams have the required expertise, and that a system is established to address their findings and recommendations.  The PHA shall be performed by a team with expertise including:\n\n?    Engineering and process operations\n\n?    One (1) employee who has experience and knowledge specific to the process being evaluated \n\n?    A member of the team must be knowledgeable in the specific process hazard analysis methodology being used\n\n\n\nThis system must also document PHA team resolutions, actions to be taken, and the schedule for planned actions.  The system must also ensure that actions are taken as soon as possible and that they are communicated to employees whose work may be affected.\n\nPHAs must be revalidated and updated once every five (5) years.  Employers must retain records of the PHAs, their updates, and resolutions of recommendations for the life of the covered process.\n\n\n\nThe full requirements for PHA are stated in 29 CFR 1910.119(e) and 40 CFR Part 68.67.  This facility?s PHA procedures are outlined in the Company?s Compliance Program.\n\n \n\nOperating Procedures\n\n\n\nThe employer must develop, implement, and update written operating procedures for each regulated process, including steps for each operating phase (i.e., startup, shutdown, emergency, and temporary operations), operating limits, safety procedures, and health and safety considerations.  These operating procedures must be readily accessible to employees associated with the covered process.\n\n\n\nThe employer must review these procedures as necessary and certify annually that the written operating procedures are current and accurate.\n\n\n\nThe full requirements for operating procedures are stated in 29 CFR 1910.119(f) and 40 CFR Part 68.69.  This facility?s operating procedures are located in the Company?s Compliance Program.\n\n\n\nTraining\n\n\n\nEmployers must provide formal initial and refresher training [at least every three (3) years] for all employees working in regulated processes that include an overview of the process and operating procedures, hazards, emergency response procedures, and safe work practices applicable to their work.  Employers must also document that each employee has received and understands the required training.\n\n\n\nThe full requirements for training are stated in 29 CFR 1910.119(g) and 40 CFR Part 68.71.  The facility?s training programs are outlined in the Company?s Compliance Program.\n\n\n\nMaintenance\n\n\n\nThe employer must develop, implement, and update written maintenance procedures for each regulated process, including steps for each operating phase (i.e., startup, shutdown, emergency, and temporary operations), operating limits, safety procedures, and health and safety considerations.  These operating procedures must be readily accessible to employees associated with the covered process.\n\nThe employer must review these procedures as necessary and certify annually that the written maintenance procedures are current and accurate.\n\nThe full requirements for maintenance procedures are stated in 40 CFR Part 68.73(b).  This facility?s maintenance procedures are located in the Company?s Compliance Program.\n\n\n\nManagement of Change (MOC)\n\n\n\nThe employer must develop written procedures to manage changes to process chemicals, technology, equipment, procedures, and facilities.  This procedure must address the technical basis for the change, impacts of health and safety, modifications to procedures, required time for changes, and authorization requirements for the changes.  Both physical and procedural changes need to be included.\n\n  \n\nEmployees affected by the change must be informed and receive the proper training.  Any changes in written PSI or operating procedures resulting from the change must be updated.\n\n\n\nThe full requirements for management of change are stated in 29 CFR 1910.119 (l) and in 40 CFR 68.75.  This facility?s MOC procedures are outlined in the Company?s Compliance Program.\n\n\n\nContractors\n\n\n\nEmployers must evaluate safety performance before contractor selection, develop safe work practices, inform contractors working near covered processes of related hazards, explain applicable portions of the emergency action plan, periodically evaluate contractor performance, and maintain a contractor injury and illness log.\n\n\n\nContract employers must provide assurance that their employees received the proper training and understand potential hazards and the relevant portions of the emergency action plan.  Contract employers must also document that each contract employee has received and understands the required training, follows the safe work practices of the facility, and advise the contract employee of any unique hazards.\n\n\n\nThe full requirements for contractors are stated in 29 CFR 1910.119(h) and in 40 CFR 68.87.  This facility?s contractor procedures are outlined in the Company?s Compliance Program.\n\n \n\nPre-startup Safety Review (PSSR)\n\n\n\nEmployers must perform Pre-startup Safety Review (PSSR) on new or modified facilities to ensure that equipment and construction meet design specifications; that all required procedures and training have been implemented and that hazard analysis recommendations have been resolved.  The PSSR process should specify what authorization and approvals are required before startup can commence.\n\n\n\nThe full requirements for pre-startup safety review are stated in 29 CFR 1910.119(i) and in 40 CFR 68.77.  This facility?s PSSR procedures are outlined in the Company?s Compliance Program.\n\n\n\nMechanical Integrity\n\n\n\nThe employer must maintain, inspect, and test critical process equipment in a documented program.  Written procedures, training, and construction Quality Assurance/Quality Control (QA/QC) programs are also necessary.  Inspections and tests of equipment must be documented.  Types of equipment include pressure vessels and storage tanks; piping systems (including piping components such as valves); relief and vent systems and devices; emergency shutdown systems; controls (including monitoring devices and sensors, alarms, and interlocks) and, pumps.  For the construction of new plants and equipment, the employer will assure that equipment as it is fabricated is suitable for the intended process application.\n\n \n\nThe full requirements for mechanical integrity are stated in 29 CFR 1910.119(j) and 40 CFR Part 68.73.  This facility?s mechanical integrity program is outlined in the Company?s Compliance Program. \n\n\n\nHot Work Permit\n\n\n\nEmployers must implement a formal authorization and permit program for welding and brazing activities near or around covered processes. Requirements for flammable vapor testing and monitoring should be specified.\n\n\n\nThe full requirements for hot work are stated in 29 CFR 1910.119 (k) and in 40 CFR 68.85.  This facility?s hot work permit procedures are outlined in the Company?s Compliance Program.\n\n \n\nIncident Investigation\n\n\n\nEmployers must investigate incidents that did or could have resulted in a catastrophic release.  Incident investigation must begin within 48 hours and involve a team that includes the appropriate expertise.  A report must be prepared for each incident that includes root cause analysis and recommendations.  The employer must also develop a system to address findings and recommendations of these reports.  Reports must be reviewed with all affected personnel, resolutions and corrective actions must be documented, and investigation reports must be retained for five (5) years.\n\n\n\nThe full requirements for incident investigation are stated in 40 CFR Part 68.81.  This facility?s incident investigation procedures are outlined in the Company?s Compliance Program.\n\n\n\nEmergency Planning and Response\n\n\n\nThe OSHA rule relies mainly on previous regulations for emergency action plans and training (29 CFR 1910.38 and 1910.120).  The plan must also include procedures for handling small releases. The EPA?s RMP rule allows a facility to evacuate and not actively respond to accidental releases, provided that the facility is included in the community emergency response plan developed under 42 U.S.C. 11003 (EPCRA; Emergency Planning and Community Right-to-Know Act) and that appropriate mechanisms are in place to notify emergency responders.  While the EPA RMP rule allows the use of plans and programs developed under prior emergency regulations, it stipulates that the plan include items required under the statute, notably procedures for informing the public and local responders about a release.\n\n\n\nThe full requirements for emergency planning and response plan are stated in 40 CFR Part 68 Subpart E.  This facility?s emergency planning and response plan is outlined in the Company?s Compliance Program.\n\n\n\nCompliance Audits\n\n\n\nAudits must be conducted to determine compliance of the procedures and practices with the RMP standard, and a report of the audit findings must be developed.  The employer must then document a response to each finding and document that deficiencies have been corrected.  Compliance audits must be completed at least once every three (3) years to verify that the program elements are in place and that they have been effectively implemented.  The two (2) most recent reports must be retained.\n\nThe full requirements for compliance audits are stated in 40 CFR Part 68.79.  This facility?s compliance audit procedures are outlined in the Company?s Compliance Program.\n\n\n\nTrade Secrets\n\n\n\nAccording to the PSM regulation, employers must make all necessary information available to those persons responsible for compiling PSI, performing PHAs, developing operating procedures, investigating incidents, preparing emergency plans, and conducting compliance audits.  The PSM regulation notes that employers may require persons that receive this information to enter into confidentiality agreements.\n\n\n\nWith regards to the Risk Management Plan, the RMP regulations provide guidance for the assertion and substantiation of confidential business information.\n\n\n\nThe full requirements for trade secrets under PSM are stated in 29 CFR 1910.119 (p).  The full requirements for confidential business information under RMP are stated in 40 CFR 68.151 and 152.\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000043841,
+                  "PreventionProgram3ID": 1000037077,
+                  "ProcessChemicalID": 1000051209
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000034837,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2008-09-20 00:00:00",
+    "ERTrainingDate": "2011-05-10 00:00:00",
+    "CoordinatingAgencyName": "Kermit Fire Department and Police",
+    "CoordinatingAgencyPhone": "3043933156",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

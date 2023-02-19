@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77501",
   "OperatorZipCodeExt": "1008",
-  "RMPContact": "David  N. Bush",
-  "RMPTitle": "Plant Manager",
   "FTE": 53,
   "OtherEPAFacilityID": "TXD982555468",
   "EPAFacilityID": "100000137835",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 13071,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 18055,
-          "ProcessID": 17611,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 22123,
@@ -99,62 +87,136 @@
           "ChemicalID": 155,
           "Quantity": 22664.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 13870,
               "ProcessChemicalID": 22123,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 13871,
               "ProcessChemicalID": 22123,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 522123,
+          "Process_NAICS_ID": 18055,
           "ProcessID": 17611,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 9315,
+              "Process_NAICS_ID": 18055,
+              "SafetyReviewDate": "1999-04-14 00:00:00",
+              "PHA_Date": "1999-02-08 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "1999-07-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-02-01 00:00:00",
+              "TrainingReviewDate": "1999-06-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer based training",
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-01 00:00:00",
+              "EquipmentInspectionDate": "1999-06-01 00:00:00",
+              "EquipmentTested": "K-101C  Compressor",
+              "ChangeMgmtDate": "1999-04-08 00:00:00",
+              "ChangeMgmtReviewDate": "1998-09-30 00:00:00",
+              "PreStartupReviewDate": "1999-04-12 00:00:00",
+              "ComplianceAuditDate": "1998-03-05 00:00:00",
+              "AuditCompletionDate": "1999-05-31 00:00:00",
+              "IncidentInvestigationDate": "1999-04-26 00:00:00",
+              "InvestigationChangeDate": "1999-05-31 00:00:00",
+              "ParticipationPlansReviewDate": "1998-09-30 00:00:00",
+              "HotWorkPermitReviewDate": "1998-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "1998-09-30 00:00:00",
+              "ContractorSafetyEvalDate": "1999-04-22 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Enron Methanol Company follows OSHA PSM regulations in addition to other health, safety and environmental regulations appropriate to a chemical manufacturing facility.  By Corporate policy, we operate safely and with concern for the environment.  We take this responsibility seriously.  The plant is designed following recognized design practices and procedures.  Detailed operating procedures and training assure that the facility will be operated safely during normal and emergency situations.  A sophisticated control system monitors the operation of the plant and if necessary an emergency shut down system will accomplish a safe and orderly shut down.  Enron Methanol Company has conducted process hazard analyses to determine the risks that exist in our process and opportunities to reduce those risks.  Enron Methanol Company uses modern maintenance practices, tools and systems to keep equipment operating reliably and detect repair needs in their early stages.  To improve equipment reliability, Enron Methanol Company conducts mechanical integrity inspections and failure analysis to determine the root cause of failures.  Qualified personnel who have been trained in plant maintenance procedures maintain the plant.  A Management of Change system controls changes to equipment and procedures.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12857,
+                  "PreventionProgram3ID": 9315,
+                  "ProcessChemicalID": 22123
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -238,49 +300,41 @@
           "ChemicalID": 155,
           "QuantityReleased": 3434.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 339,
               "AccidentChemicalID": 1725,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 340,
               "AccidentChemicalID": 1725,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 13071,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1999-05-03 00:00:00",
+    "ERTrainingDate": "1999-03-15 00:00:00",
+    "CoordinatingAgencyName": "Pasadena LEPC",
+    "CoordinatingAgencyPhone": "7134755588",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

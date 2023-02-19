@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CA",
   "OperatorZipCode": "95540",
   "OperatorZipCodeExt": "9711",
-  "RMPContact": "Chris Voehl",
-  "RMPTitle": "EH&S Manager",
   "FTE": 100,
   "OtherEPAFacilityID": "95540HMBLD572HW",
   "EPAFacilityID": "100000109465",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,35 +80,6 @@
       "FacilityID": 43378,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 63825,
-          "ProcessID": 62363,
-          "NAICSCode": "311511",
-          "_desc": {
-            "NAICS_CODE": "311511",
-            "NAICS_DESCRIPTION": "Fluid Milk Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 63826,
-          "ProcessID": 62363,
-          "NAICSCode": "311514",
-          "_desc": {
-            "NAICS_CODE": "311514",
-            "NAICS_DESCRIPTION": "Dry, Condensed, and Evaporated Dairy Product Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 63827,
-          "ProcessID": 62363,
-          "NAICSCode": "31152",
-          "_desc": {
-            "NAICS_CODE": "31152",
-            "NAICS_DESCRIPTION": "Ice Cream and Frozen Dessert Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 82338,
@@ -117,38 +87,163 @@
           "ChemicalID": 56,
           "Quantity": 33000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 63825,
+          "ProcessID": 62363,
+          "NAICSCode": "311511",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 582338,
+          "Process_NAICS_ID": 63826,
           "ProcessID": 62363,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "311514",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 36334,
+              "Process_NAICS_ID": 63826,
+              "SafetyReviewDate": "2010-07-08 00:00:00",
+              "PHA_Date": "2006-09-11 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "experienced personnel, and simialr facility accidents",
+              "PHACompletionDate": "2010-12-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "FFD/HC emergency responders review accidents and near misses from this and other simialr facilities, which assist during PHA's, emergency planning, and training",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "High-level shut-offs, and a computer system that monitors the operating parameters of critical ammonia equipment and systems",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Training and preventive maintenance",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "FFD/HC  has process area ammonia sensors (calibrated approximately every 6 months), and a hand held ammonia sensor for maintenance, emergency response, and for a temporary perimeter monitor",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "additional ammonia sensors have been installed; and also key pad locks for building security, with individual codes.",
+              "OpProceduresReviewDate": "2010-03-14 00:00:00",
+              "TrainingReviewDate": "2010-03-14 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "CalEMA 40-hr HAZWOPER, PermaCold ammonia response, Eel River Fire Authority, review of equipment operation",
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2010-03-14 00:00:00",
+              "EquipmentInspectionDate": "2010-06-08 00:00:00",
+              "EquipmentTested": "Integrity testing of ammonia tank (ERM Mechanical Integrity Audit)",
+              "ChangeMgmtDate": "2010-03-14 00:00:00",
+              "ChangeMgmtReviewDate": "2010-03-14 00:00:00",
+              "PreStartupReviewDate": "2010-03-14 00:00:00",
+              "ComplianceAuditDate": "2009-03-17 00:00:00",
+              "AuditCompletionDate": "2013-12-30 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2010-03-14 00:00:00",
+              "HotWorkPermitReviewDate": "2010-03-14 00:00:00",
+              "ContractorSafetyReviewDate": "2010-03-14 00:00:00",
+              "ContractorSafetyEvalDate": "2010-03-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Reviewed emergency response plan, ammonia sensors and alarm systems, emergency shut down procedures, safety information, operating procedures, inspection procedures, training programs, maintenance procedures, MoC procedures, pre-startup operation procedures, incident investigation procedures,employee participation plan, hot work permit procedures, and contractor safety procedures.  Completed a PHA report, and conducted a Compliance Audit.  An updated RMPlan has been completed and submitted to the Humboldt County Division of Environmental Health (CUPA), the Loleta Fire Department, and one is maintained on-site.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 52759,
+                  "PreventionProgram3ID": 36334,
+                  "ProcessChemicalID": 82338
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
+        },
+        {
+          "Process_NAICS_ID": 63827,
+          "ProcessID": 62363,
+          "NAICSCode": "31152",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 43378,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2010-07-08 00:00:00",
+    "ERTrainingDate": "2010-02-26 00:00:00",
+    "CoordinatingAgencyName": "Eel River Valley Fire Authority",
+    "CoordinatingAgencyPhone": "7078453090",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": "Hazardous Materials Business Plan"
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

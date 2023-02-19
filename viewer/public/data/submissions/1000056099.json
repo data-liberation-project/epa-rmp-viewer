@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "MO",
   "OperatorZipCode": "64504",
   "OperatorZipCodeExt": "3535",
-  "RMPContact": "Paul Oppliger",
-  "RMPTitle": "Plant Manager",
   "FTE": 249,
   "OtherEPAFacilityID": "64504GLMRC4900P",
   "EPAFacilityID": "100000049734",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "20",
   "HorizontalRefDatumCode": "001",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R09",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000056099,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000071269,
-          "ProcessID": 1000070087,
-          "NAICSCode": "32532",
-          "_desc": {
-            "NAICS_CODE": "32532",
-            "NAICS_DESCRIPTION": "Pesticide and Other Agricultural Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000086634,
@@ -99,15 +87,6 @@
           "ChemicalID": 133,
           "Quantity": 330000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 133,
-            "ChemicalName": "Dimethylamine  [Methanamine, N-methyl-]",
-            "CASNumber": "124-40-3",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,15 +95,6 @@
           "ChemicalID": 109,
           "Quantity": 1600000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 109,
-            "ChemicalName": "Isopropylamine [2-Propanamine]",
-            "CASNumber": "75-31-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -133,82 +103,131 @@
           "ChemicalID": 155,
           "Quantity": 280000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000074025,
               "ProcessChemicalID": 1000086636,
-              "ChemicalID": 133,
-              "_chemical": {
-                "ChemicalID": 133,
-                "ChemicalName": "Dimethylamine  [Methanamine, N-methyl-]",
-                "CASNumber": "124-40-3",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 133
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000586634,
+          "Process_NAICS_ID": 1000071269,
           "ProcessID": 1000070087,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000586635,
-          "ProcessID": 1000070087,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000586636,
-          "ProcessID": 1000070087,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32532",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000058623,
+              "Process_NAICS_ID": 1000071269,
+              "SafetyReviewDate": "2017-11-17 00:00:00",
+              "PHA_Date": "2016-12-13 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-12-14 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "Expansion",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "interlocks/timers",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-11-17 00:00:00",
+              "TrainingReviewDate": "2017-11-17 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-11-17 00:00:00",
+              "EquipmentInspectionDate": "2019-03-29 00:00:00",
+              "EquipmentTested": "detection monitors",
+              "ChangeMgmtDate": "2019-01-31 00:00:00",
+              "ChangeMgmtReviewDate": "2019-01-25 00:00:00",
+              "PreStartupReviewDate": "2019-02-05 00:00:00",
+              "ComplianceAuditDate": "2016-10-05 00:00:00",
+              "AuditCompletionDate": "2017-12-08 00:00:00",
+              "IncidentInvestigationDate": "2019-04-22 00:00:00",
+              "InvestigationChangeDate": "2019-06-28 00:00:00",
+              "ParticipationPlansReviewDate": "2017-11-02 00:00:00",
+              "HotWorkPermitReviewDate": "2019-04-30 00:00:00",
+              "ContractorSafetyReviewDate": "2019-04-04 00:00:00",
+              "ContractorSafetyEvalDate": "2019-04-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Reactant and Formulation",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000071913,
+                  "PreventionProgram3ID": 1000058623,
+                  "ProcessChemicalID": 1000086634
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -218,17 +237,6 @@
       "FacilityID": 1000056099,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000071279,
-          "ProcessID": 1000070098,
-          "NAICSCode": "32532",
-          "_desc": {
-            "NAICS_CODE": "32532",
-            "NAICS_DESCRIPTION": "Pesticide and Other Agricultural Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000086658,
@@ -236,33 +244,125 @@
           "ChemicalID": 109,
           "Quantity": 164000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 109,
-            "ChemicalName": "Isopropylamine [2-Propanamine]",
-            "CASNumber": "75-31-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000586658,
+          "Process_NAICS_ID": 1000071279,
           "ProcessID": 1000070098,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32532",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000058624,
+              "Process_NAICS_ID": 1000071279,
+              "SafetyReviewDate": "2017-11-17 00:00:00",
+              "PHA_Date": "2016-12-13 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-07-14 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "Expansion",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "timers",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Foam suppression",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "ABB",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-11-17 00:00:00",
+              "TrainingReviewDate": "2017-11-17 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-11-17 00:00:00",
+              "EquipmentInspectionDate": "2019-03-29 00:00:00",
+              "EquipmentTested": "detection monitors",
+              "ChangeMgmtDate": "2018-10-25 00:00:00",
+              "ChangeMgmtReviewDate": "2019-01-25 00:00:00",
+              "PreStartupReviewDate": "2018-11-01 00:00:00",
+              "ComplianceAuditDate": "2016-10-05 00:00:00",
+              "AuditCompletionDate": "2017-10-31 00:00:00",
+              "IncidentInvestigationDate": "2017-05-10 00:00:00",
+              "InvestigationChangeDate": "2017-05-22 00:00:00",
+              "ParticipationPlansReviewDate": "2017-11-02 00:00:00",
+              "HotWorkPermitReviewDate": "2019-04-30 00:00:00",
+              "ContractorSafetyReviewDate": "2019-04-04 00:00:00",
+              "ContractorSafetyEvalDate": "2019-04-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Amine unloading and dilution",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000071914,
+                  "PreventionProgram3ID": 1000058624,
+                  "ProcessChemicalID": 1000086658
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -346,15 +446,6 @@
           "ChemicalID": 109,
           "QuantityReleased": 7.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 109,
-            "ChemicalName": "Isopropylamine [2-Propanamine]",
-            "CASNumber": "75-31-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -437,15 +528,6 @@
           "ChemicalID": 109,
           "QuantityReleased": 3.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 109,
-            "ChemicalName": "Isopropylamine [2-Propanamine]",
-            "CASNumber": "75-31-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -528,20 +610,30 @@
           "ChemicalID": 109,
           "QuantityReleased": 50.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 109,
-            "ChemicalName": "Isopropylamine [2-Propanamine]",
-            "CASNumber": "75-31-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 1000056099,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "St. Joseph Fire Department",
+    "CoordinatingAgencyPhone": "8162714777",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

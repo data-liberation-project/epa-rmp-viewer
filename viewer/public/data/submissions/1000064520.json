@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "DE",
   "OperatorZipCode": "19899",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Sam Kmetz",
-  "RMPTitle": "RMP Coordinator",
   "FTE": 221,
   "OtherEPAFacilityID": "WVD005012851",
   "EPAFacilityID": "100000088889",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000064520,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000082180,
-          "ProcessID": 1000080938,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000100826,
@@ -99,15 +87,6 @@
           "ChemicalID": 56,
           "Quantity": 20040900.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,15 +95,6 @@
           "ChemicalID": 133,
           "Quantity": 12866000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 133,
-            "ChemicalName": "Dimethylamine  [Methanamine, N-methyl-]",
-            "CASNumber": "124-40-3",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -133,15 +103,6 @@
           "ChemicalID": 97,
           "Quantity": 9773600.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 97,
-            "ChemicalName": "Methylamine  [Methanamine]",
-            "CASNumber": "74-89-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -150,84 +111,140 @@
           "ChemicalID": 113,
           "Quantity": 4245300.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 113,
-            "ChemicalName": "Trimethylamine [Methanamine, N,N-dimethyl-]",
-            "CASNumber": "75-50-3",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000600826,
+          "Process_NAICS_ID": 1000082180,
           "ProcessID": 1000080938,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000600827,
-          "ProcessID": 1000080938,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000600828,
-          "ProcessID": 1000080938,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000600829,
-          "ProcessID": 1000080938,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000068115,
+              "Process_NAICS_ID": 1000082180,
+              "SafetyReviewDate": "2018-07-01 00:00:00",
+              "PHA_Date": "2017-11-29 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Human Factors Checklist & Layer of Protection Analysis",
+              "PHACompletionDate": "2018-03-08 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "Guard Posts Around Critical Equipment",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 1,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Doubled walled tank for cryogenic ammonia; Fire Squad and fire fighting equipment",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Remote Cameras",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 1,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Improved operating procedures.",
+              "OpProceduresReviewDate": "2018-08-06 00:00:00",
+              "TrainingReviewDate": "2018-02-12 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2018-03-29 00:00:00",
+              "EquipmentInspectionDate": "2018-08-20 00:00:00",
+              "EquipmentTested": "AMIN10095, MMA Feed Piping",
+              "ChangeMgmtDate": "2018-06-07 00:00:00",
+              "ChangeMgmtReviewDate": "2015-12-17 00:00:00",
+              "PreStartupReviewDate": "2018-07-02 00:00:00",
+              "ComplianceAuditDate": "2017-11-13 00:00:00",
+              "AuditCompletionDate": "2018-06-05 00:00:00",
+              "IncidentInvestigationDate": "2018-01-23 00:00:00",
+              "InvestigationChangeDate": "2018-07-02 00:00:00",
+              "ParticipationPlansReviewDate": "2016-11-08 00:00:00",
+              "HotWorkPermitReviewDate": "2018-07-23 00:00:00",
+              "ContractorSafetyReviewDate": "2016-11-10 00:00:00",
+              "ContractorSafetyEvalDate": "2018-09-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Methylamines/Amides Production",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000084334,
+                  "PreventionProgram3ID": 1000068115,
+                  "ProcessChemicalID": 1000100826
+                },
+                {
+                  "PrimaryKey": 1000084335,
+                  "PreventionProgram3ID": 1000068115,
+                  "ProcessChemicalID": 1000100827
+                },
+                {
+                  "PrimaryKey": 1000084336,
+                  "PreventionProgram3ID": 1000068115,
+                  "ProcessChemicalID": 1000100828
+                },
+                {
+                  "PrimaryKey": 1000084337,
+                  "PreventionProgram3ID": 1000068115,
+                  "ProcessChemicalID": 1000100829
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -237,17 +254,6 @@
       "FacilityID": 1000064520,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000082181,
-          "ProcessID": 1000080939,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000100830,
@@ -255,33 +261,125 @@
           "ChemicalID": 130,
           "Quantity": 2619100.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 130,
-            "ChemicalName": "Methyl ether  [Methane, oxybis-]",
-            "CASNumber": "115-10-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000600830,
+          "Process_NAICS_ID": 1000082181,
           "ProcessID": 1000080939,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000068116,
+              "Process_NAICS_ID": 1000082181,
+              "SafetyReviewDate": "2017-11-22 00:00:00",
+              "PHA_Date": "2017-12-26 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Human Factors Checklist & Layer of Protection Analysis",
+              "PHACompletionDate": "2018-06-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Remote Cameras",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2018-06-28 00:00:00",
+              "TrainingReviewDate": "2018-08-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2018-07-31 00:00:00",
+              "EquipmentInspectionDate": "2018-09-27 00:00:00",
+              "EquipmentTested": "Ground Clamps, DME Loading",
+              "ChangeMgmtDate": "2018-06-18 00:00:00",
+              "ChangeMgmtReviewDate": "2015-12-17 00:00:00",
+              "PreStartupReviewDate": "2018-04-25 00:00:00",
+              "ComplianceAuditDate": "2017-11-13 00:00:00",
+              "AuditCompletionDate": "2018-06-05 00:00:00",
+              "IncidentInvestigationDate": "2017-11-29 00:00:00",
+              "InvestigationChangeDate": "2019-12-02 00:00:00",
+              "ParticipationPlansReviewDate": "2016-11-08 00:00:00",
+              "HotWorkPermitReviewDate": "2018-07-23 00:00:00",
+              "ContractorSafetyReviewDate": "2016-11-10 00:00:00",
+              "ContractorSafetyEvalDate": "2018-09-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Dimethylether Production",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000084338,
+                  "PreventionProgram3ID": 1000068116,
+                  "ProcessChemicalID": 1000100830
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -291,17 +389,6 @@
       "FacilityID": 1000064520,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000082182,
-          "ProcessID": 1000080940,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000100831,
@@ -309,33 +396,125 @@
           "ChemicalID": 50,
           "Quantity": 620900.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 50,
-            "ChemicalName": "Sulfur trioxide",
-            "CASNumber": "7446-11-9",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000600831,
+          "Process_NAICS_ID": 1000082182,
           "ProcessID": 1000080940,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000068117,
+              "Process_NAICS_ID": 1000082182,
+              "SafetyReviewDate": "2016-07-29 00:00:00",
+              "PHA_Date": "2013-12-19 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 1,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Human Factor Checklist & Layer of Protection Analysis",
+              "PHACompletionDate": "2017-11-17 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "Open Vent Path to Scrubber System and Backup Scrubber",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Foam Suppression",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Remote Cameras",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2018-07-31 00:00:00",
+              "TrainingReviewDate": "2018-08-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2018-07-31 00:00:00",
+              "EquipmentInspectionDate": "2018-05-21 00:00:00",
+              "EquipmentTested": "SO3 Funnel Piping",
+              "ChangeMgmtDate": "2018-06-18 00:00:00",
+              "ChangeMgmtReviewDate": "2015-12-17 00:00:00",
+              "PreStartupReviewDate": "2018-08-27 00:00:00",
+              "ComplianceAuditDate": "2017-11-13 00:00:00",
+              "AuditCompletionDate": "2018-06-05 00:00:00",
+              "IncidentInvestigationDate": "2016-11-01 00:00:00",
+              "InvestigationChangeDate": "2018-01-01 00:00:00",
+              "ParticipationPlansReviewDate": "2016-11-08 00:00:00",
+              "HotWorkPermitReviewDate": "2018-07-23 00:00:00",
+              "ContractorSafetyReviewDate": "2016-11-10 00:00:00",
+              "ContractorSafetyEvalDate": "2018-09-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Dimethylsulfate Production",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000084339,
+                  "PreventionProgram3ID": 1000068117,
+                  "ProcessChemicalID": 1000100831
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -345,17 +524,6 @@
       "FacilityID": 1000064520,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000082183,
-          "ProcessID": 1000080941,
-          "NAICSCode": "325199",
-          "_desc": {
-            "NAICS_CODE": "325199",
-            "NAICS_DESCRIPTION": "All Other Basic Organic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000100832,
@@ -363,33 +531,125 @@
           "ChemicalID": 1,
           "Quantity": 184300.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 1,
-            "ChemicalName": "Formaldehyde (solution)",
-            "CASNumber": "50-00-0",
-            "Threshold": 15000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000600832,
+          "Process_NAICS_ID": 1000082183,
           "ProcessID": 1000080941,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325199",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000068118,
+              "Process_NAICS_ID": 1000082183,
+              "SafetyReviewDate": "2013-07-22 00:00:00",
+              "PHA_Date": "2015-11-13 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Human Factors Checklist & Layer of Protection Analysis",
+              "PHACompletionDate": "2017-11-08 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Thermal Oxidizer",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 1,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2018-08-23 00:00:00",
+              "TrainingReviewDate": "2018-03-27 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2018-07-31 00:00:00",
+              "EquipmentInspectionDate": "2018-08-22 00:00:00",
+              "EquipmentTested": "HCHO Monitor Test",
+              "ChangeMgmtDate": "2017-10-03 00:00:00",
+              "ChangeMgmtReviewDate": "2015-12-17 00:00:00",
+              "PreStartupReviewDate": "2018-09-22 00:00:00",
+              "ComplianceAuditDate": "2018-09-06 00:00:00",
+              "AuditCompletionDate": "2018-09-17 00:00:00",
+              "IncidentInvestigationDate": "2018-07-30 00:00:00",
+              "InvestigationChangeDate": "2018-12-13 00:00:00",
+              "ParticipationPlansReviewDate": "2016-11-08 00:00:00",
+              "HotWorkPermitReviewDate": "2018-07-23 00:00:00",
+              "ContractorSafetyReviewDate": "2016-11-10 00:00:00",
+              "ContractorSafetyEvalDate": "2018-09-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Glycolic Acid Production",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000084340,
+                  "PreventionProgram3ID": 1000068118,
+                  "ProcessChemicalID": 1000100832
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -473,20 +733,30 @@
           "ChemicalID": 97,
           "QuantityReleased": 10.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 97,
-            "ChemicalName": "Methylamine  [Methanamine]",
-            "CASNumber": "74-89-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 1000064520,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2017-06-26 00:00:00",
+    "ERTrainingDate": "2018-07-29 00:00:00",
+    "CoordinatingAgencyName": "Kanawha Putnam Emergency Planning",
+    "CoordinatingAgencyPhone": "3044143607",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "MS",
   "OperatorZipCode": "39194",
   "OperatorZipCodeExt": "0388",
-  "RMPContact": "Claudio Nascimento",
-  "RMPTitle": "General Manager",
   "FTE": 280,
   "OtherEPAFacilityID": "MSD008161432",
   "EPAFacilityID": "100000067964",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "10",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R04",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000066177,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000084095,
-          "ProcessID": 1000082893,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000103181,
@@ -99,15 +87,6 @@
           "ChemicalID": 56,
           "Quantity": 100000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,98 +95,170 @@
           "ChemicalID": 155,
           "Quantity": 14355.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000090665,
               "ProcessChemicalID": 1000103182,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000090666,
               "ProcessChemicalID": 1000103182,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000090667,
               "ProcessChemicalID": 1000103182,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000603181,
+          "Process_NAICS_ID": 1000084095,
           "ProcessID": 1000082893,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000603182,
-          "ProcessID": 1000082893,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000069871,
+              "Process_NAICS_ID": 1000084095,
+              "SafetyReviewDate": "2017-04-14 00:00:00",
+              "PHA_Date": "2017-04-14 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-04-14 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Operator checks during rounds",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-01-13 00:00:00",
+              "TrainingReviewDate": "2017-01-13 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-01-13 00:00:00",
+              "EquipmentInspectionDate": "2017-07-28 00:00:00",
+              "EquipmentTested": "124-D36, #3 Cooling Tower Sulfuric Acid Tank",
+              "ChangeMgmtDate": "2017-08-14 00:00:00",
+              "ChangeMgmtReviewDate": "2017-05-23 00:00:00",
+              "PreStartupReviewDate": "2017-09-26 00:00:00",
+              "ComplianceAuditDate": "2018-01-09 00:00:00",
+              "AuditCompletionDate": "2020-06-30 00:00:00",
+              "IncidentInvestigationDate": "2017-08-15 00:00:00",
+              "InvestigationChangeDate": "2017-08-16 00:00:00",
+              "ParticipationPlansReviewDate": "2017-08-28 00:00:00",
+              "HotWorkPermitReviewDate": "2017-08-09 00:00:00",
+              "ContractorSafetyReviewDate": "2016-04-07 00:00:00",
+              "ContractorSafetyEvalDate": "2017-08-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The CF Industries Nitrogen, LLC facility has a comprehensive Process Safety Management (PSM) Program and is subject to the Occupational Safety and Health Administration's standard for process safety management of hazardous chemicals found at 29CFR Part 1910.119. Key elements of the PSM program include: 1) Stringent design standards of equipment which incorporate substantial safety factors. 2) Extensive process safety information that is accurate and up to date. 3) Well trained personnel who operate and maintain the facility. 4) Written operating and maintenance procedures. 5) Mechanical Integrity procedures of process equipment inspectionsand quality control. 6) Management of change and pre-startup review procedures. 7) Periodic, detailed evaluation of all covered process areas by a team utilizing HAZOP methodology. 8) Regular audits of the PSM program. 9) Employee participation in every element of the PSM program. The Yazoo City Plant process is nitrogen fertilizer manufacturing which consist of thirteen interconnected and co-located production/storage units. These units have similar prevention program elements and are listed together in Section 7.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000086350,
+                  "PreventionProgram3ID": 1000069871,
+                  "ProcessChemicalID": 1000103181
+                },
+                {
+                  "PrimaryKey": 1000086351,
+                  "PreventionProgram3ID": 1000069871,
+                  "ProcessChemicalID": 1000103182
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000066177,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2016-11-04 00:00:00",
+    "ERTrainingDate": "2016-12-08 00:00:00",
+    "CoordinatingAgencyName": "Yazoo County Emergency Management",
+    "CoordinatingAgencyPhone": "6627461569",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

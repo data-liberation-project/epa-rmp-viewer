@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "IL",
   "OperatorZipCode": "60013",
   "OperatorZipCodeExt": "2861",
-  "RMPContact": "Marcella Nichols",
-  "RMPTitle": "Regulatory Compliance Manager",
   "FTE": 300,
   "OtherEPAFacilityID": "ILD010238491",
   "EPAFacilityID": "100000083447",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 11091,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 14878,
-          "ProcessID": 14521,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 14879,
-          "ProcessID": 14521,
-          "NAICSCode": "339994",
-          "_desc": {
-            "NAICS_CODE": "339994",
-            "NAICS_DESCRIPTION": "Broom, Brush, and Mop Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 17703,
@@ -108,67 +87,58 @@
           "ChemicalID": 155,
           "Quantity": 250000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 9318,
               "ProcessChemicalID": 17703,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 9319,
               "ProcessChemicalID": 17703,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 14878,
+          "ProcessID": 14521,
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 517703,
+          "Process_NAICS_ID": 14879,
           "ProcessID": 14521,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "339994",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 11091,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Village of Cary Fire Department",
+    "CoordinatingAgencyPhone": "8476390003",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 0,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 0,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

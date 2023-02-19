@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "PA",
   "OperatorZipCode": "17408",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Daniel Donohue",
-  "RMPTitle": "EHS Specialist",
   "FTE": 360,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000209623",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "10",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 1000017596,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000023491,
-          "ProcessID": 1000023188,
-          "NAICSCode": "325611",
-          "_desc": {
-            "NAICS_CODE": "325611",
-            "NAICS_DESCRIPTION": "Soap and Other Detergent Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 1000023582,
-          "ProcessID": 1000023188,
-          "NAICSCode": "49311",
-          "_desc": {
-            "NAICS_CODE": "49311",
-            "NAICS_DESCRIPTION": "General Warehousing and Storage"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000027631,
@@ -108,81 +87,63 @@
           "ChemicalID": 155,
           "Quantity": 765000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 101839,
               "ProcessChemicalID": 1000027631,
-              "ChemicalID": 111,
-              "_chemical": {
-                "ChemicalID": 111,
-                "ChemicalName": "Difluoroethane  [Ethane, 1,1-difluoro-]",
-                "CASNumber": "75-37-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 111
             },
             {
               "FlamMixChemID": 101840,
               "ProcessChemicalID": 1000027631,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 101841,
               "ProcessChemicalID": 1000027631,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             }
           ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000023491,
+          "ProcessID": 1000023188,
+          "NAICSCode": "325611",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 1000527631,
+          "Process_NAICS_ID": 1000023582,
           "ProcessID": 1000023188,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "49311",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000017596,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": "2010-02-02 00:00:00",
+    "ERTrainingDate": "2009-12-29 00:00:00",
+    "CoordinatingAgencyName": "York County Emergency Management",
+    "CoordinatingAgencyPhone": "7178407494",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

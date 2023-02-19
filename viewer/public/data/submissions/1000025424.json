@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "IL",
   "OperatorZipCode": "60505",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Kyle Grube",
-  "RMPTitle": "Distribution Manager",
   "FTE": 25,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000197976",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "04",
   "DeregistrationReasonOtherText": "Moved to new site (2570 Orchard Gateway Blvd Aurora, IL 60506)",
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000025424,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000031537,
-          "ProcessID": 1000031226,
-          "NAICSCode": "49311",
-          "_desc": {
-            "NAICS_CODE": "49311",
-            "NAICS_DESCRIPTION": "General Warehousing and Storage"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000037827,
@@ -99,67 +87,51 @@
           "ChemicalID": 155,
           "Quantity": 75000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000031736,
               "ProcessChemicalID": 1000037827,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000031737,
               "ProcessChemicalID": 1000037827,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000537827,
+          "Process_NAICS_ID": 1000031537,
           "ProcessID": 1000031226,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "49311",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000025424,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2011-12-19 00:00:00",
+    "ERTrainingDate": "2011-09-21 00:00:00",
+    "CoordinatingAgencyName": "Aurora Fire Department",
+    "CoordinatingAgencyPhone": "6308979698",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 0,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

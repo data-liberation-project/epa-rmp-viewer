@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "OH",
   "OperatorZipCode": "45714",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Philip Whitaker",
-  "RMPTitle": "Terminal Manager",
   "FTE": 10,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000230109",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "10",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000050703,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000065071,
-          "ProcessID": 1000063909,
-          "NAICSCode": "32419",
-          "_desc": {
-            "NAICS_CODE": "32419",
-            "NAICS_DESCRIPTION": "Other Petroleum and Coal Products Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000078999,
@@ -99,123 +87,180 @@
           "ChemicalID": 155,
           "Quantity": 155939.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000067933,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000067934,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000067935,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000067936,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000067937,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000067938,
               "ProcessChemicalID": 1000078999,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000578999,
+          "Process_NAICS_ID": 1000065071,
           "ProcessID": 1000063909,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32419",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000053098,
+              "Process_NAICS_ID": 1000065071,
+              "SafetyReviewDate": "2015-07-01 00:00:00",
+              "PHA_Date": "2015-04-28 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2015-07-01 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "150-ft fire hose; fire extinguishers; excess flow valves; shutoff valves",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Hydrocarbon Monitor; cameras viewed at operations center",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "This is initial RMP",
+              "OpProceduresReviewDate": "2015-07-01 00:00:00",
+              "TrainingReviewDate": "2015-07-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Video/ On-Line Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2015-07-01 00:00:00",
+              "EquipmentInspectionDate": "2015-05-31 00:00:00",
+              "EquipmentTested": "Pneumatic pressure test of equipment",
+              "ChangeMgmtDate": null,
+              "ChangeMgmtReviewDate": "2014-03-13 00:00:00",
+              "PreStartupReviewDate": "2015-07-10 00:00:00",
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2015-06-29 00:00:00",
+              "HotWorkPermitReviewDate": "2015-07-01 00:00:00",
+              "ContractorSafetyReviewDate": "2015-07-01 00:00:00",
+              "ContractorSafetyEvalDate": "2015-06-29 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "This is a new site that has had no accidental releases of flammable mixtures.\n\n\n\nThe Belpre Condensate Stabilization Facility is covered by OSHA?s Process Safety Management (PSM) regulation (29 CFR 1910.119).  The RMP Level 3 Prevention Program Elements are prevention program requirements which are identical to those given in OSHA?s PSM regulation.  Therefore, compliance with PSM will help to ensure compliance with RMP.\n\n\n\nA Process Hazard Analysis (PHA) was conducted on April 28, 2015 and report completed on May 12, 2015.  Standard Operating Procedures (SOPs) are in place and employees have been trained in the proper operation of equipment and emergency response.\n\n\n\nThe facility has an Integrated Facility Response Plan/Emergency Response Plan which has been coordinated and reviewed by the U.S. Coast Guard, the Washington County Local Emergency Planning Committee (LEPC), and the Belpre Volunteer Fire Department.  This program includes an emergency response and notification plan.  Emergency response drills and/or evaluations will be conducted routinely.\n\n\n\nIn the unlikely event of a fire at the Belpre Condensate Stabilization Facility, employees may respond to an early stage fire and act to shut down the process.  The employees may then be required to evacuate the facility.\n\n\n\n \n\n\n\n ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000065208,
+                  "PreventionProgram3ID": 1000053098,
+                  "ProcessChemicalID": 1000078999
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000050703,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2015-06-01 00:00:00",
+    "ERTrainingDate": "2015-06-30 00:00:00",
+    "CoordinatingAgencyName": "Washington County LEPC",
+    "CoordinatingAgencyPhone": "7403735613",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,
