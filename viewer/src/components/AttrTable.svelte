@@ -1,12 +1,17 @@
 <script>
+  import lookups from "../../public/data/lookups/lookups.json";
   export let table, key, i;
   const key_parts = key.split(":");
-  const name = key_parts[key_parts.length - 1].replace(/^_/, "");
-  console.log(key);
   const sections = {
     "submission:_processes": "Processes",
-    "submission:_processes:_naics": "Process NAICS Code(s)",
+    "submission:_emerg_resp": "Emergency Response",
+    "submission:_exec_summary": "Executive Summary",
+    "submission:_processes:_naics": "Prevention Programs by Industry Code",
     "submission:_processes:_naics:_desc": "NAICS Code Description",
+    "submission:_processes:_naics:_prev_prog_3": "Prevention Program (for Program Level 3)",
+    "submission:_processes:_naics:_prev_prog_3_chemicals": "Program Chemicals",
+    "submission:_processes:_naics:_prev_prog_2": "Prevention Program (for Program Level 2)",
+    "submission:_processes:_naics:_prev_prog_2_chemicals": "Program Chemicals",
     "submission:_processes:_chemicals": "Process Chemicals",
     "submission:_processes:_chemicals:_chemical": "Chemical Information",
     "submission:_processes:_chemicals:_flam_mix_chemicals": "Flammable Mixture Chemical",
@@ -35,44 +40,68 @@
     }
   };
 
+  let collapsed = false;
+  let title = sections[key] + (i > -1 ? ` #${parseInt(i)+1}` : "");
+
 </script>
 
 <div class="tablewrapper top">
-    {#if sections[key]}
-      <h4>{sections[key]}{#if i > -1}: #{i + 1}{/if}</h4>
-    {/if}
-  <table>
-    {#each Object.keys(table) as item_key}
-      {@const val = table[item_key]}
-      {#if !(keys_to_skip.indexOf(key) > -1 || item_keys_to_skip.indexOf(item_key) > -1)}
-        {#if item_key.slice(0, 1) !== "_"}
-          <tr>
-            <td class="left" data-key={item_key}>{item_key}</td>
-            <td class="right" data-key={item_key}>{@html renderValue(key, item_key, val)}</td>
-          </tr>
-        {/if}
-      {/if}
-    {/each}
-  </table>
-  {#each Object.keys(table) as item_key}
-    {@const val = table[item_key]}
-    {#if item_key.slice(0, 1) === "_"}
-      {#if item_key == "_exec_summary"}
-        <div class="tablewrapper">
-          <h4>Executive Summary</h4>
-          <div class="exec-summary">
-            {#each val as row}{row.SummaryText}{/each}
-          </div>
-        </div>
-      {:else if Array.isArray(val)}
-        {#each val as entry, i}
-          <svelte:self table={entry} key={key + ":" + item_key} i={i} />
-        {/each}
+  {#if key != "submission"}
+  <h4>
+    {title}
+    <button class="toggle" on:click={() => collapsed = !collapsed}>
+      {#if collapsed}
+      Expand
       {:else}
-        <svelte:self table={val} key={key + ":" + item_key} i=-1 />
+      Collapse
       {/if}
+    </button>
+  </h4>
+  {/if}
+  {#if Array.isArray(table) ? table.length : table}
+    {#if key === "submission:_exec_summary"}
+      <div class="exec-summary" hidden={collapsed}>
+        {#each table as row}{row.SummaryText}{/each}
+      </div>
+    {:else}
+      <table hidden={collapsed}>
+        {#each Object.keys(table) as item_key}
+          {@const val = table[item_key]}
+          {#if !(keys_to_skip.indexOf(key) > -1 || item_keys_to_skip.indexOf(item_key) > -1)}
+            {#if item_key.slice(0, 1) !== "_"}
+              <tr>
+                <td class="left" data-key={item_key}>{item_key}</td>
+                <td class="right" data-key={item_key}>
+                  {@html renderValue(key, item_key, val)}
+                  {#if (lookups[item_key] && lookups[item_key][val])}
+                    <span class="lookup">{lookups[item_key][val]}</span>
+                  {/if}
+                </td>
+              </tr>
+            {/if}
+          {/if}
+        {/each}
+      </table>
+      {#each Object.keys(table) as item_key}
+        {@const val = table[item_key]}
+        {#if item_key.slice(0, 1) === "_"}
+            <div hidden={collapsed}>
+            {#if item_key == "_exec_summary"}
+                <svelte:self table={val} key={key + ":" + item_key} i={-1} />
+            {:else if Array.isArray(val)}
+              {#each val as entry, i}
+                <svelte:self table={entry} key={key + ":" + item_key} i={i} />
+              {/each}
+            {:else}
+              <svelte:self table={val} key={key + ":" + item_key} i={-1} />
+            {/if}
+            </div>
+        {/if}
+      {/each}
     {/if}
-  {/each}
+  {:else}
+    <div class="missing" hidden={collapsed}>Missing</div>
+  {/if}
 </div>
 
 <style>
@@ -118,9 +147,35 @@
   td.right {
   }
 
+  span.lookup {
+    background-color: lightblue;
+    padding: 0.1em 0.25em;
+    display: inline-block;
+    border-radius: 3px;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
   .exec-summary {
     white-space: pre-wrap;
     background-color: white;
     padding: 1em;
   }
+
+  div.missing {
+    font-style: italic;
+  }
+
+  button.toggle {
+    font-size: 0.8em;
+    padding: 0.1em 0.25em;
+    margin-left: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button.toggle:hover {
+    border: 1px solid black;
+  }
+
 </style>

@@ -12,6 +12,8 @@
     "Phone24",
     "EmergencyContactExt_PIN",
     "EmergencyContactEmail",
+    "RMPContact",
+    "RMPTitle",
     "RMPPreparerName",
     "RMPPreparerStreet1",
     "RMPPreparerStreet2",
@@ -23,7 +25,6 @@
     "RMPPreparerForeignStateOrProvince",
     "RMPPreparerForeignCountry",
     "RMPPreparerForeignPostalCode",
-    "RMPSubmissionReasonCode",
     "RMPEmail"
   ],
   "children": [
@@ -33,40 +34,44 @@
       "key": "FacilityID",
       "children": [
         {
+          "alias": "chemicals",
+          "table": "tblS1ProcessChemicals",
+          "where": "ChemicalID != 0",
+          "key": "ProcessID",
+          "children": [
+            {
+              "alias": "flam_mix_chemicals",
+              "table": "tblS1FlammableMixtureChemicals",
+              "key": "ProcessChemicalID"
+            }
+          ]
+        },
+        {
           "alias": "naics",
           "table": "tblS1Process_NAICS",
           "key": "ProcessID",
           "children": [
             {
-              "alias": "desc",
-              "table": "tlkpNAICS",
-              "key": "NAICS_CODE",
-              "key_parent": "NAICSCode",
-              "singleton": true
-            }
-          ]
-        },
-        {
-          "alias": "chemicals",
-          "table": "tblS1ProcessChemicals",
-          "key": "ProcessID",
-          "children": [
-            {
-              "alias": "chemical",
-              "table": "tlkpChemicals",
-              "key": "ChemicalID",
-              "singleton": true
-            },
-            {
-              "alias": "flam_mix_chemicals",
-              "table": "tblS1FlammableMixtureChemicals",
-              "key": "ProcessChemicalID",
+              "alias": "prev_prog_3",
+              "table": "tblS7PreventionProgram3",
+              "key": "Process_NAICS_ID",
               "children": [
                 {
-                  "alias": "chemical",
-                  "table": "tlkpChemicals",
-                  "key": "ChemicalID",
-                  "singleton": true
+                  "alias": "chemicals",
+                  "table": "tblS7_Prevention_Program_Chemicals",
+                  "key": "PreventionProgram3ID"
+                }
+              ]
+            },
+            {
+              "alias": "prev_prog_2",
+              "table": "tblS8PreventionProgram2",
+              "key": "Process_NAICS_ID",
+              "children": [
+                {
+                  "alias": "chemicals",
+                  "table": "tblS8_Prevention_Program_Chemicals",
+                  "key": "PreventionProgram2ID"
                 }
               ]
             }
@@ -85,27 +90,19 @@
           "key": "AccidentHistoryID",
           "children": [
             {
-              "alias": "chemical",
-              "table": "tlkpChemicals",
-              "key": "ChemicalID",
-              "singleton": true
-            },
-            {
               "alias": "flam_mix_chemicals",
               "table": "tblS6FlammableMixtureChemicals",
-              "key": "AccidentChemicalID",
-              "children": [
-                {
-                  "alias": "chemical",
-                  "table": "tlkpChemicals",
-                  "key": "ChemicalID",
-                  "singleton": true
-                }
-              ]
+              "key": "AccidentChemicalID"
             }
           ]
         }
       ]
+    },
+    {
+      "alias": "emerg_resp",
+      "table": "tblS9EmergencyResponses",
+      "key": "FacilityID",
+      "singleton": true
     },
     {
       "alias": "exec_summary",

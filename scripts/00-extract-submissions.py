@@ -38,9 +38,18 @@ def parse_args() -> argparse.Namespace:
 
 
 def get(
-    cur: sqlite3.Cursor, table: str, id_col: str, id_value: typing.Union[str, int]
+    cur: sqlite3.Cursor,
+    table: str,
+    id_col: str,
+    id_value: typing.Union[str, int],
+    where: typing.Optional[str] = None,
 ) -> list[dict[str, typing.Any]]:
-    res = cur.execute(f"SELECT * FROM {table} WHERE {id_col} = ?;", [id_value])
+    if where is None:
+        query = f"SELECT * FROM {table} WHERE {id_col} = ?;"
+    else:
+        query = f"SELECT * FROM {table} WHERE {id_col} = ? AND {where};"
+
+    res = cur.execute(query, [id_value])
     return list(map(dict, res))
 
 
@@ -50,26 +59,30 @@ def extract(
     table: str,
     key: str,
     value: typing.Union[str, int],
+    where: typing.Optional[str] = None,
     key_parent: typing.Optional[str] = None,
     alias: typing.Optional[str] = None,
     skip: typing.Optional[list[str]] = None,
     children: typing.Optional[list[dict[str, typing.Any]]] = None,
+    lookups: typing.Optional[list[dict[str, typing.Any]]] = None,
     singleton: bool = False,
-) -> typing.Union[dict[str, typing.Any], list[dict[str, typing.Any]]]:
+) -> typing.Union[dict[str, typing.Any], list[dict[str, typing.Any]], None]:
     assert all((x is not None for x in [table, key, value]))
-    raw = get(cur, table, key, value)
-    for item in raw:
+    raw = get(cur, table, key, value, where)
+
+    for entry in raw:
         for c in children or []:
-            c_value = item[c.get("key_parent", c["key"])]
-            item[f"_{c['alias']}"] = extract(cur, **c, value=c_value)
+            parent_value = entry[c.get("key_parent", c["key"])]
+            entry[f"_{c['alias']}"] = extract(cur, **c, value=parent_value)
 
     final = [
         {key: value for key, value in entry.items() if key not in (skip or [])}
         for entry in raw
     ]
+
     if singleton is True:
-        assert len(final) == 1
-        return final[0]
+        assert len(final) < 2
+        return final[0] if final else None
     else:
         return final
 
