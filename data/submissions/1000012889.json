@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "78223",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Phil Goodman",
-  "RMPTitle": "Director of Operations",
   "FTE": 50,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000200846",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "150",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R03",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000012889,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000016474,
-          "ProcessID": 1000016086,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000019090,
@@ -99,118 +87,156 @@
           "ChemicalID": 155,
           "Quantity": 140000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000015664,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000015665,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000015666,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000015667,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000015668,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000015669,
               "ProcessChemicalID": 1000019090,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000519090,
+          "Process_NAICS_ID": 1000016474,
           "ProcessID": 1000016086,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000013172,
+              "Process_NAICS_ID": 1000016474,
+              "SafetyReviewDate": "2006-08-01 00:00:00",
+              "PHA_Date": "2010-03-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2012-03-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "Human Factors, Facility Siting",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Inspection Program (Mechanical Integrity)",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Local and Remote H2S and LEL Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2010-03-02 00:00:00",
+              "TrainingReviewDate": "2010-03-03 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Informal Coaching (Safety Toolbox Meetings)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2010-02-22 00:00:00",
+              "EquipmentInspectionDate": "2010-03-05 00:00:00",
+              "EquipmentTested": "Tank 4601",
+              "ChangeMgmtDate": "2010-03-10 00:00:00",
+              "ChangeMgmtReviewDate": "2007-04-01 00:00:00",
+              "PreStartupReviewDate": "2010-02-22 00:00:00",
+              "ComplianceAuditDate": "2008-07-24 00:00:00",
+              "AuditCompletionDate": "2011-12-31 00:00:00",
+              "IncidentInvestigationDate": "2010-03-02 00:00:00",
+              "InvestigationChangeDate": "2010-06-02 00:00:00",
+              "ParticipationPlansReviewDate": "2006-01-01 00:00:00",
+              "HotWorkPermitReviewDate": "2008-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "2009-07-08 00:00:00",
+              "ContractorSafetyEvalDate": "2010-02-17 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The following is a description of the general accident prevention program in place at the refinery. The refinery is subject to the OSHA PSM standard, therefore this description addresses each of the OSHA PSM elements and describes the management system in place to implement the accident prevention program.\n\n\n\nEmployee Participation\n\nAGE Refining Inc., has established a Process Safety Management Committee (PSMC) consisting of employees from all operational facets to review, evaluate and make recommendations to management on the safe operation of the plant processes. The company also encourages employees to participate in the plants safety and loss control program. Employees have access to all information created as part of the refinery safety and accident prevention program. Specific ways that employees can be involved in the accident prevention program are documented in an employee participation plan that is maintained at the refinery and addresses each accident prevention program element. In addition, the refinery has a number of initiatives under way that address process safety and employee safety issues. These initiatives include forming teams to promote both process and personal safety. The teams typically have members from various areas of the plant, including operations, maintenance, engineering, and plant management.\n\n\n\nProcess Safety Information\n\nAGE Refining Inc., keeps a variety of technical documents that are used to help maintain safe operation of the processes. These documents address chemical properties and associated hazards, and specific chemical inventories, and equipment design basis/configuration information.\n\nChemical-specific information, including exposure hazards and emergency response/exposure treatment considerations, is provided in material safety data sheets (MSDS's). This information is supplemented by documents that specifically address known corrosion concerns and any known hazards associated with the inadvertent mixing of chemicals. The refinery ensures the process is maintained within design limits using process controls, monitoring instruments, and experienced personnel.\n\nThe Process Safety Management study determined and documented that the refinery's existing equipment was designed and constructed in accordance with codes, standards and practices no longer in general use; however, the plant is being operated within the parameters previously established to ensure the safety of the personnel and the public.\n\n\n\nAGE Refining Inc., does not have the threshold quantities of Regulated Toxic Substances required under the Environmental Protection Agency?s Rule 40 CFR 68.130, however the plant does have the threshold planning quantities of  Flammable Substances.  AGE Refining Inc. does not  have threshold quantities of the Highly Hazardous Chemicals, Toxins or Reactives as defined by Appendix A of the Occupational Safety and Health Administration' Standard 29 CFR 1910.119; however, AGE Refining Inc. has performed a process hazard analysis that has identified concerns that could lead to a catastrophic incident. The potential deficiencies were summarized and approved by the PSMC and submitted to management .\n\nAGE Refining Inc., currently uses the hazard and operability (HAZOP) analysis technique to perform the evaluations required under the 29 CFR 1910.119 for the plant processes. HAZOP analysis is recognized as one of the most systematic and thorough hazard evaluation techniques. The original analyses were conducted using consultants Double D Safety Enterprises, LLC., represented D. B. Deady, CHST., FSR., ASC., and Sam Duckworth, P. E. and an AGE Refining Inc.'s team , who have operating and maintenance experience. Recent analysis have been conducted by Tejas Environmental, Health & Safety and the plant PSM committee. The consultants and team performed the study and identified potential hazards of the plant processes within the confines of the operating units. The PSM committee submitted the recommendations to management.\n\nImplementation of mitigation options in response to PHA findings are based on a relative risk ranking assigned by the PSMC and consultant. This ranking helps ensure that potential accidents assigned the highest risk received immediate attention. \n\nTo ensure that the process controls and/or process hazards do not eventually deviate significantly from the original study, AGE Refining Inc. will periodically update and revalidate the hazard analysis results. These periodic reviews will be conducted at least every 5 years and will be conducted at this frequency until the process is no longer operating. The results and findings from these updates are documented and retained. The PSM committee findings will be forwarded to management for consideration.\n\n\n\nOperating Procedures\n\nAGE Refining Inc., has established procedures that address various modes of process operations, such as (1) unit startup, (2) normal operations, (3) temporary operations, (4) emergency shutdown, and (5) normal shutdown.\n\n\n\nTraining\n\nAGE Refining Inc. has implemented a comprehensive training program for all employees involved in operations. New employees receive basic training in safety and refinery operations if they are not already familiar with such operations. After successfully completing this training, a new operator is paired with a senior operator to learn process-specific duties and tasks. After operators demonstrate having adequate knowledge to perform the duties and tasks in a safe manner on their own, they can work independently.\n\n\n\nContractors\n\nAGE Refining Inc. uses contractors to supplement its work force during periods of increased maintenance activities. Because some contractors work on or near process equipment, the refinery has procedures in place to ensure that contractors (1) perform their work in a safe manner, (2) have the appropriate knowledge and skills, (3) are aware of the hazards in their workplace, (4) understand what they should do in the event of an emergency, (5) understand and follow site safety rules, and (6) inform refinery personnel of any hazards that they find during their work. This is accomplished by providing contractors with (1) a process over-view, (2) information about safety and health hazards, (3) emergency response plan requirements, and (4) safe work practices prior to their beginning work. In addition, contractor safety programs and records are evaluated.  Refinery personnel periodically monitor contractor performance to ensure that contractors are fulfilling their safety obligations.\n\n\n\nPre-startup Safety Reviews (PSSRS)\n\nIn the event of a new facility or facility modification that requires a change in the process safety information, a PSSR will be performed by the design engineer.\n\n\n\nMechanical Integrity\n\nAGE Refining Inc., has established practices and procedures to maintain and repair pressure vessels, piping systems, relief and vent systems, controls, pumps and compressors. The staff is also trained in emergency shut down of equipment and systems. Maintenance personnel receive training, on (1) an overview of the process, (2) safety and health hazards, (3) applicable maintenance procedures, (4) emergency response plans, and (5) applicable safe work practices to help ensure that they can perform their job in a safe manner. If a deficiency is identified, employees will correct the deficiency before placing the equipment back into service.\n\nAnother integral part of the mechanical integrity program is quality assurance. AGE Refining Inc., has a policy of replacement-in-kind for all materials used to correct deficiencies.\n\n\n\nSafe Work Practices\n\nAGE Refining Inc., has established safe work practices in place to help ensure worker and process safety. Examples of these include (1) control of the entry/presence/exit of support personnel, (2) a lockout/tagout procedure to ensure isolation of energy sources for equipment undergoing maintenance or repair, (3) a procedure for safe removal of hazardous materials before process piping or equipment is opened, (4) a permit and procedure to control spark-producing activities (i.e., hot work), and (5) a permit and procedure to ensure that adequate precautions are in place before entry into a confined space. These procedures (and others), along with training of affected personnel, form a system to help ensure that operations and maintenance activities are performed safely.\n\n\n\nManagement of Change\n\nAll process changes, if they occur, will be reviewed by the designing professional engineer.  AGE Refining Inc.  has implemented a Management of Change System to review and document future process modifications.\n\n\n\nIncident Investigation\n\nAGE Refining Inc., promptly investigates all incidents that resulted in, or reasonably could have resulted in, a fire/explosion, toxic gas release, major property damage, environmental loss, or personal injury. The goal of each investigation is to determine the root cause and develop corrective actions to prevent a recurrence of the incident or a similar incident. Incident investigation reports are retained for at least 5 years so that the reports can be reviewed during future PHA's and PHA revalidations.\n\n\n\nCompliance Audits\n\nTo help ensure that the accident prevention program is functioning properly, AGE Refining Inc. will periodically conduct an audit to determine whether the procedures and practices required by the accident prevention program are being, implemented. Compliance audits will be conducted at least every 3 years. The audit team will develop findings and will forward the findings to refinery management for resolution. \n\n\n\nCHEMICAL-SPECIFIC PREVENTION STEPS\n\nThe processes at AGE Refining Inc.'s plant have hazards that must be managed to ensure continued safe operation. Collectively, accident prevention program activities help prevent potential accident scenarios that could be caused by (1) equipment failures and (2) human errors.\n\nIn addition to the accident prevention program activities, process safety features exist on many units to help (1) contain/control a release, (2) quickly detect a release, and (3) reduce the consequences of (mitigate) a release. The following types of safety features are used in various processes:\n\nRelease Detection\n\nHydrocarbon detectors with alarms within the Crude Unit.\n\n\n\nRelease Containment/Control\n\n     Process relief valves that discharge to a flare to capture and incinerate episodic releases.\n\n     Valves to permit isolation of the process (manual and automated).\n\n     Curbing and/or diking to contain liquid releases.\n\n     Redundant equipment and instrumentation (e.g., independent firewater system).\n\nRelease Mitigation\n\n     Fire suppression and extinguishing systems.\n\n     On-site fire wagon and foam cannon.\n\n     Trained and certified hazard materials emergency response and industrial firefighting personnel.\n\n     Personal protective equipment (e.g., protective clothing, self-contained breathing apparatus)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000016079,
+                  "PreventionProgram3ID": 1000013172,
+                  "ProcessChemicalID": 1000019090
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -220,17 +246,6 @@
       "FacilityID": 1000012889,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000016476,
-          "ProcessID": 1000016088,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000019089,
@@ -238,123 +253,180 @@
           "ChemicalID": 155,
           "Quantity": 170000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000015658,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000015659,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000015660,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000015661,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000015662,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000015663,
               "ProcessChemicalID": 1000019089,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000519089,
+          "Process_NAICS_ID": 1000016476,
           "ProcessID": 1000016088,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000014107,
+              "Process_NAICS_ID": 1000016476,
+              "SafetyReviewDate": "2006-08-01 00:00:00",
+              "PHA_Date": "2010-03-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": null,
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "Human Factors, Facility Siting",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Inspection Program (Mechanical Integrity)",
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Local and Remote H2S and LEL Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2010-03-02 00:00:00",
+              "TrainingReviewDate": "2010-03-03 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Informal Coaching (Safety Toolbox Meetings)",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2010-02-22 00:00:00",
+              "EquipmentInspectionDate": "2010-03-05 00:00:00",
+              "EquipmentTested": "Tank 4601",
+              "ChangeMgmtDate": "2010-03-10 00:00:00",
+              "ChangeMgmtReviewDate": "2007-04-01 00:00:00",
+              "PreStartupReviewDate": "2010-02-22 00:00:00",
+              "ComplianceAuditDate": "2008-07-24 00:00:00",
+              "AuditCompletionDate": "2011-12-31 00:00:00",
+              "IncidentInvestigationDate": "2010-03-02 00:00:00",
+              "InvestigationChangeDate": "2010-06-02 00:00:00",
+              "ParticipationPlansReviewDate": "2006-01-01 00:00:00",
+              "HotWorkPermitReviewDate": "2008-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "2009-07-08 00:00:00",
+              "ContractorSafetyEvalDate": "2010-02-17 00:00:00",
+              "CBI_Flag": 0,
+              "Description": null,
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000016916,
+                  "PreventionProgram3ID": 1000014107,
+                  "ProcessChemicalID": 1000019089
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000012889,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2009-12-01 00:00:00",
+    "ERTrainingDate": "2009-11-01 00:00:00",
+    "CoordinatingAgencyName": "San Antonio Fire Department",
+    "CoordinatingAgencyPhone": "2102078492",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

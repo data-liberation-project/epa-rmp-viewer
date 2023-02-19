@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "WY",
   "OperatorZipCode": "82501",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Greg Bloom",
-  "RMPTitle": "Operations Manager",
   "FTE": 3,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000135533",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 12133,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 16604,
-          "ProcessID": 16198,
-          "NAICSCode": "21111",
-          "_desc": {
-            "NAICS_CODE": "21111",
-            "NAICS_DESCRIPTION": "Oil and Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 20218,
@@ -99,137 +87,76 @@
           "ChemicalID": 155,
           "Quantity": 200392.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 12418,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 12419,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 12420,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 12421,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 12422,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 12423,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 12424,
               "ProcessChemicalID": 20218,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 520218,
+          "Process_NAICS_ID": 16604,
           "ProcessID": 16198,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "21111",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 12133,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1998-08-01 00:00:00",
+    "ERTrainingDate": "1998-08-01 00:00:00",
+    "CoordinatingAgencyName": "Fremont County LEPC",
+    "CoordinatingAgencyPhone": "3078573671",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

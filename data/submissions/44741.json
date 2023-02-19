@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77060",
   "OperatorZipCodeExt": null,
-  "RMPContact": null,
-  "RMPTitle": "Production Manager",
   "FTE": 115,
   "OtherEPAFacilityID": "WYD980955769",
   "EPAFacilityID": "100000081644",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "10",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R05",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 44741,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 66163,
-          "ProcessID": 64622,
-          "NAICSCode": "211111",
-          "_desc": {
-            "NAICS_CODE": "211111",
-            "NAICS_DESCRIPTION": "Crude Petroleum and Natural Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 85502,
@@ -99,15 +87,6 @@
           "ChemicalID": 63,
           "Quantity": 88500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 63,
-            "ChemicalName": "Hydrogen sulfide",
-            "CASNumber": "7783-06-4",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,50 +95,130 @@
           "ChemicalID": 98,
           "Quantity": 418000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 98,
-            "ChemicalName": "Propane",
-            "CASNumber": "74-98-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 585502,
+          "Process_NAICS_ID": 66163,
           "ProcessID": 64622,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 585503,
-          "ProcessID": 64622,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211111",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 37841,
+              "Process_NAICS_ID": 66163,
+              "SafetyReviewDate": "2005-12-16 00:00:00",
+              "PHA_Date": "2005-09-19 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Knowledge-based Revalidation",
+              "PHACompletionDate": "2010-09-19 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Switchgear Halon System; Fixed Firefighting Equipment",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Piping Changes",
+              "OpProceduresReviewDate": "2005-12-19 00:00:00",
+              "TrainingReviewDate": "2005-10-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Procedure Review",
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2005-06-22 00:00:00",
+              "EquipmentInspectionDate": "2005-12-19 00:00:00",
+              "EquipmentTested": "Process Building Fire Sprinkler Systems",
+              "ChangeMgmtDate": "2005-12-06 00:00:00",
+              "ChangeMgmtReviewDate": "2005-10-14 00:00:00",
+              "PreStartupReviewDate": "2005-10-28 00:00:00",
+              "ComplianceAuditDate": "2005-10-10 00:00:00",
+              "AuditCompletionDate": "2006-06-01 00:00:00",
+              "IncidentInvestigationDate": "2005-12-16 00:00:00",
+              "InvestigationChangeDate": "2006-01-01 00:00:00",
+              "ParticipationPlansReviewDate": "2005-09-01 00:00:00",
+              "HotWorkPermitReviewDate": "2005-12-20 00:00:00",
+              "ContractorSafetyReviewDate": "2005-05-04 00:00:00",
+              "ContractorSafetyEvalDate": "2005-12-07 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "RMP Plans were previously submitted to satisfy original and 5-yr submittal requirements in June 1999 and June 2004, respectively.  This submittal update is required because of the AGI facility addition which has amended the WCS and ARS for H2S.  In addition, the Accident Information in Section 6 has been updated due to an incident that occurred within the last 6 months.  For this update, we have selected 12/16/05 as the date to begin collecting this information.  Consequently, review/updates conducted after that date may not be reflected in the following prevention program information.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 55001,
+                  "PreventionProgram3ID": 37841,
+                  "ProcessChemicalID": 85502
+                },
+                {
+                  "PrimaryKey": 55002,
+                  "PreventionProgram3ID": 37841,
+                  "ProcessChemicalID": 85503
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -243,20 +302,30 @@
           "ChemicalID": 63,
           "QuantityReleased": 1.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 63,
-            "ChemicalName": "Hydrogen sulfide",
-            "CASNumber": "7783-06-4",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 44741,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Lincoln County LEPC",
+    "CoordinatingAgencyPhone": "3078773971",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

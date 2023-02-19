@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "KS",
   "OperatorZipCode": "67042",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Helmut T. Riedinger",
-  "RMPTitle": "PSM Manager",
   "FTE": 490,
   "OtherEPAFacilityID": "67042TXCRF1401S",
   "EPAFacilityID": "100000106164",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "50",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R04",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106947,
-          "ProcessID": 1000105656,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135474,
@@ -99,90 +87,146 @@
           "ChemicalID": 155,
           "Quantity": 19000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120049,
               "ProcessChemicalID": 1000135474,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120050,
               "ProcessChemicalID": 1000135474,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120051,
               "ProcessChemicalID": 1000135474,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120052,
               "ProcessChemicalID": 1000135474,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635474,
+          "Process_NAICS_ID": 1000106947,
           "ProcessID": 1000105656,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089613,
+              "Process_NAICS_ID": 1000106947,
+              "SafetyReviewDate": "2020-10-15 00:00:00",
+              "PHA_Date": "2017-04-18 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2019-05-17 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personnel H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-01-15 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2017-04-11 00:00:00",
+              "EquipmentTested": "Tower E-2811",
+              "ChangeMgmtDate": "2019-05-16 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-06-27 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Reformate Splitter - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases. More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114281,
+                  "PreventionProgram3ID": 1000089613,
+                  "ProcessChemicalID": 1000135474
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -192,17 +236,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106948,
-          "ProcessID": 1000105657,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135452,
@@ -210,76 +243,141 @@
           "ChemicalID": 155,
           "Quantity": 91000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000119985,
               "ProcessChemicalID": 1000135452,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000119986,
               "ProcessChemicalID": 1000135452,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000119987,
               "ProcessChemicalID": 1000135452,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635452,
+          "Process_NAICS_ID": 1000106948,
           "ProcessID": 1000105657,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089598,
+              "Process_NAICS_ID": 1000106948,
+              "SafetyReviewDate": "2020-10-07 00:00:00",
+              "PHA_Date": "2020-04-14 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2024-11-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-05-15 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-10-21 00:00:00",
+              "EquipmentTested": "Exch. C-4705-2A",
+              "ChangeMgmtDate": "2019-11-07 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-11-09 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "HTU 6 - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases. More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114260,
+                  "PreventionProgram3ID": 1000089598,
+                  "ProcessChemicalID": 1000135452
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -289,17 +387,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106949,
-          "ProcessID": 1000105658,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135453,
@@ -307,118 +394,156 @@
           "ChemicalID": 155,
           "Quantity": 33000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000119988,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000119989,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000119990,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000119991,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000119992,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000119993,
               "ProcessChemicalID": 1000135453,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635453,
+          "Process_NAICS_ID": 1000106949,
           "ProcessID": 1000105658,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089599,
+              "Process_NAICS_ID": 1000106949,
+              "SafetyReviewDate": "2020-10-12 00:00:00",
+              "PHA_Date": "2020-08-17 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2026-03-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-12-06 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-12 00:00:00",
+              "EquipmentTested": "Exch. C-2003B",
+              "ChangeMgmtDate": "2019-11-04 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-11-07 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2017-01-26 00:00:00",
+              "InvestigationChangeDate": "2017-12-31 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "CRU 1 - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases. More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114270,
+                  "PreventionProgram3ID": 1000089599,
+                  "ProcessChemicalID": 1000135453
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -428,17 +553,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106950,
-          "ProcessID": 1000105659,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135455,
@@ -446,118 +560,156 @@
           "ChemicalID": 155,
           "Quantity": 75000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120000,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120001,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120002,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120003,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120004,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120005,
               "ProcessChemicalID": 1000135455,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635455,
+          "Process_NAICS_ID": 1000106950,
           "ProcessID": 1000105659,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089600,
+              "Process_NAICS_ID": 1000106950,
+              "SafetyReviewDate": "2020-10-12 00:00:00",
+              "PHA_Date": "2017-08-21 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-12-06 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-18 00:00:00",
+              "EquipmentTested": "Furnace B-2502",
+              "ChangeMgmtDate": "2020-01-07 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-10-14 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2017-12-21 00:00:00",
+              "InvestigationChangeDate": "2017-12-21 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "CRU2\\HTU2 - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114269,
+                  "PreventionProgram3ID": 1000089600,
+                  "ProcessChemicalID": 1000135455
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -567,17 +719,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106951,
-          "ProcessID": 1000105660,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135457,
@@ -585,118 +726,156 @@
           "ChemicalID": 155,
           "Quantity": 210000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120006,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120007,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120008,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120009,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120010,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120011,
               "ProcessChemicalID": 1000135457,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635457,
+          "Process_NAICS_ID": 1000106951,
           "ProcessID": 1000105660,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089601,
+              "Process_NAICS_ID": 1000106951,
+              "SafetyReviewDate": "2020-06-22 00:00:00",
+              "PHA_Date": "2020-02-03 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2023-11-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-03-11 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-17 00:00:00",
+              "EquipmentTested": "Furnace B-0306",
+              "ChangeMgmtDate": "2020-01-08 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2020-01-10 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2017-09-01 00:00:00",
+              "InvestigationChangeDate": "2018-12-31 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Crude - Vacuum - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114268,
+                  "PreventionProgram3ID": 1000089601,
+                  "ProcessChemicalID": 1000135457
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -706,17 +885,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106952,
-          "ProcessID": 1000105661,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135458,
@@ -724,62 +892,136 @@
           "ChemicalID": 155,
           "Quantity": 130000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120012,
               "ProcessChemicalID": 1000135458,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120013,
               "ProcessChemicalID": 1000135458,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635458,
+          "Process_NAICS_ID": 1000106952,
           "ProcessID": 1000105661,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089602,
+              "Process_NAICS_ID": 1000106952,
+              "SafetyReviewDate": "2020-10-01 00:00:00",
+              "PHA_Date": "2015-09-14 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2018-05-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-05-08 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2020-01-07 00:00:00",
+              "EquipmentTested": "Piping 26-004S",
+              "ChangeMgmtDate": "2019-12-12 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-11-25 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2019-07-23 00:00:00",
+              "InvestigationChangeDate": "2020-03-21 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "DCU - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114267,
+                  "PreventionProgram3ID": 1000089602,
+                  "ProcessChemicalID": 1000135458
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -789,17 +1031,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106953,
-          "ProcessID": 1000105662,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135459,
@@ -807,104 +1038,151 @@
           "ChemicalID": 155,
           "Quantity": 490000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120014,
               "ProcessChemicalID": 1000135459,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120015,
               "ProcessChemicalID": 1000135459,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120016,
               "ProcessChemicalID": 1000135459,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120017,
               "ProcessChemicalID": 1000135459,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120018,
               "ProcessChemicalID": 1000135459,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635459,
+          "Process_NAICS_ID": 1000106953,
           "ProcessID": 1000105662,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089603,
+              "Process_NAICS_ID": 1000106953,
+              "SafetyReviewDate": "2020-09-25 00:00:00",
+              "PHA_Date": "2018-06-11 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2020-06-30 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Firewater System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-04-20 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-17 00:00:00",
+              "EquipmentTested": "Piping 01-002A2",
+              "ChangeMgmtDate": "2020-01-06 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2020-01-07 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2017-03-09 00:00:00",
+              "InvestigationChangeDate": "2017-09-30 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "FCCU - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catstrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114266,
+                  "PreventionProgram3ID": 1000089603,
+                  "ProcessChemicalID": 1000135459
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -914,17 +1192,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106954,
-          "ProcessID": 1000105663,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135460,
@@ -932,90 +1199,146 @@
           "ChemicalID": 155,
           "Quantity": 140000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120019,
               "ProcessChemicalID": 1000135460,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120020,
               "ProcessChemicalID": 1000135460,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120021,
               "ProcessChemicalID": 1000135460,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120022,
               "ProcessChemicalID": 1000135460,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635460,
+          "Process_NAICS_ID": 1000106954,
           "ProcessID": 1000105663,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089604,
+              "Process_NAICS_ID": 1000106954,
+              "SafetyReviewDate": "2020-10-12 00:00:00",
+              "PHA_Date": "2015-12-16 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2018-05-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-12-04 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-11-25 00:00:00",
+              "EquipmentTested": "Piping 27-003B",
+              "ChangeMgmtDate": "2019-10-12 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-10-13 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2018-10-31 00:00:00",
+              "InvestigationChangeDate": "2019-08-30 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Gas Conc - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114265,
+                  "PreventionProgram3ID": 1000089604,
+                  "ProcessChemicalID": 1000135460
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1025,17 +1348,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106955,
-          "ProcessID": 1000105664,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135463,
@@ -1043,146 +1355,166 @@
           "ChemicalID": 155,
           "Quantity": 54000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120023,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000120024,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000120025,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120026,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120027,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120028,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120029,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120030,
               "ProcessChemicalID": 1000135463,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635463,
+          "Process_NAICS_ID": 1000106955,
           "ProcessID": 1000105664,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089605,
+              "Process_NAICS_ID": 1000106955,
+              "SafetyReviewDate": "2020-06-20 00:00:00",
+              "PHA_Date": "2018-08-20 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2020-03-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-02-20 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-17 00:00:00",
+              "EquipmentTested": "Furnace B-1001",
+              "ChangeMgmtDate": "2019-12-09 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "1919-12-13 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2018-07-16 00:00:00",
+              "InvestigationChangeDate": "2019-11-30 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Gofiner - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114264,
+                  "PreventionProgram3ID": 1000089605,
+                  "ProcessChemicalID": 1000135463
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1192,17 +1524,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106956,
-          "ProcessID": 1000105665,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000132352,
@@ -1210,15 +1531,6 @@
           "ChemicalID": 55,
           "Quantity": 270000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 55,
-            "ChemicalName": "Hydrogen fluoride/Hydrofluoric acid (conc 50% or greater) [Hydrofluoric acid]",
-            "CASNumber": "7664-39-3",
-            "Threshold": 1000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1227,107 +1539,151 @@
           "ChemicalID": 155,
           "Quantity": 720000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120031,
               "ProcessChemicalID": 1000135464,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120032,
               "ProcessChemicalID": 1000135464,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120033,
               "ProcessChemicalID": 1000135464,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120034,
               "ProcessChemicalID": 1000135464,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000632352,
+          "Process_NAICS_ID": 1000106956,
           "ProcessID": 1000105665,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000635464,
-          "ProcessID": 1000105665,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089606,
+              "Process_NAICS_ID": 1000106956,
+              "SafetyReviewDate": "2020-10-12 00:00:00",
+              "PHA_Date": "2019-01-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2020-09-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 1,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 1,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Video Monitors, Personal H2S Monitors",
+              "CH_ChemicalReduction": 1,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-04-01 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-18 00:00:00",
+              "EquipmentTested": "Furnace B-2104",
+              "ChangeMgmtDate": "2019-12-30 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-11-19 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2018-06-16 00:00:00",
+              "InvestigationChangeDate": "2019-12-31 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "HF Alky - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary. The HF Alky Unit includes hydrocarbon detectors, HF acid detectors and video camera monitors for release detection.  For potential release containment and control, the unit has a perimeter water spray curtain, water spray systems at pump seals, remotely activated shutoff valves for selected equipment and an HF acid de-inventory vessel.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000111572,
+                  "PreventionProgram3ID": 1000089606,
+                  "ProcessChemicalID": 1000132352
+                },
+                {
+                  "PrimaryKey": 1000114263,
+                  "PreventionProgram3ID": 1000089606,
+                  "ProcessChemicalID": 1000135464
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1337,17 +1693,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106957,
-          "ProcessID": 1000105666,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135465,
@@ -1355,15 +1700,6 @@
           "ChemicalID": 118,
           "Quantity": 4000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 118,
-            "ChemicalName": "Butane",
-            "CASNumber": "106-97-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1372,15 +1708,6 @@
           "ChemicalID": 107,
           "Quantity": 10000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 107,
-            "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-            "CASNumber": "75-28-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1389,15 +1716,6 @@
           "ChemicalID": 119,
           "Quantity": 5400000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 119,
-            "ChemicalName": "1-Butene",
-            "CASNumber": "106-98-9",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1406,15 +1724,6 @@
           "ChemicalID": 98,
           "Quantity": 790000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 98,
-            "ChemicalName": "Propane",
-            "CASNumber": "74-98-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1423,101 +1732,145 @@
           "ChemicalID": 129,
           "Quantity": 1700000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 129,
-            "ChemicalName": "Propylene  [1-Propene]",
-            "CASNumber": "115-07-1",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635465,
+          "Process_NAICS_ID": 1000106957,
           "ProcessID": 1000105666,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000635466,
-          "ProcessID": 1000105666,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000635467,
-          "ProcessID": 1000105666,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000635468,
-          "ProcessID": 1000105666,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000635469,
-          "ProcessID": 1000105666,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089607,
+              "Process_NAICS_ID": 1000106957,
+              "SafetyReviewDate": "2020-10-12 00:00:00",
+              "PHA_Date": "2018-03-05 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2019-01-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-03-12 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-09 00:00:00",
+              "EquipmentTested": "Piping 21-009S",
+              "ChangeMgmtDate": "2019-08-29 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-08-05 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "LPG Storage - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.  The LPG Storage area includes tank dikes and a water deluge system which are specific to this unit.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114271,
+                  "PreventionProgram3ID": 1000089607,
+                  "ProcessChemicalID": 1000135465
+                },
+                {
+                  "PrimaryKey": 1000114272,
+                  "PreventionProgram3ID": 1000089607,
+                  "ProcessChemicalID": 1000135466
+                },
+                {
+                  "PrimaryKey": 1000114273,
+                  "PreventionProgram3ID": 1000089607,
+                  "ProcessChemicalID": 1000135467
+                },
+                {
+                  "PrimaryKey": 1000114274,
+                  "PreventionProgram3ID": 1000089607,
+                  "ProcessChemicalID": 1000135468
+                },
+                {
+                  "PrimaryKey": 1000114275,
+                  "PreventionProgram3ID": 1000089607,
+                  "ProcessChemicalID": 1000135469
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1527,17 +1880,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106958,
-          "ProcessID": 1000105667,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135471,
@@ -1545,90 +1887,146 @@
           "ChemicalID": 155,
           "Quantity": 220000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120035,
               "ProcessChemicalID": 1000135471,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120036,
               "ProcessChemicalID": 1000135471,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120037,
               "ProcessChemicalID": 1000135471,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120038,
               "ProcessChemicalID": 1000135471,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635471,
+          "Process_NAICS_ID": 1000106958,
           "ProcessID": 1000105667,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089608,
+              "Process_NAICS_ID": 1000106958,
+              "SafetyReviewDate": "2020-10-08 00:00:00",
+              "PHA_Date": "2016-02-08 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2018-05-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-12-03 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-11-19 00:00:00",
+              "EquipmentTested": "Piping 14-012L",
+              "ChangeMgmtDate": "2020-01-07 00:00:00",
+              "ChangeMgmtReviewDate": "1920-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-10-23 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2015-11-16 00:00:00",
+              "InvestigationChangeDate": "2016-12-31 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "HTU3\\ISOM - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114276,
+                  "PreventionProgram3ID": 1000089608,
+                  "ProcessChemicalID": 1000135471
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1638,17 +2036,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106959,
-          "ProcessID": 1000105668,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135472,
@@ -1656,132 +2043,161 @@
           "ChemicalID": 155,
           "Quantity": 32000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120039,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000120040,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000120041,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000120042,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000120043,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000120044,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000120045,
               "ProcessChemicalID": 1000135472,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635472,
+          "Process_NAICS_ID": 1000106959,
           "ProcessID": 1000105668,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089609,
+              "Process_NAICS_ID": 1000106959,
+              "SafetyReviewDate": "2020-10-06 00:00:00",
+              "PHA_Date": "2016-03-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2018-05-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S Monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-02-27 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-11 00:00:00",
+              "EquipmentTested": "Vessel L-0513",
+              "ChangeMgmtDate": "2019-07-29 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-10-09 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "LPGT\\GLU - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114277,
+                  "PreventionProgram3ID": 1000089609,
+                  "ProcessChemicalID": 1000135472
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1791,17 +2207,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106960,
-          "ProcessID": 1000105669,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000132369,
@@ -1809,76 +2214,141 @@
           "ChemicalID": 155,
           "Quantity": 16000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000116631,
               "ProcessChemicalID": 1000132369,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000116632,
               "ProcessChemicalID": 1000132369,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000116633,
               "ProcessChemicalID": 1000132369,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000632369,
+          "Process_NAICS_ID": 1000106960,
           "ProcessID": 1000105669,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089610,
+              "Process_NAICS_ID": 1000106960,
+              "SafetyReviewDate": "2020-09-14 00:00:00",
+              "PHA_Date": "2015-11-09 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2018-05-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Tank Blanketing",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-04-01 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-07-20 00:00:00",
+              "EquipmentTested": "Piping 13-1499",
+              "ChangeMgmtDate": "2018-11-29 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-08-15 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2018-01-08 00:00:00",
+              "InvestigationChangeDate": "2019-03-01 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Tank Farm - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.  The Tank Farm area for the covered equipment includes tank dikes and a water deluge system.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000111589,
+                  "PreventionProgram3ID": 1000089610,
+                  "ProcessChemicalID": 1000132369
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1888,17 +2358,6 @@
       "FacilityID": 1000084588,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000106962,
-          "ProcessID": 1000105671,
-          "NAICSCode": "32411",
-          "_desc": {
-            "NAICS_CODE": "32411",
-            "NAICS_DESCRIPTION": "Petroleum Refineries"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000135473,
@@ -1906,76 +2365,141 @@
           "ChemicalID": 155,
           "Quantity": 21000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000120046,
               "ProcessChemicalID": 1000135473,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000120047,
               "ProcessChemicalID": 1000135473,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000120048,
               "ProcessChemicalID": 1000135473,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000635473,
+          "Process_NAICS_ID": 1000106962,
           "ProcessID": 1000105671,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32411",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000089612,
+              "Process_NAICS_ID": 1000106962,
+              "SafetyReviewDate": "2020-09-25 00:00:00",
+              "PHA_Date": "2019-03-11 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2020-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Personal H2S monitors",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-04-30 00:00:00",
+              "TrainingReviewDate": "2017-11-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-12-07 00:00:00",
+              "EquipmentInspectionDate": "2019-12-18 00:00:00",
+              "EquipmentTested": "Furnace B-4102",
+              "ChangeMgmtDate": "2019-12-03 00:00:00",
+              "ChangeMgmtReviewDate": "2020-01-31 00:00:00",
+              "PreStartupReviewDate": "2019-12-11 00:00:00",
+              "ComplianceAuditDate": "2017-09-15 00:00:00",
+              "AuditCompletionDate": "2018-03-31 00:00:00",
+              "IncidentInvestigationDate": "2018-09-20 00:00:00",
+              "InvestigationChangeDate": "2018-09-20 00:00:00",
+              "ParticipationPlansReviewDate": "2017-04-12 00:00:00",
+              "HotWorkPermitReviewDate": "2019-09-30 00:00:00",
+              "ContractorSafetyReviewDate": "2020-01-31 00:00:00",
+              "ContractorSafetyEvalDate": "2020-01-06 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "HTU 5 - HollyFrontier El Dorado Refining LLC has addressed the provisions of Process Safety Management and Risk Management and considers these to be very important in preventing and/or mitigating incidents or catastrophic releases.  More specific details are included in the executive summary.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000114279,
+                  "PreventionProgram3ID": 1000089612,
+                  "ProcessChemicalID": 1000135473
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -2059,113 +2583,41 @@
           "ChemicalID": 155,
           "QuantityReleased": 17000.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000008641,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000008642,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000008643,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000008644,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000008645,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000008646,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000008647,
               "AccidentChemicalID": 1000054074,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
         }
@@ -2249,133 +2701,71 @@
           "ChemicalID": 155,
           "QuantityReleased": 8700.0,
           "PercentWeight": null,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000008936,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000008937,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000008938,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000008939,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000008940,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000008941,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000008942,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000008943,
               "AccidentChemicalID": 1000055594,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             }
           ]
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 1000084588,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2019-12-31 00:00:00",
+    "ERTrainingDate": "2019-12-04 00:00:00",
+    "CoordinatingAgencyName": "El Dorado Fire Department",
+    "CoordinatingAgencyPhone": "3163219100",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77521",
   "OperatorZipCodeExt": "9570",
-  "RMPContact": "Mitchell A Krutilek",
-  "RMPTitle": "Plant Manager",
   "FTE": 766,
   "OtherEPAFacilityID": "77522CHVRN9500I",
   "EPAFacilityID": "100000154049",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R09",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080102,
-          "ProcessID": 1000078922,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098297,
@@ -99,43 +87,16 @@
           "ChemicalID": 155,
           "Quantity": 13000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086225,
               "ProcessChemicalID": 1000098297,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086226,
               "ProcessChemicalID": 1000098297,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
         },
@@ -145,15 +106,6 @@
           "ChemicalID": 57,
           "Quantity": 130000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -162,67 +114,135 @@
           "ChemicalID": 62,
           "Quantity": 12000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598297,
+          "Process_NAICS_ID": 1000080102,
           "ProcessID": 1000078922,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598298,
-          "ProcessID": 1000078922,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598299,
-          "ProcessID": 1000078922,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066338,
+              "Process_NAICS_ID": 1000080102,
+              "SafetyReviewDate": "2017-03-23 00:00:00",
+              "PHA_Date": "2014-03-29 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2016-09-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor on flare.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-06-21 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-20 00:00:00",
+              "EquipmentTested": "FB-918",
+              "ChangeMgmtDate": "2017-03-03 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-08 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2016-11-30 00:00:00",
+              "InvestigationChangeDate": "2017-03-31 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-02-02 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "UTIL-1092\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082161,
+                  "PreventionProgram3ID": 1000066338,
+                  "ProcessChemicalID": 1000098297
+                },
+                {
+                  "PrimaryKey": 1000082162,
+                  "PreventionProgram3ID": 1000066338,
+                  "ProcessChemicalID": 1000098298
+                },
+                {
+                  "PrimaryKey": 1000082163,
+                  "PreventionProgram3ID": 1000066338,
+                  "ProcessChemicalID": 1000098299
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -232,17 +252,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080103,
-          "ProcessID": 1000078923,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098300,
@@ -250,216 +259,191 @@
           "ChemicalID": 155,
           "Quantity": 12000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086227,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 120,
-              "_chemical": {
-                "ChemicalID": 120,
-                "ChemicalName": "1,3-Butadiene",
-                "CASNumber": "106-99-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 120
             },
             {
               "FlamMixChemID": 1000086228,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000086229,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086230,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086231,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000086232,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086233,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000086234,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 116,
-              "_chemical": {
-                "ChemicalID": 116,
-                "ChemicalName": "Isoprene  [1,3-Butadiene, 2-methyl-]",
-                "CASNumber": "78-79-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 116
             },
             {
               "FlamMixChemID": 1000086235,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086236,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 96,
-              "_chemical": {
-                "ChemicalID": 96,
-                "ChemicalName": "Acetylene  [Ethyne]",
-                "CASNumber": "74-86-2",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 96
             },
             {
               "FlamMixChemID": 1000086237,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 154,
-              "_chemical": {
-                "ChemicalID": 154,
-                "ChemicalName": "Butene",
-                "CASNumber": "25167-67-3",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 154
             },
             {
               "FlamMixChemID": 1000086238,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000086239,
               "ProcessChemicalID": 1000098300,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598300,
+          "Process_NAICS_ID": 1000080103,
           "ProcessID": 1000078923,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066339,
+              "Process_NAICS_ID": 1000080103,
+              "SafetyReviewDate": "2017-03-01 00:00:00",
+              "PHA_Date": "2016-04-19 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2017-11-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": "Low temperature brittle fracture.",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "H2S, Benzene and Hydrocarbon.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-06-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-16 00:00:00",
+              "EquipmentTested": "B03P007",
+              "ChangeMgmtDate": "2017-03-06 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-02-28 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2017-02-14 00:00:00",
+              "InvestigationChangeDate": "2017-11-30 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2016-09-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "EU-1592\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082164,
+                  "PreventionProgram3ID": 1000066339,
+                  "ProcessChemicalID": 1000098300
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -469,17 +453,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080104,
-          "ProcessID": 1000078924,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098301,
@@ -487,85 +460,31 @@
           "ChemicalID": 155,
           "Quantity": 340000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086240,
               "ProcessChemicalID": 1000098301,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086241,
               "ProcessChemicalID": 1000098301,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086242,
               "ProcessChemicalID": 1000098301,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086243,
               "ProcessChemicalID": 1000098301,
-              "ChemicalID": 119,
-              "_chemical": {
-                "ChemicalID": 119,
-                "ChemicalName": "1-Butene",
-                "CASNumber": "106-98-9",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 119
             },
             {
               "FlamMixChemID": 1000086244,
               "ProcessChemicalID": 1000098301,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
         },
@@ -575,50 +494,130 @@
           "ChemicalID": 119,
           "Quantity": 1900000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 119,
-            "ChemicalName": "1-Butene",
-            "CASNumber": "106-98-9",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598301,
+          "Process_NAICS_ID": 1000080104,
           "ProcessID": 1000078924,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598302,
-          "ProcessID": 1000078924,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066340,
+              "Process_NAICS_ID": 1000080104,
+              "SafetyReviewDate": "2017-03-10 00:00:00",
+              "PHA_Date": "2014-08-26 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2020-09-01 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Curbed and drained area around process equipment.  Snuffing steam on heater",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor of flare activity.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-04-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-03-23 00:00:00",
+              "EquipmentTested": "D380",
+              "ChangeMgmtDate": "2017-03-02 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-09 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2017-01-07 00:00:00",
+              "InvestigationChangeDate": "2017-06-30 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2016-08-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "NAOU-1797\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082165,
+                  "PreventionProgram3ID": 1000066340,
+                  "ProcessChemicalID": 1000098301
+                },
+                {
+                  "PrimaryKey": 1000082166,
+                  "PreventionProgram3ID": 1000066340,
+                  "ProcessChemicalID": 1000098302
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -628,17 +627,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080105,
-          "ProcessID": 1000078925,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098303,
@@ -646,71 +634,26 @@
           "ChemicalID": 155,
           "Quantity": 2800000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086245,
               "ProcessChemicalID": 1000098303,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000086246,
               "ProcessChemicalID": 1000098303,
-              "ChemicalID": 116,
-              "_chemical": {
-                "ChemicalID": 116,
-                "ChemicalName": "Isoprene  [1,3-Butadiene, 2-methyl-]",
-                "CASNumber": "78-79-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 116
             },
             {
               "FlamMixChemID": 1000086247,
               "ProcessChemicalID": 1000098303,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000086248,
               "ProcessChemicalID": 1000098303,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
         },
@@ -720,15 +663,6 @@
           "ChemicalID": 120,
           "Quantity": 8100000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 120,
-            "ChemicalName": "1,3-Butadiene",
-            "CASNumber": "106-99-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -737,15 +671,6 @@
           "ChemicalID": 119,
           "Quantity": 7900000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 119,
-            "ChemicalName": "1-Butene",
-            "CASNumber": "106-98-9",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -754,15 +679,6 @@
           "ChemicalID": 107,
           "Quantity": 625000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 107,
-            "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-            "CASNumber": "75-28-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -771,101 +687,135 @@
           "ChemicalID": 125,
           "Quantity": 625000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 125,
-            "ChemicalName": "Pentane",
-            "CASNumber": "109-66-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598303,
+          "Process_NAICS_ID": 1000080105,
           "ProcessID": 1000078925,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598304,
-          "ProcessID": 1000078925,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598305,
-          "ProcessID": 1000078925,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598844,
-          "ProcessID": 1000078925,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598845,
-          "ProcessID": 1000078925,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066341,
+              "Process_NAICS_ID": 1000080105,
+              "SafetyReviewDate": "2017-02-28 00:00:00",
+              "PHA_Date": "2015-09-02 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2018-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-05-18 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-01 00:00:00",
+              "EquipmentTested": "PSV218",
+              "ChangeMgmtDate": "2017-03-01 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-03 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2016-12-25 00:00:00",
+              "InvestigationChangeDate": "2018-03-01 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-01-12 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "SHIP-1191/1492\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082167,
+                  "PreventionProgram3ID": 1000066341,
+                  "ProcessChemicalID": 1000098303
+                },
+                {
+                  "PrimaryKey": 1000082168,
+                  "PreventionProgram3ID": 1000066341,
+                  "ProcessChemicalID": 1000098304
+                },
+                {
+                  "PrimaryKey": 1000082169,
+                  "PreventionProgram3ID": 1000066341,
+                  "ProcessChemicalID": 1000098305
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -875,17 +825,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080106,
-          "ProcessID": 1000078926,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098306,
@@ -893,104 +832,151 @@
           "ChemicalID": 155,
           "Quantity": 440000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086249,
               "ProcessChemicalID": 1000098306,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086250,
               "ProcessChemicalID": 1000098306,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086251,
               "ProcessChemicalID": 1000098306,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000086252,
               "ProcessChemicalID": 1000098306,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000086253,
               "ProcessChemicalID": 1000098306,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598306,
+          "Process_NAICS_ID": 1000080106,
           "ProcessID": 1000078926,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066342,
+              "Process_NAICS_ID": 1000080106,
+              "SafetyReviewDate": "2017-03-09 00:00:00",
+              "PHA_Date": "2015-03-26 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2019-12-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor of flare activity",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-05-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-23 00:00:00",
+              "EquipmentTested": "PSV906",
+              "ChangeMgmtDate": "2017-03-08 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-06 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2017-02-12 00:00:00",
+              "InvestigationChangeDate": "2018-03-30 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2016-09-29 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "PEU-1792\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082170,
+                  "PreventionProgram3ID": 1000066342,
+                  "ProcessChemicalID": 1000098306
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1000,17 +986,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080107,
-          "ProcessID": 1000078927,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098307,
@@ -1018,71 +993,26 @@
           "ChemicalID": 155,
           "Quantity": 82000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086254,
               "ProcessChemicalID": 1000098307,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086255,
               "ProcessChemicalID": 1000098307,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086256,
               "ProcessChemicalID": 1000098307,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086257,
               "ProcessChemicalID": 1000098307,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
         },
@@ -1092,50 +1022,130 @@
           "ChemicalID": 51,
           "Quantity": 15000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 51,
-            "ChemicalName": "Titanium tetrachloride  [Titanium chloride (TiCl4) (T-4)-]",
-            "CASNumber": "7550-45-0",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598307,
+          "Process_NAICS_ID": 1000080107,
           "ProcessID": 1000078927,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598308,
-          "ProcessID": 1000078927,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066343,
+              "Process_NAICS_ID": 1000080107,
+              "SafetyReviewDate": "2017-03-04 00:00:00",
+              "PHA_Date": "2016-04-06 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2018-02-26 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor of flare activity.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-06-08 00:00:00",
+              "TrainingReviewDate": "2016-06-08 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-28 00:00:00",
+              "EquipmentTested": "V1311",
+              "ChangeMgmtDate": "2017-03-08 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-02-28 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2016-12-11 00:00:00",
+              "InvestigationChangeDate": "2017-06-01 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-01-05 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "PEU-1796\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082171,
+                  "PreventionProgram3ID": 1000066343,
+                  "ProcessChemicalID": 1000098307
+                },
+                {
+                  "PrimaryKey": 1000082172,
+                  "PreventionProgram3ID": 1000066343,
+                  "ProcessChemicalID": 1000098308
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1145,17 +1155,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080108,
-          "ProcessID": 1000078928,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098309,
@@ -1163,43 +1162,16 @@
           "ChemicalID": 155,
           "Quantity": 23000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086258,
               "ProcessChemicalID": 1000098309,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086259,
               "ProcessChemicalID": 1000098309,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
         },
@@ -1209,50 +1181,130 @@
           "ChemicalID": 52,
           "Quantity": 40000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 52,
-            "ChemicalName": "Boron trifluoride  [Borane, trifluoro-]",
-            "CASNumber": "7637-07-2",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598309,
+          "Process_NAICS_ID": 1000080108,
           "ProcessID": 1000078928,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598310,
-          "ProcessID": 1000078928,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066344,
+              "Process_NAICS_ID": 1000080108,
+              "SafetyReviewDate": "2017-03-01 00:00:00",
+              "PHA_Date": "2013-10-22 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2016-04-19 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "Manual activated dump valve.",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Tandem seals and seal pots on pumps.",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitoring of the BF3 trailer area.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-04-11 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-17 00:00:00",
+              "EquipmentTested": "D-122",
+              "ChangeMgmtDate": "2017-03-02 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-02-28 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2016-05-06 00:00:00",
+              "InvestigationChangeDate": "2016-09-30 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2016-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "PAO-1795\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082173,
+                  "PreventionProgram3ID": 1000066344,
+                  "ProcessChemicalID": 1000098309
+                },
+                {
+                  "PrimaryKey": 1000082174,
+                  "PreventionProgram3ID": 1000066344,
+                  "ProcessChemicalID": 1000098310
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1262,17 +1314,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080109,
-          "ProcessID": 1000078929,
-          "NAICSCode": "325211",
-          "_desc": {
-            "NAICS_CODE": "325211",
-            "NAICS_DESCRIPTION": "Plastics Material and Resin Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098311,
@@ -1280,90 +1321,146 @@
           "ChemicalID": 155,
           "Quantity": 910000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086260,
               "ProcessChemicalID": 1000098311,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000086261,
               "ProcessChemicalID": 1000098311,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086262,
               "ProcessChemicalID": 1000098311,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086263,
               "ProcessChemicalID": 1000098311,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598311,
+          "Process_NAICS_ID": 1000080109,
           "ProcessID": 1000078929,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066345,
+              "Process_NAICS_ID": 1000080109,
+              "SafetyReviewDate": "2017-03-15 00:00:00",
+              "PHA_Date": "2016-08-24 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2019-02-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor of flare activity.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-06-13 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-10 00:00:00",
+              "EquipmentTested": "M6403",
+              "ChangeMgmtDate": "2017-03-07 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-09 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2017-01-29 00:00:00",
+              "InvestigationChangeDate": "2017-03-31 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-02-09 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "PEU-1799\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082175,
+                  "PreventionProgram3ID": 1000066345,
+                  "ProcessChemicalID": 1000098311
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1373,17 +1470,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080110,
-          "ProcessID": 1000078930,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098312,
@@ -1391,118 +1477,156 @@
           "ChemicalID": 155,
           "Quantity": 120000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086264,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086265,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086266,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000086267,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086268,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086269,
               "ProcessChemicalID": 1000098312,
-              "ChemicalID": 119,
-              "_chemical": {
-                "ChemicalID": 119,
-                "ChemicalName": "1-Butene",
-                "CASNumber": "106-98-9",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 119
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598312,
+          "Process_NAICS_ID": 1000080110,
           "ProcessID": 1000078930,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066346,
+              "Process_NAICS_ID": 1000080110,
+              "SafetyReviewDate": "2017-03-07 00:00:00",
+              "PHA_Date": "2016-06-29 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2018-03-25 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 1,
+              "MS_None": 0,
+              "MS_OtherType": "Curbed and drained area around process equipment.",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Flame detecting camera",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-01-19 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "Panel review.",
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-15 00:00:00",
+              "EquipmentTested": "PSV25904",
+              "ChangeMgmtDate": "2017-03-02 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-02-23 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2017-01-26 00:00:00",
+              "InvestigationChangeDate": "2017-06-30 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2016-09-22 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "HU-1891\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082176,
+                  "PreventionProgram3ID": 1000066346,
+                  "ProcessChemicalID": 1000098312
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1512,17 +1636,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080111,
-          "ProcessID": 1000078931,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098313,
@@ -1530,104 +1643,151 @@
           "ChemicalID": 155,
           "Quantity": 5300000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086270,
               "ProcessChemicalID": 1000098313,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086271,
               "ProcessChemicalID": 1000098313,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086272,
               "ProcessChemicalID": 1000098313,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086273,
               "ProcessChemicalID": 1000098313,
-              "ChemicalID": 119,
-              "_chemical": {
-                "ChemicalID": 119,
-                "ChemicalName": "1-Butene",
-                "CASNumber": "106-98-9",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 119
             },
             {
               "FlamMixChemID": 1000086274,
               "ProcessChemicalID": 1000098313,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598313,
+          "Process_NAICS_ID": 1000080111,
           "ProcessID": 1000078931,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066347,
+              "Process_NAICS_ID": 1000080111,
+              "SafetyReviewDate": "2017-03-01 00:00:00",
+              "PHA_Date": "2013-07-30 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2015-12-17 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Tandem seals and seal pots on pumps.",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Camera monitor of flare activity.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "Upgrade pump seals on P1351A/B",
+              "OpProceduresReviewDate": "2016-12-31 00:00:00",
+              "TrainingReviewDate": "2016-06-01 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2017-03-03 00:00:00",
+              "EquipmentInspectionDate": "2017-02-20 00:00:00",
+              "EquipmentTested": "PSV-18918",
+              "ChangeMgmtDate": "2017-03-06 00:00:00",
+              "ChangeMgmtReviewDate": "2016-04-28 00:00:00",
+              "PreStartupReviewDate": "2017-03-09 00:00:00",
+              "ComplianceAuditDate": "2015-05-21 00:00:00",
+              "AuditCompletionDate": "2021-12-31 00:00:00",
+              "IncidentInvestigationDate": "2016-01-11 00:00:00",
+              "InvestigationChangeDate": "2016-03-02 00:00:00",
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-01-26 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "NAOU-1798\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082177,
+                  "PreventionProgram3ID": 1000066347,
+                  "ProcessChemicalID": 1000098313
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -1637,17 +1797,6 @@
       "FacilityID": 1000062943,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000080112,
-          "ProcessID": 1000078932,
-          "NAICSCode": "32511",
-          "_desc": {
-            "NAICS_CODE": "32511",
-            "NAICS_DESCRIPTION": "Petrochemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000098315,
@@ -1655,15 +1804,6 @@
           "ChemicalID": 57,
           "Quantity": 170000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1672,15 +1812,6 @@
           "ChemicalID": 31,
           "Quantity": 16000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 31,
-            "ChemicalName": "Cyclohexylamine  [Cyclohexanamine]",
-            "CASNumber": "108-91-8",
-            "Threshold": 15000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -1689,325 +1820,240 @@
           "ChemicalID": 155,
           "Quantity": 3200000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000086281,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 120,
-              "_chemical": {
-                "ChemicalID": 120,
-                "ChemicalName": "1,3-Butadiene",
-                "CASNumber": "106-99-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 120
             },
             {
               "FlamMixChemID": 1000086282,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000086283,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000086284,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000086286,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 96,
-              "_chemical": {
-                "ChemicalID": 96,
-                "ChemicalName": "Acetylene  [Ethyne]",
-                "CASNumber": "74-86-2",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 96
             },
             {
               "FlamMixChemID": 1000086288,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 95,
-              "_chemical": {
-                "ChemicalID": 95,
-                "ChemicalName": "Ethylene  [Ethene]",
-                "CASNumber": "74-85-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 95
             },
             {
               "FlamMixChemID": 1000086289,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000086290,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 116,
-              "_chemical": {
-                "ChemicalID": 116,
-                "ChemicalName": "Isoprene  [1,3-Butadiene, 2-methyl-]",
-                "CASNumber": "78-79-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 116
             },
             {
               "FlamMixChemID": 1000086291,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000086292,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000086293,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000086294,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 129,
-              "_chemical": {
-                "ChemicalID": 129,
-                "ChemicalName": "Propylene  [1-Propene]",
-                "CASNumber": "115-07-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 129
             },
             {
               "FlamMixChemID": 1000086295,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 135,
-              "_chemical": {
-                "ChemicalID": 135,
-                "ChemicalName": "Propadiene  [1,2-Propadiene]",
-                "CASNumber": "463-49-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 135
             },
             {
               "FlamMixChemID": 1000086296,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000086297,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 126,
-              "_chemical": {
-                "ChemicalID": 126,
-                "ChemicalName": "1-Pentene",
-                "CASNumber": "109-67-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 126
             },
             {
               "FlamMixChemID": 1000086298,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 145,
-              "_chemical": {
-                "ChemicalID": 145,
-                "ChemicalName": "2-Butene-trans  [2-Butene, (E)]",
-                "CASNumber": "624-64-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 145
             },
             {
               "FlamMixChemID": 1000086299,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 142,
-              "_chemical": {
-                "ChemicalID": 142,
-                "ChemicalName": "2-Butene-cis",
-                "CASNumber": "590-18-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 142
             },
             {
               "FlamMixChemID": 1000086300,
               "ProcessChemicalID": 1000098317,
-              "ChemicalID": 154,
-              "_chemical": {
-                "ChemicalID": 154,
-                "ChemicalName": "Butene",
-                "CASNumber": "25167-67-3",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 154
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000598315,
+          "Process_NAICS_ID": 1000080112,
           "ProcessID": 1000078932,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598316,
-          "ProcessID": 1000078932,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000598317,
-          "ProcessID": 1000078932,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32511",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000066348,
+              "Process_NAICS_ID": 1000080112,
+              "SafetyReviewDate": "2017-03-13 00:00:00",
+              "PHA_Date": "2015-04-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Layer of Protection Analysis (LOPA)",
+              "PHACompletionDate": "2017-04-28 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": "Low temperature brittle fracture",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "H2S,  Benzene and Hydrocarbon",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-03-27 00:00:00",
+              "TrainingReviewDate": "2017-03-27 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer Based Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2016-02-01 00:00:00",
+              "EquipmentInspectionDate": "2017-04-04 00:00:00",
+              "EquipmentTested": "E278C",
+              "ChangeMgmtDate": "2017-03-31 00:00:00",
+              "ChangeMgmtReviewDate": "2013-01-24 00:00:00",
+              "PreStartupReviewDate": "2017-03-02 00:00:00",
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2014-07-03 00:00:00",
+              "HotWorkPermitReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyReviewDate": "2017-03-31 00:00:00",
+              "ContractorSafetyEvalDate": "2017-03-31 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "EU-1594",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000082660,
+                  "PreventionProgram3ID": 1000066348,
+                  "ProcessChemicalID": 1000098317
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000062943,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2017-02-28 00:00:00",
+    "ERTrainingDate": "2017-03-03 00:00:00",
+    "CoordinatingAgencyName": "Baytown LEPC",
+    "CoordinatingAgencyPhone": "2814206556",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

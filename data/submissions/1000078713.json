@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CO",
   "OperatorZipCode": "80202",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Joel Matrisciano",
-  "RMPTitle": "Supervisor Gas Operations",
   "FTE": 0,
   "OtherEPAFacilityID": "COR000000125",
   "EPAFacilityID": "100000019277",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000078713,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000099433,
-          "ProcessID": 1000098193,
-          "NAICSCode": "21113",
-          "_desc": {
-            "NAICS_CODE": "21113",
-            "NAICS_DESCRIPTION": "Natural Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000123186,
@@ -99,95 +87,165 @@
           "ChemicalID": 155,
           "Quantity": 612260.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000107056,
               "ProcessChemicalID": 1000123186,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000107057,
               "ProcessChemicalID": 1000123186,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000107058,
               "ProcessChemicalID": 1000123186,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000107059,
               "ProcessChemicalID": 1000123186,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000623186,
+          "Process_NAICS_ID": 1000099433,
           "ProcessID": 1000098193,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "21113",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 1000061292,
+              "Process_NAICS_ID": 1000099433,
+              "SafetyReviewDate": "2018-01-08 00:00:00",
+              "FR_NFPA58": 1,
+              "FR_OSHA": 0,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 1,
+              "FR_None": 0,
+              "FR_OtherType": "Dept. of Transportation",
+              "FR_Comments": null,
+              "HazardReviewDate": "2018-01-08 00:00:00",
+              "ChangeCompletionDate": "2020-09-30 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "Operator error",
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Fire and gas leak detection",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": "PM for verifying grounding at tank loading",
+              "OpProceduresReviewDate": "2018-03-14 00:00:00",
+              "TrainingReviewDate": "2018-03-14 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "Manufacturer literature",
+              "MaintenanceReviewDate": "2018-03-14 00:00:00",
+              "EquipmentInspectionDate": "2019-04-01 00:00:00",
+              "EquipmentTested": "All valves and fittings were inspected for leaks.",
+              "ComplianceAuditDate": "2019-09-17 00:00:00",
+              "AuditCompletionDate": "2020-06-30 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": "2012-11-01 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Natural Gas Liquids Extraction",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000061960,
+                  "PreventionProgram2ID": 1000061292,
+                  "ProcessChemicalID": 1000123186
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000078713,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Garfield County Sheriff EM",
+    "CoordinatingAgencyPhone": "9709450453",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

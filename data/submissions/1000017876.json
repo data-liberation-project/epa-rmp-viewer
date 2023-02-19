@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "76118",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Gregg Tyler",
-  "RMPTitle": "Facility Manager",
   "FTE": 4,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000213155",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "40",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "01",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 1000017876,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000022986,
-          "ProcessID": 1000021965,
-          "NAICSCode": "48422",
-          "_desc": {
-            "NAICS_CODE": "48422",
-            "NAICS_DESCRIPTION": "Specialized Freight (except Used Goods) Trucking, Local"
-          }
-        },
-        {
-          "Process_NAICS_ID": 1000022987,
-          "ProcessID": 1000021965,
-          "NAICSCode": "42469",
-          "_desc": {
-            "NAICS_CODE": "42469",
-            "NAICS_DESCRIPTION": "Other Chemical and Allied Products Merchant Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000025973,
@@ -108,38 +87,151 @@
           "ChemicalID": 56,
           "Quantity": 20000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000022986,
+          "ProcessID": 1000021965,
+          "NAICSCode": "48422",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 1000525973,
+          "Process_NAICS_ID": 1000022987,
           "ProcessID": 1000021965,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42469",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 1000015529,
+              "Process_NAICS_ID": 1000022987,
+              "SafetyReviewDate": "2011-04-05 00:00:00",
+              "FR_NFPA58": 1,
+              "FR_OSHA": 1,
+              "FR_ASTM": 1,
+              "FR_ANSI": 1,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": null,
+              "FR_Comments": null,
+              "HazardReviewDate": "2011-04-05 00:00:00",
+              "ChangeCompletionDate": "2011-07-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": "human error",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 0,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 1,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2011-04-05 00:00:00",
+              "TrainingReviewDate": "2011-04-07 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "safety meetings, web based learning",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "participation in on-site drills",
+              "MaintenanceReviewDate": "2011-04-05 00:00:00",
+              "EquipmentInspectionDate": "2011-05-25 00:00:00",
+              "EquipmentTested": "fire sprinkler system, fire extinguishers, forklift, transportation trucks",
+              "ComplianceAuditDate": "2010-08-24 00:00:00",
+              "AuditCompletionDate": "2010-10-29 00:00:00",
+              "IncidentInvestigationDate": "2010-10-01 00:00:00",
+              "InvestigationChangeDate": "2010-10-21 00:00:00",
+              "MostRecentChangeDate": "2011-06-10 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "As required in 40 CFR Part 68.170, the facility has an active prevention program.  Written protocols and defined employee responsibilities are outlined in a facility specific emergency response plan.  The plan is available to all employees either in written form or by password protected files on the facilityA?s computer network.  Included in the program are quarterly safety newsletters to remind employees of safe practices and to inform employees of any new safety procedures and/or technology.  Selected facility employees maintain appropriate certifications that allow for these employees to mitigate releases on site.  These training sessions include, but are not limited to, proper forklift use, chemical identification, facility security protocols, MSDS location and identification, and various other OSHA job related courses.  These courses are provided to maintain safe handling of facility chemicals and proper use of equipment.  The facility has a monitored fire suppression system which can be utilized to suppress vapors and /or dilute chemicals in the event of a release.  The local fire department conducts yearly fire inspections to ensure the facility meets local building codes and that fire suppression equipment is operable.  Fire department and hazardous material teams receive Tier II documents identify the chemicals the facility stores on site.  Location of these chemicals is identified during regularly scheduled building inspections.  The facility maintains proper NFPS 704 placards on the outside of the building.  Individual chemical containers maintain proper identification placards. \n\nFacility employees have a hazardous materials communication plan.  The plan outlines both internal and external communication procedures in the event of a release.  Internal communications include the notification of a release to other employees and to facility management.  The internal communication outlines specific responsibilities to each manager of the facility (ie, incident commander, safety officer, etc.)  External communications outlines local, state, and federal agencies with contact numbers that are to be notified of the release.  Included in the prevention plan are various security measures.  These measures ensure no unauthorized individuals can obtain access to the chemicals located at the facility either physically or by cyber attacks.  Additional security measures include daily inventory counts of products located at the facility, use of pre-approved shipping companies, a visitor sign in sheet, and electronic surveillance to mention a few.  All doors and gates remain secured until access is required with the exception being the front office door.  The facility is secured by a ten foot chain link fence with razor wire at the top.  Entry onto the grounds of the facility requires proper shipper and product identification be identified and verified.  Entry into the front office of the facility is made through the facility main door.  A visitor sign in sheet is required of all visitors to register.  Recordable video cameras record activity at the facility. The facility has contracted with a training provider company to ensure employees maintain appropriate certifications and an environmental consultant to ensure applicable state and federal environmental regulations are followed.  Routine site inspections are conducted by both facility management and both consultants to ensure the facility and its employees are working in a safe manner.\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000019555,
+                  "PreventionProgram2ID": 1000015529,
+                  "ProcessChemicalID": 1000025973
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000017876,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": "2011-04-08 00:00:00",
+    "ERTrainingDate": "2011-05-12 00:00:00",
+    "CoordinatingAgencyName": "Richland Hills Fire Department",
+    "CoordinatingAgencyPhone": "8172991850",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": "DEA Class II Chemical reporting, FDA food storage/transportation regulations"
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "NE",
   "OperatorZipCode": "68769",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Chuck Tremmel",
-  "RMPTitle": "PSM Coordinator",
   "FTE": 58,
   "OtherEPAFacilityID": "68769HSKRG5448H",
   "EPAFacilityID": "100000181518",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000091624,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000115225,
-          "ProcessID": 1000113852,
-          "NAICSCode": "325193",
-          "_desc": {
-            "NAICS_CODE": "325193",
-            "NAICS_DESCRIPTION": "Ethyl Alcohol Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000142254,
@@ -99,76 +87,141 @@
           "ChemicalID": 155,
           "Quantity": 584000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000126270,
               "ProcessChemicalID": 1000142254,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000126271,
               "ProcessChemicalID": 1000142254,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000126272,
               "ProcessChemicalID": 1000142254,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000642254,
+          "Process_NAICS_ID": 1000115225,
           "ProcessID": 1000113852,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325193",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000097279,
+              "Process_NAICS_ID": 1000115225,
+              "SafetyReviewDate": "2019-09-20 00:00:00",
+              "PHA_Date": "2018-12-18 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2021-12-18 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Fusible Link Valves",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Monitors/AFFF Foam",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Operational Rounds",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-03-20 00:00:00",
+              "TrainingReviewDate": "2020-06-23 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "Job Function Demonstration",
+              "MaintenanceReviewDate": "2020-02-17 00:00:00",
+              "EquipmentInspectionDate": "2018-01-05 00:00:00",
+              "EquipmentTested": "Denaturant Tank",
+              "ChangeMgmtDate": "2007-04-23 00:00:00",
+              "ChangeMgmtReviewDate": "2018-05-08 00:00:00",
+              "PreStartupReviewDate": "2018-05-08 00:00:00",
+              "ComplianceAuditDate": "2019-09-20 00:00:00",
+              "AuditCompletionDate": "2021-09-20 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2016-04-19 00:00:00",
+              "HotWorkPermitReviewDate": "2020-05-20 00:00:00",
+              "ContractorSafetyReviewDate": "2020-05-20 00:00:00",
+              "ContractorSafetyEvalDate": "2020-02-12 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Denaturant Storage West:  76875 (Denaturant Storage West)\n\n\n\nProcess Name: 1000052632 (Denaturant Storage West)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000121338,
+                  "PreventionProgram3ID": 1000097279,
+                  "ProcessChemicalID": 1000142254
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -178,17 +231,6 @@
       "FacilityID": 1000091624,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000115226,
-          "ProcessID": 1000113853,
-          "NAICSCode": "325193",
-          "_desc": {
-            "NAICS_CODE": "325193",
-            "NAICS_DESCRIPTION": "Ethyl Alcohol Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000142255,
@@ -196,81 +238,165 @@
           "ChemicalID": 155,
           "Quantity": 228000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000126273,
               "ProcessChemicalID": 1000142255,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000126274,
               "ProcessChemicalID": 1000142255,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000126275,
               "ProcessChemicalID": 1000142255,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000642255,
+          "Process_NAICS_ID": 1000115226,
           "ProcessID": 1000113853,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325193",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000097280,
+              "Process_NAICS_ID": 1000115226,
+              "SafetyReviewDate": "2019-09-20 00:00:00",
+              "PHA_Date": "2018-12-18 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2021-12-18 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": " Fusible Link Valves",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Monitors/AFFF Foam",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Operational Rounds",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2020-03-20 00:00:00",
+              "TrainingReviewDate": "2020-06-23 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "Job Function Demostration",
+              "MaintenanceReviewDate": "2020-02-17 00:00:00",
+              "EquipmentInspectionDate": "2018-01-05 00:00:00",
+              "EquipmentTested": "Denaturant Tank",
+              "ChangeMgmtDate": "2007-04-23 00:00:00",
+              "ChangeMgmtReviewDate": "2018-05-08 00:00:00",
+              "PreStartupReviewDate": "2018-05-08 00:00:00",
+              "ComplianceAuditDate": "2019-09-20 00:00:00",
+              "AuditCompletionDate": "2021-09-20 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2016-04-19 00:00:00",
+              "HotWorkPermitReviewDate": "2020-05-20 00:00:00",
+              "ContractorSafetyReviewDate": "2020-05-20 00:00:00",
+              "ContractorSafetyEvalDate": "2020-02-12 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Denaturant Storage East:  76875 (Denaturant Storage)\n\n\n\nProcess Name: 1000052633 (Denaturant Storage East)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000121339,
+                  "PreventionProgram3ID": 1000097280,
+                  "ProcessChemicalID": 1000142255
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000091624,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2020-05-20 00:00:00",
+    "ERTrainingDate": "2020-06-23 00:00:00",
+    "CoordinatingAgencyName": "Plainview Volunteer Fire Department",
+    "CoordinatingAgencyPhone": "4025824928",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 0,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

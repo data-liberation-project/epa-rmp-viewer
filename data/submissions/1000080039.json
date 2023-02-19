@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "KS",
   "OperatorZipCode": "66736",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Wilma Davis",
-  "RMPTitle": "Facility Manager",
   "FTE": 42,
   "OtherEPAFacilityID": "KSD 980633259",
   "EPAFacilityID": "100000154726",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "51",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000080039,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000101153,
-          "ProcessID": 1000099911,
-          "NAICSCode": "562211",
-          "_desc": {
-            "NAICS_CODE": "562211",
-            "NAICS_DESCRIPTION": "Hazardous Waste Treatment and Disposal"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000125169,
@@ -99,81 +87,165 @@
           "ChemicalID": 155,
           "Quantity": 488209.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000108185,
               "ProcessChemicalID": 1000125169,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000108186,
               "ProcessChemicalID": 1000125169,
-              "ChemicalID": 92,
-              "_chemical": {
-                "ChemicalID": 92,
-                "ChemicalName": "Ethyl ether  [Ethane, 1,1'-oxybis-]",
-                "CASNumber": "60-29-7",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 92
             },
             {
               "FlamMixChemID": 1000108188,
               "ProcessChemicalID": 1000125169,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000625169,
+          "Process_NAICS_ID": 1000101153,
           "ProcessID": 1000099911,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "562211",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000084468,
+              "Process_NAICS_ID": 1000101153,
+              "SafetyReviewDate": "2018-08-13 00:00:00",
+              "PHA_Date": "2019-06-03 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 1,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2019-12-03 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 1,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Foam Fire System in Tanks",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Tank Temperature Probes",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2018-12-18 00:00:00",
+              "TrainingReviewDate": "2016-09-14 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2016-09-14 00:00:00",
+              "EquipmentInspectionDate": "2018-08-27 00:00:00",
+              "EquipmentTested": "Tank 9 Recertification",
+              "ChangeMgmtDate": "2019-04-26 00:00:00",
+              "ChangeMgmtReviewDate": "2016-09-14 00:00:00",
+              "PreStartupReviewDate": "2018-08-13 00:00:00",
+              "ComplianceAuditDate": "2016-09-14 00:00:00",
+              "AuditCompletionDate": "2019-08-31 00:00:00",
+              "IncidentInvestigationDate": "2018-10-04 00:00:00",
+              "InvestigationChangeDate": "2019-05-29 00:00:00",
+              "ParticipationPlansReviewDate": "2016-09-14 00:00:00",
+              "HotWorkPermitReviewDate": "2016-09-14 00:00:00",
+              "ContractorSafetyReviewDate": "2016-09-14 00:00:00",
+              "ContractorSafetyEvalDate": "2019-05-29 00:00:00",
+              "CBI_Flag": 0,
+              "Description": null,
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000105244,
+                  "PreventionProgram3ID": 1000084468,
+                  "ProcessChemicalID": 1000125169
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000080039,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Fredonia Fire Department",
+    "CoordinatingAgencyPhone": "6203782188",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

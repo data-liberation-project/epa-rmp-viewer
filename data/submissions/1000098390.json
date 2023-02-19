@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CO",
   "OperatorZipCode": "80202",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Josh Canada",
-  "RMPTitle": "Plant Manager",
   "FTE": 60,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000247618",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "1",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000098390,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000123242,
-          "ProcessID": 1000121889,
-          "NAICSCode": "32615",
-          "_desc": {
-            "NAICS_CODE": "32615",
-            "NAICS_DESCRIPTION": "Urethane and Other Foam Product (except Polystyrene) Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000152555,
@@ -99,67 +87,160 @@
           "ChemicalID": 155,
           "Quantity": 157800.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000134065,
               "ProcessChemicalID": 1000152555,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000134066,
               "ProcessChemicalID": 1000152555,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000652555,
+          "Process_NAICS_ID": 1000123242,
           "ProcessID": 1000121889,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32615",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000104796,
+              "Process_NAICS_ID": 1000123242,
+              "SafetyReviewDate": "2021-12-02 00:00:00",
+              "PHA_Date": "2021-05-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2021-12-20 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": "vandalism",
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Portable hand held meters and Sprinkler system activates fire alarm",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2021-12-20 00:00:00",
+              "TrainingReviewDate": "2021-12-20 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2021-11-11 00:00:00",
+              "EquipmentInspectionDate": "2021-12-06 00:00:00",
+              "EquipmentTested": "Pentane tank and nitrogen purge system",
+              "ChangeMgmtDate": null,
+              "ChangeMgmtReviewDate": "2021-12-20 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2021-11-29 00:00:00",
+              "HotWorkPermitReviewDate": "2021-11-29 00:00:00",
+              "ContractorSafetyReviewDate": "2021-11-29 00:00:00",
+              "ContractorSafetyEvalDate": "2021-11-29 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Administrative Controls - Starts with a paper trail. A certificate of Analysis and the Bill of Lading arrive with the material. The receiver checks the paper work for accuracy then forwards this to their supervisor for a double check from management then signed and dated. The truck is then backed up into an intrinsically safe unloading area with numerous safeguards to prevent release of pentane. Theses safeguards include the HMI that will not allow material to be pumped if its max volume is reached, the scully system to ensure the process is thoroughly grounded before allowing the material to be pumped. There are also both stationary and portable LEL detectors being used to ensure the atmospheric conditions do not reach an explosive level. These LELs are included in a mechanical integrity program and checked monthly. Only qualified operators shall perform these tasks and their competency in these tasks are evaluated by their supervisor or a member of management knowledgeable in these tasks. There is no smoking permitted on this property except in designated smoking areas that have been determined to be safe from the process. The mixing skid that has a 2-hour fire rating is where the Pentane is added into the process. This room is monitored with stationary LEL detectors and has an exhaust fan to evacuate an accumulation of vapors. The mixture is then pumped into a batch system and from there is pumped to the pour table and then the laminator. There is an exhaust fan that will continuously evacuate the volatile material from the laminator system and vent to the RTO. There are alarm levels built into the system. With any mechanical deviation an alarm will sound requiring the operator to correct the situation. At a 15% concentration of pentane an alarm along with a white strobe light will flash and shut the system down and activate the exhaust fan. At a 40% concentration of Pentane the emergency alarm will sound requiring all employees to evacuate the building and call for the Hillsboro Fire Department to assist.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000131603,
+                  "PreventionProgram3ID": 1000104796,
+                  "ProcessChemicalID": 1000152555
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000098390,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2021-10-26 00:00:00",
+    "ERTrainingDate": "2021-12-20 00:00:00",
+    "CoordinatingAgencyName": "Hillsboro Fire Department",
+    "CoordinatingAgencyPhone": "2545822401",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

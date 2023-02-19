@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "MA",
   "OperatorZipCode": "02199",
   "OperatorZipCodeExt": "8004",
-  "RMPContact": "William H. Smith",
-  "RMPTitle": "Sr. Environmental Specialist",
   "FTE": 485,
   "OtherEPAFacilityID": "MAD053483467",
   "EPAFacilityID": "100000174857",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 26500,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 38881,
-          "ProcessID": 37965,
-          "NAICSCode": "32562",
-          "_desc": {
-            "NAICS_CODE": "32562",
-            "NAICS_DESCRIPTION": "Toilet Preparation Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 49736,
@@ -99,62 +87,136 @@
           "ChemicalID": 155,
           "Quantity": 117555.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 35778,
               "ProcessChemicalID": 49736,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 35779,
               "ProcessChemicalID": 49736,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 549736,
+          "Process_NAICS_ID": 38881,
           "ProcessID": 37965,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32562",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 21243,
+              "Process_NAICS_ID": 38881,
+              "SafetyReviewDate": "2001-09-14 00:00:00",
+              "PHA_Date": "1999-11-15 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2002-09-28 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "UV/IR detectors, Fire extingushers, Fire Hoses, Water Cannons",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2001-09-14 00:00:00",
+              "TrainingReviewDate": "2002-05-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2002-05-15 00:00:00",
+              "EquipmentInspectionDate": "2002-05-15 00:00:00",
+              "EquipmentTested": "UV/IR Detectors, Fire Extingushers, Fire Hoses, Water Canons",
+              "ChangeMgmtDate": "2002-05-15 00:00:00",
+              "ChangeMgmtReviewDate": "2002-04-12 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "2001-09-14 00:00:00",
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2001-09-14 00:00:00",
+              "HotWorkPermitReviewDate": "2002-05-14 00:00:00",
+              "ContractorSafetyReviewDate": "2001-09-14 00:00:00",
+              "ContractorSafetyEvalDate": "2001-09-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Storage of hydrocarbon propellant A-46 (propane/isobutane)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 31044,
+                  "PreventionProgram3ID": 21243,
+                  "ProcessChemicalID": 49736
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -164,17 +226,6 @@
       "FacilityID": 26500,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 38882,
-          "ProcessID": 37966,
-          "NAICSCode": "32562",
-          "_desc": {
-            "NAICS_CODE": "32562",
-            "NAICS_DESCRIPTION": "Toilet Preparation Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 49737,
@@ -182,33 +233,125 @@
           "ChemicalID": 107,
           "Quantity": 119595.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 107,
-            "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-            "CASNumber": "75-28-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 549737,
+          "Process_NAICS_ID": 38882,
           "ProcessID": 37966,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32562",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 21244,
+              "Process_NAICS_ID": 38882,
+              "SafetyReviewDate": "2001-09-14 00:00:00",
+              "PHA_Date": "1999-11-15 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2002-09-30 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "UV/IR detectors, Fire extinguishers, Fire hoses, Water Canons",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2001-09-14 00:00:00",
+              "TrainingReviewDate": "2002-05-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2002-05-15 00:00:00",
+              "EquipmentInspectionDate": "2002-05-15 00:00:00",
+              "EquipmentTested": "UV/IR Detectors, Fire Extingushiers, Fire Hoses, Water Cannon",
+              "ChangeMgmtDate": "2002-05-15 00:00:00",
+              "ChangeMgmtReviewDate": "2002-04-12 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "2001-09-14 00:00:00",
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2001-09-14 00:00:00",
+              "HotWorkPermitReviewDate": "2002-05-14 00:00:00",
+              "ContractorSafetyReviewDate": "2001-09-14 00:00:00",
+              "ContractorSafetyEvalDate": "2001-09-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Storage of hydrocarbon propellant A-31 (propane)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 31045,
+                  "PreventionProgram3ID": 21244,
+                  "ProcessChemicalID": 49737
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -218,17 +361,6 @@
       "FacilityID": 26500,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 38883,
-          "ProcessID": 37967,
-          "NAICSCode": "32562",
-          "_desc": {
-            "NAICS_CODE": "32562",
-            "NAICS_DESCRIPTION": "Toilet Preparation Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 49738,
@@ -236,62 +368,136 @@
           "ChemicalID": 155,
           "Quantity": 129540.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 35780,
               "ProcessChemicalID": 49738,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 35781,
               "ProcessChemicalID": 49738,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 549738,
+          "Process_NAICS_ID": 38883,
           "ProcessID": 37967,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32562",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 21245,
+              "Process_NAICS_ID": 38883,
+              "SafetyReviewDate": "2001-09-14 00:00:00",
+              "PHA_Date": "1999-11-15 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2002-09-30 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "UV/IR detectors, Fire extinguishers, Fire Hoses, Water Canons",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2001-09-14 00:00:00",
+              "TrainingReviewDate": "2002-05-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2002-05-15 00:00:00",
+              "EquipmentInspectionDate": "2002-05-15 00:00:00",
+              "EquipmentTested": "UV/IR detectors, Fire Extinguishers, Fire Hoses, Water Canons",
+              "ChangeMgmtDate": "2002-05-15 00:00:00",
+              "ChangeMgmtReviewDate": "2002-04-12 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "2001-09-14 00:00:00",
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2001-09-14 00:00:00",
+              "HotWorkPermitReviewDate": "2002-05-14 00:00:00",
+              "ContractorSafetyReviewDate": "2001-09-14 00:00:00",
+              "ContractorSafetyEvalDate": "2001-09-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Storgae of hydrocarbon blowing agent (isopentane)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 31046,
+                  "PreventionProgram3ID": 21245,
+                  "ProcessChemicalID": 49738
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -301,17 +507,6 @@
       "FacilityID": 26500,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 38884,
-          "ProcessID": 37968,
-          "NAICSCode": "32562",
-          "_desc": {
-            "NAICS_CODE": "32562",
-            "NAICS_DESCRIPTION": "Toilet Preparation Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 49739,
@@ -319,67 +514,160 @@
           "ChemicalID": 155,
           "Quantity": 136170.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 35782,
               "ProcessChemicalID": 49739,
-              "ChemicalID": 111,
-              "_chemical": {
-                "ChemicalID": 111,
-                "ChemicalName": "Difluoroethane  [Ethane, 1,1-difluoro-]",
-                "CASNumber": "75-37-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 111
             },
             {
               "FlamMixChemID": 35783,
               "ProcessChemicalID": 49739,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 549739,
+          "Process_NAICS_ID": 38884,
           "ProcessID": 37968,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32562",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 21246,
+              "Process_NAICS_ID": 38884,
+              "SafetyReviewDate": "2001-09-14 00:00:00",
+              "PHA_Date": "1999-11-15 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2002-09-30 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "UV/IR Detectors, Fire Extingushirs, Fire hoses, Water Canons",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2001-09-14 00:00:00",
+              "TrainingReviewDate": "2002-05-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2002-05-15 00:00:00",
+              "EquipmentInspectionDate": "2002-05-15 00:00:00",
+              "EquipmentTested": "UV/IR Detectors, Fire Extinguishers, Fire Hoses, Water Canons",
+              "ChangeMgmtDate": "2002-05-15 00:00:00",
+              "ChangeMgmtReviewDate": "2002-04-12 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "2001-09-14 00:00:00",
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2001-09-14 00:00:00",
+              "HotWorkPermitReviewDate": "2002-05-14 00:00:00",
+              "ContractorSafetyReviewDate": "2001-09-14 00:00:00",
+              "ContractorSafetyEvalDate": "2001-09-14 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Storage of blended hydrocarbon and hydrofluorocarbon propleeants A-31/152A",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 31047,
+                  "PreventionProgram3ID": 21246,
+                  "ProcessChemicalID": 49739
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 26500,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2001-10-26 00:00:00",
+    "ERTrainingDate": "2001-10-26 00:00:00",
+    "CoordinatingAgencyName": "Andover Fire Department",
+    "CoordinatingAgencyPhone": "9784751281",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 0,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

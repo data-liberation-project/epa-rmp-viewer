@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CA",
   "OperatorZipCode": "92324",
   "OperatorZipCodeExt": null,
-  "RMPContact": "James Smith",
-  "RMPTitle": "Regional Manager",
   "FTE": 15,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000083116",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 35601,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 52490,
-          "ProcessID": 51325,
-          "NAICSCode": "42469",
-          "_desc": {
-            "NAICS_CODE": "42469",
-            "NAICS_DESCRIPTION": "Other Chemical and Allied Products Merchant Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 67759,
@@ -99,15 +87,6 @@
           "ChemicalID": 56,
           "Quantity": 74300.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,55 +95,154 @@
           "ChemicalID": 57,
           "Quantity": 350500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 567759,
+          "Process_NAICS_ID": 52490,
           "ProcessID": 51325,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 567760,
-          "ProcessID": 51325,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42469",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 29467,
+              "Process_NAICS_ID": 52490,
+              "SafetyReviewDate": "2004-05-30 00:00:00",
+              "PHA_Date": "2002-07-26 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2004-08-15 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 0,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Asphalt Berm on Aqua System",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2004-05-28 00:00:00",
+              "TrainingReviewDate": "2004-05-30 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Annual Refresher Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2004-05-30 00:00:00",
+              "EquipmentInspectionDate": "2004-05-30 00:00:00",
+              "EquipmentTested": "Storage Vessels, Piping",
+              "ChangeMgmtDate": "2001-05-12 00:00:00",
+              "ChangeMgmtReviewDate": "2004-05-30 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": "2002-06-11 00:00:00",
+              "AuditCompletionDate": "2002-06-11 00:00:00",
+              "IncidentInvestigationDate": "2001-04-02 00:00:00",
+              "InvestigationChangeDate": "2001-05-21 00:00:00",
+              "ParticipationPlansReviewDate": "2004-05-30 00:00:00",
+              "HotWorkPermitReviewDate": "2004-05-30 00:00:00",
+              "ContractorSafetyReviewDate": "2004-05-30 00:00:00",
+              "ContractorSafetyEvalDate": "2004-05-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Pacific Diazo Products (PDP) maintains a program level 3 prevention program in both hardcopy and web-based formats.  This documentation is located in the PDP-Fontana Process Safety Management manual which meets 29 CFR 1910.119 requirements.  A seismic failure analysis, performed by Shio-Jin Pong, a registered seismic engineer, was performed on 12/5/98. Changes in tank support structures and piping supports and couplings based on this failure analysis were begun in January, 1999 and were subsequently completed. A copy of this document is at the facility and at the Pacific Diazo Main Office\nin Colton, California. Training in a) The Hazards of Ammonia, First Aid,\n& CPR, b) Respirator Fit+Testing, c) Earthquake Safety, d) Back Injury\nPrevention, & e) HAZWOPER Training is completed annually (29 CFR 1910.120(q)).\n\nThe Process Hazard Analysis, using hte \"HAZOP\" technique was performed at the Fontana facility of Pacific Diazo on 7/26/02 by Ralph Hitchcock of Ammonia Process Safety Management. A copy of this document is at the facility and at the Pacific Diazo Main Office in Colton, California.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 42784,
+                  "PreventionProgram3ID": 29467,
+                  "ProcessChemicalID": 67759
+                },
+                {
+                  "PrimaryKey": 42785,
+                  "PreventionProgram3ID": 29467,
+                  "ProcessChemicalID": 67760
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 35601,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "SBCFD Hazardous Materials Division",
+    "CoordinatingAgencyPhone": "9093868425",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 0,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

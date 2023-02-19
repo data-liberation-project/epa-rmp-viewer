@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "ND",
   "OperatorZipCode": "58282",
   "OperatorZipCodeExt": "0709",
-  "RMPContact": null,
-  "RMPTitle": "Plant Manager",
   "FTE": 65,
   "OtherEPAFacilityID": "58282DMCRNCOUNT",
   "EPAFacilityID": "100000187317",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000000764,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000000985,
-          "ProcessID": 1000000935,
-          "NAICSCode": "325193",
-          "_desc": {
-            "NAICS_CODE": "325193",
-            "NAICS_DESCRIPTION": "Ethyl Alcohol Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000000962,
@@ -99,67 +87,51 @@
           "ChemicalID": 155,
           "Quantity": 110000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 88242,
               "ProcessChemicalID": 1000000962,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 88243,
               "ProcessChemicalID": 1000000962,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000500962,
+          "Process_NAICS_ID": 1000000985,
           "ProcessID": 1000000935,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325193",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000000764,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2008-04-29 00:00:00",
+    "ERTrainingDate": "2008-09-19 00:00:00",
+    "CoordinatingAgencyName": "Walhalla Fire and Ambulance Squad",
+    "CoordinatingAgencyPhone": "7015493193",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 0,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

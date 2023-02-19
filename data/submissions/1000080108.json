@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77042",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Robert Billeck",
-  "RMPTitle": "Director Area Operations",
   "FTE": 23,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000114949",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "100",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000080108,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000101260,
-          "ProcessID": 1000100018,
-          "NAICSCode": "21113",
-          "_desc": {
-            "NAICS_CODE": "21113",
-            "NAICS_DESCRIPTION": "Natural Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000125294,
@@ -99,15 +87,6 @@
           "ChemicalID": 118,
           "Quantity": 350000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 118,
-            "ChemicalName": "Butane",
-            "CASNumber": "106-97-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,55 +95,154 @@
           "ChemicalID": 98,
           "Quantity": 320000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 98,
-            "ChemicalName": "Propane",
-            "CASNumber": "74-98-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000625294,
+          "Process_NAICS_ID": 1000101260,
           "ProcessID": 1000100018,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000625295,
-          "ProcessID": 1000100018,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "21113",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000084530,
+              "Process_NAICS_ID": 1000101260,
+              "SafetyReviewDate": "2016-12-28 00:00:00",
+              "PHA_Date": "2016-12-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2020-12-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Loop fire water system with monitor nozzles",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-02-22 00:00:00",
+              "TrainingReviewDate": "2018-12-07 00:00:00",
+              "TR_Classroom": 0,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "computerized testing",
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": "Computerized",
+              "MaintenanceReviewDate": "2017-10-01 00:00:00",
+              "EquipmentInspectionDate": "2019-01-30 00:00:00",
+              "EquipmentTested": "Compressor Middle Inlet 7042",
+              "ChangeMgmtDate": "2019-02-25 00:00:00",
+              "ChangeMgmtReviewDate": "2017-09-01 00:00:00",
+              "PreStartupReviewDate": "2018-09-30 00:00:00",
+              "ComplianceAuditDate": "2019-05-22 00:00:00",
+              "AuditCompletionDate": "2021-07-01 00:00:00",
+              "IncidentInvestigationDate": "2019-02-07 00:00:00",
+              "InvestigationChangeDate": "2019-04-16 00:00:00",
+              "ParticipationPlansReviewDate": "2017-09-01 00:00:00",
+              "HotWorkPermitReviewDate": "2017-09-01 00:00:00",
+              "ContractorSafetyReviewDate": "2019-04-16 00:00:00",
+              "ContractorSafetyEvalDate": "2019-04-16 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The Chatom Gas Plant is owned and operated by American Midstream Chatom LLC.  American Midstream Chatom LLC is submitting this RMP intended to satisfy the EPA RMP requirement for regulated processes.  ",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000105326,
+                  "PreventionProgram3ID": 1000084530,
+                  "ProcessChemicalID": 1000125294
+                },
+                {
+                  "PrimaryKey": 1000105327,
+                  "PreventionProgram3ID": 1000084530,
+                  "ProcessChemicalID": 1000125295
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000080108,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Washington County LEPC",
+    "CoordinatingAgencyPhone": "2518472668",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

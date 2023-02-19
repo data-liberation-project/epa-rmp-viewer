@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "KS",
   "OperatorZipCode": "67337",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Neal Barkley",
-  "RMPTitle": "VP & Fertilizer Facility Manager",
   "FTE": 113,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000163048",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "R04",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044135,
-          "ProcessID": 1000043752,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052636,
@@ -99,15 +87,6 @@
           "ChemicalID": 56,
           "Quantity": 102480.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,57 +95,21 @@
           "ChemicalID": 155,
           "Quantity": 58757.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000045198,
               "ProcessChemicalID": 1000052637,
-              "ChemicalID": 136,
-              "_chemical": {
-                "ChemicalID": 136,
-                "ChemicalName": "Carbon oxysulfide  [Carbon oxide sulfide (COS)]",
-                "CASNumber": "463-58-1",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 136
             },
             {
               "FlamMixChemID": 1000045199,
               "ProcessChemicalID": 1000052637,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             },
             {
               "FlamMixChemID": 1000045200,
               "ProcessChemicalID": 1000052637,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
         },
@@ -176,67 +119,135 @@
           "ChemicalID": 63,
           "Quantity": 804.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 63,
-            "ChemicalName": "Hydrogen sulfide",
-            "CASNumber": "7783-06-4",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552636,
+          "Process_NAICS_ID": 1000044135,
           "ProcessID": 1000043752,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000552637,
-          "ProcessID": 1000043752,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000552785,
-          "ProcessID": 1000043752,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038002,
+              "Process_NAICS_ID": 1000044135,
+              "SafetyReviewDate": "2013-08-09 00:00:00",
+              "PHA_Date": "2009-08-27 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2009-08-27 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-08-09 00:00:00",
+              "TrainingReviewDate": "2013-08-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2012-10-10 00:00:00",
+              "EquipmentTested": "06-U-101 H2S Absorber",
+              "ChangeMgmtDate": "2013-08-05 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2013-08-05 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2012-08-02 00:00:00",
+              "IncidentInvestigationDate": "2013-07-07 00:00:00",
+              "InvestigationChangeDate": "2013-07-07 00:00:00",
+              "ParticipationPlansReviewDate": "2013-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Selexol Unit (Area 06)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045143,
+                  "PreventionProgram3ID": 1000038002,
+                  "ProcessChemicalID": 1000052636
+                },
+                {
+                  "PrimaryKey": 1000045144,
+                  "PreventionProgram3ID": 1000038002,
+                  "ProcessChemicalID": 1000052637
+                },
+                {
+                  "PrimaryKey": 1000045300,
+                  "PreventionProgram3ID": 1000038002,
+                  "ProcessChemicalID": 1000052785
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -246,17 +257,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044136,
-          "ProcessID": 1000043753,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052638,
@@ -264,33 +264,125 @@
           "ChemicalID": 56,
           "Quantity": 209700.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552638,
+          "Process_NAICS_ID": 1000044136,
           "ProcessID": 1000043753,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038003,
+              "Process_NAICS_ID": 1000044136,
+              "SafetyReviewDate": "2013-08-09 00:00:00",
+              "PHA_Date": "2009-10-02 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2011-06-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-08-09 00:00:00",
+              "TrainingReviewDate": "2013-08-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2012-10-13 00:00:00",
+              "EquipmentTested": "8-E-105 Converter Effluent CW Cooler",
+              "ChangeMgmtDate": "2012-09-24 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2013-02-24 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2012-08-02 00:00:00",
+              "IncidentInvestigationDate": "2013-04-27 00:00:00",
+              "InvestigationChangeDate": "2013-04-28 00:00:00",
+              "ParticipationPlansReviewDate": "2012-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Ammonia Unit (Area 08)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045145,
+                  "PreventionProgram3ID": 1000038003,
+                  "ProcessChemicalID": 1000052638
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -300,17 +392,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044137,
-          "ProcessID": 1000043754,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052639,
@@ -318,33 +399,125 @@
           "ChemicalID": 56,
           "Quantity": 59400.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552639,
+          "Process_NAICS_ID": 1000044137,
           "ProcessID": 1000043754,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038004,
+              "Process_NAICS_ID": 1000044137,
+              "SafetyReviewDate": "2013-08-09 00:00:00",
+              "PHA_Date": "2011-06-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2013-01-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 1,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-08-09 00:00:00",
+              "TrainingReviewDate": "2013-08-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2012-10-05 00:00:00",
+              "EquipmentTested": "10-R-3404 Urea Secondary Reactor",
+              "ChangeMgmtDate": "2013-08-02 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2013-08-02 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2012-08-02 00:00:00",
+              "IncidentInvestigationDate": "2013-05-30 00:00:00",
+              "InvestigationChangeDate": "2013-05-30 00:00:00",
+              "ParticipationPlansReviewDate": "2013-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Urea Unit (Area 10A)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045146,
+                  "PreventionProgram3ID": 1000038004,
+                  "ProcessChemicalID": 1000052639
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -354,17 +527,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044138,
-          "ProcessID": 1000043755,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052640,
@@ -372,33 +534,125 @@
           "ChemicalID": 56,
           "Quantity": 40000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552640,
+          "Process_NAICS_ID": 1000044138,
           "ProcessID": 1000043755,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038005,
+              "Process_NAICS_ID": 1000044138,
+              "SafetyReviewDate": "2013-08-09 00:00:00",
+              "PHA_Date": "2009-10-02 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2011-06-30 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-08-09 00:00:00",
+              "TrainingReviewDate": "2013-08-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2012-10-12 00:00:00",
+              "EquipmentTested": "LSL-0301 ST-1 Low Level Trip",
+              "ChangeMgmtDate": "2013-05-15 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2013-05-30 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2012-08-02 00:00:00",
+              "IncidentInvestigationDate": "2013-07-04 00:00:00",
+              "InvestigationChangeDate": "2013-07-04 00:00:00",
+              "ParticipationPlansReviewDate": "2013-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Atmospheric Ammonia Storage Tank - ST-1 (Area 11)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045141,
+                  "PreventionProgram3ID": 1000038005,
+                  "ProcessChemicalID": 1000052640
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -408,17 +662,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044139,
-          "ProcessID": 1000043756,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052641,
@@ -426,33 +669,125 @@
           "ChemicalID": 56,
           "Quantity": 1200000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552641,
+          "Process_NAICS_ID": 1000044139,
           "ProcessID": 1000043756,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038006,
+              "Process_NAICS_ID": 1000044139,
+              "SafetyReviewDate": "2013-08-09 00:00:00",
+              "PHA_Date": "2009-10-02 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2011-10-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 1,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-08-09 00:00:00",
+              "TrainingReviewDate": "2013-08-09 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2012-11-20 00:00:00",
+              "EquipmentTested": "NH3 Bullets EIVs - HV-76 and HV-224",
+              "ChangeMgmtDate": "2012-09-21 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2012-10-09 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2012-08-02 00:00:00",
+              "IncidentInvestigationDate": "2008-10-18 00:00:00",
+              "InvestigationChangeDate": "2008-10-20 00:00:00",
+              "ParticipationPlansReviewDate": "2013-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Pressurized Ammonia Bullet Tanks (Area 11)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045142,
+                  "PreventionProgram3ID": 1000038006,
+                  "ProcessChemicalID": 1000052641
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -462,17 +797,6 @@
       "FacilityID": 1000035744,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000044140,
-          "ProcessID": 1000043757,
-          "NAICSCode": "325311",
-          "_desc": {
-            "NAICS_CODE": "325311",
-            "NAICS_DESCRIPTION": "Nitrogenous Fertilizer Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000052643,
@@ -480,33 +804,125 @@
           "ChemicalID": 56,
           "Quantity": 70500.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000552643,
+          "Process_NAICS_ID": 1000044140,
           "ProcessID": 1000043757,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325311",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000038047,
+              "Process_NAICS_ID": 1000044140,
+              "SafetyReviewDate": "2013-01-31 00:00:00",
+              "PHA_Date": "2011-06-28 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2013-01-31 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 1,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2013-01-31 00:00:00",
+              "TrainingReviewDate": "2013-01-31 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2013-06-05 00:00:00",
+              "EquipmentInspectionDate": "2013-04-18 00:00:00",
+              "EquipmentTested": "12-E-6150 Ammonium Nitrate NH3 Vaporizer",
+              "ChangeMgmtDate": "2013-05-22 00:00:00",
+              "ChangeMgmtReviewDate": "2013-02-25 00:00:00",
+              "PreStartupReviewDate": "2013-05-22 00:00:00",
+              "ComplianceAuditDate": "2011-01-27 00:00:00",
+              "AuditCompletionDate": "2013-08-02 00:00:00",
+              "IncidentInvestigationDate": "2012-11-20 00:00:00",
+              "InvestigationChangeDate": "2013-01-13 00:00:00",
+              "ParticipationPlansReviewDate": "2013-04-23 00:00:00",
+              "HotWorkPermitReviewDate": "2012-10-01 00:00:00",
+              "ContractorSafetyReviewDate": "2013-07-31 00:00:00",
+              "ContractorSafetyEvalDate": "2013-06-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Ammonium Nitrate Unit (Area 12)",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000045192,
+                  "PreventionProgram3ID": 1000038047,
+                  "ProcessChemicalID": 1000052643
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -590,15 +1006,6 @@
           "ChemicalID": 56,
           "QuantityReleased": 1137.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -681,15 +1088,6 @@
           "ChemicalID": 56,
           "QuantityReleased": 41270.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
@@ -772,20 +1170,30 @@
           "ChemicalID": 56,
           "QuantityReleased": 11865.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 1000035744,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2013-06-30 00:00:00",
+    "ERTrainingDate": "2013-06-13 00:00:00",
+    "CoordinatingAgencyName": "Montgomery County LEPC",
+    "CoordinatingAgencyPhone": "6203301260",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

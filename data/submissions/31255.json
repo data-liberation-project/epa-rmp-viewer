@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CO",
   "OperatorZipCode": "80202",
   "OperatorZipCodeExt": "5609",
-  "RMPContact": "Gary Rhoadarmer",
-  "RMPTitle": "Corp. PSM/RMP",
   "FTE": 2,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000184613",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "5",
   "HorizontalRefDatumCode": "001",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": "C07",
   "DeregistrationReasonCode": "04",
   "DeregistrationReasonOtherText": "Facility was sold.",
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 31255,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 46383,
-          "ProcessID": 45386,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 59959,
@@ -99,53 +87,46 @@
           "ChemicalID": 155,
           "Quantity": 1716601.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 43950,
               "ProcessChemicalID": 59959,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 559959,
+          "Process_NAICS_ID": 46383,
           "ProcessID": 45386,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 31255,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2003-12-04 00:00:00",
+    "ERTrainingDate": "2003-12-10 00:00:00",
+    "CoordinatingAgencyName": "Kemmerer",
+    "CoordinatingAgencyPhone": "8004429001",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 0,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

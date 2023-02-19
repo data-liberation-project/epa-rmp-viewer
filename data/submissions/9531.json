@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "WA",
   "OperatorZipCode": "98837",
   "OperatorZipCodeExt": "9505",
-  "RMPContact": "Tor H. Hartmann",
-  "RMPTitle": "Vice President Corporate Engineerin",
   "FTE": 186,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000117857",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 9531,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 12063,
-          "ProcessID": 11783,
-          "NAICSCode": "331419",
-          "_desc": {
-            "NAICS_CODE": "331419",
-            "NAICS_DESCRIPTION": "Primary Smelting and Refining of Nonferrous Metal (except Copper and Aluminum)"
-          }
-        },
-        {
-          "Process_NAICS_ID": 12064,
-          "ProcessID": 11783,
-          "NAICSCode": "325188",
-          "_desc": {
-            "NAICS_CODE": "325188",
-            "NAICS_DESCRIPTION": "All Other Basic Inorganic Chemical Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 13355,
@@ -108,15 +87,6 @@
           "ChemicalID": 152,
           "Quantity": 330000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 152,
-            "ChemicalName": "Silane",
-            "CASNumber": "7803-62-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -125,15 +95,6 @@
           "ChemicalID": 149,
           "Quantity": 9600.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 149,
-            "ChemicalName": "Hydrogen",
-            "CASNumber": "1333-74-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -142,15 +103,6 @@
           "ChemicalID": 153,
           "Quantity": 340000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 153,
-            "ChemicalName": "Trichlorosilane  [Silane, trichloro-]",
-            "CASNumber": "10025-78-2",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -159,15 +111,6 @@
           "ChemicalID": 150,
           "Quantity": 83000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 150,
-            "ChemicalName": "Dichlorosilane  [Silane, dichloro-]",
-            "CASNumber": "4109-96-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -176,101 +119,152 @@
           "ChemicalID": 56,
           "Quantity": 12000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 12063,
+          "ProcessID": 11783,
+          "NAICSCode": "331419",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 5590,
+              "Process_NAICS_ID": 12063,
+              "SafetyReviewDate": "1999-06-01 00:00:00",
+              "PHA_Date": "1999-04-07 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2004-02-07 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": "Inerting",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Isolation valves, Monitor hydrants",
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "UVIR fire detection",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1999-05-20 00:00:00",
+              "TrainingReviewDate": "1999-06-14 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-04 00:00:00",
+              "EquipmentInspectionDate": "1999-06-01 00:00:00",
+              "EquipmentTested": "P-11602, New schedule 80 piping",
+              "ChangeMgmtDate": "1999-05-25 00:00:00",
+              "ChangeMgmtReviewDate": "1999-04-28 00:00:00",
+              "PreStartupReviewDate": "1999-03-25 00:00:00",
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": "1999-02-25 00:00:00",
+              "InvestigationChangeDate": "1999-04-01 00:00:00",
+              "ParticipationPlansReviewDate": "1999-04-28 00:00:00",
+              "HotWorkPermitReviewDate": "1999-04-28 00:00:00",
+              "ContractorSafetyReviewDate": "1999-04-28 00:00:00",
+              "ContractorSafetyEvalDate": "1999-06-15 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The Advanced Silicon Materials Inc. facility at Butte, Montana contains two interconnected production units, an associated industrial refrigeration unit and an adjacent silane module storage area which are treated as one \"process\" for RMP submittal.  The company prevention program applies to the entire source which includes both NAICS codes.  Note that this facility is covered by 29 CFR 1910.119, so most dates indicated below are of the most recent review/revision of the item, and not necessarily the date first in compliance.  The last PHA conducted was for a portion of the process, and thus the \"major hazards identified\", \"process controls in use\",  and\"mitigation systems in use\" only reflect those considered in the last PHA.   Additional major hazards identified for other portions of the process include: \"toxic release\", \"corrosion\", \"overfilling\", \"loss of cooling, heating, electricity, instrument air\", and \"earthquake\".   Additional process controls identified for other portions of the process include:  \"backup pump\", and \"excess flow devices\".  Additional mitigation systems identifed for other portions of the process include: \"sprinkler system\", \"water curtain\", \"neutralization\", \"fire walls\", \"dikes\" and in the \"other\" section, the inclusion of \"building ventillation\", \"portable foam systems\", and \"portable containment/storage devices\" .  Additional monitoring/detection systems identified for other portions of the process include \"process leak detection systems\" and \"closed circuit TV cameras\" in the \"other\" section.  Note that in all cases, \"major hazards\" were identified as those hazards possible in the absence of process controls, test and inspection programs, and mitigation systems.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 6651,
+                  "PreventionProgram3ID": 5590,
+                  "ProcessChemicalID": 13355
+                },
+                {
+                  "PrimaryKey": 6652,
+                  "PreventionProgram3ID": 5590,
+                  "ProcessChemicalID": 13356
+                },
+                {
+                  "PrimaryKey": 6653,
+                  "PreventionProgram3ID": 5590,
+                  "ProcessChemicalID": 13357
+                },
+                {
+                  "PrimaryKey": 6654,
+                  "PreventionProgram3ID": 5590,
+                  "ProcessChemicalID": 13358
+                },
+                {
+                  "PrimaryKey": 6655,
+                  "PreventionProgram3ID": 5590,
+                  "ProcessChemicalID": 13359
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 513355,
+          "Process_NAICS_ID": 12064,
           "ProcessID": 11783,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 513356,
-          "ProcessID": 11783,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 513357,
-          "ProcessID": 11783,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 513358,
-          "ProcessID": 11783,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 513359,
-          "ProcessID": 11783,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325188",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -354,20 +348,30 @@
           "ChemicalID": 153,
           "QuantityReleased": 1.0,
           "PercentWeight": 20.0,
-          "_chemical": {
-            "ChemicalID": 153,
-            "ChemicalName": "Trichlorosilane  [Silane, trichloro-]",
-            "CASNumber": "10025-78-2",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 9531,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1998-11-30 00:00:00",
+    "ERTrainingDate": "1999-05-05 00:00:00",
+    "CoordinatingAgencyName": "Butte Silver Bow Dept of Emer. Svc.",
+    "CoordinatingAgencyPhone": "4067821515",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 0,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

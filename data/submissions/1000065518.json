@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "CA",
   "OperatorZipCode": "95826",
   "OperatorZipCodeExt": "4743",
-  "RMPContact": "Race Cargile",
-  "RMPTitle": "Plant Manager",
   "FTE": 8,
   "OtherEPAFacilityID": "CAD982023665",
   "EPAFacilityID": "100000001972",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R02",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000065518,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000083335,
-          "ProcessID": 1000082093,
-          "NAICSCode": "32512",
-          "_desc": {
-            "NAICS_CODE": "32512",
-            "NAICS_DESCRIPTION": "Industrial Gas Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000102181,
@@ -99,43 +87,16 @@
           "ChemicalID": 155,
           "Quantity": 152958.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000089967,
               "ProcessChemicalID": 1000102181,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000089968,
               "ProcessChemicalID": 1000102181,
-              "ChemicalID": 149,
-              "_chemical": {
-                "ChemicalID": 149,
-                "ChemicalName": "Hydrogen",
-                "CASNumber": "1333-74-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 149
             }
           ]
         },
@@ -145,55 +106,154 @@
           "ChemicalID": 149,
           "Quantity": 143568.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 149,
-            "ChemicalName": "Hydrogen",
-            "CASNumber": "1333-74-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000602181,
+          "Process_NAICS_ID": 1000083335,
           "ProcessID": 1000082093,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000602182,
-          "ProcessID": 1000082093,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32512",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000069135,
+              "Process_NAICS_ID": 1000083335,
+              "SafetyReviewDate": "2017-05-24 00:00:00",
+              "PHA_Date": "2017-05-24 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2017-05-24 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 1,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Fire Water Monitors",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 1,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2017-03-02 00:00:00",
+              "TrainingReviewDate": "2017-03-15 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Computer based training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 0,
+              "CT_OtherType": "Computer Based Testing",
+              "MaintenanceReviewDate": "2017-03-02 00:00:00",
+              "EquipmentInspectionDate": "2017-04-05 00:00:00",
+              "EquipmentTested": "Waste Heat Boiler Inspection",
+              "ChangeMgmtDate": "2017-05-18 00:00:00",
+              "ChangeMgmtReviewDate": "2014-12-04 00:00:00",
+              "PreStartupReviewDate": "2016-05-22 00:00:00",
+              "ComplianceAuditDate": "2015-07-21 00:00:00",
+              "AuditCompletionDate": "2017-01-17 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2017-01-16 00:00:00",
+              "HotWorkPermitReviewDate": "2017-05-22 00:00:00",
+              "ContractorSafetyReviewDate": "2010-04-16 00:00:00",
+              "ContractorSafetyEvalDate": "2017-04-03 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Liquid Hydrogen Plant, Liquid Hydrogen Storage Tanks and Reformer.  All are interconnected and included in the same prevention program.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000085456,
+                  "PreventionProgram3ID": 1000069135,
+                  "ProcessChemicalID": 1000102181
+                },
+                {
+                  "PrimaryKey": 1000085457,
+                  "PreventionProgram3ID": 1000069135,
+                  "ProcessChemicalID": 1000102182
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000065518,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "City of Sacramento Fire Department",
+    "CoordinatingAgencyPhone": "9162283000",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 0,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

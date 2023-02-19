@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "MN",
   "OperatorZipCode": "55924",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Randall J. Doyal",
-  "RMPTitle": "General Manager",
   "FTE": 32,
   "OtherEPAFacilityID": "55924LCRNCHWY14",
   "EPAFacilityID": "100000147361",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "21.5",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "7000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 55699,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 83025,
-          "ProcessID": 81049,
-          "NAICSCode": "325193",
-          "_desc": {
-            "NAICS_CODE": "325193",
-            "NAICS_DESCRIPTION": "Ethyl Alcohol Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 107896,
@@ -99,76 +87,141 @@
           "ChemicalID": 155,
           "Quantity": 390000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 93833,
               "ProcessChemicalID": 107896,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 93834,
               "ProcessChemicalID": 107896,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 93835,
               "ProcessChemicalID": 107896,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 607896,
+          "Process_NAICS_ID": 83025,
           "ProcessID": 81049,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325193",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 47576,
+              "Process_NAICS_ID": 83025,
+              "SafetyReviewDate": "2007-09-10 00:00:00",
+              "PHA_Date": "2004-12-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2004-12-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "Monitor nozzles for fire suppression",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 1,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2009-05-11 00:00:00",
+              "TrainingReviewDate": "2004-04-30 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2006-04-30 00:00:00",
+              "EquipmentInspectionDate": "2008-09-16 00:00:00",
+              "EquipmentTested": "Internal floating roofs and tank seals",
+              "ChangeMgmtDate": "2004-03-31 00:00:00",
+              "ChangeMgmtReviewDate": "2008-12-12 00:00:00",
+              "PreStartupReviewDate": "2004-06-07 00:00:00",
+              "ComplianceAuditDate": "2007-09-10 00:00:00",
+              "AuditCompletionDate": "2010-06-01 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2004-06-14 00:00:00",
+              "HotWorkPermitReviewDate": "2004-06-02 00:00:00",
+              "ContractorSafetyReviewDate": "2008-12-09 00:00:00",
+              "ContractorSafetyEvalDate": "2004-06-07 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Al-Corn Clean Fuel Prevention Program",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 69487,
+                  "PreventionProgram3ID": 47576,
+                  "ProcessChemicalID": 107896
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -178,17 +231,6 @@
       "FacilityID": 55699,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 83026,
-          "ProcessID": 81050,
-          "NAICSCode": "325193",
-          "_desc": {
-            "NAICS_CODE": "325193",
-            "NAICS_DESCRIPTION": "Ethyl Alcohol Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 107897,
@@ -196,33 +238,125 @@
           "ChemicalID": 56,
           "Quantity": 100000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 607897,
+          "Process_NAICS_ID": 83026,
           "ProcessID": 81050,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "325193",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 47577,
+              "Process_NAICS_ID": 83026,
+              "SafetyReviewDate": "2007-09-10 00:00:00",
+              "PHA_Date": "2004-12-01 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 0,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2004-12-31 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 0,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 0,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 0,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 1,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 1,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2009-05-11 00:00:00",
+              "TrainingReviewDate": "2004-04-30 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2006-04-30 00:00:00",
+              "EquipmentInspectionDate": "2004-06-09 00:00:00",
+              "EquipmentTested": "Thermal oxidizer and process",
+              "ChangeMgmtDate": "2004-03-31 00:00:00",
+              "ChangeMgmtReviewDate": "2008-12-12 00:00:00",
+              "PreStartupReviewDate": "2004-06-07 00:00:00",
+              "ComplianceAuditDate": "2007-09-10 00:00:00",
+              "AuditCompletionDate": "2010-06-01 00:00:00",
+              "IncidentInvestigationDate": "2004-12-02 00:00:00",
+              "InvestigationChangeDate": "2004-12-13 00:00:00",
+              "ParticipationPlansReviewDate": "2004-06-14 00:00:00",
+              "HotWorkPermitReviewDate": "2004-06-02 00:00:00",
+              "ContractorSafetyReviewDate": "2008-12-09 00:00:00",
+              "ContractorSafetyEvalDate": "2004-06-07 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "Al-Corn Clean Fuel Prevention Program",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 69488,
+                  "PreventionProgram3ID": 47577,
+                  "ProcessChemicalID": 107897
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -306,20 +440,30 @@
           "ChemicalID": 56,
           "QuantityReleased": 15.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 56,
-            "ChemicalName": "Ammonia (anhydrous)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 10000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 55699,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2008-10-16 00:00:00",
+    "ERTrainingDate": "2008-08-20 00:00:00",
+    "CoordinatingAgencyName": "Claremont Fire Department",
+    "CoordinatingAgencyPhone": "5075282701",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": "OSHA Regulations at 29 CFR 1910.119, Process Safety Management"
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

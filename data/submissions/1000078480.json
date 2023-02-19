@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "OK",
   "OperatorZipCode": "73013",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Ronnie Anderson",
-  "RMPTitle": "Operations Manager",
   "FTE": 20,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000241829",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "15",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000078480,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000099072,
-          "ProcessID": 1000097839,
-          "NAICSCode": "21111",
-          "_desc": {
-            "NAICS_CODE": "21111",
-            "NAICS_DESCRIPTION": "Oil and Gas Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000122634,
@@ -99,137 +87,185 @@
           "ChemicalID": 155,
           "Quantity": 5000000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000106230,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000106231,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000106232,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000106233,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 1000106234,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000106235,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000106236,
               "ProcessChemicalID": 1000122634,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000622634,
+          "Process_NAICS_ID": 1000099072,
           "ProcessID": 1000097839,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "21111",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000083052,
+              "Process_NAICS_ID": 1000099072,
+              "SafetyReviewDate": "2019-04-30 00:00:00",
+              "PHA_Date": "2018-10-10 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 0,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": null,
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 1,
+              "MH_Floods": 0,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 1,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": "Pressure Relief Valves, ESD & Shutdown Valves",
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 1,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2019-04-30 00:00:00",
+              "TrainingReviewDate": "2019-04-30 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2019-10-29 00:00:00",
+              "EquipmentInspectionDate": "2019-10-29 00:00:00",
+              "EquipmentTested": "New Facility Wide Start-up",
+              "ChangeMgmtDate": null,
+              "ChangeMgmtReviewDate": "2019-04-30 00:00:00",
+              "PreStartupReviewDate": null,
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "ParticipationPlansReviewDate": "2019-04-30 00:00:00",
+              "HotWorkPermitReviewDate": "2019-04-30 00:00:00",
+              "ContractorSafetyReviewDate": "2019-04-30 00:00:00",
+              "ContractorSafetyEvalDate": "2019-04-30 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "A PHA using the HAZOP methodology was performed for the Panther Creek Plant on October 8-10, 2018. The PHA was initiated by Tall Oak Midstream to evaluate the current design and operations per the requirements of PSM regulations.  \n\n \n\nThe HAZOP technique is an organized and systematic effort used to identify potential process hazards and layers of protection within the process systems. The areas of the project to be studied are subdivided into workable sections called ?nodes?. The complexity of this PHA required 46 nodes. As part of the PHA, possible causes and consequences of potential hazards were noted as well as the improvements or action strategies that would reduce and/or prevent the circumstance. \n\n\n\nThis PHA covered all of the Panther Creek Plant. The plant consists of inlet separation, stabilization, amine treating, refrigerated cryo plant, and overhead/refrigeration/residue compression. \n\n\n\nThe objective of the PHA was to review the safety design, procedures and training to reduce the likelihood of a catastrophic release of hazardous chemicals. At the Panther Creek Plant, the facility handles large volumes of natural gas, condensate and NGLs. The objective of this PHA is to avoid a release of flammable chemicals at the facility and also prepare the facility for instances when there is a release of flammable substances. \n\n \n\nDuring the PHA, there were several assumptions that we made as part of the PHA protocol. Primarily, we did not list every common safeguard for every deviation. For example, here is a list of common safeguards that are applicable to every deviation within the PHA. Operator training, Operating procedures, Mechanical Integrity Program, Safe Work Practices, Preventive Maintenance ProgramESD System, DCS/PLC Program Logic, Design Codes and Standards, Daily facility walkaround (Operator awareness). We do not document these safeguards on every deviation as they are consistent throughout the facility. Generally, we only put the specific safeguards (such as PSVs, shutdowns devices, specific ESDs, or similar very specific safeguards). We believe that this provides a much better and more logical report during and after the PHA. \n\n \n\nSimilarly, we do not repeat every possible consequence over and over again in the PHA. Many facilitators provide a list of consequences that occur routinely, but are not specific to the deviation and cause. For example, if there is a valve that fails open and overpressure is possible, the primary issue is overpressure of piping or vessels. Every time that a vessel could overpressure, the consequences include loss of containment (gas/liquid escaping piping/vessels) personal injury, fire, property damage, downtime and possible environmental damage. Since all of these issues occur each time there is a loss of containment, we believe that only loss of containment (typically overpressure) needs to be listed as a consequence, and all of the other consequences follow. The risk ranking will determine how serious the loss of containment is, so all of the possible consequences are not listed every time. If the consequence is only operational, we have determined that it is not necessary to risk rank the consequence. However, it will be clear that the consequences are only operational. Some operational issues cause property damage or downtime and will be reviewed in more detail. \n\n\n\nIf an overpressure of a vessel or exceedance of temperature limits is listed as the consequence, it is assumed that there is a loss of containment as that is the worst scenario for these consequences. The loss of containment is not always listed, but it is assumed when risk ranking the scenario. \n\n\n\nIn this PHA, we did not document the plugging of each and every strainer, filter or similar device (typically covered under Less Flow deviation). However, we did discuss where DPI gauges were required and where DPI signals should be brought into the control room. Where additional equipment was required, this was noted in the PHA. \n\n\n\nAlso, the relief valves in the facility are still being reviewed. Kahuna is reviewing each and every relief valve and providing documentation of the size, setting and design basis for each relief valve. In the PHA, we did not document each relief valve to ensure that it was properly sized, but occasionally this was brought up due to other changes made during the PHA. \n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000103326,
+                  "PreventionProgram3ID": 1000083052,
+                  "ProcessChemicalID": 1000122634
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000078480,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2019-04-30 00:00:00",
+    "ERTrainingDate": "2019-04-30 00:00:00",
+    "CoordinatingAgencyName": "Coalgate Fire Department",
+    "CoordinatingAgencyPhone": "5809273913",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

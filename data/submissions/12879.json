@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TX",
   "OperatorZipCode": "77580",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Tony Dotson",
-  "RMPTitle": "Plant Manager",
   "FTE": 30,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000016467",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "01",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 12879,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 17720,
-          "ProcessID": 17293,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 21639,
@@ -99,15 +87,6 @@
           "ChemicalID": 98,
           "Quantity": 1800000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 98,
-            "ChemicalName": "Propane",
-            "CASNumber": "74-98-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,15 +95,6 @@
           "ChemicalID": 118,
           "Quantity": 1100000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 118,
-            "ChemicalName": "Butane",
-            "CASNumber": "106-97-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -133,15 +103,6 @@
           "ChemicalID": 107,
           "Quantity": 380000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 107,
-            "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-            "CASNumber": "75-28-5",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -150,88 +111,163 @@
           "ChemicalID": 94,
           "Quantity": 210000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 94,
-            "ChemicalName": "Ethane",
-            "CASNumber": "74-84-0",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 521639,
+          "Process_NAICS_ID": 17720,
           "ProcessID": 17293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 521640,
-          "ProcessID": 17293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 521641,
-          "ProcessID": 17293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 521642,
-          "ProcessID": 17293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 9093,
+              "Process_NAICS_ID": 17720,
+              "SafetyReviewDate": "1997-09-04 00:00:00",
+              "PHA_Date": "1994-02-10 00:00:00",
+              "PHA_WhatIf": 1,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 1,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": "Cause & Effects, ESD, and Plant Shutdown, Interlocks associated with Cause & Effects",
+              "PHACompletionDate": "1994-08-03 00:00:00",
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 1,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 1,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 1,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 1,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 1,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 1,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 1,
+              "PC_PurgeSystem": 1,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 1,
+              "CH_InstallProcessDetection": 1,
+              "CH_InstallPerimeterMonitoring": 1,
+              "CH_InstallMitigationSystems": 1,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "1998-10-22 00:00:00",
+              "TrainingReviewDate": "1997-09-04 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1997-09-04 00:00:00",
+              "EquipmentInspectionDate": "1998-12-14 00:00:00",
+              "EquipmentTested": "Solar 102A",
+              "ChangeMgmtDate": "1998-12-09 00:00:00",
+              "ChangeMgmtReviewDate": "1997-09-04 00:00:00",
+              "PreStartupReviewDate": "1998-03-04 00:00:00",
+              "ComplianceAuditDate": "1997-09-03 00:00:00",
+              "AuditCompletionDate": "1998-03-31 00:00:00",
+              "IncidentInvestigationDate": "1998-07-22 00:00:00",
+              "InvestigationChangeDate": "1998-07-23 00:00:00",
+              "ParticipationPlansReviewDate": "1997-09-03 00:00:00",
+              "HotWorkPermitReviewDate": "1996-12-01 00:00:00",
+              "ContractorSafetyReviewDate": "1996-12-01 00:00:00",
+              "ContractorSafetyEvalDate": "1998-07-15 00:00:00",
+              "CBI_Flag": 0,
+              "Description": null,
+              "_chemicals": [
+                {
+                  "PrimaryKey": 12518,
+                  "PreventionProgram3ID": 9093,
+                  "ProcessChemicalID": 21639
+                },
+                {
+                  "PrimaryKey": 12519,
+                  "PreventionProgram3ID": 9093,
+                  "ProcessChemicalID": 21640
+                },
+                {
+                  "PrimaryKey": 12520,
+                  "PreventionProgram3ID": 9093,
+                  "ProcessChemicalID": 21641
+                },
+                {
+                  "PrimaryKey": 12521,
+                  "PreventionProgram3ID": 9093,
+                  "ProcessChemicalID": 21642
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 12879,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1998-09-10 00:00:00",
+    "ERTrainingDate": "1997-10-31 00:00:00",
+    "CoordinatingAgencyName": "Mutual Aid Mont Belvieu (MAMB)",
+    "CoordinatingAgencyPhone": "2815762417",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": []
 }

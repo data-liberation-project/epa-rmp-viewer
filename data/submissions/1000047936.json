@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "OH",
   "OperatorZipCode": "43058",
   "OperatorZipCodeExt": "4970",
-  "RMPContact": "Don Wheeler",
-  "RMPTitle": "Operations Manager",
   "FTE": 0,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000228112",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "10",
   "HorizontalRefDatumCode": "003",
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "03",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 1000047936,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000060987,
-          "ProcessID": 1000059885,
-          "NAICSCode": "211112",
-          "_desc": {
-            "NAICS_CODE": "211112",
-            "NAICS_DESCRIPTION": "Natural Gas Liquid Extraction"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000073291,
@@ -99,137 +87,180 @@
           "ChemicalID": 155,
           "Quantity": 54436.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 1000062186,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 94,
-              "_chemical": {
-                "ChemicalID": 94,
-                "ChemicalName": "Ethane",
-                "CASNumber": "74-84-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 94
             },
             {
               "FlamMixChemID": 1000062187,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 93,
-              "_chemical": {
-                "ChemicalID": 93,
-                "ChemicalName": "Methane",
-                "CASNumber": "74-82-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 93
             },
             {
               "FlamMixChemID": 1000062188,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 1000062189,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             },
             {
               "FlamMixChemID": 1000062190,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 115,
-              "_chemical": {
-                "ChemicalID": 115,
-                "ChemicalName": "Isopentane  [Butane, 2-methyl-]",
-                "CASNumber": "78-78-4",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 115
             },
             {
               "FlamMixChemID": 1000062191,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 125,
-              "_chemical": {
-                "ChemicalID": 125,
-                "ChemicalName": "Pentane",
-                "CASNumber": "109-66-0",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 125
             },
             {
               "FlamMixChemID": 1000062192,
               "ProcessChemicalID": 1000073291,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 1000573291,
+          "Process_NAICS_ID": 1000060987,
           "ProcessID": 1000059885,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "211112",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 1000038089,
+              "Process_NAICS_ID": 1000060987,
+              "SafetyReviewDate": "2014-12-12 00:00:00",
+              "FR_NFPA58": 1,
+              "FR_OSHA": 0,
+              "FR_ASTM": 1,
+              "FR_ANSI": 1,
+              "FR_ASME": 1,
+              "FR_None": 0,
+              "FR_OtherType": "Additional standards include: American Pipeline Institute, Pipeline Research Council International, Manufacturer's Standardization Society, NACE International, and NFPA 10, 30, 59, & 70",
+              "FR_Comments": "Equipment standards in Title 49 of the Code of Federal Regulations, Part 192",
+              "HazardReviewDate": "2015-02-17 00:00:00",
+              "ChangeCompletionDate": null,
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 0,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": "\"Smart Hose\" Flow Shutoff Valves",
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "Tank equipped with visible pressure, volume, and temperature gauges",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2014-12-12 00:00:00",
+              "TrainingReviewDate": "2014-12-12 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Certified Employee Training Program (CETP) through National Propane Gas Association (NPGA); U.S. Dept. of Transportation; Internal Training; Manufacturer's Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2015-01-26 00:00:00",
+              "EquipmentInspectionDate": "2014-12-12 00:00:00",
+              "EquipmentTested": "NGL Storage Tank, associated piping, and relief valves",
+              "ComplianceAuditDate": "2018-03-20 00:00:00",
+              "AuditCompletionDate": "2018-05-09 00:00:00",
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "To prevent accidental releases, the facility trains personnel on the operation of the pressurized natural gas liquids (NGL) Storage Tank and equipment using the National Propane Gas Association's (NPGA) Certified Employee Training Program (CETP), training provided by the manufacturer and the U.S. Department of Transportation, and internal training. There are no employees permanently stationed onsite; however, at least one trained employee will be onsite to supervise tanker truck loading, consistent with their training and written operating procedure. Site conditions and some tank conditions are monitored via telemetry at a centralized Control Center on a 24-hour basis and supplemented with periodic visual inspections by trained personnel. Trained employees will also visit the site at least every month to conduct a \"look, listen, and hear\" leak check.\n\n\n\nAccidental releases are further reduced through technologies integrated into the NGL Storage Tank. These technologies include integrated valve shutoff for all tank piping, over-pressure relief valves, loading rack breakaways, and emergency manual tank shutoff.\n\n",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000038615,
+                  "PreventionProgram2ID": 1000038089,
+                  "ProcessChemicalID": 1000073291
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 1000047936,
+    "ER_CommunityPlan": 0,
+    "ER_FacilityPlan": 0,
+    "ER_ResponseActions": 0,
+    "ER_PublicInfoProcedures": 0,
+    "ER_EmergencyHealthCare": 0,
+    "ER_ReviewDate": null,
+    "ERTrainingDate": null,
+    "CoordinatingAgencyName": "Duncan Falls/Wayne Twp. Fire Dept.",
+    "CoordinatingAgencyPhone": "7406744444",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 0,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "OK",
   "OperatorZipCode": "74063",
   "OperatorZipCodeExt": null,
-  "RMPContact": "James Taylor",
-  "RMPTitle": "President",
   "FTE": 49,
   "OtherEPAFacilityID": "TXD000607457",
   "EPAFacilityID": "100000081519",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "50",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": null,
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 1000007517,
       "ProgramLevel": 3,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000008866,
-          "ProcessID": 1000008660,
-          "NAICSCode": "325181",
-          "_desc": {
-            "NAICS_CODE": "325181",
-            "NAICS_DESCRIPTION": "Alkalies and Chlorine Manufacturing"
-          }
-        },
-        {
-          "Process_NAICS_ID": 1000008868,
-          "ProcessID": 1000008660,
-          "NAICSCode": "42469",
-          "_desc": {
-            "NAICS_CODE": "42469",
-            "NAICS_DESCRIPTION": "Other Chemical and Allied Products Merchant Wholesalers"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 1000009682,
@@ -108,15 +87,6 @@
           "ChemicalID": 62,
           "Quantity": 1500000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -125,50 +95,137 @@
           "ChemicalID": 49,
           "Quantity": 150000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 49,
-            "ChemicalName": "Sulfur dioxide (anhydrous)",
-            "CASNumber": "7446-09-5",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000008866,
+          "ProcessID": 1000008660,
+          "NAICSCode": "325181",
+          "_prev_prog_3": [
+            {
+              "PreventionProgram3ID": 1000007050,
+              "Process_NAICS_ID": 1000008866,
+              "SafetyReviewDate": "2009-05-17 00:00:00",
+              "PHA_Date": "2006-10-27 00:00:00",
+              "PHA_WhatIf": 0,
+              "PHA_Checklist": 1,
+              "PHA_WhatIfChecklist": 0,
+              "PHA_HAZOP": 1,
+              "PHA_FMEA": 0,
+              "PHA_FTA": 0,
+              "PHA_OtherTechnique": null,
+              "PHACompletionDate": "2006-12-01 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 0,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 0,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 1,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": null,
+              "CH_ChemicalReduction": 1,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 0,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2009-03-25 00:00:00",
+              "TrainingReviewDate": "2009-03-23 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": "Outside Contracted Training",
+              "CT_WrittenTest": 1,
+              "CT_OralTest": 1,
+              "CT_Demonstration": 1,
+              "CT_Observation": 0,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2003-05-12 00:00:00",
+              "EquipmentInspectionDate": "2009-06-03 00:00:00",
+              "EquipmentTested": "Inspection and calibration of chlorine sensors and automated system",
+              "ChangeMgmtDate": "1999-02-25 00:00:00",
+              "ChangeMgmtReviewDate": "2005-07-05 00:00:00",
+              "PreStartupReviewDate": "2005-07-05 00:00:00",
+              "ComplianceAuditDate": "2009-05-17 00:00:00",
+              "AuditCompletionDate": "2009-08-01 00:00:00",
+              "IncidentInvestigationDate": "2007-08-23 00:00:00",
+              "InvestigationChangeDate": "2007-10-01 00:00:00",
+              "ParticipationPlansReviewDate": "2004-02-13 00:00:00",
+              "HotWorkPermitReviewDate": "2009-04-22 00:00:00",
+              "ContractorSafetyReviewDate": "2009-06-11 00:00:00",
+              "ContractorSafetyEvalDate": "2009-06-11 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The chlorine packaging and bleach manufacturing unit is equipped with an alarm system that will shut down the unit if there is a trace of chlorine in the atmoshphere.  The sensors are set at 0.5 parts per million (ppm) in the unit.  On the truck loading rack the sensor is set at 0.5 ppm.  The alarm has two warning lights and horns placed internally as well as externally.  Our people are all 40 hour Hazwoper trained and go through an 8 hour refresher class once a year.  Safety training is on-going in our plant.  Our people are trained annually in proper use of SCBAs/Respirators as well as proficient in utilizing A/B/C Chlorine response kits.  \n\n\nIn the event of an emergency we utilize and on-site Hazardous Materials (Haz Mat) team divised of ALTIVIA personnel that is capable of being the first responders at the unit.  If the Haz Mat team is unable to handle the situation, outside response contractors and LEPC personnel are immediately notified for assistance. This is fully outlined in our Emergency Response Plan for the Greens Bayou Facility.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 1000008035,
+                  "PreventionProgram3ID": 1000007050,
+                  "ProcessChemicalID": 1000009682
+                },
+                {
+                  "PrimaryKey": 1000008036,
+                  "PreventionProgram3ID": 1000007050,
+                  "ProcessChemicalID": 1000009683
+                }
+              ]
+            }
+          ],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 1000509682,
+          "Process_NAICS_ID": 1000008868,
           "ProcessID": 1000008660,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000509683,
-          "ProcessID": 1000008660,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "42469",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
@@ -252,20 +309,30 @@
           "ChemicalID": 62,
           "QuantityReleased": 63.0,
           "PercentWeight": 100.0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         }
       ]
     }
   ],
+  "_emerg_resp": {
+    "FacilityID": 1000007517,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2009-04-20 00:00:00",
+    "ERTrainingDate": "2009-04-03 00:00:00",
+    "CoordinatingAgencyName": "Houston - North Channel LEPC",
+    "CoordinatingAgencyPhone": "7134555372",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "TN",
   "OperatorZipCode": "38113",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Gregory Jackson",
-  "RMPTitle": "EHS Supervisor",
   "FTE": 55,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000116607",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": "R07",
   "DeregistrationReasonCode": "01",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 38302,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 56357,
-          "ProcessID": 55092,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 72865,
@@ -99,62 +87,131 @@
           "ChemicalID": 155,
           "Quantity": 23000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 54345,
               "ProcessChemicalID": 72865,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 54346,
               "ProcessChemicalID": 72865,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 572865,
+          "Process_NAICS_ID": 56357,
           "ProcessID": 55092,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 21041,
+              "Process_NAICS_ID": 56357,
+              "SafetyReviewDate": "2004-06-07 00:00:00",
+              "FR_NFPA58": 1,
+              "FR_OSHA": 1,
+              "FR_ASTM": 0,
+              "FR_ANSI": 0,
+              "FR_ASME": 0,
+              "FR_None": 0,
+              "FR_OtherType": null,
+              "FR_Comments": null,
+              "HazardReviewDate": "2004-06-07 00:00:00",
+              "ChangeCompletionDate": null,
+              "MH_ToxicRelease": 0,
+              "MH_Fire": 1,
+              "MH_Explosion": 1,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 0,
+              "MH_Corrosion": 0,
+              "MH_Overfilling": 0,
+              "MH_Contamination": 0,
+              "MH_EquipmentFailure": 0,
+              "MH_CoolingLoss": 0,
+              "MH_Earthquake": 0,
+              "MH_Floods": 0,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 0,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 0,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 0,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 0,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 0,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 1,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 0,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 0,
+              "MS_FireWalls": 1,
+              "MS_BlastWalls": 1,
+              "MS_DelugeSystem": 1,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 0,
+              "MS_Neutralization": 0,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 0,
+              "MD_None": 0,
+              "MD_OtherType": "LEL detectors for filling area.",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": null,
+              "OpProceduresReviewDate": "2000-06-13 00:00:00",
+              "TrainingReviewDate": "2004-06-07 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "2001-07-16 00:00:00",
+              "EquipmentInspectionDate": "2004-05-12 00:00:00",
+              "EquipmentTested": "Vacuum Pump",
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": null,
+              "CBI_Flag": 0,
+              "Description": "W.M. Barr has a comprehensive risk management plan comprising the following elements: 1) Health and Safety training-Periodic training for all employees working in and around processes where regulated chemicals are present. 2) Documentation-Written safe work procedures and documentation of the minimum personal protective equipment required for specific job duties. 3) Programs a) Preventative maintenance-Routine schedule for equipment inspection. 4) Built-in Safety Features-The processes that contain RMP regulated substances have multiple built-in safety features to prevent a release.  The tank farm operator performs all unloading of tanker trucks.  The tank farm unloading area has a manual cutoff switch to stop the flow into storage tanks.  The piping to storage tanks is routed through a bulkhead to prevent it from being displaced where it attaches to the tank (and thereby causing a rupture of the tank).  Piping into storage tanks is equipped with backflow and excess flow valves.  Storage tanks have fusible links, which close valves if fire is detected.                                                                                  The aerosol tank farm where the substances are stored has a 6 feet high chain link fence with barbed wire.  The facility's perimeter is also fenced and access is controlled through one employee entrance and exit.  All parking lots and the employee entrance/exit are on 24-hour videotape surveillance.  Access by tanker truck is controlled with a locked gate that the tank farm operator manually unlocks and locks to allow tanker trucks to enter and exit the facility.                                                                                                                                                                                                                                                     From the storage tank, propellant is piped into the aerosol production area.  This area is separated from the rest of the plant by a fire wall and it is equipped with sensors to detect the presence of propellant in the air.  If the level of propellant reaches 20% of LEL, exhaust fans activate to clear the room of propellant.  If the level reaches 40%, the filling process shuts down:  production ceases, tank valves seal to prevent additional propellant from entering the process, and an accelerated exhaust system engages.  This production area is also equipped with a deluge fire extinguishing system that is designed to flood the entire area with a massive amount of water.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 21991,
+                  "PreventionProgram2ID": 21041,
+                  "ProcessChemicalID": 72865
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -164,17 +221,6 @@
       "FacilityID": 38302,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 56358,
-          "ProcessID": 55093,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 72866,
@@ -182,33 +228,16 @@
           "ChemicalID": 130,
           "Quantity": 27000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 130,
-            "ChemicalName": "Methyl ether  [Methane, oxybis-]",
-            "CASNumber": "115-10-6",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 572866,
+          "Process_NAICS_ID": 56358,
           "ProcessID": 55093,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -218,17 +247,6 @@
       "FacilityID": 38302,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 56359,
-          "ProcessID": 55094,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 72867,
@@ -236,33 +254,16 @@
           "ChemicalID": 118,
           "Quantity": 27000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 118,
-            "ChemicalName": "Butane",
-            "CASNumber": "106-97-8",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 572867,
+          "Process_NAICS_ID": 56359,
           "ProcessID": 55094,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     },
@@ -272,17 +273,6 @@
       "FacilityID": 38302,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 56360,
-          "ProcessID": 55095,
-          "NAICSCode": "32551",
-          "_desc": {
-            "NAICS_CODE": "32551",
-            "NAICS_DESCRIPTION": "Paint and Coating Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 72868,
@@ -290,81 +280,56 @@
           "ChemicalID": 155,
           "Quantity": 23000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 155,
-            "ChemicalName": "Flammable Mixture",
-            "CASNumber": "00-11-11",
-            "Threshold": 10000.0,
-            "ChemType": "F",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 54347,
               "ProcessChemicalID": 72868,
-              "ChemicalID": 98,
-              "_chemical": {
-                "ChemicalID": 98,
-                "ChemicalName": "Propane",
-                "CASNumber": "74-98-6",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 98
             },
             {
               "FlamMixChemID": 54348,
               "ProcessChemicalID": 72868,
-              "ChemicalID": 107,
-              "_chemical": {
-                "ChemicalID": 107,
-                "ChemicalName": "Isobutane  [Propane, 2-methyl]",
-                "CASNumber": "75-28-5",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 107
             },
             {
               "FlamMixChemID": 54349,
               "ProcessChemicalID": 72868,
-              "ChemicalID": 118,
-              "_chemical": {
-                "ChemicalID": 118,
-                "ChemicalName": "Butane",
-                "CASNumber": "106-97-8",
-                "Threshold": 10000.0,
-                "ChemType": "F",
-                "flgCBI": 0,
-                "ChemOwner": "FED"
-              }
+              "ChemicalID": 118
             }
           ]
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 572868,
+          "Process_NAICS_ID": 56360,
           "ProcessID": 55095,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "32551",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 38302,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2003-04-22 00:00:00",
+    "ERTrainingDate": "2003-01-30 00:00:00",
+    "CoordinatingAgencyName": "Local Emergency Planning Committee",
+    "CoordinatingAgencyPhone": "9015282780",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

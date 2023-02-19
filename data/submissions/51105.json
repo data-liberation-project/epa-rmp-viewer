@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "RI",
   "OperatorZipCode": "02910",
   "OperatorZipCodeExt": null,
-  "RMPContact": "Keith Hammerschlag",
-  "RMPTitle": "Production Engineer",
   "FTE": 35,
   "OtherEPAFacilityID": "02895TCHNC300PA",
   "EPAFacilityID": "100000201827",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": "25",
   "HorizontalRefDatumCode": "002",
   "SourceMapScaleNumber": "24000",
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "04",
   "DeregistrationReasonOtherText": "Quantity of regulatory substance was erroneously calculated for initial RMP",
   "_processes": [
@@ -81,26 +80,6 @@
       "FacilityID": 51105,
       "ProgramLevel": 1,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 76018,
-          "ProcessID": 74238,
-          "NAICSCode": "331491",
-          "_desc": {
-            "NAICS_CODE": "331491",
-            "NAICS_DESCRIPTION": "Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding"
-          }
-        },
-        {
-          "Process_NAICS_ID": 76019,
-          "ProcessID": 74238,
-          "NAICSCode": "335929",
-          "_desc": {
-            "NAICS_CODE": "335929",
-            "NAICS_DESCRIPTION": "Other Communication and Energy Wire Manufacturing"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 98444,
@@ -108,38 +87,47 @@
           "ChemicalID": 57,
           "Quantity": 39000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 57,
-            "ChemicalName": "Ammonia (conc 20% or greater)",
-            "CASNumber": "7664-41-7",
-            "Threshold": 20000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 76018,
+          "ProcessID": 74238,
+          "NAICSCode": "331491",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         },
         {
-          "ProcessChemicalID": 598444,
+          "Process_NAICS_ID": 76019,
           "ProcessID": 74238,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "335929",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 51105,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "2007-07-30 00:00:00",
+    "ERTrainingDate": "2007-04-19 00:00:00",
+    "CoordinatingAgencyName": "LEPC1 - (Steven Preston)",
+    "CoordinatingAgencyPhone": "4017662500",
+    "FR_OSHA1910_38": 1,
+    "FR_OSHA1910_120": 1,
+    "FR_SPCC": 0,
+    "FR_RCRA": 1,
+    "FR_OPA90": 0,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": "Air Pollution Control"
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,

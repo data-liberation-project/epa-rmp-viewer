@@ -28,8 +28,6 @@
   "OperatorStateFIPS": "LA",
   "OperatorZipCode": "70802",
   "OperatorZipCodeExt": "8074",
-  "RMPContact": "Bob Wilks",
-  "RMPTitle": "North WWTP Superintendent",
   "FTE": 28,
   "OtherEPAFacilityID": "4843",
   "EPAFacilityID": "100000043669",
@@ -72,6 +70,7 @@
   "HorizontalAccMeasure": null,
   "HorizontalRefDatumCode": null,
   "SourceMapScaleNumber": null,
+  "RMPSubmissionReasonCode": null,
   "DeregistrationReasonCode": "02",
   "DeregistrationReasonOtherText": null,
   "_processes": [
@@ -81,17 +80,6 @@
       "FacilityID": 16121,
       "ProgramLevel": 2,
       "CBI_Flag": 0,
-      "_naics": [
-        {
-          "Process_NAICS_ID": 22877,
-          "ProcessID": 22293,
-          "NAICSCode": "22132",
-          "_desc": {
-            "NAICS_CODE": "22132",
-            "NAICS_DESCRIPTION": "Sewage Treatment Facilities"
-          }
-        }
-      ],
       "_chemicals": [
         {
           "ProcessChemicalID": 28473,
@@ -99,15 +87,6 @@
           "ChemicalID": 62,
           "Quantity": 50000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 62,
-            "ChemicalName": "Chlorine",
-            "CASNumber": "7782-50-5",
-            "Threshold": 2500.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
         },
         {
@@ -116,55 +95,149 @@
           "ChemicalID": 49,
           "Quantity": 8000.0,
           "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 49,
-            "ChemicalName": "Sulfur dioxide (anhydrous)",
-            "CASNumber": "7446-09-5",
-            "Threshold": 5000.0,
-            "ChemType": "T",
-            "flgCBI": 0,
-            "ChemOwner": "FED"
-          },
           "_flam_mix_chemicals": []
-        },
+        }
+      ],
+      "_naics": [
         {
-          "ProcessChemicalID": 528473,
+          "Process_NAICS_ID": 22877,
           "ProcessID": 22293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 528474,
-          "ProcessID": 22293,
-          "ChemicalID": 0,
-          "Quantity": 0.0,
-          "CBI_Flag": 0,
-          "_chemical": {
-            "ChemicalID": 0,
-            "ChemicalName": "Public OCA Chemical",
-            "CASNumber": null,
-            "Threshold": null,
-            "ChemType": null,
-            "flgCBI": 0,
-            "ChemOwner": null
-          },
-          "_flam_mix_chemicals": []
+          "NAICSCode": "22132",
+          "_prev_prog_3": [],
+          "_prev_prog_2": [
+            {
+              "PreventionProgram2ID": 8815,
+              "Process_NAICS_ID": 22877,
+              "SafetyReviewDate": "1999-02-25 00:00:00",
+              "FR_NFPA58": 0,
+              "FR_OSHA": 0,
+              "FR_ASTM": 1,
+              "FR_ANSI": 1,
+              "FR_ASME": 1,
+              "FR_None": 0,
+              "FR_OtherType": "Chlorine Institute Pamphlets",
+              "FR_Comments": null,
+              "HazardReviewDate": "1999-03-04 00:00:00",
+              "ChangeCompletionDate": "2000-01-05 00:00:00",
+              "MH_ToxicRelease": 1,
+              "MH_Fire": 0,
+              "MH_Explosion": 0,
+              "MH_RunawayReaction": 0,
+              "MH_Polymerization": 0,
+              "MH_Overpressurization": 1,
+              "MH_Corrosion": 1,
+              "MH_Overfilling": 1,
+              "MH_Contamination": 1,
+              "MH_EquipmentFailure": 1,
+              "MH_CoolingLoss": 1,
+              "MH_Earthquake": 0,
+              "MH_Floods": 1,
+              "MH_Tornado": 0,
+              "MH_Hurricanes": 1,
+              "MH_OtherType": null,
+              "PC_Vents": 0,
+              "PC_ReliefValves": 1,
+              "PC_CheckValves": 1,
+              "PC_Scrubbers": 1,
+              "PC_Flares": 0,
+              "PC_ManualShutoffs": 1,
+              "PC_AutomaticShutoffs": 1,
+              "PC_Interlocks": 1,
+              "PC_Alarms": 1,
+              "PC_KeyedBypass": 0,
+              "PC_EmergencyAirSupply": 0,
+              "PC_EmergencyPower": 1,
+              "PC_BackupPump": 0,
+              "PC_GroundingEquipment": 0,
+              "PC_InhibitorAddition": 0,
+              "PC_RuptureDisks": 1,
+              "PC_ExcessFlowDevice": 1,
+              "PC_QuenchSystem": 0,
+              "PC_PurgeSystem": 0,
+              "PC_None": 0,
+              "PC_OtherType": null,
+              "MS_SprinklerSystem": 1,
+              "MS_Dikes": 1,
+              "MS_FireWalls": 0,
+              "MS_BlastWalls": 0,
+              "MS_DelugeSystem": 0,
+              "MS_WaterCurtain": 0,
+              "MS_Enclosure": 1,
+              "MS_Neutralization": 1,
+              "MS_None": 0,
+              "MS_OtherType": null,
+              "MD_ProcessAreaDetectors": 1,
+              "MD_PerimeterMonitors": 1,
+              "MD_None": 0,
+              "MD_OtherType": "Door alarms, T.V. cameras, eyewash/safety shower alarms, alarms-visual and auditory",
+              "CH_ChemicalReduction": 0,
+              "CH_ChemicalIncrease": 0,
+              "CH_ChangeProcessParameters": 0,
+              "CH_InstallProcessControls": 0,
+              "CH_InstallProcessDetection": 0,
+              "CH_InstallPerimeterMonitoring": 0,
+              "CH_InstallMitigationSystems": 0,
+              "CH_NoneRequired": 0,
+              "CH_None": 1,
+              "CH_OtherChanges": "This was the first hazard review (2-8-1999 for chlorine and 3-4-1999 for sulfur dioxide)",
+              "OpProceduresReviewDate": "1999-06-27 00:00:00",
+              "TrainingReviewDate": "1998-01-28 00:00:00",
+              "TR_Classroom": 1,
+              "TR_OnTheJob": 1,
+              "TR_OtherType": null,
+              "CT_WrittenTest": 0,
+              "CT_OralTest": 0,
+              "CT_Demonstration": 1,
+              "CT_Observation": 1,
+              "CT_OtherType": null,
+              "MaintenanceReviewDate": "1999-06-26 00:00:00",
+              "EquipmentInspectionDate": "1998-10-07 00:00:00",
+              "EquipmentTested": "Flow tubes, orifices, valve plugs to the sulfonators, rupture disks in chlorine and sulfur dioxide systems",
+              "ComplianceAuditDate": null,
+              "AuditCompletionDate": null,
+              "IncidentInvestigationDate": null,
+              "InvestigationChangeDate": null,
+              "MostRecentChangeDate": "1999-03-04 00:00:00",
+              "CBI_Flag": 0,
+              "Description": "The Prevention Program at the North Wastewater Treatment Plant (NWWTP) consists of policies, procedures, and Hazard and Operability studies designed to operate, modify, and maintain the NWWTP in a site status consistent with accepted standards and personnel proficiency. The procedures included in this program consist of the following: Process Safety Information, Process Hazard Analysis, Training, Operating Procedures, Mechanical Integrity, Incident Investigation, Management of Change, and Pre-Startup Reviews.",
+              "_chemicals": [
+                {
+                  "PrimaryKey": 9227,
+                  "PreventionProgram2ID": 8815,
+                  "ProcessChemicalID": 28473
+                },
+                {
+                  "PrimaryKey": 9228,
+                  "PreventionProgram2ID": 8815,
+                  "ProcessChemicalID": 28474
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "_accidents": [],
+  "_emerg_resp": {
+    "FacilityID": 16121,
+    "ER_CommunityPlan": 1,
+    "ER_FacilityPlan": 1,
+    "ER_ResponseActions": 1,
+    "ER_PublicInfoProcedures": 1,
+    "ER_EmergencyHealthCare": 1,
+    "ER_ReviewDate": "1997-11-30 00:00:00",
+    "ERTrainingDate": "1999-05-26 00:00:00",
+    "CoordinatingAgencyName": "Hazmat - City of Baton Rouge",
+    "CoordinatingAgencyPhone": "2253894617",
+    "FR_OSHA1910_38": 0,
+    "FR_OSHA1910_120": 0,
+    "FR_SPCC": 1,
+    "FR_RCRA": 1,
+    "FR_OPA90": 1,
+    "FR_EPCRA": 1,
+    "FR_OtherRegulation": null
+  },
   "_exec_summary": [
     {
       "ESSeqNum": 0,
