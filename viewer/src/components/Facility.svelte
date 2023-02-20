@@ -13,10 +13,47 @@
     <li><b>Company 1:</b> <span>{item.company_1 || ""}</span></li>
     <li><b>Company 2:</b> <span>{item.company_2 || ""}</span></li>
     <li><b>Operator:</b> <span>{item.operator || ""}</span></li>
-    <li><b>RMP Submissions (ID — Date Validated by EPA):</b><ul id="submission-list">
-        {#each item.submissions as sub}
-          <li>#<a href="#/submission:{sub.id}">{sub.id}</a> — {sub.date}</li>
-        {/each}
-    </ul></li>
   </ul>
+  <h3>RMP Submissions (through March 2022)</h3>
+  <table id="submission-list">
+    <thead>
+      <tr>
+        <th>Sub. #</th>
+        <th>Date EPA Validated</th>
+        <th>Fac. Name</th>
+        <th>Co.&nbsp;1</th>
+        <th>Co.&nbsp;2</th>
+        <th>Op.</th>
+      </tr>
+    </thead>
+    {#each item.submissions as sub}
+    <tr>
+      <td><a href="#/submission:{sub.id}">{sub.id}</a></td>
+      <td style="white-space: nowrap">{sub.date}</td>
+      <td>{sub.name}</td>
+      <td>{sub.company_1 || ""}</td>
+      <td>{sub.company_2 || ""}</td>
+      <td>{sub.operator || ""}</td>
+    </tr>
+    {/each}
+  </table>
 </section>
+<style>
+  ul {
+    margin-left: 1em;
+    padding-left: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  td {
+    border: 1px solid #333;
+    padding: 0.25em;
+  }
+  h3 {
+    margin-top: 2em;
+  }
+</style>

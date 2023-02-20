@@ -34,13 +34,20 @@ ORDER BY
 SUBMISSIONS_QUERY = """
 SELECT
     EPAFacilityID,
+    JSON_GROUP_ARRAY(
+        DISTINCT(FacilityName)
+    ) AS names_all,
     ParentCompanyName AS company_1,
     Company2Name AS company_2,
     OperatorName AS operator,
     JSON_GROUP_ARRAY(
         JSON_OBJECT(
             'id', FacilityID,
-            'date', SUBSTR(CompletionCheckDate, 1, 10)
+            'date', SUBSTR(CompletionCheckDate, 1, 10),
+            'name', FacilityName,
+            'company_1', ParentCompanyName,
+            'company_2', Company2Name,
+            'operator', OperatorName
         )
     ) AS submissions
 FROM
@@ -84,6 +91,9 @@ def get_facilities() -> list[dict[str, typing.Any]]:
             raise ValueError(fac)
         fac.update(info_from_submissions[fac_id])
         fac["submissions"] = json.loads(fac["submissions"])
+        fac["names_all"] = json.loads(fac["names_all"])
+        fac["names_prev"] = [ x for x in fac["names_all"] if x.upper().strip() != fac["name"].upper().strip() ]
+        del fac["names_all"]
 
     return facilities
 
@@ -107,7 +117,7 @@ def write_states(facilities: list[dict[str, typing.Any]]) -> None:
                     facilities=[
                         {
                             k: fac[k]
-                            for k in ["EPAFacilityID", "name", "city", "address"]
+                            for k in ["EPAFacilityID", "name", "city", "address", "names_prev"]
                         }
                         for fac in county_facs
                     ],

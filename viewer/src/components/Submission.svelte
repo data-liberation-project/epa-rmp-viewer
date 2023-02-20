@@ -8,10 +8,12 @@
   <div class="toc-container"></div>
   <AttrTable table={item} key="submission" i=-1/>
   <script>
-    const container = document.querySelector(".toc-container");
-    [].map.call(document.querySelectorAll(".toc-item"), (x) => {
-      container.appendChild(x);
-    })
+    (() => {
+      let container = document.querySelector(".toc-container");
+      [].map.call(document.querySelectorAll(".toc-item"), (x) => {
+        container.appendChild(x);
+      });
+    })();
   </script>
 </section>
 

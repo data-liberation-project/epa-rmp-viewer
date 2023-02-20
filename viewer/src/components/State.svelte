@@ -16,6 +16,9 @@
               <li><b>City:</b> {fac.city}</li>
               <li><b>Address:</b> {fac.address}</li>
               <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+              {#if fac.names_prev.length}
+                <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+              {/if}
             </ul>
           </li>
         {/each}
