@@ -94,19 +94,19 @@
 
 {#if app.view == "page"}
   <svelte:component this={pages[app.view_arg]}/>
-{:else if app.view === "page" && app.view_data == "chooser"}
-<hr/>
-<section id="chooser">
-  <label for="avatar">Open a submission:</label>
-  <input
-    accept="application/json"
-    bind:files
-    on:change={readJSON}
-    id="sub_file"
-    name="sub_file"
-    type="file"
-  />
-</section>
+
+{:else if app.view === "file" && app.view_arg == "chooser"}
+  <section id="chooser">
+    <h2><label for="avatar">Load a submission JSON file</label></h2>
+    <input
+      accept="application/json"
+      bind:files
+      on:change={readJSON}
+      id="sub_file"
+      name="sub_file"
+      type="file"
+    />
+  </section>
 
 {:else if (app.view == "list" && app.view_arg == "states" && app.view_data) }
   <section id="states">
