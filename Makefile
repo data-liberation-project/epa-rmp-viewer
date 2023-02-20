@@ -32,5 +32,8 @@ submissions: date
 facilities: date
 	python scripts/01-extract-facilities.py
 
+lookups: date
+	python scripts/02-extract-lookups.py
+
 gh-pages:
 	git subtree push --prefix viewer/public origin gh-pages
