@@ -72,6 +72,14 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_style(node, key, value, important) {
+        if (value === null) {
+            node.style.removeProperty(key);
+        }
+        else {
+            node.style.setProperty(key, value, important ? 'important' : '');
+        }
+    }
     function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, bubbles, cancelable, detail);
@@ -514,6 +522,49 @@ var app = (function () {
     	return child_ctx;
     }
 
+    // (19:14) {#if fac.names_prev.length}
+    function create_if_block$3(ctx) {
+    	let li;
+    	let b;
+    	let t1;
+    	let t2_value = /*fac*/ ctx[4].names_prev.join(" • ") + "";
+    	let t2;
+
+    	const block = {
+    		c: function create() {
+    			li = element("li");
+    			b = element("b");
+    			b.textContent = "Has also appeared as:";
+    			t1 = space();
+    			t2 = text(t2_value);
+    			add_location(b, file$5, 19, 20, 675);
+    			add_location(li, file$5, 19, 16, 671);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, li, anchor);
+    			append_dev(li, b);
+    			append_dev(li, t1);
+    			append_dev(li, t2);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*fac*/ ctx[4].names_prev.join(" • ") + "")) set_data_dev(t2, t2_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(li);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$3.name,
+    		type: "if",
+    		source: "(19:14) {#if fac.names_prev.length}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
     // (12:8) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
     	let li3;
@@ -540,6 +591,8 @@ var app = (function () {
     	let t11;
     	let t12_value = /*fac*/ ctx[4].EPAFacilityID + "";
     	let t12;
+    	let t13;
+    	let if_block = /*fac*/ ctx[4].names_prev.length && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -565,6 +618,8 @@ var app = (function () {
     			b2.textContent = "EPA Facility ID:";
     			t11 = space();
     			t12 = text(t12_value);
+    			t13 = space();
+    			if (if_block) if_block.c();
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[4].EPAFacilityID);
     			add_location(a, file$5, 13, 12, 372);
     			add_location(b0, file$5, 15, 18, 464);
@@ -597,6 +652,8 @@ var app = (function () {
     			append_dev(li2, b2);
     			append_dev(li2, t11);
     			append_dev(li2, t12);
+    			append_dev(ul, t13);
+    			if (if_block) if_block.m(ul, null);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*fac*/ ctx[4].name + "")) set_data_dev(t0, t0_value);
@@ -608,9 +665,23 @@ var app = (function () {
     			if (dirty & /*item*/ 1 && t4_value !== (t4_value = /*fac*/ ctx[4].city + "")) set_data_dev(t4, t4_value);
     			if (dirty & /*item*/ 1 && t8_value !== (t8_value = /*fac*/ ctx[4].address + "")) set_data_dev(t8, t8_value);
     			if (dirty & /*item*/ 1 && t12_value !== (t12_value = /*fac*/ ctx[4].EPAFacilityID + "")) set_data_dev(t12, t12_value);
+
+    			if (/*fac*/ ctx[4].names_prev.length) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block$3(ctx);
+    					if_block.c();
+    					if_block.m(ul, null);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(li3);
+    			if (if_block) if_block.d();
     		}
     	};
 
@@ -975,49 +1046,112 @@ var app = (function () {
     	return block;
     }
 
-    // (17:8) {#each item.submissions as sub}
+    // (29:4) {#each item.submissions as sub}
     function create_each_block$2(ctx) {
-    	let li;
-    	let t0;
+    	let tr;
+    	let td0;
     	let a;
-    	let t1_value = /*sub*/ ctx[1].id + "";
-    	let t1;
+    	let t0_value = /*sub*/ ctx[1].id + "";
+    	let t0;
     	let a_href_value;
+    	let t1;
+    	let td1;
+    	let t2_value = /*sub*/ ctx[1].date + "";
     	let t2;
-    	let t3_value = /*sub*/ ctx[1].date + "";
     	let t3;
+    	let td2;
+    	let t4_value = /*sub*/ ctx[1].name + "";
+    	let t4;
+    	let t5;
+    	let td3;
+    	let t6_value = (/*sub*/ ctx[1].company_1 || "") + "";
+    	let t6;
+    	let t7;
+    	let td4;
+    	let t8_value = (/*sub*/ ctx[1].company_2 || "") + "";
+    	let t8;
+    	let t9;
+    	let td5;
+    	let t10_value = (/*sub*/ ctx[1].operator || "") + "";
+    	let t10;
+    	let t11;
 
     	const block = {
     		c: function create() {
-    			li = element("li");
-    			t0 = text("#");
+    			tr = element("tr");
+    			td0 = element("td");
     			a = element("a");
-    			t1 = text(t1_value);
-    			t2 = text(" — ");
-    			t3 = text(t3_value);
+    			t0 = text(t0_value);
+    			t1 = space();
+    			td1 = element("td");
+    			t2 = text(t2_value);
+    			t3 = space();
+    			td2 = element("td");
+    			t4 = text(t4_value);
+    			t5 = space();
+    			td3 = element("td");
+    			t6 = text(t6_value);
+    			t7 = space();
+    			td4 = element("td");
+    			t8 = text(t8_value);
+    			t9 = space();
+    			td5 = element("td");
+    			t10 = text(t10_value);
+    			t11 = space();
     			attr_dev(a, "href", a_href_value = "#/submission:" + /*sub*/ ctx[1].id);
-    			add_location(a, file$4, 17, 15, 1202);
-    			add_location(li, file$4, 17, 10, 1197);
+    			add_location(a, file$4, 30, 10, 1415);
+    			attr_dev(td0, "class", "svelte-173w3nh");
+    			add_location(td0, file$4, 30, 6, 1411);
+    			set_style(td1, "white-space", "nowrap");
+    			attr_dev(td1, "class", "svelte-173w3nh");
+    			add_location(td1, file$4, 31, 6, 1471);
+    			attr_dev(td2, "class", "svelte-173w3nh");
+    			add_location(td2, file$4, 32, 6, 1525);
+    			attr_dev(td3, "class", "svelte-173w3nh");
+    			add_location(td3, file$4, 33, 6, 1551);
+    			attr_dev(td4, "class", "svelte-173w3nh");
+    			add_location(td4, file$4, 34, 6, 1588);
+    			attr_dev(td5, "class", "svelte-173w3nh");
+    			add_location(td5, file$4, 35, 6, 1625);
+    			add_location(tr, file$4, 29, 4, 1400);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li, anchor);
-    			append_dev(li, t0);
-    			append_dev(li, a);
-    			append_dev(a, t1);
-    			append_dev(li, t2);
-    			append_dev(li, t3);
+    			insert_dev(target, tr, anchor);
+    			append_dev(tr, td0);
+    			append_dev(td0, a);
+    			append_dev(a, t0);
+    			append_dev(tr, t1);
+    			append_dev(tr, td1);
+    			append_dev(td1, t2);
+    			append_dev(tr, t3);
+    			append_dev(tr, td2);
+    			append_dev(td2, t4);
+    			append_dev(tr, t5);
+    			append_dev(tr, td3);
+    			append_dev(td3, t6);
+    			append_dev(tr, t7);
+    			append_dev(tr, td4);
+    			append_dev(td4, t8);
+    			append_dev(tr, t9);
+    			append_dev(tr, td5);
+    			append_dev(td5, t10);
+    			append_dev(tr, t11);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t1_value !== (t1_value = /*sub*/ ctx[1].id + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*sub*/ ctx[1].id + "")) set_data_dev(t0, t0_value);
 
     			if (dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/submission:" + /*sub*/ ctx[1].id)) {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if (dirty & /*item*/ 1 && t3_value !== (t3_value = /*sub*/ ctx[1].date + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*sub*/ ctx[1].date + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*item*/ 1 && t4_value !== (t4_value = /*sub*/ ctx[1].name + "")) set_data_dev(t4, t4_value);
+    			if (dirty & /*item*/ 1 && t6_value !== (t6_value = (/*sub*/ ctx[1].company_1 || "") + "")) set_data_dev(t6, t6_value);
+    			if (dirty & /*item*/ 1 && t8_value !== (t8_value = (/*sub*/ ctx[1].company_2 || "") + "")) set_data_dev(t8, t8_value);
+    			if (dirty & /*item*/ 1 && t10_value !== (t10_value = (/*sub*/ ctx[1].operator || "") + "")) set_data_dev(t10, t10_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li);
+    			if (detaching) detach_dev(tr);
     		}
     	};
 
@@ -1025,7 +1159,7 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(17:8) {#each item.submissions as sub}",
+    		source: "(29:4) {#each item.submissions as sub}",
     		ctx
     	});
 
@@ -1039,7 +1173,7 @@ var app = (function () {
     	let t1_value = /*item*/ ctx[0].name + "";
     	let t1;
     	let t2;
-    	let ul1;
+    	let ul;
     	let li0;
     	let b0;
     	let t4;
@@ -1098,9 +1232,23 @@ var app = (function () {
     	let t32_value = (/*item*/ ctx[0].operator || "") + "";
     	let t32;
     	let t33;
-    	let li8;
-    	let b8;
-    	let ul0;
+    	let h3;
+    	let t35;
+    	let table;
+    	let thead;
+    	let tr;
+    	let th0;
+    	let t37;
+    	let th1;
+    	let t39;
+    	let th2;
+    	let t41;
+    	let th3;
+    	let t43;
+    	let th4;
+    	let t45;
+    	let th5;
+    	let t47;
     	let if_block = /*item*/ ctx[0].lng && create_if_block$2(ctx);
     	let each_value = /*item*/ ctx[0].submissions;
     	validate_each_argument(each_value);
@@ -1117,7 +1265,7 @@ var app = (function () {
     			t0 = text("Facility: ");
     			t1 = text(t1_value);
     			t2 = space();
-    			ul1 = element("ul");
+    			ul = element("ul");
     			li0 = element("li");
     			b0 = element("b");
     			b0.textContent = "EPA Facility ID:";
@@ -1176,10 +1324,30 @@ var app = (function () {
     			span7 = element("span");
     			t32 = text(t32_value);
     			t33 = space();
-    			li8 = element("li");
-    			b8 = element("b");
-    			b8.textContent = "RMP Submissions (ID — Date Validated by EPA):";
-    			ul0 = element("ul");
+    			h3 = element("h3");
+    			h3.textContent = "RMP Submissions (through March 2022)";
+    			t35 = space();
+    			table = element("table");
+    			thead = element("thead");
+    			tr = element("tr");
+    			th0 = element("th");
+    			th0.textContent = "Sub. #";
+    			t37 = space();
+    			th1 = element("th");
+    			th1.textContent = "Date EPA Validated";
+    			t39 = space();
+    			th2 = element("th");
+    			th2.textContent = "Fac. Name";
+    			t41 = space();
+    			th3 = element("th");
+    			th3.textContent = "Co. 1";
+    			t43 = space();
+    			th4 = element("th");
+    			th4.textContent = "Co. 2";
+    			t45 = space();
+    			th5 = element("th");
+    			th5.textContent = "Op.";
+    			t47 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -1216,12 +1384,22 @@ var app = (function () {
     			add_location(b7, file$4, 14, 8, 1004);
     			add_location(span7, file$4, 14, 25, 1021);
     			add_location(li7, file$4, 14, 4, 1000);
-    			add_location(b8, file$4, 15, 8, 1069);
-    			attr_dev(ul0, "id", "submission-list");
-    			add_location(ul0, file$4, 15, 60, 1121);
-    			add_location(li8, file$4, 15, 4, 1065);
-    			attr_dev(ul1, "id", "facility-details");
-    			add_location(ul1, file$4, 6, 2, 98);
+    			attr_dev(ul, "id", "facility-details");
+    			attr_dev(ul, "class", "svelte-173w3nh");
+    			add_location(ul, file$4, 6, 2, 98);
+    			attr_dev(h3, "class", "svelte-173w3nh");
+    			add_location(h3, file$4, 16, 2, 1071);
+    			add_location(th0, file$4, 20, 8, 1179);
+    			add_location(th1, file$4, 21, 8, 1203);
+    			add_location(th2, file$4, 22, 8, 1239);
+    			add_location(th3, file$4, 23, 8, 1266);
+    			add_location(th4, file$4, 24, 8, 1294);
+    			add_location(th5, file$4, 25, 8, 1322);
+    			add_location(tr, file$4, 19, 6, 1166);
+    			add_location(thead, file$4, 18, 4, 1152);
+    			attr_dev(table, "id", "submission-list");
+    			attr_dev(table, "class", "svelte-173w3nh");
+    			add_location(table, file$4, 17, 2, 1119);
     			attr_dev(section, "id", "facility");
     			add_location(section, file$4, 4, 0, 39);
     		},
@@ -1234,63 +1412,77 @@ var app = (function () {
     			append_dev(h2, t0);
     			append_dev(h2, t1);
     			append_dev(section, t2);
-    			append_dev(section, ul1);
-    			append_dev(ul1, li0);
+    			append_dev(section, ul);
+    			append_dev(ul, li0);
     			append_dev(li0, b0);
     			append_dev(li0, t4);
     			append_dev(li0, span0);
     			append_dev(span0, a0);
     			append_dev(a0, t5);
-    			append_dev(ul1, t6);
-    			append_dev(ul1, li1);
+    			append_dev(ul, t6);
+    			append_dev(ul, li1);
     			append_dev(li1, b1);
     			append_dev(li1, t8);
     			append_dev(li1, span1);
     			append_dev(span1, a1);
     			append_dev(a1, t9);
-    			append_dev(ul1, t10);
-    			append_dev(ul1, li2);
+    			append_dev(ul, t10);
+    			append_dev(ul, li2);
     			append_dev(li2, b2);
     			append_dev(li2, t12);
     			append_dev(li2, span2);
     			append_dev(span2, t13);
-    			append_dev(ul1, t14);
-    			append_dev(ul1, li3);
+    			append_dev(ul, t14);
+    			append_dev(ul, li3);
     			append_dev(li3, b3);
     			append_dev(li3, t16);
     			append_dev(li3, span3);
     			append_dev(span3, t17);
-    			append_dev(ul1, t18);
-    			append_dev(ul1, li4);
+    			append_dev(ul, t18);
+    			append_dev(ul, li4);
     			append_dev(li4, b4);
     			append_dev(li4, t20);
     			append_dev(li4, span4);
     			if (if_block) if_block.m(span4, null);
-    			append_dev(ul1, t21);
-    			append_dev(ul1, li5);
+    			append_dev(ul, t21);
+    			append_dev(ul, li5);
     			append_dev(li5, b5);
     			append_dev(li5, t23);
     			append_dev(li5, span5);
     			append_dev(span5, t24);
-    			append_dev(ul1, t25);
-    			append_dev(ul1, li6);
+    			append_dev(ul, t25);
+    			append_dev(ul, li6);
     			append_dev(li6, b6);
     			append_dev(li6, t27);
     			append_dev(li6, span6);
     			append_dev(span6, t28);
-    			append_dev(ul1, t29);
-    			append_dev(ul1, li7);
+    			append_dev(ul, t29);
+    			append_dev(ul, li7);
     			append_dev(li7, b7);
     			append_dev(li7, t31);
     			append_dev(li7, span7);
     			append_dev(span7, t32);
-    			append_dev(ul1, t33);
-    			append_dev(ul1, li8);
-    			append_dev(li8, b8);
-    			append_dev(li8, ul0);
+    			append_dev(section, t33);
+    			append_dev(section, h3);
+    			append_dev(section, t35);
+    			append_dev(section, table);
+    			append_dev(table, thead);
+    			append_dev(thead, tr);
+    			append_dev(tr, th0);
+    			append_dev(tr, t37);
+    			append_dev(tr, th1);
+    			append_dev(tr, t39);
+    			append_dev(tr, th2);
+    			append_dev(tr, t41);
+    			append_dev(tr, th3);
+    			append_dev(tr, t43);
+    			append_dev(tr, th4);
+    			append_dev(tr, t45);
+    			append_dev(tr, th5);
+    			append_dev(table, t47);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(ul0, null);
+    				each_blocks[i].m(table, null);
     			}
     		},
     		p: function update(ctx, [dirty]) {
@@ -1340,7 +1532,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block$2(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(ul0, null);
+    						each_blocks[i].m(table, null);
     					}
     				}
 
@@ -5368,7 +5560,7 @@ var app = (function () {
     			create_component(attrtable.$$.fragment);
     			t4 = space();
     			script = element("script");
-    			script.textContent = "const container = document.querySelector(\".toc-container\");\n    [].map.call(document.querySelectorAll(\".toc-item\"), (x) => {\n      container.appendChild(x);\n    })";
+    			script.textContent = "(() => {\n      let container = document.querySelector(\".toc-container\");\n      [].map.call(document.querySelectorAll(\".toc-item\"), (x) => {\n        container.appendChild(x);\n      });\n    })();";
     			add_location(h2, file$2, 6, 2, 113);
     			attr_dev(div, "class", "toc-container svelte-1s2ds6p");
     			add_location(div, file$2, 7, 2, 154);
