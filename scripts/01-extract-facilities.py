@@ -43,7 +43,8 @@ SELECT
     JSON_GROUP_ARRAY(
         JSON_OBJECT(
             'id', FacilityID,
-            'date', SUBSTR(CompletionCheckDate, 1, 10),
+            'date_rec', SUBSTR(ReceiptDate, 1, 10),
+            'date_val', SUBSTR(CompletionCheckDate, 1, 10),
             'name', FacilityName,
             'company_1', ParentCompanyName,
             'company_2', Company2Name,
@@ -115,7 +116,7 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
     }
     core["sub_last"] = dict(
         id=fac["submissions"][0]["id"],
-        date=fac["submissions"][0]["date"],
+        date=fac["submissions"][0]["date_val"],
     )
     return core
 

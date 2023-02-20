@@ -19,7 +19,8 @@
     <thead>
       <tr>
         <th>Sub. #</th>
-        <th>Date EPA Validated</th>
+        <th>EPA Received</th>
+        <th>EPA Last Validated</th>
         <th>Fac. Name</th>
         <th>Co.&nbsp;1</th>
         <th>Co.&nbsp;2</th>
@@ -29,7 +30,8 @@
     {#each item.submissions as sub}
     <tr>
       <td><a href="#/submission:{sub.id}">{sub.id}</a></td>
-      <td style="white-space: nowrap">{sub.date}</td>
+      <td style="white-space: nowrap">{sub.date_rec}</td>
+      <td style="white-space: nowrap">{sub.date_val}</td>
       <td>{sub.name}</td>
       <td>{sub.company_1 || ""}</td>
       <td>{sub.company_2 || ""}</td>
