@@ -14,7 +14,7 @@
     <li><b>Company 2:</b> <span>{item.company_2 || ""}</span></li>
     <li><b>Operator:</b> <span>{item.operator || ""}</span></li>
   </ul>
-  <h3>RMP Submissions (through March 2022)</h3>
+  <h3>RMP Submissions (through February 2022)</h3>
   <table id="submission-list">
     <thead>
       <tr>
