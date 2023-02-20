@@ -92,10 +92,32 @@ def get_facilities() -> list[dict[str, typing.Any]]:
         fac.update(info_from_submissions[fac_id])
         fac["submissions"] = json.loads(fac["submissions"])
         fac["names_all"] = json.loads(fac["names_all"])
-        fac["names_prev"] = [ x for x in fac["names_all"] if x.upper().strip() != fac["name"].upper().strip() ]
+        fac["names_prev"] = [
+            x
+            for x in fac["names_all"]
+            if x.upper().strip() != fac["name"].upper().strip()
+        ]
         del fac["names_all"]
 
     return facilities
+
+
+def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
+    core = {
+        k: fac[k]
+        for k in [
+            "EPAFacilityID",
+            "name",
+            "city",
+            "address",
+            "names_prev",
+        ]
+    }
+    core["sub_last"] = dict(
+        id=fac["submissions"][0]["id"],
+        date=fac["submissions"][0]["date"],
+    )
+    return core
 
 
 def write_states(facilities: list[dict[str, typing.Any]]) -> None:
@@ -108,19 +130,14 @@ def write_states(facilities: list[dict[str, typing.Any]]) -> None:
         counts.append(dict(abbr=state, name=name, count=len(state_facs)))
 
         dest = f"{DATA_PATH}/facilities/by-state/{state}.json"
+
         with open(dest, "w") as f:
             county_key = itemgetter("county_fips")
             by_county = [
                 dict(
                     fips=fips,
                     name=COUNTIES[fips],
-                    facilities=[
-                        {
-                            k: fac[k]
-                            for k in ["EPAFacilityID", "name", "city", "address", "names_prev"]
-                        }
-                        for fac in county_facs
-                    ],
+                    facilities=list(map(make_fac_summary, county_facs)),
                 )
                 for fips, county_facs in groupby(
                     sorted(state_facs, key=county_key), county_key

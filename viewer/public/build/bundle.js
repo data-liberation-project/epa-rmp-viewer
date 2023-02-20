@@ -522,7 +522,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (19:14) {#if fac.names_prev.length}
+    // (20:14) {#if fac.names_prev.length}
     function create_if_block$3(ctx) {
     	let li;
     	let b;
@@ -537,8 +537,8 @@ var app = (function () {
     			b.textContent = "Has also appeared as:";
     			t1 = space();
     			t2 = text(t2_value);
-    			add_location(b, file$5, 19, 20, 679);
-    			add_location(li, file$5, 19, 16, 675);
+    			add_location(b, file$5, 20, 20, 751);
+    			add_location(li, file$5, 20, 16, 747);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -558,7 +558,7 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(19:14) {#if fac.names_prev.length}",
+    		source: "(20:14) {#if fac.names_prev.length}",
     		ctx
     	});
 
@@ -567,7 +567,7 @@ var app = (function () {
 
     // (12:8) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
-    	let li3;
+    	let li4;
     	let a;
     	let t0_value = /*fac*/ ctx[4].name + "";
     	let t0;
@@ -592,11 +592,17 @@ var app = (function () {
     	let t12_value = /*fac*/ ctx[4].EPAFacilityID + "";
     	let t12;
     	let t13;
+    	let li3;
+    	let b3;
+    	let t15;
+    	let t16_value = /*fac*/ ctx[4].sub_last.date + "";
+    	let t16;
+    	let t17;
     	let if_block = /*fac*/ ctx[4].names_prev.length && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
-    			li3 = element("li");
+    			li4 = element("li");
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
@@ -619,6 +625,12 @@ var app = (function () {
     			t11 = space();
     			t12 = text(t12_value);
     			t13 = space();
+    			li3 = element("li");
+    			b3 = element("b");
+    			b3.textContent = "Latest RMP validated:";
+    			t15 = space();
+    			t16 = text(t16_value);
+    			t17 = space();
     			if (if_block) if_block.c();
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[4].EPAFacilityID);
     			add_location(a, file$5, 13, 12, 376);
@@ -628,16 +640,18 @@ var app = (function () {
     			add_location(li1, file$5, 16, 14, 511);
     			add_location(b2, file$5, 17, 18, 568);
     			add_location(li2, file$5, 17, 14, 564);
+    			add_location(b3, file$5, 18, 18, 635);
+    			add_location(li3, file$5, 18, 14, 631);
     			add_location(ul, file$5, 14, 12, 445);
-    			attr_dev(li3, "class", "facility svelte-1rb9k9m");
-    			add_location(li3, file$5, 12, 10, 342);
+    			attr_dev(li4, "class", "facility svelte-1rb9k9m");
+    			add_location(li4, file$5, 12, 10, 342);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li3, anchor);
-    			append_dev(li3, a);
+    			insert_dev(target, li4, anchor);
+    			append_dev(li4, a);
     			append_dev(a, t0);
-    			append_dev(li3, t1);
-    			append_dev(li3, ul);
+    			append_dev(li4, t1);
+    			append_dev(li4, ul);
     			append_dev(ul, li0);
     			append_dev(li0, b0);
     			append_dev(li0, t3);
@@ -653,6 +667,11 @@ var app = (function () {
     			append_dev(li2, t11);
     			append_dev(li2, t12);
     			append_dev(ul, t13);
+    			append_dev(ul, li3);
+    			append_dev(li3, b3);
+    			append_dev(li3, t15);
+    			append_dev(li3, t16);
+    			append_dev(ul, t17);
     			if (if_block) if_block.m(ul, null);
     		},
     		p: function update(ctx, dirty) {
@@ -665,6 +684,7 @@ var app = (function () {
     			if (dirty & /*item*/ 1 && t4_value !== (t4_value = /*fac*/ ctx[4].city + "")) set_data_dev(t4, t4_value);
     			if (dirty & /*item*/ 1 && t8_value !== (t8_value = /*fac*/ ctx[4].address + "")) set_data_dev(t8, t8_value);
     			if (dirty & /*item*/ 1 && t12_value !== (t12_value = /*fac*/ ctx[4].EPAFacilityID + "")) set_data_dev(t12, t12_value);
+    			if (dirty & /*item*/ 1 && t16_value !== (t16_value = /*fac*/ ctx[4].sub_last.date + "")) set_data_dev(t16, t16_value);
 
     			if (/*fac*/ ctx[4].names_prev.length) {
     				if (if_block) {
@@ -680,7 +700,7 @@ var app = (function () {
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li3);
+    			if (detaching) detach_dev(li4);
     			if (if_block) if_block.d();
     		}
     	};
@@ -1102,21 +1122,21 @@ var app = (function () {
     			t10 = text(t10_value);
     			t11 = space();
     			attr_dev(a, "href", a_href_value = "#/submission:" + /*sub*/ ctx[1].id);
-    			add_location(a, file$4, 30, 10, 1415);
+    			add_location(a, file$4, 30, 10, 1418);
     			attr_dev(td0, "class", "svelte-173w3nh");
-    			add_location(td0, file$4, 30, 6, 1411);
+    			add_location(td0, file$4, 30, 6, 1414);
     			set_style(td1, "white-space", "nowrap");
     			attr_dev(td1, "class", "svelte-173w3nh");
-    			add_location(td1, file$4, 31, 6, 1471);
+    			add_location(td1, file$4, 31, 6, 1474);
     			attr_dev(td2, "class", "svelte-173w3nh");
-    			add_location(td2, file$4, 32, 6, 1525);
+    			add_location(td2, file$4, 32, 6, 1528);
     			attr_dev(td3, "class", "svelte-173w3nh");
-    			add_location(td3, file$4, 33, 6, 1551);
+    			add_location(td3, file$4, 33, 6, 1554);
     			attr_dev(td4, "class", "svelte-173w3nh");
-    			add_location(td4, file$4, 34, 6, 1588);
+    			add_location(td4, file$4, 34, 6, 1591);
     			attr_dev(td5, "class", "svelte-173w3nh");
-    			add_location(td5, file$4, 35, 6, 1625);
-    			add_location(tr, file$4, 29, 4, 1400);
+    			add_location(td5, file$4, 35, 6, 1628);
+    			add_location(tr, file$4, 29, 4, 1403);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -1328,7 +1348,7 @@ var app = (function () {
     			t32 = text(t32_value);
     			t33 = space();
     			h3 = element("h3");
-    			h3.textContent = "RMP Submissions (through March 2022)";
+    			h3.textContent = "RMP Submissions (through February 2022)";
     			t35 = space();
     			table = element("table");
     			thead = element("thead");
@@ -1392,17 +1412,17 @@ var app = (function () {
     			add_location(ul, file$4, 6, 2, 98);
     			attr_dev(h3, "class", "svelte-173w3nh");
     			add_location(h3, file$4, 16, 2, 1071);
-    			add_location(th0, file$4, 20, 8, 1179);
-    			add_location(th1, file$4, 21, 8, 1203);
-    			add_location(th2, file$4, 22, 8, 1239);
-    			add_location(th3, file$4, 23, 8, 1266);
-    			add_location(th4, file$4, 24, 8, 1294);
-    			add_location(th5, file$4, 25, 8, 1322);
-    			add_location(tr, file$4, 19, 6, 1166);
-    			add_location(thead, file$4, 18, 4, 1152);
+    			add_location(th0, file$4, 20, 8, 1182);
+    			add_location(th1, file$4, 21, 8, 1206);
+    			add_location(th2, file$4, 22, 8, 1242);
+    			add_location(th3, file$4, 23, 8, 1269);
+    			add_location(th4, file$4, 24, 8, 1297);
+    			add_location(th5, file$4, 25, 8, 1325);
+    			add_location(tr, file$4, 19, 6, 1169);
+    			add_location(thead, file$4, 18, 4, 1155);
     			attr_dev(table, "id", "submission-list");
     			attr_dev(table, "class", "svelte-173w3nh");
-    			add_location(table, file$4, 17, 2, 1119);
+    			add_location(table, file$4, 17, 2, 1122);
     			attr_dev(section, "id", "facility");
     			add_location(section, file$4, 4, 0, 39);
     		},
