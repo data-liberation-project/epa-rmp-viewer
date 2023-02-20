@@ -1,12 +1,16 @@
 # EPA RMP Submission Viewer
 
-This repository aims to build a simple viewer for the raw, submission-level data from the EPA database of Risk Management Plans received by the Data Liberation Project via FOIA. It consists of two components:
+🌐 [data-liberation-project.github.io/epa-rmp-viewer](https://data-liberation-project.github.io/epa-rmp-viewer/)
 
-- A Python script ([`scripts/00-extract-json.py`](scripts/00-extract-json.py)) that converts each RMP submission in the database into a JSON file.
+This repository aims to build a simple browser and viewer for raw data extracted from [the EPA's Risk Management Program database, obtained by the Data Liberation Project via FOIA](https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit).
 
-- A simple Svelte app ([`viewer/`](viewer/)) that renders a given JSON file of the type generated above.
+## Structure
 
-Ultimately, it's possible that this repo becomes the basis of a more fully-fledged website. For now, though, the focus is on making it easier to view RMP data from single submissions.
+The repository consists of two main components:
+
+- Data extraction scripts, written in Python, in the ([`scripts/`](scripts/)) directory. These convert the RMP data in the database into  a JSON files — one per state, one per facility, and one per submission, plus a couple of auxiliary lookup files. The output is written to [`viewer/public/data/`](viewer/public/data/).
+
+- A Svelte app ([`viewer/`](viewer/)) that renders the JSON files, providing a simple `state->facility->submission` browser. 
 
 ## Local Development
 
@@ -14,9 +18,11 @@ Ultimately, it's possible that this repo becomes the basis of a more fully-fledg
 
 Follow these instructions to run the converter yourself.
 
-#### Copy the main RMP SQLite file into `data/raw/`
+#### Copy the main RMP SQLite files into `data/raw/`
 
-If the `data/raw/` directory does not already exist, create it. Then, copy `RMPData.sqlite` into that directory.
+- If the `data/raw/` directory does not already exist, create it.
+- Download `RMPData.sqlite` and `RMPFac.sqlite` from [this Google Drive folder](https://drive.google.com/drive/folders/15mfQyTLvEywzQa_C0tBtWzrPE7ZawA7I).
+- Copy those two files into `data/raw/`.
 
 #### Install the Python requirements
 
@@ -24,18 +30,20 @@ This project requires Python 3, and a few Python libraries. To install them, cre
 
 #### Tweak the conversion process
 
-There are two ways to alter the conversion process:
+There are two main ways to alter the conversion process:
 
-- Modify the converter script, [`scripts/00-extract-json.py`](scripts/00-extract-json.py)
-- Edit [`data/manual/tablemap.json`](data/manual/tablemap.json), which specifies the relationships between the tables and how they should be extracted. The structure is (currently, hopefully not for long) undocumented, but is hopefully somewhat clear from what is already there.
+- Modify the files in [`scripts/`](scripts/).
+- Edit [`data/manual/tablemap.json`](data/manual/tablemap.json), which specifies the relationships between the tables and how they should be extracted. The structure is currently undocumented, but is hopefully somewhat clear from what is already there.
 
 #### Create JSON files for each submission
 
-Running `make data/converted` is the default command to generate the files. It's an alias to `python scripts/00-extract-json.py --overwrite`. Run `python scripts/00-extract-json.py --help` for more options.
+- Run `make submissions` to regenerate the submission JSON files.
+- Run `make facilities` to regenerate the facility-level and state-level files.
+- Run `make lookups` to regenerate the [shortcude-lookup file](viewer/public/data/lookups/lookups.json).
 
-### Submission viewer
+### Frontend
 
-Follow these instructions to modify the submission viewer.
+Follow these instructions to modify the Svelte application.
 
 #### Install the JavaScript requirements
 
@@ -46,6 +54,11 @@ cd viewer && npm install
 #### Edit the Svelte code
 
 The viewer is written as a Svelte app, with all relevant files in the [`viewer/`](viewer/) directory. The main source files are in [`viewer/src/`](viewer/src/).
+
+## Licensing
+
+This repository's code is available under the [MIT License terms](https://opensource.org/license/mit/). The data files are available under Creative Commons' [CC BY-SA 4.0 license terms](https://creativecommons.org/licenses/by-sa/4.0/).
+
 
 ## Questions / suggestions?
 
