@@ -3,20 +3,22 @@
   export let table, key, i;
   const key_parts = key.split(":");
   const sections = {
-    "submission:_processes": "Processes",
+    "submission": "Submission",
+    "submission:_processes": "Process",
     "submission:_emerg_resp": "Emergency Response",
     "submission:_exec_summary": "Executive Summary",
     "submission:_processes:_naics": "Prevention Programs by Industry Code",
     "submission:_processes:_naics:_desc": "NAICS Code Description",
     "submission:_processes:_naics:_prev_prog_3": "Prevention Program (for Program Level 3)",
-    "submission:_processes:_naics:_prev_prog_3_chemicals": "Program Chemicals",
+    "submission:_processes:_naics:_prev_prog_3:_chemicals": "Program Chemical",
     "submission:_processes:_naics:_prev_prog_2": "Prevention Program (for Program Level 2)",
-    "submission:_processes:_naics:_prev_prog_2_chemicals": "Program Chemicals",
-    "submission:_processes:_chemicals": "Process Chemicals",
+    "submission:_processes:_naics:_prev_prog_2:_chemicals": "Program Chemical",
+    "submission:_processes:_chemicals": "Process Chemical",
     "submission:_processes:_chemicals:_chemical": "Chemical Information",
     "submission:_processes:_chemicals:_flam_mix_chemicals": "Flammable Mixture Chemical",
-    "submission:_accidents": "Accidents",
-    "submission:_accidents:_chemicals": "Accident Chemicals",
+    "submission:_accidents": "Accident",
+    "submission:_accidents:_chemicals": "Accident Chemical",
+    "submission:_accidents:_chemicals:_flam_mix_chemicals": "Flammable Mixture Accident Chemical",
   };
 
   const keys_to_skip = [];
@@ -40,15 +42,20 @@
     }
   };
 
+  let levels = key.split(":").slice(1);
   let collapsed = false;
   let title = sections[key] + (i > -1 ? ` #${parseInt(i)+1}` : "");
+  let header;
+  const scroll = (e) => { header.scrollIntoView(); }
 
 </script>
 
-<div class="tablewrapper top">
-  {#if key != "submission"}
-  <h4>
-    {title}
+<div class="tablewrapper">
+  {#if levels.length < 2}
+  <div class="toc-item" on:click={scroll}>{#each levels as level}&nbsp;&nbsp;{/each}{title}</div>
+  {/if}
+  <h4 bind:this={header}>
+  {title}
     <button class="toggle" on:click={() => collapsed = !collapsed}>
       {#if collapsed}
       Expand
@@ -57,7 +64,6 @@
       {/if}
     </button>
   </h4>
-  {/if}
   {#if Array.isArray(table) ? table.length : table}
     {#if key === "submission:_exec_summary"}
       <div class="exec-summary" hidden={collapsed}>
@@ -111,16 +117,8 @@
     box-sizing: inherit;
   }
 
-  .tablewrapper.top {
-    background-color: #eee;
-    padding-right: 1em;
-    padding-top: 1em;
-  }
-
   .tablewrapper {
     width: 100%;
-    padding: 0.5em 1.5em;
-    padding-right: 0;
   }
 
   h4 {
@@ -178,4 +176,12 @@
     border: 1px solid black;
   }
 
+  .toc-item {
+    padding: 0.1em 0;
+    color: darkblue;
+  }
+  .toc-item:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
 </style>

@@ -10,11 +10,22 @@
       <h3>{county.name}</h3>
       <ul id="facilities-list">
         {#each county.facilities as fac}
-          <li>
-            <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> ({fac.city} • {fac.address})
+          <li class="facility">
+            <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
+            <ul>
+              <li><b>City:</b> {fac.city}</li>
+              <li><b>Address:</b> {fac.address}</li>
+              <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+            </ul>
           </li>
         {/each}
       </ul>
     {/each}
   </div>
 </section>
+
+<style>
+  .facility + .facility {
+    margin-top: 0.5em;
+  }
+</style>

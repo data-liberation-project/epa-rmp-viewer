@@ -3,6 +3,12 @@
   import Facility from "./components/Facility.svelte";
   import Submission from "./components/Submission.svelte";
 
+  import Landing from "./pages/Landing.svelte";
+
+  const pages = {
+    "landing": Landing,
+  };
+
   let app = {
     view: null,
     view_arg: null,
@@ -39,25 +45,31 @@
   };
 
   const fetchViewData = (view, view_arg) => {
-    const url = urlTemplates[view](view_arg);
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        app.view_data = data;
-      }).catch(error => {
-        console.log(error);
-      });
+    var urlMaker = urlTemplates[view];
+    if (urlMaker) {
+      const url = urlTemplates[view](view_arg);
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          app.view_data = data;
+        }).catch(error => {
+          console.log(error);
+        });
+    }
   };
 
   const routeChange = () => {
     resetApp();
-    if (location.hash.indexOf(":") < 0) {
+    if (location.hash === "") {
+      app.view = "page";
+      app.view_arg = "landing";
+    } else if (location.hash.indexOf(":") < 0) {
+      location.hash = "";
     } else {
       const match = location.hash.match(/^#\/([^:]+):([^:+]+)/);
       if (match) {
         app.view = match[1];
         app.view_arg = match[2];
-        app.view_data = null;
         fetchCurrentView();
       } else {
         console.log("Could not parse location.hash: " + location.hash);
@@ -77,9 +89,12 @@
 
 <main>
 <h1>RMP Submission Viewer</h1>
-<div class="warning">❗Work in Progress • Use With Caution ❗</div>
+<div class="warning">❗This resource is a work in progress; please consult <b><a href="https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit">the documentation</a></b>.</div>
 
-{#if location.hash.length === 0}
+
+{#if app.view == "page"}
+  <svelte:component this={pages[app.view_arg]}/>
+{:else if app.view === "page" && app.view_data == "chooser"}
 <hr/>
 <section id="chooser">
   <label for="avatar">Open a submission:</label>
@@ -92,9 +107,8 @@
     type="file"
   />
 </section>
-{/if}
 
-{#if (app.view == "list" && app.view_arg == "states" && app.view_data) }
+{:else if (app.view == "list" && app.view_arg == "states" && app.view_data) }
   <section id="states">
     <h2>Facilities by State</h2>
     <ul id="states-list">
@@ -105,17 +119,14 @@
       {/each}
     </ul>
   </section>
-{/if}
 
-{#if app.view == "state" && app.view_data }
+{:else if app.view == "state" && app.view_data }
   <State item={app.view_data} />
-{/if}
 
-{#if app.view == "facility" && app.view_data }
+{:else if app.view == "facility" && app.view_data }
   <Facility item={app.view_data} />
-{/if}
 
-{#if app.view == "submission" && app.view_data}
+{:else if app.view == "submission" && app.view_data}
   <Submission item={app.view_data} />
 {/if}
 
@@ -127,7 +138,7 @@
     padding-bottom: 1em;
   }
   .warning {
-    background-color: yellow;
+    background-color: #FFFF99;
     padding: 0.5em;
     font-size: 1.1em;
   }

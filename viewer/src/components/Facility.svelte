@@ -5,7 +5,7 @@
 <section id="facility">
   <h2>Facility: {item.name}</h2>
   <ul id="facility-details">
-    <li><b>EPA Facilty ID:</b> <span><a href="https://echo.epa.gov/detailed-facility-report?fid={item.EPAFacilityID}" target="_blank" rel="noreferrer">{item.EPAFacilityID}</a></span></li>
+    <li><b>EPA Facility ID:</b> <span><a href="https://echo.epa.gov/detailed-facility-report?fid={item.EPAFacilityID}" target="_blank" rel="noreferrer">{item.EPAFacilityID}</a></span></li>
     <li><b>State:</b> <span><a href="#/state:{item.state}">{item.state || ""}</a></span></li>
     <li><b>City:</b> <span>{item.city || ""}</span></li>
     <li><b>ZIP Code:</b> <span>{item.zip || ""}</span></li>
