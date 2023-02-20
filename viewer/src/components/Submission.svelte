@@ -5,6 +5,7 @@
 
 <section id="submission">
   <h2>Submission #{item.FacilityID}</h2>
+  <div>⭠ <a href="#/facility:{item.EPAFacilityID}">View all submissions from this facility</a></div>
   <div class="toc-container"></div>
   <AttrTable table={item} key="submission" i=-1/>
   <script>
@@ -21,6 +22,6 @@
   .toc-container {
     border: 1px solid #CCC;
     padding: 0.5em;
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 </style>
