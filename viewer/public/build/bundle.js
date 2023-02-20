@@ -537,8 +537,8 @@ var app = (function () {
     			b.textContent = "Has also appeared as:";
     			t1 = space();
     			t2 = text(t2_value);
-    			add_location(b, file$5, 19, 20, 675);
-    			add_location(li, file$5, 19, 16, 671);
+    			add_location(b, file$5, 19, 20, 679);
+    			add_location(li, file$5, 19, 16, 675);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -621,16 +621,16 @@ var app = (function () {
     			t13 = space();
     			if (if_block) if_block.c();
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[4].EPAFacilityID);
-    			add_location(a, file$5, 13, 12, 372);
-    			add_location(b0, file$5, 15, 18, 464);
-    			add_location(li0, file$5, 15, 14, 460);
-    			add_location(b1, file$5, 16, 18, 511);
-    			add_location(li1, file$5, 16, 14, 507);
-    			add_location(b2, file$5, 17, 18, 564);
-    			add_location(li2, file$5, 17, 14, 560);
-    			add_location(ul, file$5, 14, 12, 441);
+    			add_location(a, file$5, 13, 12, 376);
+    			add_location(b0, file$5, 15, 18, 468);
+    			add_location(li0, file$5, 15, 14, 464);
+    			add_location(b1, file$5, 16, 18, 515);
+    			add_location(li1, file$5, 16, 14, 511);
+    			add_location(b2, file$5, 17, 18, 568);
+    			add_location(li2, file$5, 17, 14, 564);
+    			add_location(ul, file$5, 14, 12, 445);
     			attr_dev(li3, "class", "facility svelte-1rb9k9m");
-    			add_location(li3, file$5, 12, 10, 338);
+    			add_location(li3, file$5, 12, 10, 342);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li3, anchor);
@@ -724,9 +724,9 @@ var app = (function () {
     			}
 
     			t2 = space();
-    			add_location(h3, file$5, 9, 6, 232);
+    			add_location(h3, file$5, 9, 6, 236);
     			attr_dev(ul, "id", "facilities-list");
-    			add_location(ul, file$5, 10, 6, 261);
+    			add_location(ul, file$5, 10, 6, 265);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -793,10 +793,11 @@ var app = (function () {
     	let t1_value = /*item*/ ctx[0].name + "";
     	let t1;
     	let t2;
-    	let h4;
+    	let div0;
+    	let t3;
     	let a;
-    	let t4;
-    	let div;
+    	let t5;
+    	let div1;
     	let each_value = /*item*/ ctx[0].counties;
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -812,11 +813,12 @@ var app = (function () {
     			t0 = text("Facilities in ");
     			t1 = text(t1_value);
     			t2 = space();
-    			h4 = element("h4");
+    			div0 = element("div");
+    			t3 = text("⭠ ");
     			a = element("a");
     			a.textContent = "View all states";
-    			t4 = space();
-    			div = element("div");
+    			t5 = space();
+    			div1 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -824,10 +826,10 @@ var app = (function () {
 
     			add_location(h2, file$5, 5, 2, 73);
     			attr_dev(a, "href", "#/list:states");
-    			add_location(a, file$5, 6, 6, 114);
-    			add_location(h4, file$5, 6, 2, 110);
-    			attr_dev(div, "id", "counties-list");
-    			add_location(div, file$5, 7, 2, 165);
+    			add_location(a, file$5, 6, 9, 117);
+    			add_location(div0, file$5, 6, 2, 110);
+    			attr_dev(div1, "id", "counties-list");
+    			add_location(div1, file$5, 7, 2, 169);
     			attr_dev(section, "id", "state-facilities");
     			add_location(section, file$5, 4, 0, 39);
     		},
@@ -840,13 +842,14 @@ var app = (function () {
     			append_dev(h2, t0);
     			append_dev(h2, t1);
     			append_dev(section, t2);
-    			append_dev(section, h4);
-    			append_dev(h4, a);
-    			append_dev(section, t4);
-    			append_dev(section, div);
+    			append_dev(section, div0);
+    			append_dev(div0, t3);
+    			append_dev(div0, a);
+    			append_dev(section, t5);
+    			append_dev(section, div1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				each_blocks[i].m(div1, null);
     			}
     		},
     		p: function update(ctx, [dirty]) {
@@ -865,7 +868,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -5532,10 +5535,16 @@ var app = (function () {
     	let t1_value = /*item*/ ctx[0].FacilityID + "";
     	let t1;
     	let t2;
-    	let div;
+    	let div0;
     	let t3;
-    	let attrtable;
+    	let a;
     	let t4;
+    	let a_href_value;
+    	let t5;
+    	let div1;
+    	let t6;
+    	let attrtable;
+    	let t7;
     	let script;
     	let current;
 
@@ -5555,16 +5564,24 @@ var app = (function () {
     			t0 = text("Submission #");
     			t1 = text(t1_value);
     			t2 = space();
-    			div = element("div");
-    			t3 = space();
+    			div0 = element("div");
+    			t3 = text("⭠ ");
+    			a = element("a");
+    			t4 = text("View all submissions from this facility");
+    			t5 = space();
+    			div1 = element("div");
+    			t6 = space();
     			create_component(attrtable.$$.fragment);
-    			t4 = space();
+    			t7 = space();
     			script = element("script");
     			script.textContent = "(() => {\n      let container = document.querySelector(\".toc-container\");\n      [].map.call(document.querySelectorAll(\".toc-item\"), (x) => {\n        container.appendChild(x);\n      });\n    })();";
     			add_location(h2, file$2, 6, 2, 113);
-    			attr_dev(div, "class", "toc-container svelte-1s2ds6p");
-    			add_location(div, file$2, 7, 2, 154);
-    			add_location(script, file$2, 9, 2, 240);
+    			attr_dev(a, "href", a_href_value = "#/facility:" + /*item*/ ctx[0].EPAFacilityID);
+    			add_location(a, file$2, 7, 9, 161);
+    			add_location(div0, file$2, 7, 2, 154);
+    			attr_dev(div1, "class", "toc-container svelte-6u7zzx");
+    			add_location(div1, file$2, 8, 2, 255);
+    			add_location(script, file$2, 10, 2, 341);
     			attr_dev(section, "id", "submission");
     			add_location(section, file$2, 5, 0, 85);
     		},
@@ -5577,15 +5594,25 @@ var app = (function () {
     			append_dev(h2, t0);
     			append_dev(h2, t1);
     			append_dev(section, t2);
-    			append_dev(section, div);
-    			append_dev(section, t3);
+    			append_dev(section, div0);
+    			append_dev(div0, t3);
+    			append_dev(div0, a);
+    			append_dev(a, t4);
+    			append_dev(section, t5);
+    			append_dev(section, div1);
+    			append_dev(section, t6);
     			mount_component(attrtable, section, null);
-    			append_dev(section, t4);
+    			append_dev(section, t7);
     			append_dev(section, script);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
     			if ((!current || dirty & /*item*/ 1) && t1_value !== (t1_value = /*item*/ ctx[0].FacilityID + "")) set_data_dev(t1, t1_value);
+
+    			if (!current || dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/facility:" + /*item*/ ctx[0].EPAFacilityID)) {
+    				attr_dev(a, "href", a_href_value);
+    			}
+
     			const attrtable_changes = {};
     			if (dirty & /*item*/ 1) attrtable_changes.table = /*item*/ ctx[0];
     			attrtable.$set(attrtable_changes);
@@ -5716,15 +5743,13 @@ var app = (function () {
     	let t30;
     	let a7;
     	let t32;
-    	let a8;
-    	let t34;
-    	let t35;
+    	let t33;
     	let li3;
-    	let t36;
+    	let t34;
     	let b2;
+    	let t36;
+    	let a8;
     	let t38;
-    	let a9;
-    	let t40;
     	let i;
 
     	const block = {
@@ -5758,9 +5783,9 @@ var app = (function () {
     			t17 = space();
     			ul = element("ul");
     			li0 = element("li");
-    			t18 = text("A listing of ");
+    			t18 = text("A ");
     			a5 = element("a");
-    			a5.textContent = "all states";
+    			a5.textContent = "listing of all states";
     			t20 = text(" represented in the database.");
     			t21 = space();
     			li1 = element("li");
@@ -5770,7 +5795,7 @@ var app = (function () {
     			t24 = text(" (e.g., ");
     			a6 = element("a");
     			a6.textContent = "Texas";
-    			t26 = text("), county-by-county listing of all facilities that have, at any point, filed an RMP submission.");
+    			t26 = text(") — county-by-county listing of all facilities that have, at any point, filed an RMP submission.");
     			t27 = space();
     			li2 = element("li");
     			t28 = text("For ");
@@ -5778,20 +5803,17 @@ var app = (function () {
     			b1.textContent = "each facility";
     			t30 = text(" (e.g., ");
     			a7 = element("a");
-    			a7.textContent = "this facility in Port Neches, Texas";
-    			t32 = text(", ");
-    			a8 = element("a");
-    			a8.textContent = "the site of a 2019 explosion";
-    			t34 = text("), some top-level information and a links to all the facility's submissions");
-    			t35 = space();
+    			a7.textContent = "this facility";
+    			t32 = text(") — overview information and a table linking to all the facility's submissions");
+    			t33 = space();
     			li3 = element("li");
-    			t36 = text("For ");
+    			t34 = text("For ");
     			b2 = element("b");
     			b2.textContent = "each submission";
-    			t38 = text(" (e.g., ");
-    			a9 = element("a");
-    			a9.textContent = "#1000068629";
-    			t40 = text("), raw data from the core database tables, covering information on the submission and facility, processes, process chemicals, prevention programs, accident history, and executive summary. ");
+    			t36 = text(" (e.g., ");
+    			a8 = element("a");
+    			a8.textContent = "#43946";
+    			t38 = text(") — raw data from the core database tables, covering information on the submission and facility, processes, process chemicals, prevention programs, accident history, and executive summary. ");
     			i = element("i");
     			i.textContent = "Note: Although this represents a large chunk of the data, it is not exhaustive of all tables and fields in the database, for which you should consult the raw data, available through the documentation linked above.";
     			add_location(h2, file$1, 0, 0, 0);
@@ -5809,7 +5831,7 @@ var app = (function () {
     			add_location(p1, file$1, 4, 0, 535);
     			add_location(p2, file$1, 7, 0, 822);
     			attr_dev(a5, "href", "#/list:states");
-    			add_location(a5, file$1, 11, 19, 903);
+    			add_location(a5, file$1, 11, 8, 892);
     			attr_dev(li0, "class", "svelte-wz9vls");
     			add_location(li0, file$1, 11, 2, 886);
     			add_location(b0, file$1, 12, 10, 986);
@@ -5817,19 +5839,17 @@ var app = (function () {
     			add_location(a6, file$1, 12, 35, 1011);
     			attr_dev(li1, "class", "svelte-wz9vls");
     			add_location(li1, file$1, 12, 2, 978);
-    			add_location(b1, file$1, 13, 10, 1152);
+    			add_location(b1, file$1, 13, 10, 1153);
     			attr_dev(a7, "href", "#/facility:100000070987");
-    			add_location(a7, file$1, 13, 38, 1180);
-    			attr_dev(a8, "href", "https://www.texastribune.org/2022/12/20/texas-chemical-plant-explosion-tpc-port-neches/");
-    			add_location(a8, file$1, 13, 113, 1255);
+    			add_location(a7, file$1, 13, 38, 1181);
     			attr_dev(li2, "class", "svelte-wz9vls");
-    			add_location(li2, file$1, 13, 2, 1144);
-    			add_location(b2, file$1, 14, 10, 1476);
-    			attr_dev(a9, "href", "#/submission:1000068629");
-    			add_location(a9, file$1, 14, 40, 1506);
-    			add_location(i, file$1, 14, 277, 1743);
+    			add_location(li2, file$1, 13, 2, 1145);
+    			add_location(b2, file$1, 14, 10, 1326);
+    			attr_dev(a8, "href", "#/submission:43946");
+    			add_location(a8, file$1, 14, 40, 1356);
+    			add_location(i, file$1, 14, 268, 1584);
     			attr_dev(li3, "class", "svelte-wz9vls");
-    			add_location(li3, file$1, 14, 2, 1468);
+    			add_location(li3, file$1, 14, 2, 1318);
     			add_location(ul, file$1, 10, 0, 879);
     		},
     		l: function claim(nodes) {
@@ -5875,15 +5895,13 @@ var app = (function () {
     			append_dev(li2, t30);
     			append_dev(li2, a7);
     			append_dev(li2, t32);
-    			append_dev(li2, a8);
-    			append_dev(li2, t34);
-    			append_dev(ul, t35);
+    			append_dev(ul, t33);
     			append_dev(ul, li3);
-    			append_dev(li3, t36);
+    			append_dev(li3, t34);
     			append_dev(li3, b2);
+    			append_dev(li3, t36);
+    			append_dev(li3, a8);
     			append_dev(li3, t38);
-    			append_dev(li3, a9);
-    			append_dev(li3, t40);
     			append_dev(li3, i);
     		},
     		p: noop,
@@ -6120,11 +6138,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h2, file, 112, 4, 2811);
+    			add_location(h2, file, 112, 4, 2863);
     			attr_dev(ul, "id", "states-list");
-    			add_location(ul, file, 113, 4, 2844);
+    			add_location(ul, file, 113, 4, 2896);
     			attr_dev(section, "id", "states");
-    			add_location(section, file, 111, 2, 2785);
+    			add_location(section, file, 111, 2, 2837);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -6180,43 +6198,40 @@ var app = (function () {
     	return block;
     }
 
-    // (97:60) 
+    // (98:59) 
     function create_if_block_1(ctx) {
-    	let hr;
-    	let t0;
     	let section;
+    	let h2;
     	let label;
-    	let t2;
+    	let t1;
     	let input;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			hr = element("hr");
-    			t0 = space();
     			section = element("section");
+    			h2 = element("h2");
     			label = element("label");
-    			label.textContent = "Open a submission:";
-    			t2 = space();
+    			label.textContent = "Load a submission JSON file";
+    			t1 = space();
     			input = element("input");
-    			add_location(hr, file, 97, 0, 2477);
     			attr_dev(label, "for", "avatar");
-    			add_location(label, file, 99, 2, 2508);
+    			add_location(label, file, 99, 8, 2528);
+    			add_location(h2, file, 99, 4, 2524);
     			attr_dev(input, "accept", "application/json");
     			attr_dev(input, "id", "sub_file");
     			attr_dev(input, "name", "sub_file");
     			attr_dev(input, "type", "file");
-    			add_location(input, file, 100, 2, 2557);
+    			add_location(input, file, 100, 4, 2593);
     			attr_dev(section, "id", "chooser");
-    			add_location(section, file, 98, 0, 2483);
+    			add_location(section, file, 98, 2, 2497);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, hr, anchor);
-    			insert_dev(target, t0, anchor);
     			insert_dev(target, section, anchor);
-    			append_dev(section, label);
-    			append_dev(section, t2);
+    			append_dev(section, h2);
+    			append_dev(h2, label);
+    			append_dev(section, t1);
     			append_dev(section, input);
 
     			if (!mounted) {
@@ -6232,8 +6247,6 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(hr);
-    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(section);
     			mounted = false;
     			run_all(dispose);
@@ -6244,7 +6257,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(97:60) ",
+    		source: "(98:59) ",
     		ctx
     	});
 
@@ -6348,8 +6361,8 @@ var app = (function () {
     			t3 = text(")");
     			t4 = space();
     			attr_dev(a, "href", a_href_value = "#/state:" + /*s*/ ctx[11].abbr);
-    			add_location(a, file, 116, 10, 2954);
-    			add_location(li, file, 115, 8, 2939);
+    			add_location(a, file, 116, 10, 3006);
+    			add_location(li, file, 115, 8, 2991);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -6387,11 +6400,12 @@ var app = (function () {
     function create_fragment(ctx) {
     	let main;
     	let h1;
+    	let a0;
     	let t1;
     	let div;
     	let t2;
     	let b;
-    	let a;
+    	let a1;
     	let t4;
     	let t5;
     	let current_block_type_index;
@@ -6415,7 +6429,7 @@ var app = (function () {
 
     	function select_block_type(ctx, dirty) {
     		if (/*app*/ ctx[0].view == "page") return 0;
-    		if (/*app*/ ctx[0].view === "page" && /*app*/ ctx[0].view_data == "chooser") return 1;
+    		if (/*app*/ ctx[0].view === "file" && /*app*/ ctx[0].view_arg == "chooser") return 1;
     		if (/*app*/ ctx[0].view == "list" && /*app*/ ctx[0].view_arg == "states" && /*app*/ ctx[0].view_data) return 2;
     		if (/*app*/ ctx[0].view == "state" && /*app*/ ctx[0].view_data) return 3;
     		if (/*app*/ ctx[0].view == "facility" && /*app*/ ctx[0].view_data) return 4;
@@ -6431,26 +6445,31 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			h1 = element("h1");
-    			h1.textContent = "RMP Submission Viewer";
+    			a0 = element("a");
+    			a0.textContent = "RMP Submission Viewer";
     			t1 = space();
     			div = element("div");
     			t2 = text("❗This resource is a work in progress; please consult ");
     			b = element("b");
-    			a = element("a");
-    			a.textContent = "the documentation";
+    			a1 = element("a");
+    			a1.textContent = "the documentation";
     			t4 = text(".");
     			t5 = space();
     			if (if_block) if_block.c();
     			t6 = space();
     			hr = element("hr");
-    			add_location(h1, file, 90, 0, 2104);
-    			attr_dev(a, "href", "https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit");
-    			add_location(a, file, 91, 77, 2212);
-    			add_location(b, file, 91, 74, 2209);
-    			attr_dev(div, "class", "warning svelte-14ft7lu");
-    			add_location(div, file, 91, 0, 2135);
-    			add_location(hr, file, 132, 0, 3328);
-    			attr_dev(main, "class", "svelte-14ft7lu");
+    			attr_dev(a0, "href", "#");
+    			attr_dev(a0, "class", "svelte-5fosut");
+    			add_location(a0, file, 90, 6, 2110);
+    			attr_dev(h1, "class", "svelte-5fosut");
+    			add_location(h1, file, 90, 2, 2106);
+    			attr_dev(a1, "href", "https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit");
+    			add_location(a1, file, 91, 77, 2230);
+    			add_location(b, file, 91, 74, 2227);
+    			attr_dev(div, "class", "warning svelte-5fosut");
+    			add_location(div, file, 91, 0, 2153);
+    			add_location(hr, file, 132, 0, 3380);
+    			attr_dev(main, "class", "svelte-5fosut");
     			add_location(main, file, 89, 0, 2097);
     		},
     		l: function claim(nodes) {
@@ -6459,11 +6478,12 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
     			append_dev(main, h1);
+    			append_dev(h1, a0);
     			append_dev(main, t1);
     			append_dev(main, div);
     			append_dev(div, t2);
     			append_dev(div, b);
-    			append_dev(b, a);
+    			append_dev(b, a1);
     			append_dev(div, t4);
     			append_dev(main, t5);
 
