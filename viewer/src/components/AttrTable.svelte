@@ -52,7 +52,7 @@
 
 <div class="tablewrapper">
   {#if levels.length < 2}
-  <div class="toc-item" on:click={scroll}>{#each levels as level}&nbsp;&nbsp;{/each}{title}</div>
+  <button class="toc-item" on:click={scroll}>{#each levels as level}&nbsp;&nbsp;{/each}{title}</button>
   {/if}
   <h4 bind:this={header}>
   {title}
@@ -176,12 +176,15 @@
     border: 1px solid black;
   }
 
-  .toc-item {
+  button.toc-item {
+    display: block;
+    border: none;
     padding: 0.1em 0;
+    background: inherit;
     color: darkblue;
-  }
-  .toc-item:hover {
-    font-weight: bold;
     cursor: pointer;
+  }
+  button.toc-item:hover {
+    font-weight: bold;
   }
 </style>
