@@ -112,7 +112,7 @@
   <section id="states">
     <h2>Facilities by State</h2>
     <ul id="states-list">
-      {#each app.view_data.sort((a, b) => a.name < b.name) as s}
+      {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}
         <li>
           <a href="#/state:{s.abbr}">{s.name} ({s.count})</a>
         </li>
