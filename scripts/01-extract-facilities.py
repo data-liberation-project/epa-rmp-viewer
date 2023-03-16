@@ -45,6 +45,7 @@ SELECT
             'id', FacilityID,
             'date_rec', SUBSTR(ReceiptDate, 1, 10),
             'date_val', SUBSTR(CompletionCheckDate, 1, 10),
+            'date_dereg', SUBSTR(DeRegistrationDate, 1, 10),
             'name', FacilityName,
             'company_1', ParentCompanyName,
             'company_2', Company2Name,
@@ -117,6 +118,7 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
     core["sub_last"] = dict(
         id=fac["submissions"][0]["id"],
         date=fac["submissions"][0]["date_val"],
+        date_dereg=fac["submissions"][0]["date_dereg"],
     )
     return core
 
