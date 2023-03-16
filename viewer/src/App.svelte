@@ -140,9 +140,4 @@
   h1 a {
     color: inherit;
   }
-  .warning {
-    background-color: #FFFF99;
-    padding: 0.5em;
-    font-size: 1.1em;
-  }
 </style>

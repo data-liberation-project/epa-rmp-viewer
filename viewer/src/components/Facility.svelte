@@ -4,6 +4,9 @@
 
 <section id="facility">
   <h2>Facility: {item.name}</h2>
+  {#if item.submissions[0].date_dereg}
+    <div class="warning"><a href="https://www.epa.gov/rmp/how-deregister-facility-risk-management-program">Deregistered</a> from RMP on {item.submissions[0].date_dereg}</div>
+  {/if}
   <ul id="facility-details">
     <li><b>EPA Facility ID:</b> <span><a href="https://echo.epa.gov/detailed-facility-report?fid={item.EPAFacilityID}" target="_blank" rel="noreferrer">{item.EPAFacilityID}</a></span></li>
     <li><b>State:</b> <span><a href="#/state:{item.state}">{item.state || ""}</a></span></li>

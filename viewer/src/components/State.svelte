@@ -10,7 +10,7 @@
       <h3>{county.name}</h3>
       <ul id="facilities-list">
         {#each county.facilities as fac}
-          <li class="facility">
+          <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
             <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
             <ul>
               <li><b>City:</b> {fac.city}</li>
@@ -31,5 +31,8 @@
 <style>
   .facility + .facility {
     margin-top: 0.5em;
+  }
+  .deregistered:before {
+    content: "[Deregistered] "
   }
 </style>
