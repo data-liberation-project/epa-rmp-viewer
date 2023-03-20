@@ -54,6 +54,18 @@
     </tr>
     {/each}
   </table>
+  <div class="column-descriptions">
+    <ul>
+      <li><b>Sub. #</b>: The ID number the EPA assigned to this submission. (Technically, in the raw data, the misnomered <code>FacilityID</code> field.)</li>
+      <li><b>EPA Received</b>: The date the EPA received the submission.</li>
+      <li><b>EPA Last Validated</b>: The date of the EPA's latest completion/validation check for this submission, which may also include checks of corrections made after the initial submission.</li>
+      <li><b>Fac. Name</b>: The facility name listed in the submission.</li>
+      <li><b>Co.&nbsp;1</b>: The first company listed in the submission.</li>
+      <li><b>Co.&nbsp;2</b>: The second company listed in the submission.</li>
+      <li><b>Op.</b>: The operator listed in the submission.</li>
+      <li><b>Acc.</b>: The number of accidents listed in the submission's five-year accident history. Note: Because of overlapping timeframes, some accidents may be duplicated across submissions. The total of this column is <b>often not</b> the total number of distinct accidents.</li>
+    </ul>
+  </div>
 </section>
 <style>
   ul {
@@ -72,5 +84,13 @@
   }
   h3 {
     margin-top: 2em;
+  }
+  .column-descriptions {
+    font-size: 0.9em;
+    padding-top: 1em;
+  }
+
+  .column-descriptions li {
+    padding: 0.25em 0;
   }
 </style>
