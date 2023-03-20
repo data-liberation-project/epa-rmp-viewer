@@ -525,7 +525,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (20:14) {#if fac.names_prev.length}
+    // (16:14) {#if fac.names_prev.length}
     function create_if_block$3(ctx) {
     	let li;
     	let b;
@@ -540,8 +540,8 @@ var app = (function () {
     			b.textContent = "Has also appeared as:";
     			t1 = space();
     			t2 = text(t2_value);
-    			add_location(b, file$5, 20, 20, 797);
-    			add_location(li, file$5, 20, 16, 793);
+    			add_location(b, file$5, 16, 20, 557);
+    			add_location(li, file$5, 16, 16, 553);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -561,7 +561,7 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(20:14) {#if fac.names_prev.length}",
+    		source: "(16:14) {#if fac.names_prev.length}",
     		ctx
     	});
 
@@ -570,113 +570,132 @@ var app = (function () {
 
     // (12:8) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
-    	let li4;
+    	let li5;
     	let a;
     	let t0_value = /*fac*/ ctx[4].name + "";
     	let t0;
     	let a_href_value;
     	let t1;
     	let ul;
+    	let t2;
     	let li0;
     	let b0;
-    	let t3;
-    	let t4_value = /*fac*/ ctx[4].city + "";
     	let t4;
+    	let t5_value = /*fac*/ ctx[4].city + "";
     	let t5;
+    	let t6;
     	let li1;
     	let b1;
-    	let t7;
-    	let t8_value = /*fac*/ ctx[4].address + "";
     	let t8;
+    	let t9_value = /*fac*/ ctx[4].address + "";
     	let t9;
+    	let t10;
     	let li2;
     	let b2;
-    	let t11;
-    	let t12_value = /*fac*/ ctx[4].EPAFacilityID + "";
     	let t12;
+    	let t13_value = /*fac*/ ctx[4].EPAFacilityID + "";
     	let t13;
+    	let t14;
     	let li3;
     	let b3;
-    	let t15;
-    	let t16_value = /*fac*/ ctx[4].sub_last.date + "";
     	let t16;
+    	let t17_value = /*fac*/ ctx[4].sub_last.date_val + "";
     	let t17;
+    	let t18;
+    	let li4;
+    	let b4;
+    	let t20;
+    	let t21_value = (/*fac*/ ctx[4].sub_last.num_accidents || "None") + "";
+    	let t21;
     	let if_block = /*fac*/ ctx[4].names_prev.length && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
-    			li4 = element("li");
+    			li5 = element("li");
     			a = element("a");
     			t0 = text(t0_value);
     			t1 = space();
     			ul = element("ul");
+    			if (if_block) if_block.c();
+    			t2 = space();
     			li0 = element("li");
     			b0 = element("b");
     			b0.textContent = "City:";
-    			t3 = space();
-    			t4 = text(t4_value);
-    			t5 = space();
+    			t4 = space();
+    			t5 = text(t5_value);
+    			t6 = space();
     			li1 = element("li");
     			b1 = element("b");
     			b1.textContent = "Address:";
-    			t7 = space();
-    			t8 = text(t8_value);
-    			t9 = space();
+    			t8 = space();
+    			t9 = text(t9_value);
+    			t10 = space();
     			li2 = element("li");
     			b2 = element("b");
     			b2.textContent = "EPA Facility ID:";
-    			t11 = space();
-    			t12 = text(t12_value);
-    			t13 = space();
+    			t12 = space();
+    			t13 = text(t13_value);
+    			t14 = space();
     			li3 = element("li");
     			b3 = element("b");
     			b3.textContent = "Latest RMP validation:";
-    			t15 = space();
-    			t16 = text(t16_value);
-    			t17 = space();
-    			if (if_block) if_block.c();
+    			t16 = space();
+    			t17 = text(t17_value);
+    			t18 = space();
+    			li4 = element("li");
+    			b4 = element("b");
+    			b4.textContent = "# Accidents in latest 5-year history:";
+    			t20 = space();
+    			t21 = text(t21_value);
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[4].EPAFacilityID);
     			add_location(a, file$5, 13, 12, 421);
-    			add_location(b0, file$5, 15, 18, 513);
-    			add_location(li0, file$5, 15, 14, 509);
-    			add_location(b1, file$5, 16, 18, 560);
-    			add_location(li1, file$5, 16, 14, 556);
-    			add_location(b2, file$5, 17, 18, 613);
-    			add_location(li2, file$5, 17, 14, 609);
-    			add_location(b3, file$5, 18, 18, 680);
-    			add_location(li3, file$5, 18, 14, 676);
+    			add_location(b0, file$5, 18, 18, 658);
+    			add_location(li0, file$5, 18, 14, 654);
+    			add_location(b1, file$5, 19, 18, 705);
+    			add_location(li1, file$5, 19, 14, 701);
+    			add_location(b2, file$5, 20, 18, 758);
+    			add_location(li2, file$5, 20, 14, 754);
+    			add_location(b3, file$5, 21, 18, 825);
+    			add_location(li3, file$5, 21, 14, 821);
+    			add_location(b4, file$5, 22, 18, 902);
+    			add_location(li4, file$5, 22, 14, 898);
     			add_location(ul, file$5, 14, 12, 490);
-    			attr_dev(li4, "class", "facility svelte-12dmo8a");
-    			toggle_class(li4, "deregistered", /*fac*/ ctx[4].sub_last.date_dereg);
-    			add_location(li4, file$5, 12, 10, 342);
+    			attr_dev(li5, "class", "facility svelte-12dmo8a");
+    			toggle_class(li5, "deregistered", /*fac*/ ctx[4].sub_last.date_dereg);
+    			add_location(li5, file$5, 12, 10, 342);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li4, anchor);
-    			append_dev(li4, a);
+    			insert_dev(target, li5, anchor);
+    			append_dev(li5, a);
     			append_dev(a, t0);
-    			append_dev(li4, t1);
-    			append_dev(li4, ul);
+    			append_dev(li5, t1);
+    			append_dev(li5, ul);
+    			if (if_block) if_block.m(ul, null);
+    			append_dev(ul, t2);
     			append_dev(ul, li0);
     			append_dev(li0, b0);
-    			append_dev(li0, t3);
     			append_dev(li0, t4);
-    			append_dev(ul, t5);
+    			append_dev(li0, t5);
+    			append_dev(ul, t6);
     			append_dev(ul, li1);
     			append_dev(li1, b1);
-    			append_dev(li1, t7);
     			append_dev(li1, t8);
-    			append_dev(ul, t9);
+    			append_dev(li1, t9);
+    			append_dev(ul, t10);
     			append_dev(ul, li2);
     			append_dev(li2, b2);
-    			append_dev(li2, t11);
     			append_dev(li2, t12);
-    			append_dev(ul, t13);
+    			append_dev(li2, t13);
+    			append_dev(ul, t14);
     			append_dev(ul, li3);
     			append_dev(li3, b3);
-    			append_dev(li3, t15);
     			append_dev(li3, t16);
-    			append_dev(ul, t17);
-    			if (if_block) if_block.m(ul, null);
+    			append_dev(li3, t17);
+    			append_dev(ul, t18);
+    			append_dev(ul, li4);
+    			append_dev(li4, b4);
+    			append_dev(li4, t20);
+    			append_dev(li4, t21);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*fac*/ ctx[4].name + "")) set_data_dev(t0, t0_value);
@@ -685,30 +704,31 @@ var app = (function () {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if (dirty & /*item*/ 1 && t4_value !== (t4_value = /*fac*/ ctx[4].city + "")) set_data_dev(t4, t4_value);
-    			if (dirty & /*item*/ 1 && t8_value !== (t8_value = /*fac*/ ctx[4].address + "")) set_data_dev(t8, t8_value);
-    			if (dirty & /*item*/ 1 && t12_value !== (t12_value = /*fac*/ ctx[4].EPAFacilityID + "")) set_data_dev(t12, t12_value);
-    			if (dirty & /*item*/ 1 && t16_value !== (t16_value = /*fac*/ ctx[4].sub_last.date + "")) set_data_dev(t16, t16_value);
-
     			if (/*fac*/ ctx[4].names_prev.length) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
     					if_block = create_if_block$3(ctx);
     					if_block.c();
-    					if_block.m(ul, null);
+    					if_block.m(ul, t2);
     				}
     			} else if (if_block) {
     				if_block.d(1);
     				if_block = null;
     			}
 
+    			if (dirty & /*item*/ 1 && t5_value !== (t5_value = /*fac*/ ctx[4].city + "")) set_data_dev(t5, t5_value);
+    			if (dirty & /*item*/ 1 && t9_value !== (t9_value = /*fac*/ ctx[4].address + "")) set_data_dev(t9, t9_value);
+    			if (dirty & /*item*/ 1 && t13_value !== (t13_value = /*fac*/ ctx[4].EPAFacilityID + "")) set_data_dev(t13, t13_value);
+    			if (dirty & /*item*/ 1 && t17_value !== (t17_value = /*fac*/ ctx[4].sub_last.date_val + "")) set_data_dev(t17, t17_value);
+    			if (dirty & /*item*/ 1 && t21_value !== (t21_value = (/*fac*/ ctx[4].sub_last.num_accidents || "None") + "")) set_data_dev(t21, t21_value);
+
     			if (dirty & /*item*/ 1) {
-    				toggle_class(li4, "deregistered", /*fac*/ ctx[4].sub_last.date_dereg);
+    				toggle_class(li5, "deregistered", /*fac*/ ctx[4].sub_last.date_dereg);
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li4);
+    			if (detaching) detach_dev(li5);
     			if (if_block) if_block.d();
     		}
     	};
@@ -1313,7 +1333,7 @@ var app = (function () {
     	return block;
     }
 
-    // (43:4) {#each item.submissions as sub}
+    // (44:4) {#each item.submissions as sub}
     function create_each_block$2(ctx) {
     	let tr;
     	let td0;
@@ -1346,6 +1366,10 @@ var app = (function () {
     	let t12_value = (/*sub*/ ctx[1].operator || "") + "";
     	let t12;
     	let t13;
+    	let td7;
+    	let t14_value = (/*sub*/ ctx[1].num_accidents || "") + "";
+    	let t14;
+    	let t15;
 
     	const block = {
     		c: function create() {
@@ -1372,25 +1396,30 @@ var app = (function () {
     			td6 = element("td");
     			t12 = text(t12_value);
     			t13 = space();
+    			td7 = element("td");
+    			t14 = text(t14_value);
+    			t15 = space();
     			attr_dev(a, "href", a_href_value = "#/submission:" + /*sub*/ ctx[1].id);
-    			add_location(a, file$4, 44, 10, 2892);
+    			add_location(a, file$4, 45, 10, 2914);
     			attr_dev(td0, "class", "svelte-173w3nh");
-    			add_location(td0, file$4, 44, 6, 2888);
+    			add_location(td0, file$4, 45, 6, 2910);
     			set_style(td1, "white-space", "nowrap");
     			attr_dev(td1, "class", "svelte-173w3nh");
-    			add_location(td1, file$4, 45, 6, 2948);
+    			add_location(td1, file$4, 46, 6, 2970);
     			set_style(td2, "white-space", "nowrap");
     			attr_dev(td2, "class", "svelte-173w3nh");
-    			add_location(td2, file$4, 46, 6, 3006);
+    			add_location(td2, file$4, 47, 6, 3028);
     			attr_dev(td3, "class", "svelte-173w3nh");
-    			add_location(td3, file$4, 47, 6, 3064);
+    			add_location(td3, file$4, 48, 6, 3086);
     			attr_dev(td4, "class", "svelte-173w3nh");
-    			add_location(td4, file$4, 48, 6, 3090);
+    			add_location(td4, file$4, 49, 6, 3112);
     			attr_dev(td5, "class", "svelte-173w3nh");
-    			add_location(td5, file$4, 49, 6, 3127);
+    			add_location(td5, file$4, 50, 6, 3149);
     			attr_dev(td6, "class", "svelte-173w3nh");
-    			add_location(td6, file$4, 50, 6, 3164);
-    			add_location(tr, file$4, 43, 4, 2877);
+    			add_location(td6, file$4, 51, 6, 3186);
+    			attr_dev(td7, "class", "svelte-173w3nh");
+    			add_location(td7, file$4, 52, 6, 3222);
+    			add_location(tr, file$4, 44, 4, 2899);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -1416,6 +1445,9 @@ var app = (function () {
     			append_dev(tr, td6);
     			append_dev(td6, t12);
     			append_dev(tr, t13);
+    			append_dev(tr, td7);
+    			append_dev(td7, t14);
+    			append_dev(tr, t15);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*sub*/ ctx[1].id + "")) set_data_dev(t0, t0_value);
@@ -1430,6 +1462,7 @@ var app = (function () {
     			if (dirty & /*item*/ 1 && t8_value !== (t8_value = (/*sub*/ ctx[1].company_1 || "") + "")) set_data_dev(t8, t8_value);
     			if (dirty & /*item*/ 1 && t10_value !== (t10_value = (/*sub*/ ctx[1].company_2 || "") + "")) set_data_dev(t10, t10_value);
     			if (dirty & /*item*/ 1 && t12_value !== (t12_value = (/*sub*/ ctx[1].operator || "") + "")) set_data_dev(t12, t12_value);
+    			if (dirty & /*item*/ 1 && t14_value !== (t14_value = (/*sub*/ ctx[1].num_accidents || "") + "")) set_data_dev(t14, t14_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
@@ -1440,7 +1473,7 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(43:4) {#each item.submissions as sub}",
+    		source: "(44:4) {#each item.submissions as sub}",
     		ctx
     	});
 
@@ -1536,6 +1569,8 @@ var app = (function () {
     	let t50;
     	let th6;
     	let t52;
+    	let th7;
+    	let t54;
     	let if_block0 = /*item*/ ctx[0].submissions[0].date_dereg && create_if_block_3$2(ctx);
     	let if_block1 = /*item*/ ctx[0].lon_fac && create_if_block_2$2(ctx);
     	let if_block2 = /*item*/ ctx[0].submissions[0].lon_sub && create_if_block_1$2(ctx);
@@ -1648,6 +1683,9 @@ var app = (function () {
     			th6 = element("th");
     			th6.textContent = "Op.";
     			t52 = space();
+    			th7 = element("th");
+    			th7.textContent = "Acc.";
+    			t54 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -1698,6 +1736,7 @@ var app = (function () {
     			add_location(th4, file$4, 37, 8, 2743);
     			add_location(th5, file$4, 38, 8, 2771);
     			add_location(th6, file$4, 39, 8, 2799);
+    			add_location(th7, file$4, 40, 8, 2820);
     			add_location(tr, file$4, 32, 6, 2613);
     			add_location(thead, file$4, 31, 4, 2599);
     			attr_dev(table, "id", "submission-list");
@@ -1791,7 +1830,9 @@ var app = (function () {
     			append_dev(tr, th5);
     			append_dev(tr, t50);
     			append_dev(tr, th6);
-    			append_dev(table, t52);
+    			append_dev(tr, t52);
+    			append_dev(tr, th7);
+    			append_dev(table, t54);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(table, null);
