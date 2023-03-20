@@ -121,15 +121,19 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
             "names_prev",
         ]
     }
-    core["sub_last"] = dict(
-        id=fac["submissions"][0]["id"],
-        date=fac["submissions"][0]["date_val"],
-        date_dereg=fac["submissions"][0]["date_dereg"],
-        lat_sub=fac["submissions"][0]["lat_sub"],
-        lon_sub=fac["submissions"][0]["lon_sub"],
-        lat_frs=fac["submissions"][0]["lat_frs"],
-        lon_frs=fac["submissions"][0]["lon_frs"],
-    )
+    last = fac["submissions"][0]
+    core["sub_last"] = {
+        k: last[k]
+        for k in [
+            "id",
+            "date_val",
+            "date_dereg",
+            "lat_sub",
+            "lon_sub",
+            "lat_frs",
+            "lon_frs",
+        ]
+    }
     return core
 
 
