@@ -38,6 +38,7 @@
         <th>Co.&nbsp;1</th>
         <th>Co.&nbsp;2</th>
         <th>Op.</th>
+        <th>Acc.</th>
       </tr>
     </thead>
     {#each item.submissions as sub}
@@ -49,6 +50,7 @@
       <td>{sub.company_1 || ""}</td>
       <td>{sub.company_2 || ""}</td>
       <td>{sub.operator || ""}</td>
+      <td>{sub.num_accidents || ""}</td>
     </tr>
     {/each}
   </table>

@@ -13,13 +13,14 @@
           <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
             <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
             <ul>
+              {#if fac.names_prev.length}
+                <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+              {/if}
               <li><b>City:</b> {fac.city}</li>
               <li><b>Address:</b> {fac.address}</li>
               <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
               <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-              {#if fac.names_prev.length}
-                <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
-              {/if}
+              <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
             </ul>
           </li>
         {/each}

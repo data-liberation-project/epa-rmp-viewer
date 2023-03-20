@@ -42,7 +42,7 @@ SELECT
     OperatorName AS operator,
     JSON_GROUP_ARRAY(
         JSON_OBJECT(
-            'id', FacilityID,
+            'id', sub.FacilityID,
             'date_rec', SUBSTR(ReceiptDate, 1, 10),
             'date_val', SUBSTR(CompletionCheckDate, 1, 10),
             'date_dereg', SUBSTR(DeRegistrationDate, 1, 10),
@@ -50,6 +50,8 @@ SELECT
             'lon_sub', FacilityLongDecDegs,
             'lat_frs', FRS_Lat,
             'lon_frs', FRS_Long,
+            'num_accidents', num_accidents,
+            'latest_accident', SUBSTR(latest_accident, 1, 10),
             'name', FacilityName,
             'company_1', ParentCompanyName,
             'company_2', Company2Name,
@@ -62,7 +64,18 @@ FROM
         ORDER BY
             EPAFacilityID,
             CompletionCheckDate DESC
-    )
+    ) sub
+LEFT JOIN
+    (SELECT
+            FacilityID,
+            COUNT(*) AS num_accidents,
+            MAX(AccidentDate) AS latest_accident
+        FROM
+            tblS6AccidentHistory
+        GROUP BY
+            FacilityID
+    ) acc
+    ON acc.FacilityID = sub.FacilityID
 GROUP BY
     EPAFacilityID;
 """
@@ -132,6 +145,8 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
             "lon_sub",
             "lat_frs",
             "lon_frs",
+            "num_accidents",
+            "latest_accident",
         ]
     }
     return core
