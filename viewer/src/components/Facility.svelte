@@ -12,7 +12,17 @@
     <li><b>State:</b> <span><a href="#/state:{item.state}">{item.state || ""}</a></span></li>
     <li><b>City:</b> <span>{item.city || ""}</span></li>
     <li><b>ZIP Code:</b> <span>{item.zip || ""}</span></li>
-    <li><b>Coordinates:</b> <span>{#if item.lng}{item.lat || ""}, {item.lng || ""} (<a href="https://www.openstreetmap.org/?zoom=14&mlat={item.lat}&mlon={item.lng}" target="_blank" rel="noreferrer">OSM</a> | <a href="https://maps.google.com/maps?q=loc:{item.lat},{item.lng}" target="_blank" rel="noreferrer">Google</a>){/if}</span></li>
+    <li><b>Coordinates:</b> <span><ul>
+        {#if item.lon_fac}
+          <li>From <code><a href="https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit#heading=h.yq3wkmelid3j">RMPFac</a></code> database: {item.lat_fac || ""}, {item.lon_fac || ""} (<a href="https://www.openstreetmap.org/?zoom=10&mlat={item.lat_fac}&mlon={item.lon_fac}" target="_blank" rel="noreferrer">OSM</a> | <a href="https://maps.google.com/maps?q=loc:{item.lat_fac},{item.lon_fac}" target="_blank" rel="noreferrer">Google</a>)</li>
+        {/if}
+        {#if item.submissions[0].lon_sub}
+          <li>From latest submission: {item.submissions[0].lat_sub || ""}, {item.submissions[0].lon_sub || ""} (<a href="https://www.openstreetmap.org/?zoom=10&mlat={item.submissions[0].lat_sub}&mlon={item.submissions[0].lon_sub}" target="_blank" rel="noreferrer">OSM</a> | <a href="https://maps.google.com/maps?q=loc:{item.submissions[0].lat_sub},{item.submissions[0].lon_sub}" target="_blank" rel="noreferrer">Google</a>)</li>
+        {/if}
+        {#if item.submissions[0].lon_frs}
+          <li>From <code>FRS_Lat/Long</code> fields: {item.submissions[0].lat_frs || ""}, {item.submissions[0].lon_frs || ""} (<a href="https://www.openstreetmap.org/?zoom=10&mlat={item.submissions[0].lat_frs}&mlon={item.submissions[0].lon_frs}" target="_blank" rel="noreferrer">OSM</a> | <a href="https://maps.google.com/maps?q=loc:{item.submissions[0].lat_frs},{item.submissions[0].lon_frs}" target="_blank" rel="noreferrer">Google</a>)</li>
+        {/if}
+    </ul></span></li>
     <li><b>Company 1:</b> <span>{item.company_1 || ""}</span></li>
     <li><b>Company 2:</b> <span>{item.company_2 || ""}</span></li>
     <li><b>Operator:</b> <span>{item.operator || ""}</span></li>

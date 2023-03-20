@@ -993,7 +993,7 @@ var app = (function () {
     }
 
     // (7:2) {#if item.submissions[0].date_dereg}
-    function create_if_block_1$2(ctx) {
+    function create_if_block_3$2(ctx) {
     	let div;
     	let a;
     	let t1;
@@ -1028,7 +1028,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$2.name,
+    		id: create_if_block_3$2.name,
     		type: "if",
     		source: "(7:2) {#if item.submissions[0].date_dereg}",
     		ctx
@@ -1037,77 +1037,268 @@ var app = (function () {
     	return block;
     }
 
-    // (15:34) {#if item.lng}
-    function create_if_block$2(ctx) {
-    	let t0_value = (/*item*/ ctx[0].lat || "") + "";
+    // (16:8) {#if item.lon_fac}
+    function create_if_block_2$2(ctx) {
+    	let li;
     	let t0;
-    	let t1;
-    	let t2_value = (/*item*/ ctx[0].lng || "") + "";
-    	let t2;
-    	let t3;
+    	let code;
     	let a0;
+    	let t2;
+    	let t3_value = (/*item*/ ctx[0].lat_fac || "") + "";
+    	let t3;
     	let t4;
-    	let a0_href_value;
+    	let t5_value = (/*item*/ ctx[0].lon_fac || "") + "";
     	let t5;
-    	let a1;
     	let t6;
-    	let a1_href_value;
+    	let a1;
     	let t7;
+    	let a1_href_value;
+    	let t8;
+    	let a2;
+    	let t9;
+    	let a2_href_value;
+    	let t10;
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = text(", ");
-    			t2 = text(t2_value);
-    			t3 = text(" (");
+    			li = element("li");
+    			t0 = text("From ");
+    			code = element("code");
     			a0 = element("a");
-    			t4 = text("OSM");
-    			t5 = text(" | ");
+    			a0.textContent = "RMPFac";
+    			t2 = text(" database: ");
+    			t3 = text(t3_value);
+    			t4 = text(", ");
+    			t5 = text(t5_value);
+    			t6 = text(" (");
     			a1 = element("a");
-    			t6 = text("Google");
-    			t7 = text(")");
-    			attr_dev(a0, "href", a0_href_value = "https://www.openstreetmap.org/?zoom=14&mlat=" + /*item*/ ctx[0].lat + "&mlon=" + /*item*/ ctx[0].lng);
-    			attr_dev(a0, "target", "_blank");
-    			attr_dev(a0, "rel", "noreferrer");
-    			add_location(a0, file$4, 14, 84, 831);
-    			attr_dev(a1, "href", a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].lat + "," + /*item*/ ctx[0].lng);
+    			t7 = text("OSM");
+    			t8 = text(" | ");
+    			a2 = element("a");
+    			t9 = text("Google");
+    			t10 = text(")");
+    			attr_dev(a0, "href", "https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit#heading=h.yq3wkmelid3j");
+    			add_location(a0, file$4, 16, 25, 838);
+    			add_location(code, file$4, 16, 19, 832);
+    			attr_dev(a1, "href", a1_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].lat_fac + "&mlon=" + /*item*/ ctx[0].lon_fac);
     			attr_dev(a1, "target", "_blank");
     			attr_dev(a1, "rel", "noreferrer");
-    			add_location(a1, file$4, 14, 208, 955);
+    			add_location(a1, file$4, 16, 215, 1028);
+    			attr_dev(a2, "href", a2_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].lat_fac + "," + /*item*/ ctx[0].lon_fac);
+    			attr_dev(a2, "target", "_blank");
+    			attr_dev(a2, "rel", "noreferrer");
+    			add_location(a2, file$4, 16, 347, 1160);
+    			add_location(li, file$4, 16, 10, 823);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, a0, anchor);
-    			append_dev(a0, t4);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, a1, anchor);
-    			append_dev(a1, t6);
-    			insert_dev(target, t7, anchor);
+    			insert_dev(target, li, anchor);
+    			append_dev(li, t0);
+    			append_dev(li, code);
+    			append_dev(code, a0);
+    			append_dev(li, t2);
+    			append_dev(li, t3);
+    			append_dev(li, t4);
+    			append_dev(li, t5);
+    			append_dev(li, t6);
+    			append_dev(li, a1);
+    			append_dev(a1, t7);
+    			append_dev(li, t8);
+    			append_dev(li, a2);
+    			append_dev(a2, t9);
+    			append_dev(li, t10);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = (/*item*/ ctx[0].lat || "") + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = (/*item*/ ctx[0].lng || "") + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*item*/ 1 && t3_value !== (t3_value = (/*item*/ ctx[0].lat_fac || "") + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*item*/ 1 && t5_value !== (t5_value = (/*item*/ ctx[0].lon_fac || "") + "")) set_data_dev(t5, t5_value);
 
-    			if (dirty & /*item*/ 1 && a0_href_value !== (a0_href_value = "https://www.openstreetmap.org/?zoom=14&mlat=" + /*item*/ ctx[0].lat + "&mlon=" + /*item*/ ctx[0].lng)) {
+    			if (dirty & /*item*/ 1 && a1_href_value !== (a1_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].lat_fac + "&mlon=" + /*item*/ ctx[0].lon_fac)) {
+    				attr_dev(a1, "href", a1_href_value);
+    			}
+
+    			if (dirty & /*item*/ 1 && a2_href_value !== (a2_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].lat_fac + "," + /*item*/ ctx[0].lon_fac)) {
+    				attr_dev(a2, "href", a2_href_value);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(li);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2$2.name,
+    		type: "if",
+    		source: "(16:8) {#if item.lon_fac}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (19:8) {#if item.submissions[0].lon_sub}
+    function create_if_block_1$2(ctx) {
+    	let li;
+    	let t0;
+    	let t1_value = (/*item*/ ctx[0].submissions[0].lat_sub || "") + "";
+    	let t1;
+    	let t2;
+    	let t3_value = (/*item*/ ctx[0].submissions[0].lon_sub || "") + "";
+    	let t3;
+    	let t4;
+    	let a0;
+    	let t5;
+    	let a0_href_value;
+    	let t6;
+    	let a1;
+    	let t7;
+    	let a1_href_value;
+    	let t8;
+
+    	const block = {
+    		c: function create() {
+    			li = element("li");
+    			t0 = text("From latest submission: ");
+    			t1 = text(t1_value);
+    			t2 = text(", ");
+    			t3 = text(t3_value);
+    			t4 = text(" (");
+    			a0 = element("a");
+    			t5 = text("OSM");
+    			t6 = text(" | ");
+    			a1 = element("a");
+    			t7 = text("Google");
+    			t8 = text(")");
+    			attr_dev(a0, "href", a0_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].submissions[0].lat_sub + "&mlon=" + /*item*/ ctx[0].submissions[0].lon_sub);
+    			attr_dev(a0, "target", "_blank");
+    			attr_dev(a0, "rel", "noreferrer");
+    			add_location(a0, file$4, 19, 112, 1453);
+    			attr_dev(a1, "href", a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].submissions[0].lat_sub + "," + /*item*/ ctx[0].submissions[0].lon_sub);
+    			attr_dev(a1, "target", "_blank");
+    			attr_dev(a1, "rel", "noreferrer");
+    			add_location(a1, file$4, 19, 274, 1615);
+    			add_location(li, file$4, 19, 10, 1351);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, li, anchor);
+    			append_dev(li, t0);
+    			append_dev(li, t1);
+    			append_dev(li, t2);
+    			append_dev(li, t3);
+    			append_dev(li, t4);
+    			append_dev(li, a0);
+    			append_dev(a0, t5);
+    			append_dev(li, t6);
+    			append_dev(li, a1);
+    			append_dev(a1, t7);
+    			append_dev(li, t8);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t1_value !== (t1_value = (/*item*/ ctx[0].submissions[0].lat_sub || "") + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*item*/ 1 && t3_value !== (t3_value = (/*item*/ ctx[0].submissions[0].lon_sub || "") + "")) set_data_dev(t3, t3_value);
+
+    			if (dirty & /*item*/ 1 && a0_href_value !== (a0_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].submissions[0].lat_sub + "&mlon=" + /*item*/ ctx[0].submissions[0].lon_sub)) {
     				attr_dev(a0, "href", a0_href_value);
     			}
 
-    			if (dirty & /*item*/ 1 && a1_href_value !== (a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].lat + "," + /*item*/ ctx[0].lng)) {
+    			if (dirty & /*item*/ 1 && a1_href_value !== (a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].submissions[0].lat_sub + "," + /*item*/ ctx[0].submissions[0].lon_sub)) {
     				attr_dev(a1, "href", a1_href_value);
     			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(a0);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(a1);
-    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(li);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$2.name,
+    		type: "if",
+    		source: "(19:8) {#if item.submissions[0].lon_sub}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (22:8) {#if item.submissions[0].lon_frs}
+    function create_if_block$2(ctx) {
+    	let li;
+    	let t0;
+    	let code;
+    	let t2;
+    	let t3_value = (/*item*/ ctx[0].submissions[0].lat_frs || "") + "";
+    	let t3;
+    	let t4;
+    	let t5_value = (/*item*/ ctx[0].submissions[0].lon_frs || "") + "";
+    	let t5;
+    	let t6;
+    	let a0;
+    	let t7;
+    	let a0_href_value;
+    	let t8;
+    	let a1;
+    	let t9;
+    	let a1_href_value;
+    	let t10;
+
+    	const block = {
+    		c: function create() {
+    			li = element("li");
+    			t0 = text("From ");
+    			code = element("code");
+    			code.textContent = "FRS_Lat/Long";
+    			t2 = text(" fields: ");
+    			t3 = text(t3_value);
+    			t4 = text(", ");
+    			t5 = text(t5_value);
+    			t6 = text(" (");
+    			a0 = element("a");
+    			t7 = text("OSM");
+    			t8 = text(" | ");
+    			a1 = element("a");
+    			t9 = text("Google");
+    			t10 = text(")");
+    			add_location(code, file$4, 22, 19, 1845);
+    			attr_dev(a0, "href", a0_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].submissions[0].lat_frs + "&mlon=" + /*item*/ ctx[0].submissions[0].lon_frs);
+    			attr_dev(a0, "target", "_blank");
+    			attr_dev(a0, "rel", "noreferrer");
+    			add_location(a0, file$4, 22, 127, 1953);
+    			attr_dev(a1, "href", a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].submissions[0].lat_frs + "," + /*item*/ ctx[0].submissions[0].lon_frs);
+    			attr_dev(a1, "target", "_blank");
+    			attr_dev(a1, "rel", "noreferrer");
+    			add_location(a1, file$4, 22, 289, 2115);
+    			add_location(li, file$4, 22, 10, 1836);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, li, anchor);
+    			append_dev(li, t0);
+    			append_dev(li, code);
+    			append_dev(li, t2);
+    			append_dev(li, t3);
+    			append_dev(li, t4);
+    			append_dev(li, t5);
+    			append_dev(li, t6);
+    			append_dev(li, a0);
+    			append_dev(a0, t7);
+    			append_dev(li, t8);
+    			append_dev(li, a1);
+    			append_dev(a1, t9);
+    			append_dev(li, t10);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t3_value !== (t3_value = (/*item*/ ctx[0].submissions[0].lat_frs || "") + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*item*/ 1 && t5_value !== (t5_value = (/*item*/ ctx[0].submissions[0].lon_frs || "") + "")) set_data_dev(t5, t5_value);
+
+    			if (dirty & /*item*/ 1 && a0_href_value !== (a0_href_value = "https://www.openstreetmap.org/?zoom=10&mlat=" + /*item*/ ctx[0].submissions[0].lat_frs + "&mlon=" + /*item*/ ctx[0].submissions[0].lon_frs)) {
+    				attr_dev(a0, "href", a0_href_value);
+    			}
+
+    			if (dirty & /*item*/ 1 && a1_href_value !== (a1_href_value = "https://maps.google.com/maps?q=loc:" + /*item*/ ctx[0].submissions[0].lat_frs + "," + /*item*/ ctx[0].submissions[0].lon_frs)) {
+    				attr_dev(a1, "href", a1_href_value);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(li);
     		}
     	};
 
@@ -1115,14 +1306,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(15:34) {#if item.lng}",
+    		source: "(22:8) {#if item.submissions[0].lon_frs}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:4) {#each item.submissions as sub}
+    // (43:4) {#each item.submissions as sub}
     function create_each_block$2(ctx) {
     	let tr;
     	let td0;
@@ -1182,24 +1373,24 @@ var app = (function () {
     			t12 = text(t12_value);
     			t13 = space();
     			attr_dev(a, "href", a_href_value = "#/submission:" + /*sub*/ ctx[1].id);
-    			add_location(a, file$4, 34, 10, 1670);
+    			add_location(a, file$4, 44, 10, 2892);
     			attr_dev(td0, "class", "svelte-173w3nh");
-    			add_location(td0, file$4, 34, 6, 1666);
+    			add_location(td0, file$4, 44, 6, 2888);
     			set_style(td1, "white-space", "nowrap");
     			attr_dev(td1, "class", "svelte-173w3nh");
-    			add_location(td1, file$4, 35, 6, 1726);
+    			add_location(td1, file$4, 45, 6, 2948);
     			set_style(td2, "white-space", "nowrap");
     			attr_dev(td2, "class", "svelte-173w3nh");
-    			add_location(td2, file$4, 36, 6, 1784);
+    			add_location(td2, file$4, 46, 6, 3006);
     			attr_dev(td3, "class", "svelte-173w3nh");
-    			add_location(td3, file$4, 37, 6, 1842);
+    			add_location(td3, file$4, 47, 6, 3064);
     			attr_dev(td4, "class", "svelte-173w3nh");
-    			add_location(td4, file$4, 38, 6, 1868);
+    			add_location(td4, file$4, 48, 6, 3090);
     			attr_dev(td5, "class", "svelte-173w3nh");
-    			add_location(td5, file$4, 39, 6, 1905);
+    			add_location(td5, file$4, 49, 6, 3127);
     			attr_dev(td6, "class", "svelte-173w3nh");
-    			add_location(td6, file$4, 40, 6, 1942);
-    			add_location(tr, file$4, 33, 4, 1655);
+    			add_location(td6, file$4, 50, 6, 3164);
+    			add_location(tr, file$4, 43, 4, 2877);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -1249,7 +1440,7 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(33:4) {#each item.submissions as sub}",
+    		source: "(43:4) {#each item.submissions as sub}",
     		ctx
     	});
 
@@ -1264,7 +1455,7 @@ var app = (function () {
     	let t1;
     	let t2;
     	let t3;
-    	let ul;
+    	let ul1;
     	let li0;
     	let b0;
     	let t5;
@@ -1301,49 +1492,54 @@ var app = (function () {
     	let b4;
     	let t21;
     	let span4;
+    	let ul0;
     	let t22;
+    	let t23;
+    	let t24;
     	let li5;
     	let b5;
-    	let t24;
-    	let span5;
-    	let t25_value = (/*item*/ ctx[0].company_1 || "") + "";
-    	let t25;
     	let t26;
+    	let span5;
+    	let t27_value = (/*item*/ ctx[0].company_1 || "") + "";
+    	let t27;
+    	let t28;
     	let li6;
     	let b6;
-    	let t28;
-    	let span6;
-    	let t29_value = (/*item*/ ctx[0].company_2 || "") + "";
-    	let t29;
     	let t30;
+    	let span6;
+    	let t31_value = (/*item*/ ctx[0].company_2 || "") + "";
+    	let t31;
+    	let t32;
     	let li7;
     	let b7;
-    	let t32;
-    	let span7;
-    	let t33_value = (/*item*/ ctx[0].operator || "") + "";
-    	let t33;
     	let t34;
-    	let h3;
+    	let span7;
+    	let t35_value = (/*item*/ ctx[0].operator || "") + "";
+    	let t35;
     	let t36;
+    	let h3;
+    	let t38;
     	let table;
     	let thead;
     	let tr;
     	let th0;
-    	let t38;
-    	let th1;
     	let t40;
-    	let th2;
+    	let th1;
     	let t42;
-    	let th3;
+    	let th2;
     	let t44;
-    	let th4;
+    	let th3;
     	let t46;
-    	let th5;
+    	let th4;
     	let t48;
-    	let th6;
+    	let th5;
     	let t50;
-    	let if_block0 = /*item*/ ctx[0].submissions[0].date_dereg && create_if_block_1$2(ctx);
-    	let if_block1 = /*item*/ ctx[0].lng && create_if_block$2(ctx);
+    	let th6;
+    	let t52;
+    	let if_block0 = /*item*/ ctx[0].submissions[0].date_dereg && create_if_block_3$2(ctx);
+    	let if_block1 = /*item*/ ctx[0].lon_fac && create_if_block_2$2(ctx);
+    	let if_block2 = /*item*/ ctx[0].submissions[0].lon_sub && create_if_block_1$2(ctx);
+    	let if_block3 = /*item*/ ctx[0].submissions[0].lon_frs && create_if_block$2(ctx);
     	let each_value = /*item*/ ctx[0].submissions;
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -1361,7 +1557,7 @@ var app = (function () {
     			t2 = space();
     			if (if_block0) if_block0.c();
     			t3 = space();
-    			ul = element("ul");
+    			ul1 = element("ul");
     			li0 = element("li");
     			b0 = element("b");
     			b0.textContent = "EPA Facility ID:";
@@ -1397,56 +1593,61 @@ var app = (function () {
     			b4.textContent = "Coordinates:";
     			t21 = space();
     			span4 = element("span");
+    			ul0 = element("ul");
     			if (if_block1) if_block1.c();
     			t22 = space();
+    			if (if_block2) if_block2.c();
+    			t23 = space();
+    			if (if_block3) if_block3.c();
+    			t24 = space();
     			li5 = element("li");
     			b5 = element("b");
     			b5.textContent = "Company 1:";
-    			t24 = space();
-    			span5 = element("span");
-    			t25 = text(t25_value);
     			t26 = space();
+    			span5 = element("span");
+    			t27 = text(t27_value);
+    			t28 = space();
     			li6 = element("li");
     			b6 = element("b");
     			b6.textContent = "Company 2:";
-    			t28 = space();
-    			span6 = element("span");
-    			t29 = text(t29_value);
     			t30 = space();
+    			span6 = element("span");
+    			t31 = text(t31_value);
+    			t32 = space();
     			li7 = element("li");
     			b7 = element("b");
     			b7.textContent = "Operator:";
-    			t32 = space();
-    			span7 = element("span");
-    			t33 = text(t33_value);
     			t34 = space();
+    			span7 = element("span");
+    			t35 = text(t35_value);
+    			t36 = space();
     			h3 = element("h3");
     			h3.textContent = "RMP Submissions (through February 2022)";
-    			t36 = space();
+    			t38 = space();
     			table = element("table");
     			thead = element("thead");
     			tr = element("tr");
     			th0 = element("th");
     			th0.textContent = "Sub. #";
-    			t38 = space();
+    			t40 = space();
     			th1 = element("th");
     			th1.textContent = "EPA Received";
-    			t40 = space();
+    			t42 = space();
     			th2 = element("th");
     			th2.textContent = "EPA Last Validated";
-    			t42 = space();
+    			t44 = space();
     			th3 = element("th");
     			th3.textContent = "Fac. Name";
-    			t44 = space();
+    			t46 = space();
     			th4 = element("th");
     			th4.textContent = "Co. 1";
-    			t46 = space();
+    			t48 = space();
     			th5 = element("th");
     			th5.textContent = "Co. 2";
-    			t48 = space();
+    			t50 = space();
     			th6 = element("th");
     			th6.textContent = "Op.";
-    			t50 = space();
+    			t52 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -1472,34 +1673,36 @@ var app = (function () {
     			add_location(span3, file$4, 13, 25, 712);
     			add_location(li3, file$4, 13, 4, 691);
     			add_location(b4, file$4, 14, 8, 755);
+    			attr_dev(ul0, "class", "svelte-173w3nh");
+    			add_location(ul0, file$4, 14, 34, 781);
     			add_location(span4, file$4, 14, 28, 775);
     			add_location(li4, file$4, 14, 4, 751);
-    			add_location(b5, file$4, 15, 8, 1092);
-    			add_location(span5, file$4, 15, 26, 1110);
-    			add_location(li5, file$4, 15, 4, 1088);
-    			add_location(b6, file$4, 16, 8, 1159);
-    			add_location(span6, file$4, 16, 26, 1177);
-    			add_location(li6, file$4, 16, 4, 1155);
-    			add_location(b7, file$4, 17, 8, 1226);
-    			add_location(span7, file$4, 17, 25, 1243);
-    			add_location(li7, file$4, 17, 4, 1222);
-    			attr_dev(ul, "id", "facility-details");
-    			attr_dev(ul, "class", "svelte-173w3nh");
-    			add_location(ul, file$4, 9, 2, 320);
+    			add_location(b5, file$4, 25, 8, 2314);
+    			add_location(span5, file$4, 25, 26, 2332);
+    			add_location(li5, file$4, 25, 4, 2310);
+    			add_location(b6, file$4, 26, 8, 2381);
+    			add_location(span6, file$4, 26, 26, 2399);
+    			add_location(li6, file$4, 26, 4, 2377);
+    			add_location(b7, file$4, 27, 8, 2448);
+    			add_location(span7, file$4, 27, 25, 2465);
+    			add_location(li7, file$4, 27, 4, 2444);
+    			attr_dev(ul1, "id", "facility-details");
+    			attr_dev(ul1, "class", "svelte-173w3nh");
+    			add_location(ul1, file$4, 9, 2, 320);
     			attr_dev(h3, "class", "svelte-173w3nh");
-    			add_location(h3, file$4, 19, 2, 1293);
-    			add_location(th0, file$4, 23, 8, 1404);
-    			add_location(th1, file$4, 24, 8, 1428);
-    			add_location(th2, file$4, 25, 8, 1458);
-    			add_location(th3, file$4, 26, 8, 1494);
-    			add_location(th4, file$4, 27, 8, 1521);
-    			add_location(th5, file$4, 28, 8, 1549);
-    			add_location(th6, file$4, 29, 8, 1577);
-    			add_location(tr, file$4, 22, 6, 1391);
-    			add_location(thead, file$4, 21, 4, 1377);
+    			add_location(h3, file$4, 29, 2, 2515);
+    			add_location(th0, file$4, 33, 8, 2626);
+    			add_location(th1, file$4, 34, 8, 2650);
+    			add_location(th2, file$4, 35, 8, 2680);
+    			add_location(th3, file$4, 36, 8, 2716);
+    			add_location(th4, file$4, 37, 8, 2743);
+    			add_location(th5, file$4, 38, 8, 2771);
+    			add_location(th6, file$4, 39, 8, 2799);
+    			add_location(tr, file$4, 32, 6, 2613);
+    			add_location(thead, file$4, 31, 4, 2599);
     			attr_dev(table, "id", "submission-list");
     			attr_dev(table, "class", "svelte-173w3nh");
-    			add_location(table, file$4, 20, 2, 1344);
+    			add_location(table, file$4, 30, 2, 2566);
     			attr_dev(section, "id", "facility");
     			add_location(section, file$4, 4, 0, 39);
     		},
@@ -1514,76 +1717,81 @@ var app = (function () {
     			append_dev(section, t2);
     			if (if_block0) if_block0.m(section, null);
     			append_dev(section, t3);
-    			append_dev(section, ul);
-    			append_dev(ul, li0);
+    			append_dev(section, ul1);
+    			append_dev(ul1, li0);
     			append_dev(li0, b0);
     			append_dev(li0, t5);
     			append_dev(li0, span0);
     			append_dev(span0, a0);
     			append_dev(a0, t6);
-    			append_dev(ul, t7);
-    			append_dev(ul, li1);
+    			append_dev(ul1, t7);
+    			append_dev(ul1, li1);
     			append_dev(li1, b1);
     			append_dev(li1, t9);
     			append_dev(li1, span1);
     			append_dev(span1, a1);
     			append_dev(a1, t10);
-    			append_dev(ul, t11);
-    			append_dev(ul, li2);
+    			append_dev(ul1, t11);
+    			append_dev(ul1, li2);
     			append_dev(li2, b2);
     			append_dev(li2, t13);
     			append_dev(li2, span2);
     			append_dev(span2, t14);
-    			append_dev(ul, t15);
-    			append_dev(ul, li3);
+    			append_dev(ul1, t15);
+    			append_dev(ul1, li3);
     			append_dev(li3, b3);
     			append_dev(li3, t17);
     			append_dev(li3, span3);
     			append_dev(span3, t18);
-    			append_dev(ul, t19);
-    			append_dev(ul, li4);
+    			append_dev(ul1, t19);
+    			append_dev(ul1, li4);
     			append_dev(li4, b4);
     			append_dev(li4, t21);
     			append_dev(li4, span4);
-    			if (if_block1) if_block1.m(span4, null);
-    			append_dev(ul, t22);
-    			append_dev(ul, li5);
+    			append_dev(span4, ul0);
+    			if (if_block1) if_block1.m(ul0, null);
+    			append_dev(ul0, t22);
+    			if (if_block2) if_block2.m(ul0, null);
+    			append_dev(ul0, t23);
+    			if (if_block3) if_block3.m(ul0, null);
+    			append_dev(ul1, t24);
+    			append_dev(ul1, li5);
     			append_dev(li5, b5);
-    			append_dev(li5, t24);
+    			append_dev(li5, t26);
     			append_dev(li5, span5);
-    			append_dev(span5, t25);
-    			append_dev(ul, t26);
-    			append_dev(ul, li6);
+    			append_dev(span5, t27);
+    			append_dev(ul1, t28);
+    			append_dev(ul1, li6);
     			append_dev(li6, b6);
-    			append_dev(li6, t28);
+    			append_dev(li6, t30);
     			append_dev(li6, span6);
-    			append_dev(span6, t29);
-    			append_dev(ul, t30);
-    			append_dev(ul, li7);
+    			append_dev(span6, t31);
+    			append_dev(ul1, t32);
+    			append_dev(ul1, li7);
     			append_dev(li7, b7);
-    			append_dev(li7, t32);
+    			append_dev(li7, t34);
     			append_dev(li7, span7);
-    			append_dev(span7, t33);
-    			append_dev(section, t34);
-    			append_dev(section, h3);
+    			append_dev(span7, t35);
     			append_dev(section, t36);
+    			append_dev(section, h3);
+    			append_dev(section, t38);
     			append_dev(section, table);
     			append_dev(table, thead);
     			append_dev(thead, tr);
     			append_dev(tr, th0);
-    			append_dev(tr, t38);
-    			append_dev(tr, th1);
     			append_dev(tr, t40);
-    			append_dev(tr, th2);
+    			append_dev(tr, th1);
     			append_dev(tr, t42);
-    			append_dev(tr, th3);
+    			append_dev(tr, th2);
     			append_dev(tr, t44);
-    			append_dev(tr, th4);
+    			append_dev(tr, th3);
     			append_dev(tr, t46);
-    			append_dev(tr, th5);
+    			append_dev(tr, th4);
     			append_dev(tr, t48);
+    			append_dev(tr, th5);
+    			append_dev(tr, t50);
     			append_dev(tr, th6);
-    			append_dev(table, t50);
+    			append_dev(table, t52);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(table, null);
@@ -1596,7 +1804,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_1$2(ctx);
+    					if_block0 = create_if_block_3$2(ctx);
     					if_block0.c();
     					if_block0.m(section, t3);
     				}
@@ -1620,22 +1828,48 @@ var app = (function () {
     			if (dirty & /*item*/ 1 && t14_value !== (t14_value = (/*item*/ ctx[0].city || "") + "")) set_data_dev(t14, t14_value);
     			if (dirty & /*item*/ 1 && t18_value !== (t18_value = (/*item*/ ctx[0].zip || "") + "")) set_data_dev(t18, t18_value);
 
-    			if (/*item*/ ctx[0].lng) {
+    			if (/*item*/ ctx[0].lon_fac) {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block$2(ctx);
+    					if_block1 = create_if_block_2$2(ctx);
     					if_block1.c();
-    					if_block1.m(span4, null);
+    					if_block1.m(ul0, t22);
     				}
     			} else if (if_block1) {
     				if_block1.d(1);
     				if_block1 = null;
     			}
 
-    			if (dirty & /*item*/ 1 && t25_value !== (t25_value = (/*item*/ ctx[0].company_1 || "") + "")) set_data_dev(t25, t25_value);
-    			if (dirty & /*item*/ 1 && t29_value !== (t29_value = (/*item*/ ctx[0].company_2 || "") + "")) set_data_dev(t29, t29_value);
-    			if (dirty & /*item*/ 1 && t33_value !== (t33_value = (/*item*/ ctx[0].operator || "") + "")) set_data_dev(t33, t33_value);
+    			if (/*item*/ ctx[0].submissions[0].lon_sub) {
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
+    				} else {
+    					if_block2 = create_if_block_1$2(ctx);
+    					if_block2.c();
+    					if_block2.m(ul0, t23);
+    				}
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
+    			}
+
+    			if (/*item*/ ctx[0].submissions[0].lon_frs) {
+    				if (if_block3) {
+    					if_block3.p(ctx, dirty);
+    				} else {
+    					if_block3 = create_if_block$2(ctx);
+    					if_block3.c();
+    					if_block3.m(ul0, null);
+    				}
+    			} else if (if_block3) {
+    				if_block3.d(1);
+    				if_block3 = null;
+    			}
+
+    			if (dirty & /*item*/ 1 && t27_value !== (t27_value = (/*item*/ ctx[0].company_1 || "") + "")) set_data_dev(t27, t27_value);
+    			if (dirty & /*item*/ 1 && t31_value !== (t31_value = (/*item*/ ctx[0].company_2 || "") + "")) set_data_dev(t31, t31_value);
+    			if (dirty & /*item*/ 1 && t35_value !== (t35_value = (/*item*/ ctx[0].operator || "") + "")) set_data_dev(t35, t35_value);
 
     			if (dirty & /*item*/ 1) {
     				each_value = /*item*/ ctx[0].submissions;
@@ -1667,6 +1901,8 @@ var app = (function () {
     			if (detaching) detach_dev(section);
     			if (if_block0) if_block0.d();
     			if (if_block1) if_block1.d();
+    			if (if_block2) if_block2.d();
+    			if (if_block3) if_block3.d();
     			destroy_each(each_blocks, detaching);
     		}
     	};
