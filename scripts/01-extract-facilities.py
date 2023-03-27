@@ -19,9 +19,7 @@ SELECT
         ' •'
     ) AS address,
     FacilityZipCode AS zip,
-    FacilityCountyFIPS AS county_fips,
-    FacilityLatDecDegs AS lat_fac,
-    FacilityLongDecDegs AS lon_fac
+    FacilityCountyFIPS AS county_fips
 FROM
     tblFacility
 ORDER BY
@@ -48,8 +46,6 @@ SELECT
             'date_dereg', SUBSTR(DeRegistrationDate, 1, 10),
             'lat_sub', FacilityLatDecDegs,
             'lon_sub', FacilityLongDecDegs,
-            'lat_frs', FRS_Lat,
-            'lon_frs', FRS_Long,
             'num_accidents', num_accidents,
             'latest_accident', SUBSTR(latest_accident, 1, 10),
             'name', FacilityName,
@@ -129,8 +125,6 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
             "name",
             "city",
             "address",
-            "lat_fac",
-            "lon_fac",
             "names_prev",
         ]
     }
@@ -143,8 +137,6 @@ def make_fac_summary(fac: dict[str, typing.Any]) -> dict[str, typing.Any]:
             "date_dereg",
             "lat_sub",
             "lon_sub",
-            "lat_frs",
-            "lon_frs",
             "num_accidents",
             "latest_accident",
         ]
