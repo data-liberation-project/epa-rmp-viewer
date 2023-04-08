@@ -2,7 +2,7 @@
   import State from "./components/State.svelte";
   import Facility from "./components/Facility.svelte";
   import Submission from "./components/Submission.svelte";
-
+  import Map from './components/Map.svelte';
   import Landing from "./pages/Landing.svelte";
 
   const pages = {
@@ -121,7 +121,7 @@
   </section>
 
 {:else if app.view == "state" && app.view_data }
-  <State item={app.view_data} />
+  <State item={app. view_data} />
 
 {:else if app.view == "facility" && app.view_data }
   <Facility item={app.view_data} />
