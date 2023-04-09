@@ -1,6 +1,13 @@
 <script>
-  import mapboxgl from 'mapbox-gl';
+  import { Map, Geocoder, Marker, controls } from '@beyonk/svelte-mapbox'
+  import facility from './../../public/data/facilities/by-state/AK.json';
+  export let item;
+  
+  let mapComponent;
+  const { GeolocateControl, NavigationControl, ScaleControl } = controls
+  console.log('coordinates:', item.counties)
 
+  /*
   onMount(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsYXF1eXg4azAwZjQzeW92cjJrMDJwOXYifQ.NOmLvhjeSluUXlAlqmuDrgd';
     const map = new mapboxgl.Map({
@@ -10,6 +17,20 @@
       zoom: 9
     });
   });
+  */
 </script>
 
-<div id="map" style="width: 100%; height: 100%;"></div>
+
+<Map
+accessToken="pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ" 
+  bind:this={mapComponent} 
+  options={{ scrollZoom: false }}
+>
+
+</Map>
+
+<style>
+  :global(.mapboxgl-map) {
+      height: 200px;
+  }
+</style>
