@@ -121,8 +121,9 @@
   </section>
 
 {:else if app.view == "state" && app.view_data }
+  <Map item={app. view_data} />
   <State item={app. view_data} />
-  <Map item={app.view_data}/>
+  
 
 {:else if app.view == "facility" && app.view_data }
   <Facility item={app.view_data} />
