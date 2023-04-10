@@ -6094,7 +6094,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "id", "map");
     			set_style(div, "height", "400px");
-    			add_location(div, file$2, 55, 0, 1813);
+    			add_location(div, file$2, 55, 0, 1765);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6140,30 +6140,31 @@ var app = (function () {
     				zoom: 6
     			});
 
+    		// Add zoom control to the map
+    		map.addControl(new mapboxGl.NavigationControl(), 'top-right');
+
     		item.counties.forEach(county => {
     			county.facilities.forEach(facility => {
-    				const lat = Number(facility.sub_last.lat_sub);
-    				const lon = Number(facility.sub_last.lon_sub);
+    				let lat = Number(facility.sub_last.lat_sub);
+    				let lon = Number(facility.sub_last.lon_sub);
     				console.log([lat, lon]);
     				const el = document.createElement('div');
     				el.className = 'marker';
 
-    				// el.textContent = facility.name;
-    				new mapboxGl.Marker(el).setLngLat([lon, lat]).setPopup(new mapboxGl.Popup({ offset: 25 }).setHTML(`<h3>${facility.name}</h3>`)).addTo(map); // add popups
+    				// Add marker to the map
+    				const marker = new mapboxGl.Marker().setLngLat([lon, lat]).addTo(map);
 
-    				el.addEventListener('click', () => {
-    					alert(`Clicked on ${facility.name}`);
-    				});
+    				// Add popup to the marker
+    				const popup = new mapboxGl.Popup({ closeOnClick: false, closeButton: false });
 
-    				//Popup on hover
-    				const popup = new mapboxGl.Popup({ closeButton: false, closeOnClick: false });
-
-    				map.on('mouseenter', e => {
+    				// Show popup on marker hover
+    				marker.getElement().addEventListener('mouseenter', () => {
     					map.getCanvas().style.cursor = 'pointer';
-    					popup.setLngLat([lon, lat]).setHTML(`<h3>${facility.num_accidents}</h3>`).addTo(map);
+    					popup.setLngLat(marker.getLngLat()).setHTML(`<p>${facility.name}</p>`).addTo(map);
     				});
 
-    				map.on('mouseleave', 'places', () => {
+    				// Hide popup on marker leave
+    				marker.getElement().addEventListener('mouseleave', () => {
     					map.getCanvas().style.cursor = '';
     					popup.remove();
     				});

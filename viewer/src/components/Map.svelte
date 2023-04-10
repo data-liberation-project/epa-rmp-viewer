@@ -14,40 +14,40 @@
       zoom: 6
     });
 
+    // Add zoom control to the map
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+
     item.counties.forEach(county => {
         county.facilities.forEach(facility => {
-          const lat = Number(facility.sub_last.lat_sub);
-          const lon = Number(facility.sub_last.lon_sub);
+          let lat = Number(facility.sub_last.lat_sub);
+          let lon = Number(facility.sub_last.lon_sub);
           console.log([lat, lon]);
 
           const el = document.createElement('div');
           el.className = 'marker';
-          // el.textContent = facility.name;
 
-          new mapboxgl.Marker(el)
+          // Add marker to the map
+          const marker = new mapboxgl.Marker()
             .setLngLat([lon, lat])
-            .setPopup(
-                    new mapboxgl.Popup({ offset: 25 }) // add popups
-                          .setHTML(`<h3>${facility.name}</h3>`))
             .addTo(map);
-            el.addEventListener('click', () => {
-              alert(`Clicked on ${facility.name}`);
-            });
 
-            //Popup on hover
-            const popup = new mapboxgl.Popup({
-              closeButton: false,
-              closeOnClick: false
-            });
-            map.on('mouseenter', (e) => {
+          // Add popup to the marker
+          const popup = new mapboxgl.Popup({
+              closeOnClick: false,
+              closeButton: false
+          });
+
+          // Show popup on marker hover
+          marker.getElement().addEventListener('mouseenter', () => {
               map.getCanvas().style.cursor = 'pointer';
-              popup.setLngLat([lon, lat]).setHTML(`<h3>${facility.num_accidents}</h3>`).addTo(map);
-            })
+              popup.setLngLat(marker.getLngLat()).setHTML(`<p>${facility.name}</p>`).addTo(map);
+          });
 
-            map.on('mouseleave', 'places', () => {
+          // Hide popup on marker leave
+          marker.getElement().addEventListener('mouseleave', () => {
               map.getCanvas().style.cursor = '';
               popup.remove();
-            });
+          });
         })
     });
   });
@@ -57,7 +57,6 @@
   
 <style>
   :global(.marker) {
-    background-color: black;
     background-image: url("/viewer/public/images/mapbox-marker-icon-blue.svg");
     background-size:  cover;
     width:            20px;
@@ -65,13 +64,5 @@
     border-radius:    10%;
     cursor:           pointer;
   }
-
-  .mapboxgl-popup {
-    max-width:        200px;
-  }
-
-  .mapboxgl-popup-content h3 {
-    text-align:       center;
-    font-size:        22px;
-  }
+  
 </style>
