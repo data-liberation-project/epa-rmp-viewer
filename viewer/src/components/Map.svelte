@@ -7,7 +7,6 @@
 
   onMount(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ';
-
     map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
@@ -31,9 +30,23 @@
                     new mapboxgl.Popup({ offset: 25 }) // add popups
                           .setHTML(`<h3>${facility.name}</h3>`))
             .addTo(map);
-          
             el.addEventListener('click', () => {
               alert(`Clicked on ${facility.name}`);
+            });
+
+            //Popup on hover
+            const popup = new mapboxgl.Popup({
+              closeButton: false,
+              closeOnClick: false
+            });
+            map.on('mouseenter', (e) => {
+              map.getCanvas().style.cursor = 'pointer';
+              popup.setLngLat([lon, lat]).setHTML(`<h3>${facility.num_accidents}</h3>`).addTo(map);
+            })
+
+            map.on('mouseleave', 'places', () => {
+              map.getCanvas().style.cursor = '';
+              popup.remove();
             });
         })
     });
@@ -44,8 +57,8 @@
   
 <style>
   :global(.marker) {
-    background-color: #3366ff;
-    background-image: url("/viewer/images/mapbox-marker-icon-blue.svg");
+    background-color: black;
+    background-image: url("/viewer/public/images/mapbox-marker-icon-blue.svg");
     background-size:  cover;
     width:            20px;
     height:           20px;

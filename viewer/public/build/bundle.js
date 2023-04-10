@@ -6094,7 +6094,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "id", "map");
     			set_style(div, "height", "400px");
-    			add_location(div, file$2, 42, 0, 1304);
+    			add_location(div, file$2, 55, 0, 1813);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6153,6 +6153,19 @@ var app = (function () {
 
     				el.addEventListener('click', () => {
     					alert(`Clicked on ${facility.name}`);
+    				});
+
+    				//Popup on hover
+    				const popup = new mapboxGl.Popup({ closeButton: false, closeOnClick: false });
+
+    				map.on('mouseenter', e => {
+    					map.getCanvas().style.cursor = 'pointer';
+    					popup.setLngLat([lon, lat]).setHTML(`<h3>${facility.num_accidents}</h3>`).addTo(map);
+    				});
+
+    				map.on('mouseleave', 'places', () => {
+    					map.getCanvas().style.cursor = '';
+    					popup.remove();
     				});
     			});
     		});
