@@ -1,52 +1,64 @@
 <script>
-  import { Map, Geocoder, Marker, controls } from '@beyonk/svelte-mapbox'
+  import mapboxgl from 'mapbox-gl';
+  import { onMount } from 'svelte';
   export let item;
-  const { GeolocateControl, NavigationControl, ScaleControl } = controls
-  
-  let mapComponent;
-  let coordinates = []; // store coordinates as object
-  
-  for (let county of item.counties) {
-    for (let facility of county.facilities) {
-      //console.log('latitute: ', facility.sub_last.lat_sub)
-      //console.log('longitude: ', facility.sub_last.lon_sub)
-      coordinates.push([Number(facility.sub_last.lon_sub), Number(facility.sub_last.lat_sub)])
-    }
-  }
-  //console.log(coordinates)
-  
+
+  let map;
+
+  onMount(() => {
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ';
+
+    map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [Number(item.counties[0].facilities[0].sub_last.lon_sub), Number(item.counties[0].facilities[0].sub_last.lat_sub)],
+      zoom: 6
+    });
+
+    item.counties.forEach(county => {
+        county.facilities.forEach(facility => {
+          const lat = Number(facility.sub_last.lat_sub);
+          const lon = Number(facility.sub_last.lon_sub);
+          console.log([lat, lon]);
+
+          const el = document.createElement('div');
+          el.className = 'marker';
+          // el.textContent = facility.name;
+
+          new mapboxgl.Marker(el)
+            .setLngLat([lon, lat])
+            .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                          .setHTML(`<h3>${facility.name}</h3>`))
+            .addTo(map);
+          
+            el.addEventListener('click', () => {
+              alert(`Clicked on ${facility.name}`);
+            });
+        })
+    });
+  });
 </script>
 
-
-<Map
-  accessToken="pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ" 
-  style="mapbox://styles/mapbox/outdoors-v11"
-  bind:this={mapComponent}
-  center={[-74.5, 40]}
-  zoom={7}
->
-  <div class='mapboxgl-map'> 
-    {#each item.counties as location}
-      {#each location.facilities as facility}
-        <Marker
-          lat = {facility.sub_last.lat_sub} 
-          lng = {facility.sub_last.lon_sub}>
-            <div>{facility.name}: {facility.sub_last.lat_sub}, {facility.sub_last.lon_sub}</div>
-        </Marker>
-      {/each}
-    {/each}
-  </div>
-</Map>
-
-<style>
-  :global(.mapboxgl-map) {
-    height: 400px;
-  }
-  :global(.marker) {
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
+<div id="map" style="height: 400px;"></div>
   
+<style>
+  :global(.marker) {
+    background-color: #3366ff;
+    background-image: url("/viewer/images/mapbox-marker-icon-blue.svg");
+    background-size:  cover;
+    width:            20px;
+    height:           20px;
+    border-radius:    10%;
+    cursor:           pointer;
+  }
+
+  .mapboxgl-popup {
+    max-width:        200px;
+  }
+
+  .mapboxgl-popup-content h3 {
+    text-align:       center;
+    font-size:        22px;
+  }
 </style>
