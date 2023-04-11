@@ -1,26 +1,41 @@
 <script>
-  import { Accordion, AccordionItem } from 'svelte-collapsible'
+  import { Accordion, AccordionItem } from 'svelte-collapsible';
+  import { onDestroy } from 'svelte';
+
   export let item;
+  let showDeregistered = true;
+
+  function toggleDeregistered() {
+    showDeregistered = !showDeregistered;
+  }
+  // function filterFacilities(county) {
+  //   return showDeregistered ? county.facilities : county.facilities.filter(facility => facility.sub_last.date_dereg === null);
+  // }
+  onDestroy(() => {
+
+  })
+
 </script>
 
 <Accordion>
-
   <section id="state-facilities">
     <h2>Facilities in {item.name}</h2>
+
+    <button on:click={toggleDeregistered}>
+      {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
+    </button>
+
     <div>⭠ <a href="#/list:states">View all states</a></div>
     <div id="counties-list">
       {#each item.counties as county}
 
       <AccordionItem key={county.fips}>
-      
         <div slot='header' class='header'>
-
           <h3>{county.name}</h3>
-
         </div>
-        
         <ul id="facilities-list" slot="body">
           {#each county.facilities as fac}
+          {#if showDeregistered || fac.sub_last.date_dereg === null}
             <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
               <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
               <ul>
@@ -34,16 +49,13 @@
                 <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
               </ul>
             </li>
+          {/if}
           {/each}
         </ul>
-
       </AccordionItem>
-
       {/each}    
-
     </div>
   </section>
-
 </Accordion>
 
 <style>
