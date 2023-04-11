@@ -23,13 +23,10 @@
 
     <div>⭠ <a href="#/list:states">View all states</a></div>
     <div id="counties-list">
-      <!-- {#if item.counties.every(county => county.facilities.every(fac => fac.sub_last.date_dereg !== null))}
-        <p>No active facilities</p>
-      {:else} -->
         {#each item.counties as county}
-          {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}
+        <!-- {#if county.facilities.filter(fac => fac.sub_last.date_dereg === null).length === 0}
             <p>No active facilities</p>
-          {:else}
+          {:else} -->
             <AccordionItem key={county.fips}>
               <div slot='header' class='header'>
                 <h3>{county.name}</h3>
@@ -54,7 +51,7 @@
                 {/each} 
               </ul>
             </AccordionItem>
-          {/if}
+          <!-- {/if} -->
         {/each}  
     </div>
   </section>

@@ -1250,125 +1250,30 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (32:10) {:else}
-    function create_else_block$1(ctx) {
-    	let accordionitem;
-    	let current;
-
-    	accordionitem = new AccordionItem({
-    			props: {
-    				key: /*county*/ ctx[3].fips,
-    				$$slots: {
-    					body: [create_body_slot],
-    					header: [create_header_slot]
-    				},
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(accordionitem.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(accordionitem, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const accordionitem_changes = {};
-    			if (dirty & /*item*/ 1) accordionitem_changes.key = /*county*/ ctx[3].fips;
-
-    			if (dirty & /*$$scope, item, showDeregistered*/ 515) {
-    				accordionitem_changes.$$scope = { dirty, ctx };
-    			}
-
-    			accordionitem.$set(accordionitem_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(accordionitem.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(accordionitem.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(accordionitem, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block$1.name,
-    		type: "else",
-    		source: "(32:10) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (30:10) {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}
-    function create_if_block$3(ctx) {
-    	let p;
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			p.textContent = "No active facilities";
-    			add_location(p, file$6, 30, 12, 930);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    		},
-    		p: noop,
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block$3.name,
-    		type: "if",
-    		source: "(30:10) {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (34:14) 
+    // (31:14) 
     function create_header_slot(ctx) {
     	let div;
     	let h3;
-    	let t0_value = /*county*/ ctx[3].name + "";
-    	let t0;
-    	let t1;
+    	let t_value = /*county*/ ctx[3].name + "";
+    	let t;
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			h3 = element("h3");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			add_location(h3, file$6, 34, 16, 1087);
+    			t = text(t_value);
+    			add_location(h3, file$6, 31, 16, 941);
     			attr_dev(div, "slot", "header");
     			attr_dev(div, "class", "header svelte-14go8pg");
-    			add_location(div, file$6, 33, 14, 1036);
+    			add_location(div, file$6, 30, 14, 890);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, h3);
-    			append_dev(h3, t0);
-    			append_dev(div, t1);
+    			append_dev(h3, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*county*/ ctx[3].name + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*item*/ 1 && t_value !== (t_value = /*county*/ ctx[3].name + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
@@ -1379,15 +1284,15 @@ var app = (function () {
     		block,
     		id: create_header_slot.name,
     		type: "slot",
-    		source: "(34:14) ",
+    		source: "(31:14) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
-    function create_if_block_1$3(ctx) {
+    // (36:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
+    function create_if_block$3(ctx) {
     	let li5;
     	let a;
     	let t0_value = /*fac*/ ctx[6].name + "";
@@ -1425,7 +1330,8 @@ var app = (function () {
     	let t20;
     	let t21_value = (/*fac*/ ctx[6].sub_last.num_accidents || "None") + "";
     	let t21;
-    	let if_block = /*fac*/ ctx[6].names_prev.length && create_if_block_2$2(ctx);
+    	let t22;
+    	let if_block = /*fac*/ ctx[6].names_prev.length && create_if_block_1$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -1465,22 +1371,23 @@ var app = (function () {
     			b4.textContent = "# Accidents in latest 5-year history:";
     			t20 = space();
     			t21 = text(t21_value);
+    			t22 = space();
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[6].EPAFacilityID);
-    			add_location(a, file$6, 40, 22, 1418);
-    			add_location(b0, file$6, 45, 28, 1705);
-    			add_location(li0, file$6, 45, 24, 1701);
-    			add_location(b1, file$6, 46, 28, 1762);
-    			add_location(li1, file$6, 46, 24, 1758);
-    			add_location(b2, file$6, 47, 28, 1825);
-    			add_location(li2, file$6, 47, 24, 1821);
-    			add_location(b3, file$6, 48, 28, 1902);
-    			add_location(li3, file$6, 48, 24, 1898);
-    			add_location(b4, file$6, 49, 28, 1989);
-    			add_location(li4, file$6, 49, 24, 1985);
-    			add_location(ul, file$6, 41, 22, 1497);
+    			add_location(a, file$6, 37, 22, 1272);
+    			add_location(b0, file$6, 42, 28, 1559);
+    			add_location(li0, file$6, 42, 24, 1555);
+    			add_location(b1, file$6, 43, 28, 1616);
+    			add_location(li1, file$6, 43, 24, 1612);
+    			add_location(b2, file$6, 44, 28, 1679);
+    			add_location(li2, file$6, 44, 24, 1675);
+    			add_location(b3, file$6, 45, 28, 1756);
+    			add_location(li3, file$6, 45, 24, 1752);
+    			add_location(b4, file$6, 46, 28, 1843);
+    			add_location(li4, file$6, 46, 24, 1839);
+    			add_location(ul, file$6, 38, 22, 1351);
     			attr_dev(li5, "class", "facility svelte-14go8pg");
     			toggle_class(li5, "deregistered", /*fac*/ ctx[6].sub_last.date_dereg);
-    			add_location(li5, file$6, 39, 20, 1329);
+    			add_location(li5, file$6, 36, 20, 1183);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li5, anchor);
@@ -1514,6 +1421,7 @@ var app = (function () {
     			append_dev(li4, b4);
     			append_dev(li4, t20);
     			append_dev(li4, t21);
+    			append_dev(li5, t22);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*fac*/ ctx[6].name + "")) set_data_dev(t0, t0_value);
@@ -1526,7 +1434,7 @@ var app = (function () {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_2$2(ctx);
+    					if_block = create_if_block_1$3(ctx);
     					if_block.c();
     					if_block.m(ul, t2);
     				}
@@ -1553,17 +1461,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$3.name,
+    		id: create_if_block$3.name,
     		type: "if",
-    		source: "(39:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
+    		source: "(36:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:24) {#if fac.names_prev.length}
-    function create_if_block_2$2(ctx) {
+    // (40:24) {#if fac.names_prev.length}
+    function create_if_block_1$3(ctx) {
     	let li;
     	let b;
     	let t1;
@@ -1577,8 +1485,8 @@ var app = (function () {
     			b.textContent = "Has also appeared as:";
     			t1 = space();
     			t2 = text(t2_value);
-    			add_location(b, file$6, 43, 30, 1584);
-    			add_location(li, file$6, 43, 26, 1580);
+    			add_location(b, file$6, 40, 30, 1438);
+    			add_location(li, file$6, 40, 26, 1434);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1596,19 +1504,19 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$2.name,
+    		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(43:24) {#if fac.names_prev.length}",
+    		source: "(40:24) {#if fac.names_prev.length}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:16) {#each county.facilities as fac}
+    // (35:16) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
-    	let if_block = (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) && create_if_block_1$3(ctx);
+    	let if_block = (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -1624,7 +1532,7 @@ var app = (function () {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_1$3(ctx);
+    					if_block = create_if_block$3(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -1643,17 +1551,16 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(38:16) {#each county.facilities as fac}",
+    		source: "(35:16) {#each county.facilities as fac}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:14) 
+    // (34:14) 
     function create_body_slot(ctx) {
     	let ul;
-    	let t;
     	let each_value_1 = /*county*/ ctx[3].facilities;
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
@@ -1670,10 +1577,9 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			t = space();
     			attr_dev(ul, "id", "facilities-list");
     			attr_dev(ul, "slot", "body");
-    			add_location(ul, file$6, 36, 14, 1145);
+    			add_location(ul, file$6, 33, 14, 999);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, ul, anchor);
@@ -1681,8 +1587,6 @@ var app = (function () {
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(ul, null);
     			}
-
-    			append_dev(ul, t);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item, showDeregistered*/ 3) {
@@ -1698,7 +1602,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_1$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(ul, t);
+    						each_blocks[i].m(ul, null);
     					}
     				}
 
@@ -1719,82 +1623,63 @@ var app = (function () {
     		block,
     		id: create_body_slot.name,
     		type: "slot",
-    		source: "(37:14) ",
+    		source: "(34:14) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:8) {#each item.counties as county}
+    // (26:8) {#each item.counties as county}
     function create_each_block$3(ctx) {
-    	let show_if;
-    	let current_block_type_index;
-    	let if_block;
-    	let if_block_anchor;
+    	let accordionitem;
+    	let t;
     	let current;
-    	const if_block_creators = [create_if_block$3, create_else_block$1];
-    	const if_blocks = [];
 
-    	function select_block_type(ctx, dirty) {
-    		if (dirty & /*item*/ 1) show_if = null;
-    		if (show_if == null) show_if = !!/*county*/ ctx[3].facilities.every(func$1);
-    		if (show_if) return 0;
-    		return 1;
-    	}
-
-    	current_block_type_index = select_block_type(ctx, -1);
-    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    	accordionitem = new AccordionItem({
+    			props: {
+    				key: /*county*/ ctx[3].fips,
+    				$$slots: {
+    					body: [create_body_slot],
+    					header: [create_header_slot]
+    				},
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
-    			if_block.c();
-    			if_block_anchor = empty();
+    			create_component(accordionitem.$$.fragment);
+    			t = space();
     		},
     		m: function mount(target, anchor) {
-    			if_blocks[current_block_type_index].m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
+    			mount_component(accordionitem, target, anchor);
+    			insert_dev(target, t, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			let previous_block_index = current_block_type_index;
-    			current_block_type_index = select_block_type(ctx, dirty);
+    			const accordionitem_changes = {};
+    			if (dirty & /*item*/ 1) accordionitem_changes.key = /*county*/ ctx[3].fips;
 
-    			if (current_block_type_index === previous_block_index) {
-    				if_blocks[current_block_type_index].p(ctx, dirty);
-    			} else {
-    				group_outros();
-
-    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
-    					if_blocks[previous_block_index] = null;
-    				});
-
-    				check_outros();
-    				if_block = if_blocks[current_block_type_index];
-
-    				if (!if_block) {
-    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-    					if_block.c();
-    				} else {
-    					if_block.p(ctx, dirty);
-    				}
-
-    				transition_in(if_block, 1);
-    				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    			if (dirty & /*$$scope, item, showDeregistered*/ 515) {
+    				accordionitem_changes.$$scope = { dirty, ctx };
     			}
+
+    			accordionitem.$set(accordionitem_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(if_block);
+    			transition_in(accordionitem.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(if_block);
+    			transition_out(accordionitem.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if_blocks[current_block_type_index].d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
+    			destroy_component(accordionitem, detaching);
+    			if (detaching) detach_dev(t);
     		}
     	};
 
@@ -1802,7 +1687,7 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(29:8) {#each item.counties as county}",
+    		source: "(26:8) {#each item.counties as county}",
     		ctx
     	});
 
@@ -2030,8 +1915,6 @@ var app = (function () {
 
     	return block;
     }
-
-    const func$1 = fac => fac.sub_last.date_dereg === null;
 
     function instance$6($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
