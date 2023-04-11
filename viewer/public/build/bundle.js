@@ -1250,392 +1250,8 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (33:8) 
-    function create_header_slot(ctx) {
-    	let div;
-    	let h3;
-    	let t0_value = /*county*/ ctx[3].name + "";
-    	let t0;
-    	let t1;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			h3 = element("h3");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			add_location(h3, file$6, 33, 10, 917);
-    			attr_dev(div, "slot", "header");
-    			attr_dev(div, "class", "header svelte-14go8pg");
-    			add_location(div, file$6, 32, 8, 872);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, h3);
-    			append_dev(h3, t0);
-    			append_dev(div, t1);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*county*/ ctx[3].name + "")) set_data_dev(t0, t0_value);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_header_slot.name,
-    		type: "slot",
-    		source: "(33:8) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (38:10) {#if showDeregistered || fac.sub_last.date_dereg === null}
-    function create_if_block$3(ctx) {
-    	let li5;
-    	let a;
-    	let t0_value = /*fac*/ ctx[6].name + "";
-    	let t0;
-    	let a_href_value;
-    	let t1;
-    	let ul;
-    	let t2;
-    	let li0;
-    	let b0;
-    	let t4;
-    	let t5_value = /*fac*/ ctx[6].city + "";
-    	let t5;
-    	let t6;
-    	let li1;
-    	let b1;
-    	let t8;
-    	let t9_value = /*fac*/ ctx[6].address + "";
-    	let t9;
-    	let t10;
-    	let li2;
-    	let b2;
-    	let t12;
-    	let t13_value = /*fac*/ ctx[6].EPAFacilityID + "";
-    	let t13;
-    	let t14;
-    	let li3;
-    	let b3;
-    	let t16;
-    	let t17_value = /*fac*/ ctx[6].sub_last.date_val + "";
-    	let t17;
-    	let t18;
-    	let li4;
-    	let b4;
-    	let t20;
-    	let t21_value = (/*fac*/ ctx[6].sub_last.num_accidents || "None") + "";
-    	let t21;
-    	let if_block = /*fac*/ ctx[6].names_prev.length && create_if_block_1$3(ctx);
-
-    	const block = {
-    		c: function create() {
-    			li5 = element("li");
-    			a = element("a");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			ul = element("ul");
-    			if (if_block) if_block.c();
-    			t2 = space();
-    			li0 = element("li");
-    			b0 = element("b");
-    			b0.textContent = "City:";
-    			t4 = space();
-    			t5 = text(t5_value);
-    			t6 = space();
-    			li1 = element("li");
-    			b1 = element("b");
-    			b1.textContent = "Address:";
-    			t8 = space();
-    			t9 = text(t9_value);
-    			t10 = space();
-    			li2 = element("li");
-    			b2 = element("b");
-    			b2.textContent = "EPA Facility ID:";
-    			t12 = space();
-    			t13 = text(t13_value);
-    			t14 = space();
-    			li3 = element("li");
-    			b3 = element("b");
-    			b3.textContent = "Latest RMP validation:";
-    			t16 = space();
-    			t17 = text(t17_value);
-    			t18 = space();
-    			li4 = element("li");
-    			b4 = element("b");
-    			b4.textContent = "# Accidents in latest 5-year history:";
-    			t20 = space();
-    			t21 = text(t21_value);
-    			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[6].EPAFacilityID);
-    			add_location(a, file$6, 39, 14, 1206);
-    			add_location(b0, file$6, 44, 20, 1453);
-    			add_location(li0, file$6, 44, 16, 1449);
-    			add_location(b1, file$6, 45, 20, 1502);
-    			add_location(li1, file$6, 45, 16, 1498);
-    			add_location(b2, file$6, 46, 20, 1557);
-    			add_location(li2, file$6, 46, 16, 1553);
-    			add_location(b3, file$6, 47, 20, 1626);
-    			add_location(li3, file$6, 47, 16, 1622);
-    			add_location(b4, file$6, 48, 20, 1705);
-    			add_location(li4, file$6, 48, 16, 1701);
-    			add_location(ul, file$6, 40, 14, 1277);
-    			attr_dev(li5, "class", "facility svelte-14go8pg");
-    			toggle_class(li5, "deregistered", /*fac*/ ctx[6].sub_last.date_dereg);
-    			add_location(li5, file$6, 38, 12, 1125);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, li5, anchor);
-    			append_dev(li5, a);
-    			append_dev(a, t0);
-    			append_dev(li5, t1);
-    			append_dev(li5, ul);
-    			if (if_block) if_block.m(ul, null);
-    			append_dev(ul, t2);
-    			append_dev(ul, li0);
-    			append_dev(li0, b0);
-    			append_dev(li0, t4);
-    			append_dev(li0, t5);
-    			append_dev(ul, t6);
-    			append_dev(ul, li1);
-    			append_dev(li1, b1);
-    			append_dev(li1, t8);
-    			append_dev(li1, t9);
-    			append_dev(ul, t10);
-    			append_dev(ul, li2);
-    			append_dev(li2, b2);
-    			append_dev(li2, t12);
-    			append_dev(li2, t13);
-    			append_dev(ul, t14);
-    			append_dev(ul, li3);
-    			append_dev(li3, b3);
-    			append_dev(li3, t16);
-    			append_dev(li3, t17);
-    			append_dev(ul, t18);
-    			append_dev(ul, li4);
-    			append_dev(li4, b4);
-    			append_dev(li4, t20);
-    			append_dev(li4, t21);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*fac*/ ctx[6].name + "")) set_data_dev(t0, t0_value);
-
-    			if (dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/facility:" + /*fac*/ ctx[6].EPAFacilityID)) {
-    				attr_dev(a, "href", a_href_value);
-    			}
-
-    			if (/*fac*/ ctx[6].names_prev.length) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block_1$3(ctx);
-    					if_block.c();
-    					if_block.m(ul, t2);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-
-    			if (dirty & /*item*/ 1 && t5_value !== (t5_value = /*fac*/ ctx[6].city + "")) set_data_dev(t5, t5_value);
-    			if (dirty & /*item*/ 1 && t9_value !== (t9_value = /*fac*/ ctx[6].address + "")) set_data_dev(t9, t9_value);
-    			if (dirty & /*item*/ 1 && t13_value !== (t13_value = /*fac*/ ctx[6].EPAFacilityID + "")) set_data_dev(t13, t13_value);
-    			if (dirty & /*item*/ 1 && t17_value !== (t17_value = /*fac*/ ctx[6].sub_last.date_val + "")) set_data_dev(t17, t17_value);
-    			if (dirty & /*item*/ 1 && t21_value !== (t21_value = (/*fac*/ ctx[6].sub_last.num_accidents || "None") + "")) set_data_dev(t21, t21_value);
-
-    			if (dirty & /*item*/ 1) {
-    				toggle_class(li5, "deregistered", /*fac*/ ctx[6].sub_last.date_dereg);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li5);
-    			if (if_block) if_block.d();
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block$3.name,
-    		type: "if",
-    		source: "(38:10) {#if showDeregistered || fac.sub_last.date_dereg === null}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (42:16) {#if fac.names_prev.length}
-    function create_if_block_1$3(ctx) {
-    	let li;
-    	let b;
-    	let t1;
-    	let t2_value = /*fac*/ ctx[6].names_prev.join(" • ") + "";
-    	let t2;
-
-    	const block = {
-    		c: function create() {
-    			li = element("li");
-    			b = element("b");
-    			b.textContent = "Has also appeared as:";
-    			t1 = space();
-    			t2 = text(t2_value);
-    			add_location(b, file$6, 42, 22, 1348);
-    			add_location(li, file$6, 42, 18, 1344);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, li, anchor);
-    			append_dev(li, b);
-    			append_dev(li, t1);
-    			append_dev(li, t2);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*fac*/ ctx[6].names_prev.join(" • ") + "")) set_data_dev(t2, t2_value);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_1$3.name,
-    		type: "if",
-    		source: "(42:16) {#if fac.names_prev.length}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (37:10) {#each county.facilities as fac}
-    function create_each_block_1$1(ctx) {
-    	let if_block_anchor;
-    	let if_block = (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) && create_if_block$3(ctx);
-
-    	const block = {
-    		c: function create() {
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block$3(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_1$1.name,
-    		type: "each",
-    		source: "(37:10) {#each county.facilities as fac}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (36:8) 
-    function create_body_slot(ctx) {
-    	let ul;
-    	let t;
-    	let each_value_1 = /*county*/ ctx[3].facilities;
-    	validate_each_argument(each_value_1);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value_1.length; i += 1) {
-    		each_blocks[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			ul = element("ul");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t = space();
-    			attr_dev(ul, "id", "facilities-list");
-    			attr_dev(ul, "slot", "body");
-    			add_location(ul, file$6, 35, 8, 963);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, ul, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(ul, null);
-    			}
-
-    			append_dev(ul, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*item, showDeregistered*/ 3) {
-    				each_value_1 = /*county*/ ctx[3].facilities;
-    				validate_each_argument(each_value_1);
-    				let i;
-
-    				for (i = 0; i < each_value_1.length; i += 1) {
-    					const child_ctx = get_each_context_1$1(ctx, each_value_1, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block_1$1(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(ul, t);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value_1.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(ul);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_body_slot.name,
-    		type: "slot",
-    		source: "(36:8) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (30:6) {#each item.counties as county}
-    function create_each_block$3(ctx) {
+    // (32:10) {:else}
+    function create_else_block$1(ctx) {
     	let accordionitem;
     	let current;
 
@@ -1685,16 +1301,515 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$3.name,
-    		type: "each",
-    		source: "(30:6) {#each item.counties as county}",
+    		id: create_else_block$1.name,
+    		type: "else",
+    		source: "(32:10) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:0) <Accordion>
+    // (30:10) {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}
+    function create_if_block$3(ctx) {
+    	let p;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			p.textContent = "No active facilities";
+    			add_location(p, file$6, 30, 12, 930);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$3.name,
+    		type: "if",
+    		source: "(30:10) {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (34:14) 
+    function create_header_slot(ctx) {
+    	let div;
+    	let h3;
+    	let t0_value = /*county*/ ctx[3].name + "";
+    	let t0;
+    	let t1;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			h3 = element("h3");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			add_location(h3, file$6, 34, 16, 1087);
+    			attr_dev(div, "slot", "header");
+    			attr_dev(div, "class", "header svelte-14go8pg");
+    			add_location(div, file$6, 33, 14, 1036);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, h3);
+    			append_dev(h3, t0);
+    			append_dev(div, t1);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*county*/ ctx[3].name + "")) set_data_dev(t0, t0_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_header_slot.name,
+    		type: "slot",
+    		source: "(34:14) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (39:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
+    function create_if_block_1$3(ctx) {
+    	let li5;
+    	let a;
+    	let t0_value = /*fac*/ ctx[6].name + "";
+    	let t0;
+    	let a_href_value;
+    	let t1;
+    	let ul;
+    	let t2;
+    	let li0;
+    	let b0;
+    	let t4;
+    	let t5_value = /*fac*/ ctx[6].city + "";
+    	let t5;
+    	let t6;
+    	let li1;
+    	let b1;
+    	let t8;
+    	let t9_value = /*fac*/ ctx[6].address + "";
+    	let t9;
+    	let t10;
+    	let li2;
+    	let b2;
+    	let t12;
+    	let t13_value = /*fac*/ ctx[6].EPAFacilityID + "";
+    	let t13;
+    	let t14;
+    	let li3;
+    	let b3;
+    	let t16;
+    	let t17_value = /*fac*/ ctx[6].sub_last.date_val + "";
+    	let t17;
+    	let t18;
+    	let li4;
+    	let b4;
+    	let t20;
+    	let t21_value = (/*fac*/ ctx[6].sub_last.num_accidents || "None") + "";
+    	let t21;
+    	let if_block = /*fac*/ ctx[6].names_prev.length && create_if_block_2$2(ctx);
+
+    	const block = {
+    		c: function create() {
+    			li5 = element("li");
+    			a = element("a");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			ul = element("ul");
+    			if (if_block) if_block.c();
+    			t2 = space();
+    			li0 = element("li");
+    			b0 = element("b");
+    			b0.textContent = "City:";
+    			t4 = space();
+    			t5 = text(t5_value);
+    			t6 = space();
+    			li1 = element("li");
+    			b1 = element("b");
+    			b1.textContent = "Address:";
+    			t8 = space();
+    			t9 = text(t9_value);
+    			t10 = space();
+    			li2 = element("li");
+    			b2 = element("b");
+    			b2.textContent = "EPA Facility ID:";
+    			t12 = space();
+    			t13 = text(t13_value);
+    			t14 = space();
+    			li3 = element("li");
+    			b3 = element("b");
+    			b3.textContent = "Latest RMP validation:";
+    			t16 = space();
+    			t17 = text(t17_value);
+    			t18 = space();
+    			li4 = element("li");
+    			b4 = element("b");
+    			b4.textContent = "# Accidents in latest 5-year history:";
+    			t20 = space();
+    			t21 = text(t21_value);
+    			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[6].EPAFacilityID);
+    			add_location(a, file$6, 40, 22, 1418);
+    			add_location(b0, file$6, 45, 28, 1705);
+    			add_location(li0, file$6, 45, 24, 1701);
+    			add_location(b1, file$6, 46, 28, 1762);
+    			add_location(li1, file$6, 46, 24, 1758);
+    			add_location(b2, file$6, 47, 28, 1825);
+    			add_location(li2, file$6, 47, 24, 1821);
+    			add_location(b3, file$6, 48, 28, 1902);
+    			add_location(li3, file$6, 48, 24, 1898);
+    			add_location(b4, file$6, 49, 28, 1989);
+    			add_location(li4, file$6, 49, 24, 1985);
+    			add_location(ul, file$6, 41, 22, 1497);
+    			attr_dev(li5, "class", "facility svelte-14go8pg");
+    			toggle_class(li5, "deregistered", /*fac*/ ctx[6].sub_last.date_dereg);
+    			add_location(li5, file$6, 39, 20, 1329);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, li5, anchor);
+    			append_dev(li5, a);
+    			append_dev(a, t0);
+    			append_dev(li5, t1);
+    			append_dev(li5, ul);
+    			if (if_block) if_block.m(ul, null);
+    			append_dev(ul, t2);
+    			append_dev(ul, li0);
+    			append_dev(li0, b0);
+    			append_dev(li0, t4);
+    			append_dev(li0, t5);
+    			append_dev(ul, t6);
+    			append_dev(ul, li1);
+    			append_dev(li1, b1);
+    			append_dev(li1, t8);
+    			append_dev(li1, t9);
+    			append_dev(ul, t10);
+    			append_dev(ul, li2);
+    			append_dev(li2, b2);
+    			append_dev(li2, t12);
+    			append_dev(li2, t13);
+    			append_dev(ul, t14);
+    			append_dev(ul, li3);
+    			append_dev(li3, b3);
+    			append_dev(li3, t16);
+    			append_dev(li3, t17);
+    			append_dev(ul, t18);
+    			append_dev(ul, li4);
+    			append_dev(li4, b4);
+    			append_dev(li4, t20);
+    			append_dev(li4, t21);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t0_value !== (t0_value = /*fac*/ ctx[6].name + "")) set_data_dev(t0, t0_value);
+
+    			if (dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/facility:" + /*fac*/ ctx[6].EPAFacilityID)) {
+    				attr_dev(a, "href", a_href_value);
+    			}
+
+    			if (/*fac*/ ctx[6].names_prev.length) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_2$2(ctx);
+    					if_block.c();
+    					if_block.m(ul, t2);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+
+    			if (dirty & /*item*/ 1 && t5_value !== (t5_value = /*fac*/ ctx[6].city + "")) set_data_dev(t5, t5_value);
+    			if (dirty & /*item*/ 1 && t9_value !== (t9_value = /*fac*/ ctx[6].address + "")) set_data_dev(t9, t9_value);
+    			if (dirty & /*item*/ 1 && t13_value !== (t13_value = /*fac*/ ctx[6].EPAFacilityID + "")) set_data_dev(t13, t13_value);
+    			if (dirty & /*item*/ 1 && t17_value !== (t17_value = /*fac*/ ctx[6].sub_last.date_val + "")) set_data_dev(t17, t17_value);
+    			if (dirty & /*item*/ 1 && t21_value !== (t21_value = (/*fac*/ ctx[6].sub_last.num_accidents || "None") + "")) set_data_dev(t21, t21_value);
+
+    			if (dirty & /*item*/ 1) {
+    				toggle_class(li5, "deregistered", /*fac*/ ctx[6].sub_last.date_dereg);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(li5);
+    			if (if_block) if_block.d();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$3.name,
+    		type: "if",
+    		source: "(39:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (43:24) {#if fac.names_prev.length}
+    function create_if_block_2$2(ctx) {
+    	let li;
+    	let b;
+    	let t1;
+    	let t2_value = /*fac*/ ctx[6].names_prev.join(" • ") + "";
+    	let t2;
+
+    	const block = {
+    		c: function create() {
+    			li = element("li");
+    			b = element("b");
+    			b.textContent = "Has also appeared as:";
+    			t1 = space();
+    			t2 = text(t2_value);
+    			add_location(b, file$6, 43, 30, 1584);
+    			add_location(li, file$6, 43, 26, 1580);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, li, anchor);
+    			append_dev(li, b);
+    			append_dev(li, t1);
+    			append_dev(li, t2);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*fac*/ ctx[6].names_prev.join(" • ") + "")) set_data_dev(t2, t2_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(li);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2$2.name,
+    		type: "if",
+    		source: "(43:24) {#if fac.names_prev.length}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (38:16) {#each county.facilities as fac}
+    function create_each_block_1$1(ctx) {
+    	let if_block_anchor;
+    	let if_block = (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) && create_if_block_1$3(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[6].sub_last.date_dereg === null) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block_1$3(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1$1.name,
+    		type: "each",
+    		source: "(38:16) {#each county.facilities as fac}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (37:14) 
+    function create_body_slot(ctx) {
+    	let ul;
+    	let t;
+    	let each_value_1 = /*county*/ ctx[3].facilities;
+    	validate_each_argument(each_value_1);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			ul = element("ul");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t = space();
+    			attr_dev(ul, "id", "facilities-list");
+    			attr_dev(ul, "slot", "body");
+    			add_location(ul, file$6, 36, 14, 1145);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, ul, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(ul, null);
+    			}
+
+    			append_dev(ul, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*item, showDeregistered*/ 3) {
+    				each_value_1 = /*county*/ ctx[3].facilities;
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1$1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block_1$1(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(ul, t);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value_1.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(ul);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_body_slot.name,
+    		type: "slot",
+    		source: "(37:14) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (29:8) {#each item.counties as county}
+    function create_each_block$3(ctx) {
+    	let show_if;
+    	let current_block_type_index;
+    	let if_block;
+    	let if_block_anchor;
+    	let current;
+    	const if_block_creators = [create_if_block$3, create_else_block$1];
+    	const if_blocks = [];
+
+    	function select_block_type(ctx, dirty) {
+    		if (dirty & /*item*/ 1) show_if = null;
+    		if (show_if == null) show_if = !!/*county*/ ctx[3].facilities.every(func$1);
+    		if (show_if) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index = select_block_type(ctx, -1);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_blocks[current_block_type_index].m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type(ctx, dirty);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block = if_blocks[current_block_type_index];
+
+    				if (!if_block) {
+    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block.c();
+    				} else {
+    					if_block.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block, 1);
+    				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if_blocks[current_block_type_index].d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$3.name,
+    		type: "each",
+    		source: "(29:8) {#each item.counties as county}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (16:0) <Accordion>
     function create_default_slot(ctx) {
     	let section;
     	let h2;
@@ -1751,15 +1866,15 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h2, file$6, 21, 4, 510);
-    			add_location(button, file$6, 23, 4, 550);
+    			add_location(h2, file$6, 17, 4, 355);
+    			add_location(button, file$6, 19, 4, 395);
     			attr_dev(a, "href", "#/list:states");
-    			add_location(a, file$6, 27, 11, 706);
-    			add_location(div0, file$6, 27, 4, 699);
+    			add_location(a, file$6, 23, 11, 551);
+    			add_location(div0, file$6, 23, 4, 544);
     			attr_dev(div1, "id", "counties-list");
-    			add_location(div1, file$6, 28, 4, 760);
+    			add_location(div1, file$6, 24, 4, 605);
     			attr_dev(section, "id", "state-facilities");
-    			add_location(section, file$6, 20, 2, 474);
+    			add_location(section, file$6, 16, 2, 319);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -1852,7 +1967,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(20:0) <Accordion>",
+    		source: "(16:0) <Accordion>",
     		ctx
     	});
 
@@ -1916,6 +2031,8 @@ var app = (function () {
     	return block;
     }
 
+    const func$1 = fac => fac.sub_last.date_dereg === null;
+
     function instance$6($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('State', slots, []);
@@ -1926,12 +2043,9 @@ var app = (function () {
     		$$invalidate(1, showDeregistered = !showDeregistered);
     	}
 
-    	// function filterFacilities(county) {
-    	//   return showDeregistered ? county.facilities : county.facilities.filter(facility => facility.sub_last.date_dereg === null);
-    	// }
     	onDestroy(() => {
     		
-    	});
+    	}); // Cleanup
 
     	$$self.$$.on_mount.push(function () {
     		if (item === undefined && !('item' in $$props || $$self.$$.bound[$$self.$$.props['item']])) {
@@ -1952,6 +2066,7 @@ var app = (function () {
     	$$self.$capture_state = () => ({
     		Accordion,
     		AccordionItem,
+    		onMount,
     		onDestroy,
     		item,
     		showDeregistered,

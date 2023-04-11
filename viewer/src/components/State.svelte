@@ -1,20 +1,16 @@
 <script>
   import { Accordion, AccordionItem } from 'svelte-collapsible';
-  import { onDestroy } from 'svelte';
-
+  import { onMount, onDestroy } from 'svelte';
   export let item;
-  let showDeregistered = true;
 
+  let showDeregistered = true;
   function toggleDeregistered() {
     showDeregistered = !showDeregistered;
   }
-  // function filterFacilities(county) {
-  //   return showDeregistered ? county.facilities : county.facilities.filter(facility => facility.sub_last.date_dereg === null);
-  // }
+
   onDestroy(() => {
-
-  })
-
+    // Cleanup
+  });
 </script>
 
 <Accordion>
@@ -27,33 +23,39 @@
 
     <div>⭠ <a href="#/list:states">View all states</a></div>
     <div id="counties-list">
-      {#each item.counties as county}
-
-      <AccordionItem key={county.fips}>
-        <div slot='header' class='header'>
-          <h3>{county.name}</h3>
-        </div>
-        <ul id="facilities-list" slot="body">
-          {#each county.facilities as fac}
-          {#if showDeregistered || fac.sub_last.date_dereg === null}
-            <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
-              <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
-              <ul>
-                {#if fac.names_prev.length}
-                  <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
-                {/if}
-                <li><b>City:</b> {fac.city}</li>
-                <li><b>Address:</b> {fac.address}</li>
-                <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
-                <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-                <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
+      <!-- {#if item.counties.every(county => county.facilities.every(fac => fac.sub_last.date_dereg !== null))}
+        <p>No active facilities</p>
+      {:else} -->
+        {#each item.counties as county}
+          {#if county.facilities.every(fac => fac.sub_last.date_dereg === null)}
+            <p>No active facilities</p>
+          {:else}
+            <AccordionItem key={county.fips}>
+              <div slot='header' class='header'>
+                <h3>{county.name}</h3>
+              </div>
+              <ul id="facilities-list" slot="body">
+                {#each county.facilities as fac}
+                  {#if showDeregistered || fac.sub_last.date_dereg === null}
+                    <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
+                      <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
+                      <ul>
+                        {#if fac.names_prev.length}
+                          <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+                        {/if}
+                        <li><b>City:</b> {fac.city}</li>
+                        <li><b>Address:</b> {fac.address}</li>
+                        <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+                        <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
+                        <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
+                      </ul>
+                    </li>
+                  {/if}
+                {/each} 
               </ul>
-            </li>
+            </AccordionItem>
           {/if}
-          {/each}
-        </ul>
-      </AccordionItem>
-      {/each}    
+        {/each}  
     </div>
   </section>
 </Accordion>
