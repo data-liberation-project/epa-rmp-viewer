@@ -53,7 +53,16 @@
   });
 </script>
 
-<div id="map" style="height: 400px;"></div>
+<div id="map">
+  <!-- <div id="left" class="sidebar flex-center left collapsed">
+    <div class="sidebar-content rounded-rect flex-center">
+    Left Sidebar
+      <div class="sidebar-toggle rounded-rect left" onclick="toggleSidebar('left')">
+      &rarr;
+      </div>
+    </div>
+  </div> -->
+</div>
   
 <style>
   :global(.marker) {
@@ -62,7 +71,14 @@
     width:            20px;
     height:           20px;
     border-radius:    10%;
-    cursor:           pointer;
+    cursor:           pointer !important;
+  }
+
+  #map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%;
   }
   
 </style>
