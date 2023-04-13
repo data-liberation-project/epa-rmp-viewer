@@ -1,111 +1,94 @@
-*, *:before, *:after {
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	background-color: #EEE;
-	color: #333;
+html,
+body {
+  /*position: relative;  this avoid thats the map extends to the right side*/
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #eee;
+  color: #333;
 }
 
 body {
-	color: #333;
-	font-size: 16px;
-	padding: 1em;
-	width: 100%;
-	max-width: 800px; 
-	margin: 0 auto;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #333;
+  font-size: 16px;
+  padding: 1em;
+  width: 100%;
+  /*max-width: 800px;  avoid that the map container extends to the left side*/
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-
 a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+  color: rgb(0, 100, 200);
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:visited {
-	color: rgb(0,80,160);
+  color: rgb(0, 80, 160);
 }
 
 label {
-	display: block;
+  display: block;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+  color: #ccc;
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
 }
 
 button:disabled {
-	color: #999;
+  color: #999;
 }
 
 button:not(:disabled):active {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 
 button:focus {
-	border-color: #666;
+  border-color: #666;
 }
 
 .tablewrapper .tablewrapper {
-	margin-top: 0.5em;
-	padding: 0.5em 1.5em;
-	padding-right: 0;
+  margin-top: 0.5em;
+  padding: 0.5em 1.5em;
+  padding-right: 0;
 }
 
 .warning {
-	background-color: #FFFF99;
-	padding: 0.5em;
-	font-size: 1.1em;
+  background-color: #ffff99;
+  padding: 0.5em;
+  font-size: 1.1em;
 }
 
-/* #map { 
-	position: absolute; 
-	top: 0; 
-	bottom: 0; 
-	width: 100%;
-	margin: 0;
-	padding: 0;
-} */
-/* .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
-#facilities-list .facility {
-	display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-} */
 
