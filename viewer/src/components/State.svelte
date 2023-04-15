@@ -13,23 +13,18 @@
     // Cleanup
   });
 
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
   // Create facility map by state
   let map;
-  // Add or remove the 'collapsed' CSS class from the sidebar element.
-  function toggleSidebar(id) {
-      const elem = document.getElementById(id);
-      const collapsed = elem.classList.toggle('collapsed');
-      const padding = {};
-      // 'id' is 'left'. When run at start, this object looks like: '{left: 300}';
-      padding[id] = collapsed ? 0 : 410; // 0 if collapsed, 300 px if not. This matches the width of the sidebars in the .sidebar CSS class.
-      console.log('function works', collapsed)
-      // // Adjust the map's center accounting for the position of sidebars.
-      // map.easeTo({
-      //   padding: padding,
-      //   duration: 1000 // In ms. This matches the CSS transition duration property.
-      // });
-    }
-
   onMount(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ';
     map = new mapboxgl.Map({
@@ -38,10 +33,7 @@
       center: [Number(item.counties[0].facilities[0].sub_last.lon_sub), Number(item.counties[0].facilities[0].sub_last.lat_sub)],
       zoom: 6
     });
-
-    // Add zoom control to the map
-    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right'); // Add zoom control to the map
     item.counties.forEach(county => {
         county.facilities.forEach(facility => {
           let lat = Number(facility.sub_last.lat_sub);
@@ -50,93 +42,82 @@
 
           const el = document.createElement('div');
           el.className = 'marker';
-
-          // Add marker to the map
-          const marker = new mapboxgl.Marker()
+          const marker = new mapboxgl.Marker() // Add marker to the map
             .setLngLat([lon, lat])
             .addTo(map);
 
-          // Add popup to the marker
-          const popup = new mapboxgl.Popup({
+          const popup = new mapboxgl.Popup({ // Add popup to the marker
               closeOnClick: false,
               closeButton: false
           });
-
-          // Show popup on marker hover
-          marker.getElement().addEventListener('mouseenter', () => {
+          marker.getElement().addEventListener('mouseenter', () => { // Show popup on marker hover
               map.getCanvas().style.cursor = 'pointer';
               popup.setLngLat(marker.getLngLat()).setHTML(`<p>${facility.name}</p>`).addTo(map);
           });
-
-          // Hide popup on marker leave
-          marker.getElement().addEventListener('mouseleave', () => {
+          marker.getElement().addEventListener('mouseleave', () => { // Hide popup on marker leave
               map.getCanvas().style.cursor = '';
               popup.remove();
           });
         })
     });
-    map.on('load', () => {
-      toggleSidebar('left');
-    });
   });
 </script>
 
-<div id="map">
-  <div id="left" class="sidebar flex-center left collapsed">
-    <div class="sidebar-content rounded-rect flex-center">
-      <button on:click={() => toggleSidebar('left')} class="sidebar-toggle rounded-rect left">
-        &rarr;
+<div id="main">
+  <button class="openbtn" on:click={() => openNav()}>☰ Toggle Sidebar</button>  
+ <div id='map'></div>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="#/list:states"> ⭠ View all states 
+    <a href="javascript:void(0);" class="closebtn" on:click={() => closeNav()}>×</a>
+  </a>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <section id="state-facilities">
+      <h1>Facilities in {item.name}</h1>
+      <button on:click={toggleDeregistered}>
+        {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
       </button>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-          <section id="state-facilities">
-            <h1>Facilities in {item.name}</h1>
-            <button on:click={toggleDeregistered}>
-              {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
-            </button>
-            <div>⭠ <a href="#/list:states">View all states</a></div>
-            <div id="counties-list">
-              
-              <div class="accordion-item">
-                {#each item.counties as county}
-                    <h2 class="accordion-header" id="flush-heading{county.name}">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{county.name}" aria-expanded="false" aria-controls="flush-collapse{county.name}">
-                        {county.name}
-                      </button>
-                    </h2>
-                    <div id="flush-collapse{county.name}" class="accordion-collapse collapse" aria-labelledby="flush-heading{county.name}" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <ul id="facilities-list">
-                          {#each county.facilities as fac}
-                            {#if showDeregistered || fac.sub_last.date_dereg === null}
-                              
-                                <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
-                                    <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
-                                    <div class="facility-info">
-                                      <ul>
-                                        {#if fac.names_prev.length}
-                                          <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
-                                        {/if}
-                                        <li><b>City:</b> {fac.city}</li>
-                                        <li><b>Address:</b> {fac.address}</li>
-                                        <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
-                                        <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-                                        <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
-                                      </ul>
-                                    </div>
-                                </li>
-                            {/if}
-                          {/each} 
-                        </ul>
-                      </div>
-                    </div>
-                {/each}
+      <div id="counties-list">
+        <div class="accordion-item">
+        {#each item.counties as county}
+            <h2 class="accordion-header" id="flush-heading{county.name}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{county.name}" aria-expanded="false" aria-controls="flush-collapse{county.name}">
+                {county.name}
+              </button>
+            </h2>
+            <div id="flush-collapse{county.name}" class="accordion-collapse collapse" aria-labelledby="flush-heading{county.name}" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul id="facilities-list">
+                  {#each county.facilities as fac}
+                      {#if showDeregistered || fac.sub_last.date_dereg === null}
+                          <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
+                            <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
+                            <div class="facility-info">
+                              <ul>
+                                {#if fac.names_prev.length}
+                                    <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+                                {/if}
+                                    <li><b>City:</b> {fac.city}</li>
+                                    <li><b>Address:</b> {fac.address}</li>
+                                    <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+                                    <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
+                                    <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
+                              </ul>
+                            </div>
+                          </li>
+                      {/if}
+                  {/each} 
+                </ul>
               </div>
             </div>
-          </section>
+          {/each}
+        </div>
       </div>
-    </div>
-  </div> 
-</div>
+    </section>
+  </div>
+</div> 
+
 
 <style>
   .facility + .facility {
@@ -145,7 +126,6 @@
   .deregistered:before {
     content: "[Deregistered] "
   }
-
   :global(.marker) {
     background-image: url("/viewer/public/images/mapbox-marker-icon-blue.svg");
     background-size:  cover;
@@ -156,58 +136,66 @@
   }
   #map { 
     position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    width: 100%;
-    display: flex;
-  }
-  .left.collapsed {
-    transform: translateX(-295px);
-  }
-  .rounded-rect {
-    /* background: white; */
-    border-radius: 10px;
-    box-shadow: 0 0 50px -25px black;
-  }
-  .flex-center {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .flex-center.left {
-    left: 0px;
-  }
-  .sidebar-content {
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: gray;
-  }
-  .sidebar-toggle {
-    position: absolute;
-    width: 1.3em;
-    height: 1.3em;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sidebar-toggle.left {
-    right: -1.5em;
-  }
-  .sidebar-toggle:hover {
-    color: #0aa1cf;
-    cursor: pointer;
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    width:100%;
+    height:100%; 
   }
   .sidebar {
-    transition: transform 1s;
-    z-index: 1;
-    width: 410px;
     height: 100%;
-    overflow: auto;
-    background-color: white;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding: 10px 0px 0px 0px;
   }
+  .sidebar a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;    
+    position:absolute; 
+    top:10px; 
+    left:10px; 
+    z-index:1;
+    border-radius: 3px;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  #main {
+    position:relative;
+    transition: margin-left .5s;
+    padding: 16px;
+    height:100%; 
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }   
 </style>

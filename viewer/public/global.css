@@ -4,6 +4,11 @@
   box-sizing: inherit;
 }
 
+body { 
+  margin:0; 
+  padding:0; 
+}
+
 html,
 body {
   /*position: relative;  this avoid thats the map extends to the right side*/
@@ -12,18 +17,24 @@ body {
   box-sizing: border-box;
   background-color: #eee;
   color: #333;
+  margin: 0px;
 }
 
-body {
+html, body, #map{
+  height:100%;
+  margin: 0px;
+}
+
+/* body {
   color: #333;
   font-size: 16px;
   padding: 1em;
   width: 100%;
-  /*max-width: 800px;  avoid that the map container extends to the left side*/
-  margin: 0 auto;
+  */ /* max-width: 800px;  avoid that the map container extends to the left side*/
+ /* margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
+} */
 
 a {
   color: rgb(0, 100, 200);
