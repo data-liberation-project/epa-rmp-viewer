@@ -1,8 +1,12 @@
 <script>
-  import { Accordion, AccordionItem } from 'svelte-collapsible';
   import { onMount, onDestroy } from 'svelte';
+  import Accordion, { createAccordionContext } from './Accordion.svelte'
+  import AccordionItem from './AccordionItem.svelte';
   import mapboxgl from 'mapbox-gl';
   export let item;
+
+  // Create Accordion
+  createAccordionContext();
 
   // Hide deregistered facilities
   let showDeregistered = true;
@@ -69,53 +73,45 @@
 </div>
 
 <div id="mySidebar" class="sidebar">
-  <a href="#/list:states"> ⭠ View all states 
-    <a href="javascript:void(0);" class="closebtn" on:click={() => closeNav()}>×</a>
-  </a>
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <section id="state-facilities">
-      <h1>Facilities in {item.name}</h1>
+  <a href="#/list:states"> ⭠ View all states</a>
+  <button class="closebtn" on:click={() => closeNav()}>×</button>
+  <h1>Facilities in {item.name}</h1>
       <button on:click={toggleDeregistered}>
         {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
       </button>
-      <div id="counties-list">
-        <div class="accordion-item">
+
+    <Accordion current="a">
         {#each item.counties as county}
-            <h2 class="accordion-header" id="flush-heading{county.name}">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{county.name}" aria-expanded="false" aria-controls="flush-collapse{county.name}">
-                {county.name}
-              </button>
-            </h2>
-            <div id="flush-collapse{county.name}" class="accordion-collapse collapse" aria-labelledby="flush-heading{county.name}" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul id="facilities-list">
-                  {#each county.facilities as fac}
-                      {#if showDeregistered || fac.sub_last.date_dereg === null}
-                          <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
-                            <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
-                            <div class="facility-info">
-                              <ul>
-                                {#if fac.names_prev.length}
-                                    <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
-                                {/if}
-                                    <li><b>City:</b> {fac.city}</li>
-                                    <li><b>Address:</b> {fac.address}</li>
-                                    <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
-                                    <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-                                    <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
-                              </ul>
-                            </div>
-                          </li>
-                      {/if}
-                  {/each} 
-                </ul>
-              </div>
+        <AccordionItem key="{county.abbr}">
+            <div slot="head">
+              {county.name}
             </div>
-          {/each}
-        </div>
-      </div>
-    </section>
-  </div>
+            <div slot="details">
+              <ul id="facilities-list">
+                {#each county.facilities as fac}
+                  {#if showDeregistered || fac.sub_last.date_dereg === null}
+                    <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
+                    <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
+                    <div class="facility-info">
+                      <ul>
+                        {#if fac.names_prev.length}
+                          <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+                        {/if}
+                          <li><b>City:</b> {fac.city}</li>
+                          <li><b>Address:</b> {fac.address}</li>
+                          <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+                          <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
+                          <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
+                      </ul>
+                    </div>
+                    </li>
+                  {/if}
+                {/each} 
+              </ul>
+            </div>
+        </AccordionItem>
+      {/each}
+    </Accordion>
 </div> 
 
 
@@ -144,7 +140,7 @@
   .sidebar {
     height: 100%;
     width: 0;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
     top: 0;
     left: 0;
@@ -152,6 +148,10 @@
     overflow-x: hidden;
     transition: 0.25s;
     padding: 10px 0px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -25px black;
+    left: 0px;
+    position: absolute;
   }
   .sidebar a {
     padding: 8px 8px 8px 0px;
@@ -167,9 +167,10 @@
   .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0px;
     font-size: 36px;
-    margin-left: 50px;
+    padding: 0px;
+    margin-left: 10px;
   }
   .openbtn {
     font-size: 20px;
