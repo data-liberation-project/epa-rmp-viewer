@@ -1460,7 +1460,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (88:12) 
+    // (110:14) 
     function create_head_slot(ctx) {
     	let div;
     	let t0_value = /*county*/ ctx[8].name + "";
@@ -1473,7 +1473,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(div, "slot", "head");
-    			add_location(div, file$6, 87, 12, 3142);
+    			add_location(div, file$6, 109, 14, 4133);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1492,14 +1492,14 @@ var app = (function () {
     		block,
     		id: create_head_slot.name,
     		type: "slot",
-    		source: "(88:12) ",
+    		source: "(110:14) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (94:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
+    // (116:20) {#if showDeregistered || fac.sub_last.date_dereg === null}
     function create_if_block$3(ctx) {
     	let li5;
     	let a;
@@ -1583,24 +1583,24 @@ var app = (function () {
     			t21 = text(t21_value);
     			t22 = space();
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[11].EPAFacilityID);
-    			attr_dev(a, "class", "svelte-1eomli4");
-    			add_location(a, file$6, 95, 20, 3513);
-    			add_location(b0, file$6, 101, 30, 3850);
-    			add_location(li0, file$6, 101, 26, 3846);
-    			add_location(b1, file$6, 102, 30, 3909);
-    			add_location(li1, file$6, 102, 26, 3905);
-    			add_location(b2, file$6, 103, 30, 3974);
-    			add_location(li2, file$6, 103, 26, 3970);
-    			add_location(b3, file$6, 104, 30, 4053);
-    			add_location(li3, file$6, 104, 26, 4049);
-    			add_location(b4, file$6, 105, 30, 4142);
-    			add_location(li4, file$6, 105, 26, 4138);
-    			add_location(ul, file$6, 97, 22, 3640);
+    			attr_dev(a, "class", "facility-name");
+    			add_location(a, file$6, 117, 22, 4520);
+    			add_location(b0, file$6, 123, 32, 4891);
+    			add_location(li0, file$6, 123, 28, 4887);
+    			add_location(b1, file$6, 124, 32, 4952);
+    			add_location(li1, file$6, 124, 28, 4948);
+    			add_location(b2, file$6, 125, 32, 5019);
+    			add_location(li2, file$6, 125, 28, 5015);
+    			add_location(b3, file$6, 126, 32, 5100);
+    			add_location(li3, file$6, 126, 28, 5096);
+    			add_location(b4, file$6, 127, 32, 5191);
+    			add_location(li4, file$6, 127, 28, 5187);
+    			add_location(ul, file$6, 119, 24, 4673);
     			attr_dev(div, "class", "facility-info");
-    			add_location(div, file$6, 96, 20, 3590);
-    			attr_dev(li5, "class", "facility svelte-1eomli4");
+    			add_location(div, file$6, 118, 22, 4621);
+    			attr_dev(li5, "class", "facility svelte-ahh7ts");
     			toggle_class(li5, "deregistered", /*fac*/ ctx[11].sub_last.date_dereg);
-    			add_location(li5, file$6, 94, 20, 3426);
+    			add_location(li5, file$6, 116, 22, 4431);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li5, anchor);
@@ -1677,14 +1677,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(94:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
+    		source: "(116:20) {#if showDeregistered || fac.sub_last.date_dereg === null}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (99:24) {#if fac.names_prev.length}
+    // (121:26) {#if fac.names_prev.length}
     function create_if_block_1$3(ctx) {
     	let li;
     	let b;
@@ -1699,8 +1699,8 @@ var app = (function () {
     			b.textContent = "Has also appeared as:";
     			t1 = space();
     			t2 = text(t2_value);
-    			add_location(b, file$6, 99, 30, 3727);
-    			add_location(li, file$6, 99, 26, 3723);
+    			add_location(b, file$6, 121, 32, 4764);
+    			add_location(li, file$6, 121, 28, 4760);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1720,17 +1720,17 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(99:24) {#if fac.names_prev.length}",
+    		source: "(121:26) {#if fac.names_prev.length}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (93:16) {#each county.facilities as fac}
+    // (115:18) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
-    	let if_block = (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[11].sub_last.date_dereg === null) && create_if_block$3(ctx);
+    	let if_block = (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[11].sub_last.date_dereg === null) && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -1742,7 +1742,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*showDeregistered*/ ctx[1] || /*fac*/ ctx[11].sub_last.date_dereg === null) {
+    			if (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[11].sub_last.date_dereg === null) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -1765,14 +1765,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(93:16) {#each county.facilities as fac}",
+    		source: "(115:18) {#each county.facilities as fac}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (91:12) 
+    // (113:14) 
     function create_details_slot(ctx) {
     	let div;
     	let ul;
@@ -1796,9 +1796,9 @@ var app = (function () {
 
     			t = space();
     			attr_dev(ul, "id", "facilities-list");
-    			add_location(ul, file$6, 91, 14, 3254);
+    			add_location(ul, file$6, 113, 16, 4253);
     			attr_dev(div, "slot", "details");
-    			add_location(div, file$6, 90, 12, 3219);
+    			add_location(div, file$6, 112, 14, 4216);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1811,7 +1811,7 @@ var app = (function () {
     			append_dev(div, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item, showDeregistered*/ 3) {
+    			if (dirty & /*item, showDeregistered*/ 5) {
     				each_value_1 = /*county*/ ctx[8].facilities;
     				validate_each_argument(each_value_1);
     				let i;
@@ -1845,14 +1845,14 @@ var app = (function () {
     		block,
     		id: create_details_slot.name,
     		type: "slot",
-    		source: "(91:12) ",
+    		source: "(113:14) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (86:8) {#each item.counties as county}
+    // (108:10) {#each item.counties as county}
     function create_each_block$3(ctx) {
     	let accordionitem;
     	let current;
@@ -1881,7 +1881,7 @@ var app = (function () {
     			const accordionitem_changes = {};
     			if (dirty & /*item*/ 1) accordionitem_changes.key = /*county*/ ctx[8].abbr;
 
-    			if (dirty & /*$$scope, item, showDeregistered*/ 16387) {
+    			if (dirty & /*$$scope, item, showDeregistered*/ 16389) {
     				accordionitem_changes.$$scope = { dirty, ctx };
     			}
 
@@ -1905,14 +1905,14 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(86:8) {#each item.counties as county}",
+    		source: "(108:10) {#each item.counties as county}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (85:4) <Accordion current="a">
+    // (107:6) <Accordion current="a">
     function create_default_slot(ctx) {
     	let each_1_anchor;
     	let current;
@@ -1945,7 +1945,7 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item, showDeregistered*/ 3) {
+    			if (dirty & /*item, showDeregistered*/ 5) {
     				each_value = /*item*/ ctx[0].counties;
     				validate_each_argument(each_value);
     				let i;
@@ -2001,7 +2001,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(85:4) <Accordion current=\\\"a\\\">",
+    		source: "(107:6) <Accordion current=\\\"a\\\">",
     		ctx
     	});
 
@@ -2011,22 +2011,24 @@ var app = (function () {
     function create_fragment$6(ctx) {
     	let div1;
     	let button0;
+    	let t0;
+    	let t1_value = (/*active*/ ctx[1] ? 'Close' : 'Open') + "";
     	let t1;
-    	let div0;
     	let t2;
-    	let div2;
-    	let a;
+    	let t3;
+    	let div0;
     	let t4;
-    	let button1;
+    	let aside;
+    	let a;
     	let t6;
     	let h1;
     	let t7;
     	let t8_value = /*item*/ ctx[0].name + "";
     	let t8;
     	let t9;
-    	let button2;
+    	let button1;
 
-    	let t10_value = (/*showDeregistered*/ ctx[1]
+    	let t10_value = (/*showDeregistered*/ ctx[2]
     	? 'Hide Deregistered Facilities'
     	: 'Show Deregistered Facilities') + "";
 
@@ -2050,43 +2052,39 @@ var app = (function () {
     		c: function create() {
     			div1 = element("div");
     			button0 = element("button");
-    			button0.textContent = "☰ Toggle Sidebar";
-    			t1 = space();
+    			t0 = text("☰ ");
+    			t1 = text(t1_value);
+    			t2 = text(" Sidebar");
+    			t3 = space();
     			div0 = element("div");
-    			t2 = space();
-    			div2 = element("div");
+    			t4 = space();
+    			aside = element("aside");
     			a = element("a");
     			a.textContent = "⭠ View all states";
-    			t4 = space();
-    			button1 = element("button");
-    			button1.textContent = "×";
     			t6 = space();
     			h1 = element("h1");
     			t7 = text("Facilities in ");
     			t8 = text(t8_value);
     			t9 = space();
-    			button2 = element("button");
+    			button1 = element("button");
     			t10 = text(t10_value);
     			t11 = space();
     			create_component(accordion.$$.fragment);
-    			attr_dev(button0, "class", "openbtn svelte-1eomli4");
-    			add_location(button0, file$6, 72, 2, 2565);
+    			attr_dev(button0, "class", "openbtn svelte-ahh7ts");
+    			add_location(button0, file$6, 92, 2, 3466);
     			attr_dev(div0, "id", "map");
-    			attr_dev(div0, "class", "svelte-1eomli4");
-    			add_location(div0, file$6, 73, 1, 2645);
-    			attr_dev(div1, "id", "main");
-    			attr_dev(div1, "class", "svelte-1eomli4");
-    			add_location(div1, file$6, 71, 0, 2547);
+    			attr_dev(div0, "class", "svelte-ahh7ts");
+    			add_location(div0, file$6, 95, 2, 3578);
     			attr_dev(a, "href", "#/list:states");
-    			attr_dev(a, "class", "svelte-1eomli4");
-    			add_location(a, file$6, 77, 2, 2713);
-    			attr_dev(button1, "class", "closebtn svelte-1eomli4");
-    			add_location(button1, file$6, 78, 2, 2762);
-    			add_location(h1, file$6, 79, 2, 2828);
-    			add_location(button2, file$6, 80, 6, 2869);
-    			attr_dev(div2, "id", "mySidebar");
-    			attr_dev(div2, "class", "sidebar svelte-1eomli4");
-    			add_location(div2, file$6, 76, 0, 2674);
+    			add_location(a, file$6, 99, 4, 3677);
+    			add_location(h1, file$6, 101, 4, 3805);
+    			add_location(button1, file$6, 102, 8, 3848);
+    			attr_dev(aside, "class", "svelte-ahh7ts");
+    			toggle_class(aside, "active", /*active*/ ctx[1]);
+    			add_location(aside, file$6, 97, 4, 3651);
+    			attr_dev(div1, "id", "main");
+    			attr_dev(div1, "class", "svelte-ahh7ts");
+    			add_location(div1, file$6, 90, 0, 3358);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2094,48 +2092,53 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
     			append_dev(div1, button0);
-    			append_dev(div1, t1);
+    			append_dev(button0, t0);
+    			append_dev(button0, t1);
+    			append_dev(button0, t2);
+    			append_dev(div1, t3);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, a);
-    			append_dev(div2, t4);
-    			append_dev(div2, button1);
-    			append_dev(div2, t6);
-    			append_dev(div2, h1);
+    			append_dev(div1, t4);
+    			append_dev(div1, aside);
+    			append_dev(aside, a);
+    			append_dev(aside, t6);
+    			append_dev(aside, h1);
     			append_dev(h1, t7);
     			append_dev(h1, t8);
-    			append_dev(div2, t9);
-    			append_dev(div2, button2);
-    			append_dev(button2, t10);
-    			append_dev(div2, t11);
-    			mount_component(accordion, div2, null);
+    			append_dev(aside, t9);
+    			append_dev(aside, button1);
+    			append_dev(button1, t10);
+    			append_dev(aside, t11);
+    			mount_component(accordion, aside, null);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button0, "click", /*click_handler*/ ctx[3], false, false, false),
-    					listen_dev(button1, "click", /*click_handler_1*/ ctx[4], false, false, false),
-    					listen_dev(button2, "click", /*toggleDeregistered*/ ctx[2], false, false, false)
+    					listen_dev(button0, "click", /*click_handler*/ ctx[5], false, false, false),
+    					listen_dev(button1, "click", /*toggleDeregistered*/ ctx[4], false, false, false)
     				];
 
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
+    			if ((!current || dirty & /*active*/ 2) && t1_value !== (t1_value = (/*active*/ ctx[1] ? 'Close' : 'Open') + "")) set_data_dev(t1, t1_value);
     			if ((!current || dirty & /*item*/ 1) && t8_value !== (t8_value = /*item*/ ctx[0].name + "")) set_data_dev(t8, t8_value);
 
-    			if ((!current || dirty & /*showDeregistered*/ 2) && t10_value !== (t10_value = (/*showDeregistered*/ ctx[1]
+    			if ((!current || dirty & /*showDeregistered*/ 4) && t10_value !== (t10_value = (/*showDeregistered*/ ctx[2]
     			? 'Hide Deregistered Facilities'
     			: 'Show Deregistered Facilities') + "")) set_data_dev(t10, t10_value);
 
     			const accordion_changes = {};
 
-    			if (dirty & /*$$scope, item, showDeregistered*/ 16387) {
+    			if (dirty & /*$$scope, item, showDeregistered*/ 16389) {
     				accordion_changes.$$scope = { dirty, ctx };
     			}
 
     			accordion.$set(accordion_changes);
+
+    			if (!current || dirty & /*active*/ 2) {
+    				toggle_class(aside, "active", /*active*/ ctx[1]);
+    			}
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -2148,8 +2151,6 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div2);
     			destroy_component(accordion);
     			mounted = false;
     			run_all(dispose);
@@ -2167,16 +2168,6 @@ var app = (function () {
     	return block;
     }
 
-    function openNav() {
-    	document.getElementById("mySidebar").style.width = "250px";
-    	document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-    	document.getElementById("mySidebar").style.width = "0";
-    	document.getElementById("main").style.marginLeft = "0";
-    }
-
     function instance$6($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('State', slots, []);
@@ -2185,17 +2176,48 @@ var app = (function () {
     	// Create Accordion
     	createAccordionContext();
 
+    	// Sidebar button
+    	let active = false;
+
+    	function toggleSidebar() {
+    		$$invalidate(1, active = !active);
+    		const openButton = document.querySelector(".openbtn");
+
+    		// openButton.style.left = '100px';
+    		const expanded = openButton.classList.toggle('expanded');
+
+    		console.log(expanded);
+    		expanded['left'] = expanded ? 300 : 0;
+    	} // const padding = {};
+    	// padding['left'] = collapsed ? 0 : 300;
+
+    	// console.log(padding['left'])
     	// Hide deregistered facilities
     	let showDeregistered = true;
 
     	function toggleDeregistered() {
-    		$$invalidate(1, showDeregistered = !showDeregistered);
+    		$$invalidate(2, showDeregistered = !showDeregistered);
     	}
 
     	onDestroy(() => {
     		
     	}); // Cleanup
 
+    	// Open and close sidebar
+    	// function openNav() {
+    	//   document.getElementById("mySidebar").style.width = "400px";
+    	//   document.getElementById("main").style.marginLeft = "0px";
+    	//   const parentDOM = document.getElementById("main");
+    	//   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "400px"
+    	//   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
+    	// }
+    	// function closeNav() {
+    	//   document.getElementById("mySidebar").style.width = "0";
+    	//   document.getElementById("main").style.marginLeft= "0";
+    	//   const parentDOM = document.getElementById("main");
+    	//   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "0px"
+    	//   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
+    	// }
     	// Create facility map by state
     	let map;
 
@@ -2246,8 +2268,6 @@ var app = (function () {
     		});
     	});
 
-    	let open = true;
-
     	$$self.$$.on_mount.push(function () {
     		if (item === undefined && !('item' in $$props || $$self.$$.bound[$$self.$$.props['item']])) {
     			console_1$1.warn("<State> was created without expected prop 'item'");
@@ -2260,8 +2280,7 @@ var app = (function () {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$1.warn(`<State> was created with unknown prop '${key}'`);
     	});
 
-    	const click_handler = () => openNav();
-    	const click_handler_1 = () => closeNav();
+    	const click_handler = () => toggleSidebar();
 
     	$$self.$$set = $$props => {
     		if ('item' in $$props) $$invalidate(0, item = $$props.item);
@@ -2275,26 +2294,32 @@ var app = (function () {
     		AccordionItem,
     		mapboxgl: mapboxGl,
     		item,
+    		active,
+    		toggleSidebar,
     		showDeregistered,
     		toggleDeregistered,
-    		openNav,
-    		closeNav,
-    		map,
-    		open
+    		map
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('item' in $$props) $$invalidate(0, item = $$props.item);
-    		if ('showDeregistered' in $$props) $$invalidate(1, showDeregistered = $$props.showDeregistered);
+    		if ('active' in $$props) $$invalidate(1, active = $$props.active);
+    		if ('showDeregistered' in $$props) $$invalidate(2, showDeregistered = $$props.showDeregistered);
     		if ('map' in $$props) map = $$props.map;
-    		if ('open' in $$props) open = $$props.open;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [item, showDeregistered, toggleDeregistered, click_handler, click_handler_1];
+    	return [
+    		item,
+    		active,
+    		showDeregistered,
+    		toggleSidebar,
+    		toggleDeregistered,
+    		click_handler
+    	];
     }
 
     class State extends SvelteComponentDev {
@@ -7644,7 +7669,7 @@ var app = (function () {
     			add_location(b, file$1, 6, 4, 165);
     			attr_dev(div0, "class", "warning");
     			add_location(div0, file$1, 4, 2, 81);
-    			attr_dev(div1, "class", "header");
+    			attr_dev(div1, "class", "header svelte-1lxcdva");
     			add_location(div1, file$1, 0, 0, 0);
     		},
     		l: function claim(nodes) {

@@ -8,6 +8,21 @@
   // Create Accordion
   createAccordionContext();
 
+  // Sidebar button
+  let active = false;
+  function toggleSidebar() {
+    active = !active;
+    const openButton = document.querySelector(".openbtn");
+    // openButton.style.left = '100px';
+    const expanded = openButton.classList.toggle('expanded');
+    console.log(expanded)
+    openButton.style['left'] = expanded ? 300 : 0;
+    
+    // const padding = {};
+    // padding['left'] = collapsed ? 0 : 300;
+    // console.log(padding['left'])
+  }
+
   // Hide deregistered facilities
   let showDeregistered = true;
   function toggleDeregistered() {
@@ -18,14 +33,20 @@
   });
 
   // Open and close sidebar
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
+  // function openNav() {
+  //   document.getElementById("mySidebar").style.width = "400px";
+  //   document.getElementById("main").style.marginLeft = "0px";
+  //   const parentDOM = document.getElementById("main");
+  //   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "400px"
+  //   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
+  // }
+  // function closeNav() {
+  //   document.getElementById("mySidebar").style.width = "0";
+  //   document.getElementById("main").style.marginLeft= "0";
+  //   const parentDOM = document.getElementById("main");
+  //   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "0px"
+  //   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
+  // }
 
   // Create facility map by state
   let map;
@@ -68,52 +89,56 @@
 </script>
 
 <div id="main">
-  <button class="openbtn" on:click={() => openNav()}>☰ Toggle Sidebar</button>  
- <div id='map'></div>
+  <!-- <button class="openbtn" on:click={() => openNav()}>☰ Toggle Sidebar</button>   -->
+  <button class="openbtn" on:click={()=> toggleSidebar()}>
+    ☰ {active? 'Close' : 'Open'} Sidebar
+  </button>
+  <div id='map'></div>
+  <!-- <div id="mySidebar" class="sidebar"> -->
+    <aside class:active>
+
+    <a href="#/list:states"> ⭠ View all states</a>
+    <!-- <button class="closebtn" on:click={() => closeNav()}>×</button> -->
+    <h1>Facilities in {item.name}</h1>
+        <button on:click={toggleDeregistered}>
+          {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
+        </button>
+
+      <Accordion current="a">
+          {#each item.counties as county}
+          <AccordionItem key="{county.abbr}">
+              <div slot="head">
+                {county.name}
+              </div>
+              <div slot="details">
+                <ul id="facilities-list">
+                  {#each county.facilities as fac}
+                    {#if showDeregistered || fac.sub_last.date_dereg === null}
+                      <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
+                      <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">{fac.name}</a> 
+                      <div class="facility-info">
+                        <ul>
+                          {#if fac.names_prev.length}
+                            <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+                          {/if}
+                            <li><b>City:</b> {fac.city}</li>
+                            <li><b>Address:</b> {fac.address}</li>
+                            <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
+                            <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
+                            <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
+                        </ul>
+                      </div>
+                      </li>
+                    {/if}
+                  {/each} 
+                </ul>
+              </div>
+          </AccordionItem>
+        {/each}
+      </Accordion>
+    </aside>
+  <!-- </div>  -->
 </div>
-
-<div id="mySidebar" class="sidebar">
-  <a href="#/list:states"> ⭠ View all states</a>
-  <button class="closebtn" on:click={() => closeNav()}>×</button>
-  <h1>Facilities in {item.name}</h1>
-      <button on:click={toggleDeregistered}>
-        {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
-      </button>
-
-    <Accordion current="a">
-        {#each item.counties as county}
-        <AccordionItem key="{county.abbr}">
-            <div slot="head">
-              {county.name}
-            </div>
-            <div slot="details">
-              <ul id="facilities-list">
-                {#each county.facilities as fac}
-                  {#if showDeregistered || fac.sub_last.date_dereg === null}
-                    <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
-                    <a href="#/facility:{fac.EPAFacilityID}">{fac.name}</a> 
-                    <div class="facility-info">
-                      <ul>
-                        {#if fac.names_prev.length}
-                          <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
-                        {/if}
-                          <li><b>City:</b> {fac.city}</li>
-                          <li><b>Address:</b> {fac.address}</li>
-                          <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
-                          <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-                          <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
-                      </ul>
-                    </div>
-                    </li>
-                  {/if}
-                {/each} 
-              </ul>
-            </div>
-        </AccordionItem>
-      {/each}
-    </Accordion>
-</div> 
-
 
 <style>
   .facility + .facility {
@@ -137,10 +162,28 @@
     width:100%;
     height:100%; 
   }
-  .sidebar {
+  aside {
+		position: absolute;
+		left: -500px;
+		transition: all .5s;
+		height: 100%;
+		width: 300px;
+		padding: 20px;
+		border: 1px solid #ddd;
+		background-color: #efefef;
+    overflow: scroll;
+	}
+	.active {
+		left: 0px
+	}
+  .expanded {
+    /* margin-left: 300px; */
+    transition: 0.5s;
+    left: 300px;
+  }
+  /* .sidebar {
     height: 100%;
     width: 0;
-    /* position: fixed; */
     z-index: 1;
     top: 0;
     left: 0;
@@ -152,7 +195,7 @@
     box-shadow: 0 0 50px -25px black;
     left: 0px;
     position: absolute;
-  }
+  } */
   .sidebar a {
     padding: 8px 8px 8px 0px;
     text-decoration: none;
@@ -166,7 +209,7 @@
   }
   .sidebar .closebtn {
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0px;
     font-size: 36px;
     padding: 0px;
@@ -181,7 +224,7 @@
     border: none;    
     position:absolute; 
     top:10px; 
-    left:10px; 
+    left: 10px; 
     z-index:1;
     border-radius: 3px;
   }
