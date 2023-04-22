@@ -5,6 +5,10 @@
   import mapboxgl from 'mapbox-gl';
   export let item;
 
+  /* ----------------- */
+  /* Sidebar           */
+  /* ----------------- */
+
   // Create Accordion
   createAccordionContext();
 
@@ -13,16 +17,8 @@
   function toggleSidebar() {
     active = !active;
     const openButton = document.querySelector(".openbtn");
-    // openButton.style.left = '100px';
-    const expanded = openButton.classList.toggle('expanded');
-    console.log(expanded)
-    openButton.style['left'] = expanded ? 300 : 0;
-    
-    // const padding = {};
-    // padding['left'] = collapsed ? 0 : 300;
-    // console.log(padding['left'])
+    openButton.style.left = active ? "300px" : "10px";
   }
-
   // Hide deregistered facilities
   let showDeregistered = true;
   function toggleDeregistered() {
@@ -32,21 +28,9 @@
     // Cleanup
   });
 
-  // Open and close sidebar
-  // function openNav() {
-  //   document.getElementById("mySidebar").style.width = "400px";
-  //   document.getElementById("main").style.marginLeft = "0px";
-  //   const parentDOM = document.getElementById("main");
-  //   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "400px"
-  //   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
-  // }
-  // function closeNav() {
-  //   document.getElementById("mySidebar").style.width = "0";
-  //   document.getElementById("main").style.marginLeft= "0";
-  //   const parentDOM = document.getElementById("main");
-  //   parentDOM.getElementsByClassName("openbtn")[0].style.marginLeft = "0px"
-  //   parentDOM.getElementsByClassName("openbtn")[0].style.transition = "0.25s"
-  // }
+  /* ----------------- */
+  /* Map               */
+  /* ----------------- */
 
   // Create facility map by state
   let map;
@@ -86,24 +70,29 @@
         })
     });
   });
+
+  /* ----------------- */
+  /* Fetch county data */
+  /* ----------------- */
+
+  let data;
+	onMount(async () => {
+		data = await fetch('https://parseapi.back4app.com/classes/Area?count=1&limit=0&where=19001')
+          .then(x => x.json())
+	})
 </script>
 
 <div id="main">
-  <!-- <button class="openbtn" on:click={() => openNav()}>☰ Toggle Sidebar</button>   -->
   <button class="openbtn" on:click={()=> toggleSidebar()}>
     ☰ {active? 'Close' : 'Open'} Sidebar
   </button>
   <div id='map'></div>
-  <!-- <div id="mySidebar" class="sidebar"> -->
-    <aside class:active>
-
+  <aside class:active>
     <a href="#/list:states"> ⭠ View all states</a>
-    <!-- <button class="closebtn" on:click={() => closeNav()}>×</button> -->
     <h1>Facilities in {item.name}</h1>
         <button on:click={toggleDeregistered}>
           {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
         </button>
-
       <Accordion current="a">
           {#each item.counties as county}
           <AccordionItem key="{county.abbr}">
@@ -111,33 +100,29 @@
                 {county.name}
               </div>
               <div slot="details">
-                <ul id="facilities-list">
                   {#each county.facilities as fac}
                     {#if showDeregistered || fac.sub_last.date_dereg === null}
-                      <li class="facility" class:deregistered={fac.sub_last.date_dereg}>
-                      <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">{fac.name}</a> 
-                      <div class="facility-info">
-                        <ul>
+                      <div id="facility-{fac.EPAFacilityID}" class="item">
+                        <p class="facility" class:deregistered={fac.sub_last.date_dereg}> </p>
+                        <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">{fac.name}</a> 
+                        <div class="facility-info">
                           {#if fac.names_prev.length}
-                            <li><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</li>
+                            <p><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</p>
                           {/if}
-                            <li><b>City:</b> {fac.city}</li>
-                            <li><b>Address:</b> {fac.address}</li>
-                            <li><b>EPA Facility ID:</b> {fac.EPAFacilityID}</li>
-                            <li><b>Latest RMP validation:</b> {fac.sub_last.date_val}</li>
-                            <li><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</li>
-                        </ul>
+                          <p><b>City:</b> {fac.city}</p>
+                          <p><b>Address:</b> {fac.address}</p>
+                          <p><b>EPA Facility ID:</b> {fac.EPAFacilityID}</p>
+                          <p><b>Latest RMP validation:</b> {fac.sub_last.date_val}</p>
+                          <p><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</p>
+                        </div>
                       </div>
-                      </li>
                     {/if}
                   {/each} 
-                </ul>
               </div>
           </AccordionItem>
         {/each}
       </Accordion>
     </aside>
-  <!-- </div>  -->
 </div>
 
 <style>
@@ -171,50 +156,43 @@
 		padding: 20px;
 		border: 1px solid #ddd;
 		background-color: #efefef;
-    overflow: scroll;
+    overflow: auto;
+    padding-bottom: 60px;
 	}
 	.active {
 		left: 0px
 	}
-  .expanded {
-    /* margin-left: 300px; */
-    transition: 0.5s;
-    left: 300px;
-  }
-  /* .sidebar {
-    height: 100%;
-    width: 0;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.25s;
-    padding: 10px 0px 0px 0px;
-    border-radius: 10px;
-    box-shadow: 0 0 50px -25px black;
-    left: 0px;
-    position: absolute;
-  } */
-  .sidebar a {
-    padding: 8px 8px 8px 0px;
+  .details .item {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+  }
+  .details .item:last-child { border-bottom: none; }
+  .details .item .facility-name {
     display: block;
-    transition: 0.3s;
+    color: #00853e;
+    font-weight: 700;
   }
-  .sidebar a:hover {
-    color: #f1f1f1;
+  .details .item .facility-name small { font-weight: 400; }
+  .details .item.active .facility-name,
+  .details .item .facility-name:hover { color: #8cc63f; }
+  .details .item.active {
+    background-color: #f8f8f8;
   }
-  .sidebar .closebtn {
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    font-size: 36px;
-    padding: 0px;
-    margin-left: 10px;
+  ::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      border-left: 0;
+      background: rgba(0, 0, 0, 0.1);
   }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00853e;
+    border-radius: 0;
+  }
+
   .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -227,6 +205,7 @@
     left: 10px; 
     z-index:1;
     border-radius: 3px;
+    transition: 0.5s;
   }
   .openbtn:hover {
     background-color: #444;
@@ -234,12 +213,12 @@
   #main {
     position:relative;
     transition: margin-left .5s;
-    padding: 16px;
+    /* padding: 16px; */
     height:100%; 
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
-  }   
+  }    */
 </style>
