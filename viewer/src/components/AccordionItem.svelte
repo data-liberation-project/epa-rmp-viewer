@@ -6,6 +6,7 @@
 
   export let open = false;
   export let key = {};
+	export let id;
   
   const { current } = getAccordionContext();
   
@@ -16,22 +17,22 @@
   $: open = $current == key;
 </script>
 
-<div class="accordion">
+<div class="accordion-item" id={id}>
 	<button class="header" on:click={handleClick}>
 		<div class="text">
-			<slot name="head"/>
+			<slot name="head" id=id-{id}/>
 		</div>
 	</button>
 
 	{#if open}
-		<div class="details" transition:slide="{{ duration: 150, easing: quadInOut }}" >
-			<slot name="details"/>
+		<div class="details" transition:slide="{{ duration: 150, easing: quadInOut }}">
+			<slot name="details" id=id-{id} />
 		</div>
 	{/if}
 </div>
 
 <style>
-	.accordion {
+	.accordion-item {
 		margin: 0;
 	}
 

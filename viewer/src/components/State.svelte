@@ -11,7 +11,6 @@
 
   // Create Accordion
   createAccordionContext();
-
   // Sidebar button
   let active = false;
   function toggleSidebar() {
@@ -27,13 +26,22 @@
   onDestroy(() => {
     // Cleanup
   });
-
   /* ----------------- */
   /* Map               */
   /* ----------------- */
-
+  
   // Create facility map by state
   let map;
+
+  // Eventlisteners for markers and popups
+  function showLocation({fac}) {
+      console.log(fac);
+      let lon = Number(fac.sub_last.lon_sub);
+      let lat = Number(fac.sub_last.lat_sub);
+      console.log([lon, lat])
+      flyToFac(lon, lat)
+      createPopUp(lon, lat, fac)
+  };
   onMount(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ';
     map = new mapboxgl.Map({
@@ -42,48 +50,54 @@
       center: [Number(item.counties[0].facilities[0].sub_last.lon_sub), Number(item.counties[0].facilities[0].sub_last.lat_sub)],
       zoom: 6
     });
-    map.addControl(new mapboxgl.NavigationControl(), 'top-right'); // Add zoom control to the map
+    // Add controls
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right'); 
+    
+    // Define Interactive functions
+    function flyToFac(lon, lat) {
+      map.flyTo({
+        center: [lon, lat],
+        zoom: 15
+      });
+    }
+    function createPopUp(lon, lat, facility) {
+      const popUps = document.getElementsByClassName('mapboxgl-popup');
+      if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
+      const popup = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat([lon, lat])
+        .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
+        .addTo(map);
+    }
+
+    // Iterate through facilities and include functions
     item.counties.forEach(county => {
         county.facilities.forEach(facility => {
           let lat = Number(facility.sub_last.lat_sub);
           let lon = Number(facility.sub_last.lon_sub);
           console.log([lat, lon]);
 
-          const el = document.createElement('div');
-          el.className = 'marker';
-          const marker = new mapboxgl.Marker() // Add marker to the map
-            .setLngLat([lon, lat])
-            .addTo(map);
-
-          const popup = new mapboxgl.Popup({ // Add popup to the marker
-              closeOnClick: false,
-              closeButton: false
-          });
-          marker.getElement().addEventListener('mouseenter', () => { // Show popup on marker hover
-              map.getCanvas().style.cursor = 'pointer';
-              popup.setLngLat(marker.getLngLat()).setHTML(`<p>${facility.name}</p>`).addTo(map);
-          });
-          marker.getElement().addEventListener('mouseleave', () => { // Hide popup on marker leave
-              map.getCanvas().style.cursor = '';
-              popup.remove();
-          });
+          flyToFac(lon, lat)
+          createPopUp(lon, lat, facility)
         })
     });
   });
+  
 
   /* ----------------- */
   /* Fetch county data */
   /* ----------------- */
 
-  let data;
-	onMount(async () => {
-		data = await fetch('https://parseapi.back4app.com/classes/Area?count=1&limit=0&where=19001')
-          .then(x => x.json())
-	})
+  // let data;
+	// onMount(async () => {
+	// 	data = await fetch('https://parseapi.back4app.com/classes/Area?count=1&limit=0&where=19001')
+  //         .then(x => x.json())
+	// })
 </script>
 
 <div id="main">
-  <button class="openbtn" on:click={()=> toggleSidebar()}>
+  <button 
+    class="openbtn" 
+    on:click={()=> toggleSidebar()}>
     ☰ {active? 'Close' : 'Open'} Sidebar
   </button>
   <div id='map'></div>
@@ -93,32 +107,31 @@
         <button on:click={toggleDeregistered}>
           {showDeregistered ? 'Hide Deregistered Facilities' : 'Show Deregistered Facilities'}
         </button>
-      <Accordion current="a">
-          {#each item.counties as county}
-          <AccordionItem key="{county.abbr}">
-              <div slot="head">
-                {county.name}
-              </div>
-              <div slot="details">
-                  {#each county.facilities as fac}
-                    {#if showDeregistered || fac.sub_last.date_dereg === null}
+      <Accordion>
+        {#each item.counties as county}
+          <AccordionItem key="county-{county.fips}" id="{county.fips}">
+            <div slot="head" id="head-{county.fips}">{county.name}</div>
+            <div slot="details" id="details-{county.fips}"> 
+                {#each county.facilities as fac}
+                  {#if showDeregistered || fac.sub_last.date_dereg === null}
                       <div id="facility-{fac.EPAFacilityID}" class="item">
-                        <p class="facility" class:deregistered={fac.sub_last.date_dereg}> </p>
-                        <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">{fac.name}</a> 
-                        <div class="facility-info">
-                          {#if fac.names_prev.length}
-                            <p><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</p>
-                          {/if}
-                          <p><b>City:</b> {fac.city}</p>
-                          <p><b>Address:</b> {fac.address}</p>
-                          <p><b>EPA Facility ID:</b> {fac.EPAFacilityID}</p>
-                          <p><b>Latest RMP validation:</b> {fac.sub_last.date_val}</p>
-                          <p><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</p>
-                        </div>
+                        <p class="facility" class:deregistered={fac.sub_last.date_dereg}></p>
+                        <button
+                          class="facility-name" 
+                          on:click={() => showLocation({fac})}>{fac.name}</button> 
+                        <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">See more details</a> 
+                        {#if fac.names_prev.length}
+                          <p><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</p>
+                        {/if}
+                        <p><b>City:</b> {fac.city}</p>
+                        <p><b>Address:</b> {fac.address}</p>
+                        <p><b>EPA Facility ID:</b> {fac.EPAFacilityID}</p>
+                        <p><b>Latest RMP validation:</b> {fac.sub_last.date_val}</p>
+                        <p><b># Accidents in latest 5-year history:</b> {fac.sub_last.num_accidents || "None"}</p>
                       </div>
-                    {/if}
-                  {/each} 
-              </div>
+                  {/if}
+                {/each}
+            </div>
           </AccordionItem>
         {/each}
       </Accordion>
@@ -126,12 +139,6 @@
 </div>
 
 <style>
-  .facility + .facility {
-    margin-top: 0.5em;
-  }
-  .deregistered:before {
-    content: "[Deregistered] "
-  }
   :global(.marker) {
     background-image: url("/viewer/public/images/mapbox-marker-icon-blue.svg");
     background-size:  cover;
@@ -139,6 +146,28 @@
     height:           20px;
     border-radius:    10%;
     cursor:           pointer !important;
+  }
+  #main {
+    position:relative;
+    transition: margin-left .5s;
+    height:100%; 
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;    
+    position:absolute; 
+    top:10px; 
+    left: 10px; 
+    z-index:1;
+    border-radius: 3px;
+    transition: 0.5s;
+  }
+  .openbtn:hover {
+    background-color: #444;
   }
   #map { 
     position: absolute; 
@@ -162,6 +191,42 @@
 	.active {
 		left: 0px
 	}
+  .deregistered:before {
+    content: "[Deregistered] "
+  }
+  /* Marker tweaks */
+  .mapboxgl-popup-close-button {
+    display: none;
+  }
+  .mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    width: 180px;
+  }
+  .mapboxgl-popup-content h3 {
+    background: #91c949;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+  }
+  .mapboxgl-popup-content h4 {
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+  }
+  .mapboxgl-popup-content div {
+    padding: 10px;
+  }
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+  }
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #91c949;
+  }
+
   .details .item {
     border-bottom: 1px solid #eee;
     padding: 10px;
@@ -191,30 +256,6 @@
   ::-webkit-scrollbar-thumb {
     background: #00853e;
     border-radius: 0;
-  }
-
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;    
-    position:absolute; 
-    top:10px; 
-    left: 10px; 
-    z-index:1;
-    border-radius: 3px;
-    transition: 0.5s;
-  }
-  .openbtn:hover {
-    background-color: #444;
-  }
-  #main {
-    position:relative;
-    transition: margin-left .5s;
-    /* padding: 16px; */
-    height:100%; 
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   /* @media screen and (max-height: 450px) {
