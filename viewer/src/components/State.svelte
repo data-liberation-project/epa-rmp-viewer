@@ -35,7 +35,7 @@
 
   // Eventlisteners for markers and popups
   function showLocation({fac}) {
-      console.log(fac);
+      console.log('Facility', fac);
       let lon = Number(fac.sub_last.lon_sub);
       let lat = Number(fac.sub_last.lat_sub);
       console.log([lon, lat])
@@ -48,7 +48,7 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [Number(item.counties[0].facilities[0].sub_last.lon_sub), Number(item.counties[0].facilities[0].sub_last.lat_sub)],
-      zoom: 6
+      zoom: 2
     });
     // Add controls
     map.addControl(new mapboxgl.NavigationControl(), 'top-right'); 
@@ -57,7 +57,7 @@
     function flyToFac(lon, lat) {
       map.flyTo({
         center: [lon, lat],
-        zoom: 15
+        zoom: 2
       });
     }
     function createPopUp(lon, lat, facility) {
@@ -68,6 +68,9 @@
         .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
         .addTo(map);
     }
+
+    // Calculate center of state polygon
+    
 
     // Iterate through facilities and include functions
     item.counties.forEach(county => {
