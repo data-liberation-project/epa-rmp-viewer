@@ -23,9 +23,20 @@
   function toggleDeregistered() {
     showDeregistered = !showDeregistered;
   }
-  onDestroy(() => {
-    // Cleanup
-  });
+  
+  /* ----------------- */
+  /* Fetch Data        */
+  /* ----------------- */
+  let stateCoordData = null;
+  let url = "./data/geo-administrative/states-center-coord.json";
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      stateCoordData = data;
+      console.log('Center State Data', stateCoordData)
+    }).catch(error => {
+      console.log(error);
+    });
   /* ----------------- */
   /* Map               */
   /* ----------------- */
@@ -33,15 +44,34 @@
   // Create facility map by state
   let map;
 
+  // Go to location of selected facility
+  // function flyToFac(lon, lat) {
+  //     map.flyTo({
+  //       center: [lon, lat],
+  //       zoom: 2
+  //     });
+  //   }
   // Eventlisteners for markers and popups
-  function showLocation({fac}) {
+  function showLocation(fac) {
       console.log('Facility', fac);
       let lon = Number(fac.sub_last.lon_sub);
       let lat = Number(fac.sub_last.lat_sub);
       console.log([lon, lat])
-      flyToFac(lon, lat)
+      map.flyTo({
+        center: [lon, lat],
+        zoom: 2
+      });
       createPopUp(lon, lat, fac)
   };
+  function createPopUp(lon, lat, facility) {
+      const popUps = document.getElementsByClassName('mapboxgl-popup');
+      if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
+      const popup = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat([lon, lat])
+        .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
+        .addTo(map);
+    }
+
   onMount(() => {
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljYWVsYS1yb3NhZGlvIiwiYSI6ImNsZzlsN2s1eTBxZXIzZHJ2YTI1YjJ1ejkifQ.bT9A2q8RKkiKPfCMVh63jQ';
     map = new mapboxgl.Map({
@@ -52,49 +82,29 @@
     });
     // Add controls
     map.addControl(new mapboxgl.NavigationControl(), 'top-right'); 
-    
-    // Define Interactive functions
-    function flyToFac(lon, lat) {
-      map.flyTo({
-        center: [lon, lat],
-        zoom: 2
-      });
-    }
-    function createPopUp(lon, lat, facility) {
-      const popUps = document.getElementsByClassName('mapboxgl-popup');
-      if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
-      const popup = new mapboxgl.Popup({ closeOnClick: false })
-        .setLngLat([lon, lat])
-        .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
-        .addTo(map);
-    }
 
-    // Calculate center of state polygon
-    
+    // function createPopUp(lon, lat, facility) {
+    //   const popUps = document.getElementsByClassName('mapboxgl-popup');
+    //   if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
+    //   const popup = new mapboxgl.Popup({ closeOnClick: false })
+    //     .setLngLat([lon, lat])
+    //     .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
+    //     .addTo(map);
+    // }
 
-    // Iterate through facilities and include functions
-    item.counties.forEach(county => {
-        county.facilities.forEach(facility => {
-          let lat = Number(facility.sub_last.lat_sub);
-          let lon = Number(facility.sub_last.lon_sub);
-          console.log([lat, lon]);
+    // // Iterate through facilities and include functions
+    // item.counties.forEach(county => {
+    //     county.facilities.forEach(facility => {
+    //       let lat = Number(facility.sub_last.lat_sub);
+    //       let lon = Number(facility.sub_last.lon_sub);
+    //       console.log([lat, lon]);
 
-          flyToFac(lon, lat)
-          createPopUp(lon, lat, facility)
-        })
-    });
+    //       showLocation(map, createPopUp, facility);
+    //       //flyToFac(lon, lat)
+    //       //createPopUp(lon, lat, facility)
+    //     })
+    // });
   });
-  
-
-  /* ----------------- */
-  /* Fetch county data */
-  /* ----------------- */
-
-  // let data;
-	// onMount(async () => {
-	// 	data = await fetch('https://parseapi.back4app.com/classes/Area?count=1&limit=0&where=19001')
-  //         .then(x => x.json())
-	// })
 </script>
 
 <div id="main">
@@ -121,7 +131,8 @@
                         <p class="facility" class:deregistered={fac.sub_last.date_dereg}></p>
                         <button
                           class="facility-name" 
-                          on:click={() => showLocation({fac})}>{fac.name}</button> 
+                          id="show-facility"
+                          on:click={() => showLocation(fac)}>{fac.name}</button> 
                         <a href="#/facility:{fac.EPAFacilityID}" class="facility-name">See more details</a> 
                         {#if fac.names_prev.length}
                           <p><b>Has also appeared as:</b> {fac.names_prev.join(" • ")}</p>

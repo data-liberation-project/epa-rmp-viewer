@@ -1473,20 +1473,20 @@ var app = (function () {
 
     function get_each_context$3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[14] = list[i];
     	return child_ctx;
     }
 
-    // (113:12) 
+    // (124:12) 
     function create_head_slot(ctx) {
     	let div;
-    	let t_value = /*county*/ ctx[9].name + "";
+    	let t_value = /*county*/ ctx[11].name + "";
     	let t;
     	let div_id_value;
 
@@ -1495,18 +1495,18 @@ var app = (function () {
     			div = element("div");
     			t = text(t_value);
     			attr_dev(div, "slot", "head");
-    			attr_dev(div, "id", div_id_value = "head-" + /*county*/ ctx[9].fips);
+    			attr_dev(div, "id", div_id_value = "head-" + /*county*/ ctx[11].fips);
     			attr_dev(div, "class", "svelte-pmfz5t");
-    			add_location(div, file$6, 112, 12, 3448);
+    			add_location(div, file$6, 123, 12, 3830);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t_value !== (t_value = /*county*/ ctx[9].name + "")) set_data_dev(t, t_value);
+    			if (dirty & /*item*/ 1 && t_value !== (t_value = /*county*/ ctx[11].name + "")) set_data_dev(t, t_value);
 
-    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "head-" + /*county*/ ctx[9].fips)) {
+    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "head-" + /*county*/ ctx[11].fips)) {
     				attr_dev(div, "id", div_id_value);
     			}
     		},
@@ -1519,20 +1519,20 @@ var app = (function () {
     		block,
     		id: create_head_slot.name,
     		type: "slot",
-    		source: "(113:12) ",
+    		source: "(124:12) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
+    // (127:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
     function create_if_block$3(ctx) {
     	let div;
     	let p0;
     	let t0;
     	let button;
-    	let t1_value = /*fac*/ ctx[12].name + "";
+    	let t1_value = /*fac*/ ctx[14].name + "";
     	let t1;
     	let t2;
     	let a;
@@ -1543,41 +1543,41 @@ var app = (function () {
     	let p1;
     	let b0;
     	let t7;
-    	let t8_value = /*fac*/ ctx[12].city + "";
+    	let t8_value = /*fac*/ ctx[14].city + "";
     	let t8;
     	let t9;
     	let p2;
     	let b1;
     	let t11;
-    	let t12_value = /*fac*/ ctx[12].address + "";
+    	let t12_value = /*fac*/ ctx[14].address + "";
     	let t12;
     	let t13;
     	let p3;
     	let b2;
     	let t15;
-    	let t16_value = /*fac*/ ctx[12].EPAFacilityID + "";
+    	let t16_value = /*fac*/ ctx[14].EPAFacilityID + "";
     	let t16;
     	let t17;
     	let p4;
     	let b3;
     	let t19;
-    	let t20_value = /*fac*/ ctx[12].sub_last.date_val + "";
+    	let t20_value = /*fac*/ ctx[14].sub_last.date_val + "";
     	let t20;
     	let t21;
     	let p5;
     	let b4;
     	let t23;
-    	let t24_value = (/*fac*/ ctx[12].sub_last.num_accidents || "None") + "";
+    	let t24_value = (/*fac*/ ctx[14].sub_last.num_accidents || "None") + "";
     	let t24;
     	let div_id_value;
     	let mounted;
     	let dispose;
 
     	function click_handler_1() {
-    		return /*click_handler_1*/ ctx[6](/*fac*/ ctx[12]);
+    		return /*click_handler_1*/ ctx[6](/*fac*/ ctx[14]);
     	}
 
-    	let if_block = /*fac*/ ctx[12].names_prev.length && create_if_block_1$3(ctx);
+    	let if_block = /*fac*/ ctx[14].names_prev.length && create_if_block_1$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -1622,36 +1622,36 @@ var app = (function () {
     			t23 = space();
     			t24 = text(t24_value);
     			attr_dev(p0, "class", "facility svelte-pmfz5t");
-    			toggle_class(p0, "deregistered", /*fac*/ ctx[12].sub_last.date_dereg);
-    			add_location(p0, file$6, 117, 24, 3795);
+    			toggle_class(p0, "deregistered", /*fac*/ ctx[14].sub_last.date_dereg);
+    			add_location(p0, file$6, 128, 24, 4177);
     			attr_dev(button, "class", "facility-name svelte-pmfz5t");
-    			add_location(button, file$6, 118, 24, 3889);
-    			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[12].EPAFacilityID);
+    			add_location(button, file$6, 129, 24, 4271);
+    			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[14].EPAFacilityID);
     			attr_dev(a, "class", "facility-name svelte-pmfz5t");
-    			add_location(a, file$6, 121, 24, 4054);
+    			add_location(a, file$6, 132, 24, 4436);
     			attr_dev(b0, "class", "svelte-pmfz5t");
-    			add_location(b0, file$6, 125, 27, 4339);
+    			add_location(b0, file$6, 136, 27, 4721);
     			attr_dev(p1, "class", "svelte-pmfz5t");
-    			add_location(p1, file$6, 125, 24, 4336);
+    			add_location(p1, file$6, 136, 24, 4718);
     			attr_dev(b1, "class", "svelte-pmfz5t");
-    			add_location(b1, file$6, 126, 27, 4394);
+    			add_location(b1, file$6, 137, 27, 4776);
     			attr_dev(p2, "class", "svelte-pmfz5t");
-    			add_location(p2, file$6, 126, 24, 4391);
+    			add_location(p2, file$6, 137, 24, 4773);
     			attr_dev(b2, "class", "svelte-pmfz5t");
-    			add_location(b2, file$6, 127, 27, 4455);
+    			add_location(b2, file$6, 138, 27, 4837);
     			attr_dev(p3, "class", "svelte-pmfz5t");
-    			add_location(p3, file$6, 127, 24, 4452);
+    			add_location(p3, file$6, 138, 24, 4834);
     			attr_dev(b3, "class", "svelte-pmfz5t");
-    			add_location(b3, file$6, 128, 27, 4530);
+    			add_location(b3, file$6, 139, 27, 4912);
     			attr_dev(p4, "class", "svelte-pmfz5t");
-    			add_location(p4, file$6, 128, 24, 4527);
+    			add_location(p4, file$6, 139, 24, 4909);
     			attr_dev(b4, "class", "svelte-pmfz5t");
-    			add_location(b4, file$6, 129, 27, 4615);
+    			add_location(b4, file$6, 140, 27, 4997);
     			attr_dev(p5, "class", "svelte-pmfz5t");
-    			add_location(p5, file$6, 129, 24, 4612);
-    			attr_dev(div, "id", div_id_value = "facility-" + /*fac*/ ctx[12].EPAFacilityID);
+    			add_location(p5, file$6, 140, 24, 4994);
+    			attr_dev(div, "id", div_id_value = "facility-" + /*fac*/ ctx[14].EPAFacilityID);
     			attr_dev(div, "class", "item svelte-pmfz5t");
-    			add_location(div, file$6, 116, 22, 3718);
+    			add_location(div, file$6, 127, 22, 4100);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1699,16 +1699,16 @@ var app = (function () {
     			ctx = new_ctx;
 
     			if (dirty & /*item*/ 1) {
-    				toggle_class(p0, "deregistered", /*fac*/ ctx[12].sub_last.date_dereg);
+    				toggle_class(p0, "deregistered", /*fac*/ ctx[14].sub_last.date_dereg);
     			}
 
-    			if (dirty & /*item*/ 1 && t1_value !== (t1_value = /*fac*/ ctx[12].name + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*item*/ 1 && t1_value !== (t1_value = /*fac*/ ctx[14].name + "")) set_data_dev(t1, t1_value);
 
-    			if (dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/facility:" + /*fac*/ ctx[12].EPAFacilityID)) {
+    			if (dirty & /*item*/ 1 && a_href_value !== (a_href_value = "#/facility:" + /*fac*/ ctx[14].EPAFacilityID)) {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if (/*fac*/ ctx[12].names_prev.length) {
+    			if (/*fac*/ ctx[14].names_prev.length) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -1721,13 +1721,13 @@ var app = (function () {
     				if_block = null;
     			}
 
-    			if (dirty & /*item*/ 1 && t8_value !== (t8_value = /*fac*/ ctx[12].city + "")) set_data_dev(t8, t8_value);
-    			if (dirty & /*item*/ 1 && t12_value !== (t12_value = /*fac*/ ctx[12].address + "")) set_data_dev(t12, t12_value);
-    			if (dirty & /*item*/ 1 && t16_value !== (t16_value = /*fac*/ ctx[12].EPAFacilityID + "")) set_data_dev(t16, t16_value);
-    			if (dirty & /*item*/ 1 && t20_value !== (t20_value = /*fac*/ ctx[12].sub_last.date_val + "")) set_data_dev(t20, t20_value);
-    			if (dirty & /*item*/ 1 && t24_value !== (t24_value = (/*fac*/ ctx[12].sub_last.num_accidents || "None") + "")) set_data_dev(t24, t24_value);
+    			if (dirty & /*item*/ 1 && t8_value !== (t8_value = /*fac*/ ctx[14].city + "")) set_data_dev(t8, t8_value);
+    			if (dirty & /*item*/ 1 && t12_value !== (t12_value = /*fac*/ ctx[14].address + "")) set_data_dev(t12, t12_value);
+    			if (dirty & /*item*/ 1 && t16_value !== (t16_value = /*fac*/ ctx[14].EPAFacilityID + "")) set_data_dev(t16, t16_value);
+    			if (dirty & /*item*/ 1 && t20_value !== (t20_value = /*fac*/ ctx[14].sub_last.date_val + "")) set_data_dev(t20, t20_value);
+    			if (dirty & /*item*/ 1 && t24_value !== (t24_value = (/*fac*/ ctx[14].sub_last.num_accidents || "None") + "")) set_data_dev(t24, t24_value);
 
-    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "facility-" + /*fac*/ ctx[12].EPAFacilityID)) {
+    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "facility-" + /*fac*/ ctx[14].EPAFacilityID)) {
     				attr_dev(div, "id", div_id_value);
     			}
     		},
@@ -1743,19 +1743,19 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(116:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
+    		source: "(127:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:24) {#if fac.names_prev.length}
+    // (134:24) {#if fac.names_prev.length}
     function create_if_block_1$3(ctx) {
     	let p;
     	let b;
     	let t1;
-    	let t2_value = /*fac*/ ctx[12].names_prev.join(" • ") + "";
+    	let t2_value = /*fac*/ ctx[14].names_prev.join(" • ") + "";
     	let t2;
 
     	const block = {
@@ -1766,9 +1766,9 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			attr_dev(b, "class", "svelte-pmfz5t");
-    			add_location(b, file$6, 123, 29, 4220);
+    			add_location(b, file$6, 134, 29, 4602);
     			attr_dev(p, "class", "svelte-pmfz5t");
-    			add_location(p, file$6, 123, 26, 4217);
+    			add_location(p, file$6, 134, 26, 4599);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1777,7 +1777,7 @@ var app = (function () {
     			append_dev(p, t2);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*fac*/ ctx[12].names_prev.join(" • ") + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*item*/ 1 && t2_value !== (t2_value = /*fac*/ ctx[14].names_prev.join(" • ") + "")) set_data_dev(t2, t2_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
@@ -1788,17 +1788,17 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(123:24) {#if fac.names_prev.length}",
+    		source: "(134:24) {#if fac.names_prev.length}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:16) {#each county.facilities as fac}
+    // (126:16) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
-    	let if_block = (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[12].sub_last.date_dereg === null) && create_if_block$3(ctx);
+    	let if_block = (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[14].sub_last.date_dereg === null) && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -1810,7 +1810,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[12].sub_last.date_dereg === null) {
+    			if (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[14].sub_last.date_dereg === null) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -1833,19 +1833,19 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(115:16) {#each county.facilities as fac}",
+    		source: "(126:16) {#each county.facilities as fac}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:12) 
+    // (125:12) 
     function create_details_slot(ctx) {
     	let div;
     	let t;
     	let div_id_value;
-    	let each_value_1 = /*county*/ ctx[9].facilities;
+    	let each_value_1 = /*county*/ ctx[11].facilities;
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -1863,9 +1863,9 @@ var app = (function () {
 
     			t = space();
     			attr_dev(div, "slot", "details");
-    			attr_dev(div, "id", div_id_value = "details-" + /*county*/ ctx[9].fips);
+    			attr_dev(div, "id", div_id_value = "details-" + /*county*/ ctx[11].fips);
     			attr_dev(div, "class", "svelte-pmfz5t");
-    			add_location(div, file$6, 113, 12, 3521);
+    			add_location(div, file$6, 124, 12, 3903);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1878,7 +1878,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*item, showLocation, showDeregistered*/ 5) {
-    				each_value_1 = /*county*/ ctx[9].facilities;
+    				each_value_1 = /*county*/ ctx[11].facilities;
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -1901,7 +1901,7 @@ var app = (function () {
     				each_blocks.length = each_value_1.length;
     			}
 
-    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "details-" + /*county*/ ctx[9].fips)) {
+    			if (dirty & /*item*/ 1 && div_id_value !== (div_id_value = "details-" + /*county*/ ctx[11].fips)) {
     				attr_dev(div, "id", div_id_value);
     			}
     		},
@@ -1915,22 +1915,22 @@ var app = (function () {
     		block,
     		id: create_details_slot.name,
     		type: "slot",
-    		source: "(114:12) ",
+    		source: "(125:12) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (111:8) {#each item.counties as county}
+    // (122:8) {#each item.counties as county}
     function create_each_block$3(ctx) {
     	let accordionitem;
     	let current;
 
     	accordionitem = new AccordionItem({
     			props: {
-    				key: "county-" + /*county*/ ctx[9].fips,
-    				id: /*county*/ ctx[9].fips,
+    				key: "county-" + /*county*/ ctx[11].fips,
+    				id: /*county*/ ctx[11].fips,
     				$$slots: {
     					details: [create_details_slot],
     					head: [create_head_slot]
@@ -1950,10 +1950,10 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const accordionitem_changes = {};
-    			if (dirty & /*item*/ 1) accordionitem_changes.key = "county-" + /*county*/ ctx[9].fips;
-    			if (dirty & /*item*/ 1) accordionitem_changes.id = /*county*/ ctx[9].fips;
+    			if (dirty & /*item*/ 1) accordionitem_changes.key = "county-" + /*county*/ ctx[11].fips;
+    			if (dirty & /*item*/ 1) accordionitem_changes.id = /*county*/ ctx[11].fips;
 
-    			if (dirty & /*$$scope, item, showDeregistered*/ 32773) {
+    			if (dirty & /*$$scope, item, showDeregistered*/ 131077) {
     				accordionitem_changes.$$scope = { dirty, ctx };
     			}
 
@@ -1977,14 +1977,14 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(111:8) {#each item.counties as county}",
+    		source: "(122:8) {#each item.counties as county}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:6) <Accordion>
+    // (121:6) <Accordion>
     function create_default_slot(ctx) {
     	let each_1_anchor;
     	let current;
@@ -2073,7 +2073,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(110:6) <Accordion>",
+    		source: "(121:6) <Accordion>",
     		ctx
     	});
 
@@ -2142,23 +2142,23 @@ var app = (function () {
     			t11 = space();
     			create_component(accordion.$$.fragment);
     			attr_dev(button0, "class", "openbtn svelte-pmfz5t");
-    			add_location(button0, file$6, 97, 2, 2890);
+    			add_location(button0, file$6, 108, 2, 3272);
     			attr_dev(div0, "id", "map");
     			attr_dev(div0, "class", "svelte-pmfz5t");
-    			add_location(div0, file$6, 102, 2, 3012);
+    			add_location(div0, file$6, 113, 2, 3394);
     			attr_dev(a, "href", "#/list:states");
     			attr_dev(a, "class", "svelte-pmfz5t");
-    			add_location(a, file$6, 104, 4, 3060);
+    			add_location(a, file$6, 115, 4, 3442);
     			attr_dev(h1, "class", "svelte-pmfz5t");
-    			add_location(h1, file$6, 105, 4, 3111);
+    			add_location(h1, file$6, 116, 4, 3493);
     			attr_dev(button1, "class", "svelte-pmfz5t");
-    			add_location(button1, file$6, 106, 8, 3154);
+    			add_location(button1, file$6, 117, 8, 3536);
     			attr_dev(aside, "class", "svelte-pmfz5t");
     			toggle_class(aside, "active", /*active*/ ctx[1]);
-    			add_location(aside, file$6, 103, 2, 3035);
+    			add_location(aside, file$6, 114, 2, 3417);
     			attr_dev(div1, "id", "main");
     			attr_dev(div1, "class", "svelte-pmfz5t");
-    			add_location(div1, file$6, 96, 0, 2872);
+    			add_location(div1, file$6, 107, 0, 3254);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2204,7 +2204,7 @@ var app = (function () {
 
     			const accordion_changes = {};
 
-    			if (dirty & /*$$scope, item, showDeregistered*/ 32773) {
+    			if (dirty & /*$$scope, item, showDeregistered*/ 131077) {
     				accordion_changes.$$scope = { dirty, ctx };
     			}
 
@@ -2243,7 +2243,7 @@ var app = (function () {
     }
 
     function showLocation({ fac }) {
-    	console.log(fac);
+    	console.log('Facility', fac);
     	let lon = Number(fac.sub_last.lon_sub);
     	let lat = Number(fac.sub_last.lat_sub);
     	console.log([lon, lat]);
@@ -2278,9 +2278,19 @@ var app = (function () {
     		$$invalidate(2, showDeregistered = !showDeregistered);
     	}
 
-    	onDestroy(() => {
-    		
-    	}); // Cleanup
+    	/* ----------------- */
+    	/* Fetch Data        */
+    	/* ----------------- */
+    	let stateCoordData = null;
+
+    	let url = "./data/geo-administrative/states-center-coord.json";
+
+    	fetch(url).then(response => response.json()).then(data => {
+    		stateCoordData = data;
+    		console.log('Center State Data', stateCoordData);
+    	}).catch(error => {
+    		console.log(error);
+    	});
 
     	/* ----------------- */
     	/* Map               */
@@ -2298,22 +2308,11 @@ var app = (function () {
     					Number(item.counties[0].facilities[0].sub_last.lon_sub),
     					Number(item.counties[0].facilities[0].sub_last.lat_sub)
     				],
-    				zoom: 6
+    				zoom: 2
     			});
 
     		// Add controls
     		map.addControl(new mapboxGl.NavigationControl(), 'top-right');
-
-    		// Define Interactive functions
-    		function flyToFac(lon, lat) {
-    			map.flyTo({ center: [lon, lat], zoom: 15 });
-    		}
-
-    		function createPopUp(lon, lat, facility) {
-    			const popUps = document.getElementsByClassName('mapboxgl-popup');
-    			if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
-    			new mapboxGl.Popup({ closeOnClick: false }).setLngLat([lon, lat]).setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`).addTo(map);
-    		}
 
     		// Iterate through facilities and include functions
     		item.counties.forEach(county => {
@@ -2321,9 +2320,8 @@ var app = (function () {
     				let lat = Number(facility.sub_last.lat_sub);
     				let lon = Number(facility.sub_last.lon_sub);
     				console.log([lat, lon]);
-    				flyToFac(lon, lat);
-    				createPopUp(lon, lat, facility);
-    			});
+    			}); //flyToFac(lon, lat)
+    			//createPopUp(lon, lat, facility)
     		});
     	});
 
@@ -2358,6 +2356,8 @@ var app = (function () {
     		toggleSidebar,
     		showDeregistered,
     		toggleDeregistered,
+    		stateCoordData,
+    		url,
     		map,
     		showLocation
     	});
@@ -2366,6 +2366,8 @@ var app = (function () {
     		if ('item' in $$props) $$invalidate(0, item = $$props.item);
     		if ('active' in $$props) $$invalidate(1, active = $$props.active);
     		if ('showDeregistered' in $$props) $$invalidate(2, showDeregistered = $$props.showDeregistered);
+    		if ('stateCoordData' in $$props) stateCoordData = $$props.stateCoordData;
+    		if ('url' in $$props) url = $$props.url;
     		if ('map' in $$props) map = $$props.map;
     	};
 
@@ -7796,6 +7798,7 @@ var app = (function () {
     /* src/App.svelte generated by Svelte v3.55.1 */
 
     const { console: console_1 } = globals;
+
     const file = "src/App.svelte";
 
     function get_each_context(ctx, list, i) {
@@ -7804,7 +7807,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (127:54) 
+    // (131:54) 
     function create_if_block_5(ctx) {
     	let submission;
     	let current;
@@ -7845,14 +7848,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(127:54) ",
+    		source: "(131:54) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:53) 
+    // (128:53) 
     function create_if_block_4(ctx) {
     	let facility;
     	let current;
@@ -7893,14 +7896,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(124:53) ",
+    		source: "(128:53) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:50) 
+    // (124:50) 
     function create_if_block_3(ctx) {
     	let state;
     	let current;
@@ -7941,14 +7944,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(120:50) ",
+    		source: "(124:50) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (108:79) 
+    // (112:79) 
     function create_if_block_2(ctx) {
     	let section;
     	let h2;
@@ -7974,11 +7977,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h2, file, 109, 6, 2711);
+    			add_location(h2, file, 113, 6, 2782);
     			attr_dev(ul, "id", "states-list");
-    			add_location(ul, file, 110, 6, 2746);
+    			add_location(ul, file, 114, 6, 2817);
     			attr_dev(section, "id", "states");
-    			add_location(section, file, 108, 4, 2683);
+    			add_location(section, file, 112, 4, 2754);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -8027,14 +8030,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(108:79) ",
+    		source: "(112:79) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (95:61) 
+    // (99:61) 
     function create_if_block_1(ctx) {
     	let section;
     	let h2;
@@ -8053,15 +8056,15 @@ var app = (function () {
     			t1 = space();
     			input = element("input");
     			attr_dev(label, "for", "avatar");
-    			add_location(label, file, 96, 10, 2352);
-    			add_location(h2, file, 96, 6, 2348);
+    			add_location(label, file, 100, 10, 2423);
+    			add_location(h2, file, 100, 6, 2419);
     			attr_dev(input, "accept", "application/json");
     			attr_dev(input, "id", "sub_file");
     			attr_dev(input, "name", "sub_file");
     			attr_dev(input, "type", "file");
-    			add_location(input, file, 97, 6, 2419);
+    			add_location(input, file, 101, 6, 2490);
     			attr_dev(section, "id", "chooser");
-    			add_location(section, file, 95, 4, 2319);
+    			add_location(section, file, 99, 4, 2390);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -8093,14 +8096,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(95:61) ",
+    		source: "(99:61) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (92:2) {#if app.view == "page"}
+    // (96:2) {#if app.view == "page"}
     function create_if_block(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
@@ -8167,14 +8170,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(92:2) {#if app.view == \\\"page\\\"}",
+    		source: "(96:2) {#if app.view == \\\"page\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:8) {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}
+    // (116:8) {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}
     function create_each_block(ctx) {
     	let li;
     	let a;
@@ -8197,8 +8200,8 @@ var app = (function () {
     			t3 = text(")");
     			t4 = space();
     			attr_dev(a, "href", a_href_value = "#/state:" + /*s*/ ctx[11].abbr);
-    			add_location(a, file, 113, 12, 2871);
-    			add_location(li, file, 112, 10, 2854);
+    			add_location(a, file, 117, 12, 2942);
+    			add_location(li, file, 116, 10, 2925);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -8226,7 +8229,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(112:8) {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}",
+    		source: "(116:8) {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}",
     		ctx
     	});
 
@@ -8277,7 +8280,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t1 = space();
     			hr = element("hr");
-    			add_location(hr, file, 130, 2, 3275);
+    			add_location(hr, file, 134, 2, 3346);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8473,6 +8476,7 @@ var app = (function () {
     		Submission,
     		Landing,
     		Header,
+    		component_subscribe,
     		pages,
     		app,
     		resetApp,

@@ -6,7 +6,6 @@
   import Header from "./components/Header.svelte";
 
   // Test
-  import Counties from "./components/Counties.js"
   
   import { component_subscribe } from "svelte/internal";
 
