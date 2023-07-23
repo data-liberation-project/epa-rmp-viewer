@@ -57,7 +57,46 @@
       <li><b>Co.&nbsp;1</b>: The first company listed in the submission.</li>
       <li><b>Co.&nbsp;2</b>: The second company listed in the submission.</li>
       <li><b>Op.</b>: The operator listed in the submission.</li>
-      <li><b>Acc.</b>: The number of accidents listed in the submission's five-year accident history. Note: Because of overlapping timeframes, some accidents may be duplicated across submissions. The total of this column is <b>often not</b> the total number of distinct accidents.</li>
+      <li><b>Acc.</b>: The number of accidents listed in the submission's five-year accident history. Note: Because of overlapping timeframes, some accidents may be duplicated across submissions. The total of this column is <b>often not</b> the total number of distinct accidents. See below for distinct accidents.</li>
+    </ul>
+  </div>
+  <h3>Accidents Reported (through June 2023)</h3>
+  <table id="accidents-list">
+    <thead>
+      <tr>
+        <th>Latest Sub.</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Chemicals</th>
+        <th>Deaths</th>
+        <th>Inj.</th>
+        <th>Ev./Shelt.</th>
+        <th>Prop. Dam.</th>
+      </tr>
+    </thead>
+    {#each item.accidents as acc}
+    <tr>
+      <td><a href="#/submission:{acc.sub_id}">{acc.sub_id}</a></td>
+      <td style="white-space: nowrap">{acc.date}</td>
+      <td style="white-space: nowrap">{acc.time}</td>
+      <td>{acc.chem}</td>
+      <td>{acc.deaths.toLocaleString()}</td>
+      <td>{acc.inj.toLocaleString()}</td>
+      <td>{acc.ev_shlt.toLocaleString()}</td>
+      <td>${acc.damg.toLocaleString()}</td>
+    </tr>
+    {/each}
+  </table>
+  <div class="column-descriptions">
+    <ul>
+      <li><b>Lastet Sub.</b>: The most recent RMP submission containing information about this accident.</li>
+      <li><b>Date</b>: The date of the accident.</li>
+      <li><b>Time</b>: The HH:MM time of the accident, on a 24-hour clock.</li>
+      <li><b>Chemicals</b>: The chemicals involved in the accident.</li>
+      <li><b>Deaths</b>: The number of deaths reported; see linked submission for a breakdown of workers, public responders, public onsite, and public offsite.</li>
+      <li><b>Inj.</b>: Injuries and hospitalizations.</li>
+      <li><b>Ev./Shelt.</b>: The number of people evacuated + sheltered in place.</li>
+      <li><b>Prop. Dam.</b>: Total cost of onsite and offsite property damage.</li>
     </ul>
   </div>
 </section>
