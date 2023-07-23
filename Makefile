@@ -1,4 +1,4 @@
-.PHONY: venv date
+.PHONY: venv date data
 
 date:
 	@date
@@ -34,6 +34,8 @@ facilities: date
 
 lookups: date
 	python scripts/02-extract-lookups.py
+
+data: submissions facilities lookups
 
 gh-pages:
 	git subtree push --prefix viewer/public origin gh-pages
