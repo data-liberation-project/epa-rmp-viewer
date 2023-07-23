@@ -1,15 +1,19 @@
 import json
 import sqlite3
 
-
 INT_KEYS = [
     "ChemicalID",
 ]
 
+
 def extract(
     cur: sqlite3.Cursor, table: str, key_col: str, value_col: str
 ) -> dict[str, str]:
-    order_q = f"ORDER BY CAST({key_col} AS INT)" if key_col in INT_KEYS else f"ORDER BY {key_col}";
+    order_q = (
+        f"ORDER BY CAST({key_col} AS INT)"
+        if key_col in INT_KEYS
+        else f"ORDER BY {key_col}"
+    )
     query = f"SELECT {key_col}, {value_col} FROM {table} {order_q};"
     res = cur.execute(query)
     return {x[key_col]: x[value_col] for x in res}
