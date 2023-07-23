@@ -8,77 +8,6 @@ import us
 
 DATA_PATH = "viewer/public/data"
 
-FACILITIES_QUERY = """
-SELECT
-    EPAFacilityID,
-    FacilityName AS name,
-    FacilityState AS state,
-    FacilityCity AS city,
-    MAX(SUBSTR(CompletionCheckDate, 1, 10)) AS ValidationDate,
-    TRIM(
-        COALESCE(FacilityStr1, '') || ' • ' || COALESCE(FacilityStr2, ''),
-        ' •'
-    ) AS address,
-    FacilityZipCode AS zip,
-    FacilityCountyFIPS AS county_fips
-FROM
-    tblS1Facilities 
-GROUP BY
-    EPAFacilityID
-ORDER BY
-    state,
-    county_fips,
-    LOWER(city),
-    LOWER(name);
-"""
-
-SUBMISSIONS_QUERY = """
-SELECT
-    EPAFacilityID,
-    JSON_GROUP_ARRAY(
-        DISTINCT(FacilityName)
-    ) AS names_all,
-    ParentCompanyName AS company_1,
-    Company2Name AS company_2,
-    OperatorName AS operator,
-    JSON_GROUP_ARRAY(
-        JSON_OBJECT(
-            'id', sub.FacilityID,
-            'date_rec', SUBSTR(ReceiptDate, 1, 10),
-            'date_val', SUBSTR(CompletionCheckDate, 1, 10),
-            'date_dereg', SUBSTR(DeRegistrationDate, 1, 10),
-            'lat_sub', FacilityLatDecDegs,
-            'lon_sub', FacilityLongDecDegs,
-            'num_accidents', num_accidents,
-            'latest_accident', SUBSTR(latest_accident, 1, 10),
-            'name', FacilityName,
-            'company_1', ParentCompanyName,
-            'company_2', Company2Name,
-            'operator', OperatorName
-        )
-    ) AS submissions
-FROM
-    (SELECT *
-        FROM tblS1Facilities
-        ORDER BY
-            EPAFacilityID,
-            CompletionCheckDate DESC
-    ) sub
-LEFT JOIN
-    (SELECT
-            FacilityID,
-            COUNT(*) AS num_accidents,
-            MAX(AccidentDate) AS latest_accident
-        FROM
-            tblS6AccidentHistory
-        GROUP BY
-            FacilityID
-    ) acc
-    ON acc.FacilityID = sub.FacilityID
-GROUP BY
-    EPAFacilityID;
-"""
-
 with open("data/manual/counties.json") as f:
     COUNTIES = {x["fips"]: x["name"] for x in json.load(f)}
 
@@ -93,12 +22,11 @@ def get_raw(db_path: str, query: str) -> list[dict[str, typing.Any]]:
     return list(map(dict, res))
 
 
+FACILITIES_QUERY = open("sql/facilities.sql").read()
+
+
 def get_facilities() -> list[dict[str, typing.Any]]:
     facilities = get_raw("data/raw/RMPData.sqlite", FACILITIES_QUERY)
-    info_from_submissions = {
-        x["EPAFacilityID"]: x
-        for x in get_raw("data/raw/RMPData.sqlite", SUBMISSIONS_QUERY)
-    }
 
     for fac in facilities:
         fac_id = fac["EPAFacilityID"]
@@ -107,8 +35,8 @@ def get_facilities() -> list[dict[str, typing.Any]]:
             fac["county_fips"] = fix
         elif fac["county_fips"] is None:
             raise ValueError(fac)
-        fac.update(info_from_submissions[fac_id])
         fac["submissions"] = json.loads(fac["submissions"])
+        fac["accidents"] = json.loads(fac["accidents"] or "[]")
         fac["names_all"] = json.loads(fac["names_all"])
         fac["names_prev"] = [
             x
