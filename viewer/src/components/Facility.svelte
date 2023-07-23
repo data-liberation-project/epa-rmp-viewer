@@ -61,6 +61,7 @@
     </ul>
   </div>
   <h3>Accidents Reported (through June 2023)</h3>
+  {#if item.accidents.length}
   <table id="accidents-list">
     <thead>
       <tr>
@@ -99,6 +100,9 @@
       <li><b>Prop. Dam.</b>: Total cost of onsite and offsite property damage.</li>
     </ul>
   </div>
+  {:else}
+    <p><i>None</i></p>
+  {/if}
 </section>
 <style>
   ul {
