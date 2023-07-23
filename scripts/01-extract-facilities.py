@@ -14,6 +14,7 @@ SELECT
     FacilityName AS name,
     FacilityState AS state,
     FacilityCity AS city,
+    MAX(SUBSTR(CompletionCheckDate, 1, 10)) AS ValidationDate,
     TRIM(
         COALESCE(FacilityStr1, '') || ' • ' || COALESCE(FacilityStr2, ''),
         ' •'
@@ -21,7 +22,9 @@ SELECT
     FacilityZipCode AS zip,
     FacilityCountyFIPS AS county_fips
 FROM
-    tblFacility
+    tblS1Facilities 
+GROUP BY
+    EPAFacilityID
 ORDER BY
     state,
     county_fips,
@@ -56,7 +59,7 @@ SELECT
     ) AS submissions
 FROM
     (SELECT *
-        FROM TblS1Facilities
+        FROM tblS1Facilities
         ORDER BY
             EPAFacilityID,
             CompletionCheckDate DESC
@@ -91,7 +94,7 @@ def get_raw(db_path: str, query: str) -> list[dict[str, typing.Any]]:
 
 
 def get_facilities() -> list[dict[str, typing.Any]]:
-    facilities = get_raw("data/raw/RMPFac.sqlite", FACILITIES_QUERY)
+    facilities = get_raw("data/raw/RMPData.sqlite", FACILITIES_QUERY)
     info_from_submissions = {
         x["EPAFacilityID"]: x
         for x in get_raw("data/raw/RMPData.sqlite", SUBMISSIONS_QUERY)
