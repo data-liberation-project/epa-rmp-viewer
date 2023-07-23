@@ -11,16 +11,16 @@
   "LEPC": "Dewey County LEPC",
   "FacilityLatDecDegs": "35.940900",
   "FacilityLongDecDegs": "-099.303430",
-  "ValidLatLongFlag": 1,
+  "ValidLatLongFlag": "Yes",
   "LatLongMethod": "GO",
   "LatLongDescription": "PG",
   "FacilityURL": null,
   "FacilityEmailAddress": null,
-  "FacilityDUNS": 0,
+  "FacilityDUNS": null,
   "ParentCompanyName": "Enbridge G&P (Oklahoma) LP",
   "Company2Name": "Enbridge G&P (Oklahoma) LP",
-  "CompanyDUNS": 0,
-  "Company2DUNS": 0,
+  "CompanyDUNS": null,
+  "Company2DUNS": null,
   "OperatorName": "Enbridge G&P (Oklahoma) LP",
   "OperatorStr1": "Route 4, Box 6100",
   "OperatorStr2": null,
@@ -31,41 +31,41 @@
   "FTE": 4,
   "OtherEPAFacilityID": null,
   "EPAFacilityID": "100000205084",
-  "OSHA_PSM": 1,
-  "EPCRA_302": 0,
-  "CAA_TitleV": 0,
+  "OSHA_PSM": "Yes",
+  "EPCRA_302": "No",
+  "CAA_TitleV": "No",
   "ClearAirOpPermitID": null,
   "SafetyInspectionDate": null,
   "SafetyInspectionBy": "Never had one",
-  "OSHARanking": 0,
-  "PredictiveFilingFlag": 0,
+  "OSHARanking": "No",
+  "PredictiveFilingFlag": "No",
   "SubmissionType": "R",
   "RMPDescription": null,
-  "NoAccidents": 0,
+  "NoAccidents": "No",
   "ForeignStateProv": null,
   "ForeignZipCode": null,
   "ForeignCountry": null,
-  "CBI_Flag": 0,
+  "CBI_Flag": "No",
   "CompletionCheckDate": "2011-08-31 00:00:00",
   "ErrorReportDate": null,
   "ReceiptDate": "2011-06-20 00:00:00",
-  "GraphicsIndicator": 0,
-  "AttachmentsIndicator": 0,
-  "CertificationReceivedFlag": 1,
+  "GraphicsIndicator": "No",
+  "AttachmentsIndicator": "No",
+  "CertificationReceivedFlag": "Yes",
   "SubmissionMethod": "RMP*eSubmit",
-  "CBISubstantiationFlag": 0,
-  "ElectronicWaiverReceivedFlag": 0,
+  "CBISubstantiationFlag": "No",
+  "ElectronicWaiverReceivedFlag": "No",
   "PostmarkDate": "2011-06-20 00:00:00",
-  "RMPCompleteFlag": 1,
+  "RMPCompleteFlag": "Yes",
   "DeRegistrationDate": "2021-01-07 00:00:00",
   "DeRegistrationEffectiveDate": "2020-11-01 00:00:00",
   "AnniversaryDate": "2016-06-20 00:00:00",
-  "CBIFlag": 0,
-  "CBIUnsanitizedVersionFlag": 0,
+  "CBIFlag": "No",
+  "CBIUnsanitizedVersionFlag": "No",
   "VersionNumber": "1.0",
-  "FRS_Lat": null,
-  "FRS_Long": null,
-  "FRS_Description": null,
+  "FRS_Lat": 35.9409,
+  "FRS_Long": -99.30343,
+  "FRS_Description": "PLANT ENTRANCE (GENERAL)",
   "FRS_Method": null,
   "HorizontalAccMeasure": "3",
   "HorizontalRefDatumCode": "002",
@@ -75,18 +75,75 @@
   "DeregistrationReasonOtherText": null,
   "_processes": [
     {
+      "ProcessID": 1000027733,
+      "AltID": "NGL Storage Tank",
+      "FacilityID": 1000019380,
+      "ProgramLevel": 1,
+      "CBI_Flag": "No",
+      "_chemicals": [
+        {
+          "ProcessChemicalID": 1000033047,
+          "ProcessID": 1000027733,
+          "ChemicalID": 155,
+          "Quantity": 300000.0,
+          "CBI_Flag": "No",
+          "_flam_mix_chemicals": [
+            {
+              "FlamMixChemID": 106548,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 115
+            },
+            {
+              "FlamMixChemID": 106549,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 98
+            },
+            {
+              "FlamMixChemID": 106550,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 125
+            },
+            {
+              "FlamMixChemID": 106551,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 118
+            },
+            {
+              "FlamMixChemID": 106552,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 94
+            },
+            {
+              "FlamMixChemID": 106553,
+              "ProcessChemicalID": 1000033047,
+              "ChemicalID": 107
+            }
+          ]
+        }
+      ],
+      "_naics": [
+        {
+          "Process_NAICS_ID": 1000028036,
+          "ProcessID": 1000027733,
+          "NAICSCode": "211112",
+          "_prev_prog_3": [],
+          "_prev_prog_2": []
+        }
+      ]
+    },
+    {
       "ProcessID": 1000023666,
       "AltID": "Condensate Storage Tank",
       "FacilityID": 1000019380,
       "ProgramLevel": 1,
-      "CBI_Flag": 0,
+      "CBI_Flag": "No",
       "_chemicals": [
         {
           "ProcessChemicalID": 1000028070,
           "ProcessID": 1000023666,
           "ChemicalID": 155,
           "Quantity": 485000.0,
-          "CBI_Flag": 0,
+          "CBI_Flag": "No",
           "_flam_mix_chemicals": [
             {
               "FlamMixChemID": 106554,
@@ -135,86 +192,54 @@
           "_prev_prog_2": []
         }
       ]
-    },
-    {
-      "ProcessID": 1000027733,
-      "AltID": "NGL Storage Tank",
-      "FacilityID": 1000019380,
-      "ProgramLevel": 1,
-      "CBI_Flag": 0,
-      "_chemicals": [
-        {
-          "ProcessChemicalID": 1000033047,
-          "ProcessID": 1000027733,
-          "ChemicalID": 155,
-          "Quantity": 300000.0,
-          "CBI_Flag": 0,
-          "_flam_mix_chemicals": [
-            {
-              "FlamMixChemID": 106548,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 115
-            },
-            {
-              "FlamMixChemID": 106549,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 98
-            },
-            {
-              "FlamMixChemID": 106550,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 125
-            },
-            {
-              "FlamMixChemID": 106551,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 118
-            },
-            {
-              "FlamMixChemID": 106552,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 94
-            },
-            {
-              "FlamMixChemID": 106553,
-              "ProcessChemicalID": 1000033047,
-              "ChemicalID": 107
-            }
-          ]
-        }
-      ],
-      "_naics": [
-        {
-          "Process_NAICS_ID": 1000028036,
-          "ProcessID": 1000027733,
-          "NAICSCode": "211112",
-          "_prev_prog_3": [],
-          "_prev_prog_2": []
-        }
-      ]
     }
   ],
   "_accidents": [],
   "_emerg_resp": {
     "FacilityID": 1000019380,
-    "ER_CommunityPlan": 0,
-    "ER_FacilityPlan": 1,
-    "ER_ResponseActions": 1,
-    "ER_PublicInfoProcedures": 1,
-    "ER_EmergencyHealthCare": 1,
+    "ER_CommunityPlan": "No",
+    "ER_FacilityPlan": "Yes",
+    "ER_ResponseActions": "Yes",
+    "ER_PublicInfoProcedures": "Yes",
+    "ER_EmergencyHealthCare": "Yes",
     "ER_ReviewDate": "2011-02-23 00:00:00",
     "ERTrainingDate": "2011-02-23 00:00:00",
     "CoordinatingAgencyName": "Leedey Fire Department",
     "CoordinatingAgencyPhone": "5804883388",
-    "FR_OSHA1910_38": 1,
-    "FR_OSHA1910_120": 1,
-    "FR_SPCC": 1,
-    "FR_RCRA": 0,
-    "FR_OPA90": 1,
-    "FR_EPCRA": 0,
+    "FR_OSHA1910_38": "Yes",
+    "FR_OSHA1910_120": "Yes",
+    "FR_SPCC": "Yes",
+    "FR_RCRA": "No",
+    "FR_OPA90": "Yes",
+    "FR_EPCRA": "No",
     "FR_OtherRegulation": null
   },
   "_exec_summary": [
+    {
+      "ESSeqNum": 8,
+      "FacilityID": 1000019380,
+      "SummaryText": "future PHAs and PHA revalidations.\n\nCompliance Audits\nTo help ensure that the accident prevention program is functioning properly, the Nine Mile gas plant periodically conducts an audit to determine whether the procedures and practices required by the accident prevention program are being implemented. Compliance audits are conducted at least every three years. Both hourly and staff personnel may participate as audit team members.  The audit team findings are forwarded to plant management for resolution. Corrective actions taken in response to the audit team's findings are tracked until completion. The final resolution of each finding is documented, and the two most recent audit reports are retained.\n\nCHEMICAL-SPECIFIC PREVENTION STEPS\nThe processes at the Nine Mile gas plant have hazards that must be managed to ensure continued safe operation. The following is a description of existing safety features applicable to prevention of accidental releases of regulated substances in the facility.\nUniversal Prevention Activities\nThe accident prevention program summarized above is applied to all RMP covered processes at the Nine Mile gas plant. Collectively, these prevention program activities help prevent potential accidents that could be caused by equipment failures and human errors.\nSpecialized Safety Features\nThe Nine Mile gas plant has safety features to help (1) contain/control a release and (2) reduce the consequences of (mitigate) a release. The following types of safety features are used in the covered processes:\nRelease Containment/Control\n\u00c2\u00bf Process relief valves that discharge to a vent stack\n\u00c2\u00bf Valves to permit isolation of the process (manual or automated)\n\u00c2\u00bf Automated shutdown systems for specific process parameters (e.g., high temperature)\n\u00c2\u00bf Curbing or diking to contain liquid releases\n\u00c2\u00bf Redundant equipment and instrumentation (e.g., reserve pneumatic supply for process control system, backup pumps)\n\u00c2\u00bf Atmospheric relief devices\n\nRelease Mitigation\n\u00c2\u00bf Fire e"
+    },
+    {
+      "ESSeqNum": 9,
+      "FacilityID": 1000019380,
+      "SummaryText": "xtinguishers\n\u00c2\u00bf Trained personnel\n\u00c2\u00bf Personal protective equipment\n\nFIVE-YEAR ACCIDENT HISTORY\nThe Nine Mile gas plant has an excellent record of accident prevention over the past five years. There have been no releases of regulated substances that resulted in deaths, injuries, property or environmental damage, evacuations, or sheltering in place. \n\nEMERGENCY ACTION PLAN INFORMATION\nThe Nine Mile gas plant maintains a written emergency action plan, which is in place to protect the safety of workers and the public, as well as the environment. There are no 112(r) threshold toxic substances on the plant site. For a non-incidental release of a flammable substance, including the possibility of a fire, response actions have been coordinated with the local fire department, and mechanisms for notification are in place. Employees receive training as necessary to perform their specific emergency actions. The emergency action plan is updated when necessary, and affected personnel are informed and/or trained in the changes.  The gas plant has around-the-clock communications capability with appropriate officials and emergency response organizations (e.g., fire department). This provides a means of notification of an incident if necessary, as well as facilitating quick response to an incident.\n\nPLANNED CHANGES TO IMPROVE SAFETY\nContinuous transition to the Enbridge safety culture and HSMS."
+    },
+    {
+      "ESSeqNum": 5,
+      "FacilityID": 1000019380,
+      "SummaryText": "ors work on or near process equipment, the gas plant has procedures in place to ensure that contractors (1) perform their work in a safe manner, (2) have the appropriate knowledge and skills, (3) are aware of the hazards in their workplace, (4) understand what they should do in the event of an emergency, (5) understand and follow plant safety rules, and (6) inform gas plant personnel of any hazards that they find during their work. This is accomplished by providing contractors with (1) a process overview, (2) information about safety and health hazards, (3) emergency response plan requirements, and (4) safe work practices prior to their beginning work. In addition, the Nine Mile gas plant evaluates contractor safety programs and performance during the selection of a contractor. Gas plant personnel periodically monitor contractor performance to ensure that contractors are fulfilling their safety obligations.\n\nPre-startup Safety Reviews (PSSRs) \nThe Nine Mile gas plant conducts a PSSR for any new facility or process modification that requires a change in the process safety information. The purpose of the PSSR is to ensure that safety features, procedures, personnel, and equipment are appropriately prepared for startup prior to placing the equipment into service. This review provides an additional check to make sure construction is in accordance with the design specifications and that all supporting systems are operationally ready. The PSSR team uses checklist(s) to verify startup readiness. A PSSR involves field verification of the construction and serves a quality assurance function by requiring verification that accident prevention program requirements are properly implemented.\n\nMechanical Integrity\nThe Nine Mile gas plant has well-established practices and procedures to maintain pressure vessels, piping systems, relief valves, controls, pumps and compressors, and emergency shutdown systems in a safe operating condition. The basic aspects of this program include: (1"
+    },
+    {
+      "ESSeqNum": 6,
+      "FacilityID": 1000019380,
+      "SummaryText": ") conducting training, (2) scheduled preventive maintenance, (3) performing inspections and tests, (4) correcting identified deficiencies, and (5) applying quality assurance measures. In combination, these activities form a system that maintains the mechanical integrity of the process.  Maintenance personnel receive training on (1) an overview of the process, (2) safety and health hazards, (3) applicable maintenance procedures, (4) emergency action plan, and (5) applicable safe work practices to help ensure that they perform their jobs in a safe manner. Scheduled preventive maintenance helps ensure that work is performed in a timely and consistent manner.  Inspections and tests are performed to help ensure that equipment functions as intended and to verify that equipment is within acceptable limits (e.g., adequate wall thickness for pressure vessels). If a deficiency is identified, employees will correct the deficiency before placing the equipment back into service (if possible), or plant management will review the use of the equipment and determine what actions are necessary to ensure the safe operation of the equipment. Another integral part of the mechanical integrity program is quality assurance. The Nine Mile gas plant incorporates quality assurance measures into equipment purchases and repairs. This helps ensure that new equipment is suitable for its intended use and that proper materials and spare parts are used when repairs are made.\n\nSafe Work Practices\nThe Nine Mile gas plant has long-standing safe work practices in place to help ensure worker and process safety. Examples of these include (1) control of the entry/presence/exit of support personnel, (2) a lockout/tagout procedure to ensure isolation of energy sources for equipment undergoing maintenance, (3) a procedure for safe removal of hazardous substances before process piping or equipment is opened, (4) a permit and procedure to control spark-producing activities (i.e., hot work), and (5) a permit and"
+    },
+    {
+      "ESSeqNum": 7,
+      "FacilityID": 1000019380,
+      "SummaryText": "procedure to ensure that adequate precautions are in place before entry into a confined space. These procedures (and others), along with training of affected personnel, form a system to help ensure that operations and maintenance activities are performed safely.\n\nManagement of Change\nThe Nine Mile gas plant has a comprehensive system to manage changes to all covered processes. This system requires that changes to items such as process equipment, chemicals, technology (including process operating conditions), procedures, and other facility changes be properly reviewed and authorized before being implemented. Changes are reviewed to (1) ensure that adequate controls are in place to manage any new hazards and (2) verify that existing controls have not been compromised by the change. Chemical hazard information, process operating limits, and equipment information, as well as procedures, are updated to incorporate these changes. In addition, operating and maintenance personnel are provided any necessary training on the change.\n\nIncident Investigation\nThe Nine Mile gas plant promptly investigates all incidents that resulted in, or reasonably could have resulted in, a fire/explosion, major property damage, environmental loss, or personal injury. The goal of each investigation is to determine the facts and develop corrective actions to prevent a recurrence of the incident or a similar incident. The investigation team documents its findings, develops recommendations to prevent a recurrence, and forwards these results to plant management for resolution. Corrective actions taken in response to the investigation team's findings and recommendations are tracked until completed. The final resolution of each finding or recommendation is documented, and the investigation results are reviewed with all employees (including contractors) who could be affected by the findings. Incident investigation reports are retained for at least five years so that the reports can be reviewed during"
+    },
     {
       "ESSeqNum": 0,
       "FacilityID": 1000019380,
@@ -239,31 +264,6 @@
       "ESSeqNum": 4,
       "FacilityID": 1000019380,
       "SummaryText": "s documented and retained.\n\nOperating Procedures\nThe Nine Mile gas plant maintains written procedures that address various modes of process operations, such as (1) unit startup, (2) normal operations, (3) temporary operations, (4) emergency shutdown, (5) normal shutdown, and (6) initial startup of a new process. These procedures can be used as a reference by experienced operators and provide a basis for consistent training of new operators. These procedures are periodically reviewed and annually certified as current and accurate. The procedures are kept current and accurate by revising them as necessary to reflect changes made through the management of change process. These procedures are readily available in the process unit for operators and other personnel to use as necessary to safely perform their job task.\n\nTraining\nTo complement the written procedures for process operations, the Nine Mile gas plant has implemented a comprehensive training program for all employees involved in operating a process. New employees receive basic training in gas plant operations if they are not already familiar with such operations. After successfully completing this training, a new operator is paired with a senior operator to learn process-specific duties and tasks. After operators demonstrate (e.g., through tests, skills demonstration) having adequate knowledge to perform the duties and tasks in a safe manner on their own, they can work independently. In addition, all operators periodically receive refresher training on the operating procedures to ensure that their skills and knowledge are maintained at an acceptable level. This refresher training is conducted at least every three years. This training is documented for each operator, including the means used to verify that the operator understood the training.\n\nContractors\nThe Nine Mile gas plant uses contractors to supplement its work force during periods of increased maintenance or construction activities. Because some contract"
-    },
-    {
-      "ESSeqNum": 5,
-      "FacilityID": 1000019380,
-      "SummaryText": "ors work on or near process equipment, the gas plant has procedures in place to ensure that contractors (1) perform their work in a safe manner, (2) have the appropriate knowledge and skills, (3) are aware of the hazards in their workplace, (4) understand what they should do in the event of an emergency, (5) understand and follow plant safety rules, and (6) inform gas plant personnel of any hazards that they find during their work. This is accomplished by providing contractors with (1) a process overview, (2) information about safety and health hazards, (3) emergency response plan requirements, and (4) safe work practices prior to their beginning work. In addition, the Nine Mile gas plant evaluates contractor safety programs and performance during the selection of a contractor. Gas plant personnel periodically monitor contractor performance to ensure that contractors are fulfilling their safety obligations.\n\nPre-startup Safety Reviews (PSSRs) \nThe Nine Mile gas plant conducts a PSSR for any new facility or process modification that requires a change in the process safety information. The purpose of the PSSR is to ensure that safety features, procedures, personnel, and equipment are appropriately prepared for startup prior to placing the equipment into service. This review provides an additional check to make sure construction is in accordance with the design specifications and that all supporting systems are operationally ready. The PSSR team uses checklist(s) to verify startup readiness. A PSSR involves field verification of the construction and serves a quality assurance function by requiring verification that accident prevention program requirements are properly implemented.\n\nMechanical Integrity\nThe Nine Mile gas plant has well-established practices and procedures to maintain pressure vessels, piping systems, relief valves, controls, pumps and compressors, and emergency shutdown systems in a safe operating condition. The basic aspects of this program include: (1"
-    },
-    {
-      "ESSeqNum": 6,
-      "FacilityID": 1000019380,
-      "SummaryText": ") conducting training, (2) scheduled preventive maintenance, (3) performing inspections and tests, (4) correcting identified deficiencies, and (5) applying quality assurance measures. In combination, these activities form a system that maintains the mechanical integrity of the process.  Maintenance personnel receive training on (1) an overview of the process, (2) safety and health hazards, (3) applicable maintenance procedures, (4) emergency action plan, and (5) applicable safe work practices to help ensure that they perform their jobs in a safe manner. Scheduled preventive maintenance helps ensure that work is performed in a timely and consistent manner.  Inspections and tests are performed to help ensure that equipment functions as intended and to verify that equipment is within acceptable limits (e.g., adequate wall thickness for pressure vessels). If a deficiency is identified, employees will correct the deficiency before placing the equipment back into service (if possible), or plant management will review the use of the equipment and determine what actions are necessary to ensure the safe operation of the equipment. Another integral part of the mechanical integrity program is quality assurance. The Nine Mile gas plant incorporates quality assurance measures into equipment purchases and repairs. This helps ensure that new equipment is suitable for its intended use and that proper materials and spare parts are used when repairs are made.\n\nSafe Work Practices\nThe Nine Mile gas plant has long-standing safe work practices in place to help ensure worker and process safety. Examples of these include (1) control of the entry/presence/exit of support personnel, (2) a lockout/tagout procedure to ensure isolation of energy sources for equipment undergoing maintenance, (3) a procedure for safe removal of hazardous substances before process piping or equipment is opened, (4) a permit and procedure to control spark-producing activities (i.e., hot work), and (5) a permit and"
-    },
-    {
-      "ESSeqNum": 7,
-      "FacilityID": 1000019380,
-      "SummaryText": " procedure to ensure that adequate precautions are in place before entry into a confined space. These procedures (and others), along with training of affected personnel, form a system to help ensure that operations and maintenance activities are performed safely.\n\nManagement of Change\nThe Nine Mile gas plant has a comprehensive system to manage changes to all covered processes. This system requires that changes to items such as process equipment, chemicals, technology (including process operating conditions), procedures, and other facility changes be properly reviewed and authorized before being implemented. Changes are reviewed to (1) ensure that adequate controls are in place to manage any new hazards and (2) verify that existing controls have not been compromised by the change. Chemical hazard information, process operating limits, and equipment information, as well as procedures, are updated to incorporate these changes. In addition, operating and maintenance personnel are provided any necessary training on the change.\n\nIncident Investigation\nThe Nine Mile gas plant promptly investigates all incidents that resulted in, or reasonably could have resulted in, a fire/explosion, major property damage, environmental loss, or personal injury. The goal of each investigation is to determine the facts and develop corrective actions to prevent a recurrence of the incident or a similar incident. The investigation team documents its findings, develops recommendations to prevent a recurrence, and forwards these results to plant management for resolution. Corrective actions taken in response to the investigation team's findings and recommendations are tracked until completed. The final resolution of each finding or recommendation is documented, and the investigation results are reviewed with all employees (including contractors) who could be affected by the findings. Incident investigation reports are retained for at least five years so that the reports can be reviewed during "
-    },
-    {
-      "ESSeqNum": 8,
-      "FacilityID": 1000019380,
-      "SummaryText": "future PHAs and PHA revalidations.\n\nCompliance Audits\nTo help ensure that the accident prevention program is functioning properly, the Nine Mile gas plant periodically conducts an audit to determine whether the procedures and practices required by the accident prevention program are being implemented. Compliance audits are conducted at least every three years. Both hourly and staff personnel may participate as audit team members.  The audit team findings are forwarded to plant management for resolution. Corrective actions taken in response to the audit team's findings are tracked until completion. The final resolution of each finding is documented, and the two most recent audit reports are retained.\n\nCHEMICAL-SPECIFIC PREVENTION STEPS\nThe processes at the Nine Mile gas plant have hazards that must be managed to ensure continued safe operation. The following is a description of existing safety features applicable to prevention of accidental releases of regulated substances in the facility.\nUniversal Prevention Activities\nThe accident prevention program summarized above is applied to all RMP covered processes at the Nine Mile gas plant. Collectively, these prevention program activities help prevent potential accidents that could be caused by equipment failures and human errors.\nSpecialized Safety Features\nThe Nine Mile gas plant has safety features to help (1) contain/control a release and (2) reduce the consequences of (mitigate) a release. The following types of safety features are used in the covered processes:\nRelease Containment/Control\nA? Process relief valves that discharge to a vent stack\nA? Valves to permit isolation of the process (manual or automated)\nA? Automated shutdown systems for specific process parameters (e.g., high temperature)\nA? Curbing or diking to contain liquid releases\nA? Redundant equipment and instrumentation (e.g., reserve pneumatic supply for process control system, backup pumps)\nA? Atmospheric relief devices\n\nRelease Mitigation\nA? Fire e"
-    },
-    {
-      "ESSeqNum": 9,
-      "FacilityID": 1000019380,
-      "SummaryText": "xtinguishers\nA? Trained personnel\nA? Personal protective equipment\n\nFIVE-YEAR ACCIDENT HISTORY\nThe Nine Mile gas plant has an excellent record of accident prevention over the past five years. There have been no releases of regulated substances that resulted in deaths, injuries, property or environmental damage, evacuations, or sheltering in place. \n\nEMERGENCY ACTION PLAN INFORMATION\nThe Nine Mile gas plant maintains a written emergency action plan, which is in place to protect the safety of workers and the public, as well as the environment. There are no 112(r) threshold toxic substances on the plant site. For a non-incidental release of a flammable substance, including the possibility of a fire, response actions have been coordinated with the local fire department, and mechanisms for notification are in place. Employees receive training as necessary to perform their specific emergency actions. The emergency action plan is updated when necessary, and affected personnel are informed and/or trained in the changes.  The gas plant has around-the-clock communications capability with appropriate officials and emergency response organizations (e.g., fire department). This provides a means of notification of an incident if necessary, as well as facilitating quick response to an incident.\n\nPLANNED CHANGES TO IMPROVE SAFETY\nContinuous transition to the Enbridge safety culture and HSMS.\n"
     }
   ]
 }
