@@ -90,7 +90,7 @@
   </table>
   <div class="column-descriptions">
     <ul>
-      <li><b>Lastet Sub.</b>: The most recent RMP submission containing information about this accident.</li>
+      <li><b>Latest Sub.</b>: The most recent RMP submission containing information about this accident.</li>
       <li><b>Date</b>: The date of the accident.</li>
       <li><b>Time</b>: The HH:MM time of the accident, on a 24-hour clock.</li>
       <li><b>Chemicals</b>: The chemicals involved in the accident.</li>
