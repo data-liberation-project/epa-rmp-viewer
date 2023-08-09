@@ -53,7 +53,7 @@
   //   }
   // Eventlisteners for markers and popups
   function showLocation(fac) {
-      console.log('Facility', fac);
+      console.log('Clicked Facility ', fac);
       let lon = Number(fac.sub_last.lon_sub);
       let lat = Number(fac.sub_last.lat_sub);
       console.log([lon, lat])
