@@ -1483,7 +1483,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (126:12) 
+    // (115:12) 
     function create_head_slot(ctx) {
     	let div;
     	let t_value = /*county*/ ctx[13].name + "";
@@ -1497,7 +1497,7 @@ var app = (function () {
     			attr_dev(div, "slot", "head");
     			attr_dev(div, "id", div_id_value = "head-" + /*county*/ ctx[13].fips);
     			attr_dev(div, "class", "svelte-pmfz5t");
-    			add_location(div, file$6, 125, 12, 4118);
+    			add_location(div, file$6, 114, 12, 3478);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1519,14 +1519,14 @@ var app = (function () {
     		block,
     		id: create_head_slot.name,
     		type: "slot",
-    		source: "(126:12) ",
+    		source: "(115:12) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
+    // (118:18) {#if showDeregistered || fac.sub_last.date_dereg === null}
     function create_if_block$3(ctx) {
     	let div;
     	let p0;
@@ -1623,36 +1623,36 @@ var app = (function () {
     			t24 = text(t24_value);
     			attr_dev(p0, "class", "facility svelte-pmfz5t");
     			toggle_class(p0, "deregistered", /*fac*/ ctx[16].sub_last.date_dereg);
-    			add_location(p0, file$6, 130, 24, 4465);
+    			add_location(p0, file$6, 119, 24, 3825);
     			attr_dev(button, "class", "facility-name svelte-pmfz5t");
     			attr_dev(button, "id", "show-facility");
-    			add_location(button, file$6, 131, 24, 4559);
+    			add_location(button, file$6, 120, 24, 3919);
     			attr_dev(a, "href", a_href_value = "#/facility:" + /*fac*/ ctx[16].EPAFacilityID);
     			attr_dev(a, "class", "facility-name svelte-pmfz5t");
-    			add_location(a, file$6, 135, 24, 4767);
+    			add_location(a, file$6, 124, 24, 4127);
     			attr_dev(b0, "class", "svelte-pmfz5t");
-    			add_location(b0, file$6, 139, 27, 5052);
+    			add_location(b0, file$6, 128, 27, 4412);
     			attr_dev(p1, "class", "svelte-pmfz5t");
-    			add_location(p1, file$6, 139, 24, 5049);
+    			add_location(p1, file$6, 128, 24, 4409);
     			attr_dev(b1, "class", "svelte-pmfz5t");
-    			add_location(b1, file$6, 140, 27, 5107);
+    			add_location(b1, file$6, 129, 27, 4467);
     			attr_dev(p2, "class", "svelte-pmfz5t");
-    			add_location(p2, file$6, 140, 24, 5104);
+    			add_location(p2, file$6, 129, 24, 4464);
     			attr_dev(b2, "class", "svelte-pmfz5t");
-    			add_location(b2, file$6, 141, 27, 5168);
+    			add_location(b2, file$6, 130, 27, 4528);
     			attr_dev(p3, "class", "svelte-pmfz5t");
-    			add_location(p3, file$6, 141, 24, 5165);
+    			add_location(p3, file$6, 130, 24, 4525);
     			attr_dev(b3, "class", "svelte-pmfz5t");
-    			add_location(b3, file$6, 142, 27, 5243);
+    			add_location(b3, file$6, 131, 27, 4603);
     			attr_dev(p4, "class", "svelte-pmfz5t");
-    			add_location(p4, file$6, 142, 24, 5240);
+    			add_location(p4, file$6, 131, 24, 4600);
     			attr_dev(b4, "class", "svelte-pmfz5t");
-    			add_location(b4, file$6, 143, 27, 5328);
+    			add_location(b4, file$6, 132, 27, 4688);
     			attr_dev(p5, "class", "svelte-pmfz5t");
-    			add_location(p5, file$6, 143, 24, 5325);
+    			add_location(p5, file$6, 132, 24, 4685);
     			attr_dev(div, "id", div_id_value = "facility-" + /*fac*/ ctx[16].EPAFacilityID);
     			attr_dev(div, "class", "item svelte-pmfz5t");
-    			add_location(div, file$6, 129, 22, 4388);
+    			add_location(div, file$6, 118, 22, 3748);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1744,14 +1744,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(129:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
+    		source: "(118:18) {#if showDeregistered || fac.sub_last.date_dereg === null}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:24) {#if fac.names_prev.length}
+    // (126:24) {#if fac.names_prev.length}
     function create_if_block_1$3(ctx) {
     	let p;
     	let b;
@@ -1767,9 +1767,9 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			attr_dev(b, "class", "svelte-pmfz5t");
-    			add_location(b, file$6, 137, 29, 4933);
+    			add_location(b, file$6, 126, 29, 4293);
     			attr_dev(p, "class", "svelte-pmfz5t");
-    			add_location(p, file$6, 137, 26, 4930);
+    			add_location(p, file$6, 126, 26, 4290);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1789,14 +1789,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(137:24) {#if fac.names_prev.length}",
+    		source: "(126:24) {#if fac.names_prev.length}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:16) {#each county.facilities as fac}
+    // (117:16) {#each county.facilities as fac}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
     	let if_block = (/*showDeregistered*/ ctx[2] || /*fac*/ ctx[16].sub_last.date_dereg === null) && create_if_block$3(ctx);
@@ -1834,14 +1834,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(128:16) {#each county.facilities as fac}",
+    		source: "(117:16) {#each county.facilities as fac}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:12) 
+    // (116:12) 
     function create_details_slot(ctx) {
     	let div;
     	let t;
@@ -1866,7 +1866,7 @@ var app = (function () {
     			attr_dev(div, "slot", "details");
     			attr_dev(div, "id", div_id_value = "details-" + /*county*/ ctx[13].fips);
     			attr_dev(div, "class", "svelte-pmfz5t");
-    			add_location(div, file$6, 126, 12, 4191);
+    			add_location(div, file$6, 115, 12, 3551);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1916,14 +1916,14 @@ var app = (function () {
     		block,
     		id: create_details_slot.name,
     		type: "slot",
-    		source: "(127:12) ",
+    		source: "(116:12) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:8) {#each item.counties as county}
+    // (113:8) {#each item.counties as county}
     function create_each_block$3(ctx) {
     	let accordionitem;
     	let current;
@@ -1978,14 +1978,14 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(124:8) {#each item.counties as county}",
+    		source: "(113:8) {#each item.counties as county}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:6) <Accordion>
+    // (112:6) <Accordion>
     function create_default_slot(ctx) {
     	let each_1_anchor;
     	let current;
@@ -2074,7 +2074,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(123:6) <Accordion>",
+    		source: "(112:6) <Accordion>",
     		ctx
     	});
 
@@ -2143,23 +2143,23 @@ var app = (function () {
     			t11 = space();
     			create_component(accordion.$$.fragment);
     			attr_dev(button0, "class", "openbtn svelte-pmfz5t");
-    			add_location(button0, file$6, 110, 2, 3560);
+    			add_location(button0, file$6, 99, 2, 2920);
     			attr_dev(div0, "id", "map");
     			attr_dev(div0, "class", "svelte-pmfz5t");
-    			add_location(div0, file$6, 115, 2, 3682);
+    			add_location(div0, file$6, 104, 2, 3042);
     			attr_dev(a, "href", "#/list:states");
     			attr_dev(a, "class", "svelte-pmfz5t");
-    			add_location(a, file$6, 117, 4, 3730);
+    			add_location(a, file$6, 106, 4, 3090);
     			attr_dev(h1, "class", "svelte-pmfz5t");
-    			add_location(h1, file$6, 118, 4, 3781);
+    			add_location(h1, file$6, 107, 4, 3141);
     			attr_dev(button1, "class", "svelte-pmfz5t");
-    			add_location(button1, file$6, 119, 8, 3824);
+    			add_location(button1, file$6, 108, 8, 3184);
     			attr_dev(aside, "class", "svelte-pmfz5t");
     			toggle_class(aside, "active", /*active*/ ctx[1]);
-    			add_location(aside, file$6, 116, 2, 3705);
+    			add_location(aside, file$6, 105, 2, 3065);
     			attr_dev(div1, "id", "main");
     			attr_dev(div1, "class", "svelte-pmfz5t");
-    			add_location(div1, file$6, 109, 0, 3542);
+    			add_location(div1, file$6, 98, 0, 2902);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2273,13 +2273,22 @@ var app = (function () {
     	/* ----------------- */
     	/* Fetch Data        */
     	/* ----------------- */
-    	let stateCoordData = null;
+    	let map;
 
+    	let stateCoordData = null;
     	let url = "./data/geo-administrative/states-center-coord.json";
 
     	fetch(url).then(response => response.json()).then(data => {
     		stateCoordData = data;
     		console.log('Center State Data', stateCoordData);
+    		console.log('Item State', item);
+
+    		stateCoordData.centerStates.forEach(foundState => {
+    			if (foundState.abbr === item.abbr) {
+    				console.log('Item state found in DB: ', foundState.abbr);
+    				map.flyTo({ center: foundState.center, zoom: 7 });
+    			}
+    		});
     	}).catch(error => {
     		console.log(error);
     	});
@@ -2288,15 +2297,10 @@ var app = (function () {
     	/* Map               */
     	/* ----------------- */
     	// Create facility map by state
-    	let map;
+    	//let map;
+    	// Fly to selected state
+    	console.log('Selected State', item);
 
-    	// Go to location of selected facility
-    	// function flyToFac(lon, lat) {
-    	//     map.flyTo({
-    	//       center: [lon, lat],
-    	//       zoom: 2
-    	//     });
-    	//   }
     	// Eventlisteners for markers and popups
     	function showLocation(fac) {
     		console.log('Clicked Facility ', fac);
@@ -2328,10 +2332,7 @@ var app = (function () {
 
     		// Add controls
     		map.addControl(new mapboxGl.NavigationControl(), 'top-right');
-    	}); // function createPopUp(lon, lat, facility) {
-    	//   const popUps = document.getElementsByClassName('mapboxgl-popup');
-    	//   if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
-    	//   const popup = new mapboxgl.Popup({ closeOnClick: false })
+    	});
 
     	$$self.$$.on_mount.push(function () {
     		if (item === undefined && !('item' in $$props || $$self.$$.bound[$$self.$$.props['item']])) {
@@ -2364,9 +2365,9 @@ var app = (function () {
     		toggleSidebar,
     		showDeregistered,
     		toggleDeregistered,
+    		map,
     		stateCoordData,
     		url,
-    		map,
     		showLocation,
     		createPopUp
     	});
@@ -2375,9 +2376,9 @@ var app = (function () {
     		if ('item' in $$props) $$invalidate(0, item = $$props.item);
     		if ('active' in $$props) $$invalidate(1, active = $$props.active);
     		if ('showDeregistered' in $$props) $$invalidate(2, showDeregistered = $$props.showDeregistered);
+    		if ('map' in $$props) map = $$props.map;
     		if ('stateCoordData' in $$props) stateCoordData = $$props.stateCoordData;
     		if ('url' in $$props) url = $$props.url;
-    		if ('map' in $$props) map = $$props.map;
     	};
 
     	if ($$props && "$$inject" in $$props) {

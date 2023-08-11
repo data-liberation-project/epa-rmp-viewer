@@ -27,30 +27,40 @@
   /* ----------------- */
   /* Fetch Data        */
   /* ----------------- */
+  let map;
+
   let stateCoordData = null;
   let url = "./data/geo-administrative/states-center-coord.json";
   fetch(url)
     .then(response => response.json())
     .then(data => {
       stateCoordData = data;
-      console.log('Center State Data', stateCoordData)
+      console.log('Center State Data', stateCoordData);
+      console.log('Item State', item);
+
+      stateCoordData.centerStates.forEach((foundState) => {
+        if (foundState.abbr === item.abbr) {
+          console.log('Item state found in DB: ', foundState.abbr)
+          map.flyTo({
+            center: foundState.center,
+            zoom: 7
+          })
+        }
+      });
     }).catch(error => {
       console.log(error);
     });
+
   /* ----------------- */
   /* Map               */
-  /* ----------------- */
+  /* ----------------- */  
   
   // Create facility map by state
-  let map;
+  //let map;
 
-  // Go to location of selected facility
-  // function flyToFac(lon, lat) {
-  //     map.flyTo({
-  //       center: [lon, lat],
-  //       zoom: 2
-  //     });
-  //   }
+  // Fly to selected state
+  console.log('Selected State', item)
+
   // Eventlisteners for markers and popups
   function showLocation(fac) {
       console.log('Clicked Facility ', fac);
@@ -83,27 +93,6 @@
     // Add controls
     map.addControl(new mapboxgl.NavigationControl(), 'top-right'); 
 
-    // function createPopUp(lon, lat, facility) {
-    //   const popUps = document.getElementsByClassName('mapboxgl-popup');
-    //   if (popUps[0]) popUps[0].remove(); // Remove existing popups on map
-    //   const popup = new mapboxgl.Popup({ closeOnClick: false })
-    //     .setLngLat([lon, lat])
-    //     .setHTML(`<h3>${facility.name}</h3><h4>${facility.address}</h4>`)
-    //     .addTo(map);
-    // }
-
-    // // Iterate through facilities and include functions
-    // item.counties.forEach(county => {
-    //     county.facilities.forEach(facility => {
-    //       let lat = Number(facility.sub_last.lat_sub);
-    //       let lon = Number(facility.sub_last.lon_sub);
-    //       console.log([lat, lon]);
-
-    //       showLocation(map, createPopUp, facility);
-    //       //flyToFac(lon, lat)
-    //       //createPopUp(lon, lat, facility)
-    //     })
-    // });
   });
 </script>
 
