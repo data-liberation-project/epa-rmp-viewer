@@ -59,7 +59,7 @@
       console.log([lon, lat])
       map.flyTo({
         center: [lon, lat],
-        zoom: 2
+        zoom: 10
       });
       createPopUp(lon, lat, fac)
   };
@@ -78,7 +78,7 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [Number(item.counties[0].facilities[0].sub_last.lon_sub), Number(item.counties[0].facilities[0].sub_last.lat_sub)],
-      zoom: 2
+      zoom: 4
     });
     // Add controls
     map.addControl(new mapboxgl.NavigationControl(), 'top-right'); 
