@@ -67,7 +67,7 @@
   {#if Array.isArray(table) ? table.length : table}
     {#if key === "submission:_exec_summary"}
       <div class="exec-summary" hidden={collapsed}>
-        {#each table as row}{row.SummaryText}{/each}
+        {#each table.sort((a, b) => a.ESSeqNum - b.ESSeqNum) as row}{row.SummaryText}{/each}
       </div>
     {:else}
       <table hidden={collapsed}>
