@@ -2,8 +2,12 @@
   import State from "./components/State.svelte";
   import Facility from "./components/Facility.svelte";
   import Submission from "./components/Submission.svelte";
-
   import Landing from "./pages/Landing.svelte";
+  import Header from "./components/Header.svelte";
+
+  // Test
+  
+  import { component_subscribe } from "svelte/internal";
 
   const pages = {
     "landing": Landing,
@@ -87,56 +91,54 @@
 
 <svelte:window on:hashchange={routeChange} />
 
-<main>
-  <h1><a href="#/">RMP Submission Viewer</a></h1>
-<div class="warning">❗This resource is a work in progress; please consult <b><a href="https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit">the documentation</a></b>.</div>
+<Header />
+<!-- <main> -->
+  {#if app.view == "page"}
+    <svelte:component this={pages[app.view_arg]}/>
 
+  {:else if app.view === "file" && app.view_arg == "chooser"}
+    <section id="chooser">
+      <h2><label for="avatar">Load a submission JSON file</label></h2>
+      <input
+        accept="application/json"
+        bind:files
+        on:change={readJSON}
+        id="sub_file"
+        name="sub_file"
+        type="file"
+      />
+    </section>
 
-{#if app.view == "page"}
-  <svelte:component this={pages[app.view_arg]}/>
+  {:else if (app.view == "list" && app.view_arg == "states" && app.view_data) }
+    <section id="states">
+      <h2>Facilities by State</h2>
+      <ul id="states-list">
+        {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}
+          <li>
+            <a href="#/state:{s.abbr}">{s.name} ({s.count})</a>
+          </li>
+        {/each}
+      </ul>
+    </section>
 
-{:else if app.view === "file" && app.view_arg == "chooser"}
-  <section id="chooser">
-    <h2><label for="avatar">Load a submission JSON file</label></h2>
-    <input
-      accept="application/json"
-      bind:files
-      on:change={readJSON}
-      id="sub_file"
-      name="sub_file"
-      type="file"
-    />
-  </section>
+  {:else if app.view == "state" && app.view_data }
+    <State item={app. view_data} />
+    
 
-{:else if (app.view == "list" && app.view_arg == "states" && app.view_data) }
-  <section id="states">
-    <h2>Facilities by State</h2>
-    <ul id="states-list">
-      {#each app.view_data.sort((a, b) => a.name < b.name ? -1 : 1) as s}
-        <li>
-          <a href="#/state:{s.abbr}">{s.name} ({s.count})</a>
-        </li>
-      {/each}
-    </ul>
-  </section>
+  {:else if app.view == "facility" && app.view_data }
+    <Facility item={app.view_data} />
 
-{:else if app.view == "state" && app.view_data }
-  <State item={app.view_data} />
+  {:else if app.view == "submission" && app.view_data}
+    <Submission item={app.view_data} />
+  {/if}
 
-{:else if app.view == "facility" && app.view_data }
-  <Facility item={app.view_data} />
-
-{:else if app.view == "submission" && app.view_data}
-  <Submission item={app.view_data} />
-{/if}
-
-<hr/>
-</main>
+  <hr/>
+<!-- </main> -->
 
 <style>
-  main {
+  /* main {
     padding-bottom: 1em;
-  }
+  } */
   h1 a {
     color: inherit;
   }
