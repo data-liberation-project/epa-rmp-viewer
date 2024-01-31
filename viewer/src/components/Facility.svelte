@@ -21,7 +21,7 @@
     <li><b>Company 2:</b> <span>{item.company_2 || ""}</span></li>
     <li><b>Operator:</b> <span>{item.operator || ""}</span></li>
   </ul>
-  <h3>RMP Submissions (through October 2023)</h3>
+  <h3>RMP Submissions (through late January 2024)</h3>
   <table id="submission-list">
     <thead>
       <tr>
@@ -60,7 +60,7 @@
       <li><b>Acc.</b>: The number of accidents listed in the submission's five-year accident history. Note: Because of overlapping timeframes, some accidents may be duplicated across submissions. The total of this column is <b>often not</b> the total number of distinct accidents. See below for distinct accidents.</li>
     </ul>
   </div>
-  <h3>Accidents Reported (through October 2023)</h3>
+  <h3>Accidents Reported (through late January 2024)</h3>
   {#if item.accidents.length}
   <table id="accidents-list">
     <thead>
