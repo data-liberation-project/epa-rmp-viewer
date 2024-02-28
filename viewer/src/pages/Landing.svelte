@@ -1,3 +1,11 @@
+<script>
+  let search_facility_id = null;
+  const get_by_facility_id = (e) => {
+    if (search_facility_id) {
+      location.hash = "/facility:" + search_facility_id;
+    }
+  };
+</script>
 <section>
   <h2>Introduction and Instructions</h2>
   <p>
@@ -16,9 +24,24 @@
     <li>For <b>each submission</b> (e.g., <a href="#/submission:43946">#43946</a>) — raw data from the core database tables, covering information on the submission and facility, processes, process chemicals, prevention programs, accident history, and executive summary. <i>Note: Although this represents a large chunk of the data, it is not exhaustive of all tables and fields in the database, for which you should consult the raw data, available through the documentation linked above.</i></li>
   </ul>
 </section>
+<section>
+  <h2>Search by EPA Facility ID</h2>
+  <input bind:value={search_facility_id}><button on:click={get_by_facility_id}>Go</button>
+</section>
 
 <style>
   li + li {
     margin-top: 1em;
+  }
+  input {
+    margin-right: 0.25em; 
+  }
+  button {
+    cursor: pointer;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+  }
+  button:hover {
+    border: 2px solid #666;
   }
 </style>
