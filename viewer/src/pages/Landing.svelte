@@ -24,6 +24,7 @@
     <li>For <b>each submission</b> (e.g., <a href="#/submission:43946">#43946</a>) — raw data from the core database tables, covering information on the submission and facility, processes, process chemicals, prevention programs, accident history, and executive summary. <i>Note: Although this represents a large chunk of the data, it is not exhaustive of all tables and fields in the database, for which you should consult the raw data, available through the documentation linked above.</i></li>
   </ul>
 </section>
+<hr/>
 <section>
   <h2>Search by EPA Facility ID</h2>
   <input bind:value={search_facility_id}><button on:click={get_by_facility_id}>Go</button>
