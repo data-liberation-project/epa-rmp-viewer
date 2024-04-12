@@ -35,7 +35,12 @@
         <th>Acc.</th>
       </tr>
     </thead>
-    {#each item.submissions as sub}
+    {#each item.submissions.sort((a, b) => {
+      return (
+        -a.date_rec.localeCompare(b.date_rec) ||
+        -a.date_val.localeCompare(b.date_val)
+      )
+    }) as sub}
     <tr>
       <td><a href="#/submission:{sub.id}">{sub.id}</a></td>
       <td style="white-space: nowrap">{sub.date_rec}</td>
