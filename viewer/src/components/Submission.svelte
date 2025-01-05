@@ -6,7 +6,7 @@
 <section id="submission">
   <h2>Submission #{item.FacilityID}</h2>
   <div>⭠ <a href="#/facility:{item.EPAFacilityID}">View all submissions from this facility</a></div>
-  <div>🔍 <a href="https://cdxapps.epa.gov/olem-rmp-pds/facility/registration?facilityId={item.FacilityID}" target="_blank" rel="noreferrer">Search for this submission in the EPA's RMP query tool</a></div>
+  <div>🔍 <a href="https://cdxapps.epa.gov/olem-rmp-pds/facility/registration/{item.FacilityID}" target="_blank" rel="noreferrer">Search for this submission in the EPA's RMP query tool</a></div>
   <div class="toc-container"></div>
   <AttrTable table={item} key="submission" i=-1/>
   <script>
