@@ -15,7 +15,7 @@
   "LatLongMethod": "I1",
   "LatLongDescription": "CE",
   "FacilityURL": "www.mplx.com",
-  "FacilityEmailAddress": "nmwheldon@mplx.com",
+  "FacilityEmailAddress": null,
   "FacilityDUNS": null,
   "ParentCompanyName": "Green River Processing, LLC",
   "Company2Name": "MPLX, LP",
@@ -46,7 +46,7 @@
   "ForeignZipCode": null,
   "ForeignCountry": null,
   "CBI_Flag": "No",
-  "CompletionCheckDate": "2023-08-30 00:00:00",
+  "CompletionCheckDate": "2024-08-08 00:00:00",
   "ErrorReportDate": null,
   "ReceiptDate": "2023-08-30 00:00:00",
   "GraphicsIndicator": "No",
@@ -82,10 +82,54 @@
       "CBI_Flag": "No",
       "_chemicals": [
         {
-          "ProcessChemicalID": 1000163959,
+          "ProcessChemicalID": 1000163962,
           "ProcessID": 1000130778,
-          "ChemicalID": 107,
-          "Quantity": 578280.0,
+          "ChemicalID": 155,
+          "Quantity": 84386.0,
+          "CBI_Flag": "No",
+          "_flam_mix_chemicals": [
+            {
+              "FlamMixChemID": 1000145385,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 98
+            },
+            {
+              "FlamMixChemID": 1000145386,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 118
+            },
+            {
+              "FlamMixChemID": 1000145387,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 94
+            },
+            {
+              "FlamMixChemID": 1000145388,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 93
+            },
+            {
+              "FlamMixChemID": 1000145389,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 107
+            },
+            {
+              "FlamMixChemID": 1000145390,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 115
+            },
+            {
+              "FlamMixChemID": 1000145391,
+              "ProcessChemicalID": 1000163962,
+              "ChemicalID": 125
+            }
+          ]
+        },
+        {
+          "ProcessChemicalID": 1000163961,
+          "ProcessID": 1000130778,
+          "ChemicalID": 118,
+          "Quantity": 583680.0,
           "CBI_Flag": "No",
           "_flam_mix_chemicals": []
         },
@@ -98,63 +142,19 @@
           "_flam_mix_chemicals": []
         },
         {
-          "ProcessChemicalID": 1000163961,
+          "ProcessChemicalID": 1000163959,
           "ProcessID": 1000130778,
-          "ChemicalID": 118,
-          "Quantity": 583680.0,
+          "ChemicalID": 107,
+          "Quantity": 578280.0,
           "CBI_Flag": "No",
           "_flam_mix_chemicals": []
-        },
-        {
-          "ProcessChemicalID": 1000163962,
-          "ProcessID": 1000130778,
-          "ChemicalID": 155,
-          "Quantity": 84386.0,
-          "CBI_Flag": "No",
-          "_flam_mix_chemicals": [
-            {
-              "FlamMixChemID": 1000145391,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 125
-            },
-            {
-              "FlamMixChemID": 1000145390,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 115
-            },
-            {
-              "FlamMixChemID": 1000145389,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 107
-            },
-            {
-              "FlamMixChemID": 1000145388,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 93
-            },
-            {
-              "FlamMixChemID": 1000145387,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 94
-            },
-            {
-              "FlamMixChemID": 1000145386,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 118
-            },
-            {
-              "FlamMixChemID": 1000145385,
-              "ProcessChemicalID": 1000163962,
-              "ChemicalID": 98
-            }
-          ]
         }
       ],
       "_naics": [
         {
           "Process_NAICS_ID": 1000132211,
           "ProcessID": 1000130778,
-          "NAICSCode": "21111",
+          "NAICSCode": "21113",
           "_prev_prog_3": [
             {
               "PreventionProgram3ID": 1000112666,
@@ -258,14 +258,9 @@
               "Description": null,
               "_chemicals": [
                 {
-                  "PrimaryKey": 1000144348,
+                  "PrimaryKey": 1000144351,
                   "PreventionProgram3ID": 1000112666,
-                  "ProcessChemicalID": 1000163962
-                },
-                {
-                  "PrimaryKey": 1000144349,
-                  "PreventionProgram3ID": 1000112666,
-                  "ProcessChemicalID": 1000163961
+                  "ProcessChemicalID": 1000163960
                 },
                 {
                   "PrimaryKey": 1000144350,
@@ -273,9 +268,14 @@
                   "ProcessChemicalID": 1000163959
                 },
                 {
-                  "PrimaryKey": 1000144351,
+                  "PrimaryKey": 1000144349,
                   "PreventionProgram3ID": 1000112666,
-                  "ProcessChemicalID": 1000163960
+                  "ProcessChemicalID": 1000163961
+                },
+                {
+                  "PrimaryKey": 1000144348,
+                  "PreventionProgram3ID": 1000112666,
+                  "ProcessChemicalID": 1000163962
                 }
               ]
             }
@@ -303,18 +303,31 @@
     "FR_RCRA": "No",
     "FR_OPA90": "Yes",
     "FR_EPCRA": "Yes",
-    "FR_OtherRegulation": null
+    "FR_OtherRegulation": null,
+    "ExercisePlan": "No",
+    "ExercisePlanDate": null,
+    "NotificationDrill": "No",
+    "NotificationDrillDate": null,
+    "TabletopExercise": "No",
+    "TabletopExerciseDate": null,
+    "LEPCCoordination": "No",
+    "LEPCCoordinationDate": null,
+    "LEPCCoordinationReason": null,
+    "LocalResponseAgencyCoordination": "No",
+    "LocalResponseAgencyCoordinationDate": null,
+    "LocalResponseAgencyCoordinationReason": null,
+    "StationarySource": "No"
   },
   "_exec_summary": [
-    {
-      "ESSeqNum": 1,
-      "FacilityID": 1000104850,
-      "SummaryText": "se from any of the three processes would not exceed 0.6 miles and does not include any population in that radius; however, there are industrial facilities with that radius that make the site qualify for RMP Program Level 3. The Blacks Fork Gas Plant does not use and/or process any regulated toxic substances above threshold quantities.\n\nFive Year Accident History:\nBlacks Fork Gas Plant has an excellent record of accident prevention over the past five (5) years. There have been no onsite or offsite accidents, as defined by EPA's General Guidance on Risk Management Programs.\n\nEmergency Response Program Information:\nThe Blacks Fork Gas Plant maintains a written Emergency Action Plan, which is in place to protect worker and public safety as well as the environment. The program consists of procedures for responding to a release of a regulated substance, including the possibility of a fire or explosion if a flammable substance is accidentally released. The procedures address the aspects of emergency response including first aid, evacuation plans and accounting for all personnel after an evacuation, notification of local emergency response agencies and the public if a release occurs, and the post incident clean up requirements.\n\nIn addition, the plant has procedures that address maintenance, inspection and testing of emergency response equipment as well as instructions that address the use of emergency response equipment.\n\nMPLX employees and contractors receive training in these procedures as necessary and have completed a safety plot plan with two (2) designated escape rendezvous areas in case of an onsite emergency.\n\nEmergency Action Plan is updated as needed and all employees are trained accordingly with each update to the ER Plan.\n\nPlanned Improvements - Latest PHA conducted 2/6/23 had 12 recommendations with latest completion date of 3/31/2026."
-    },
     {
       "ESSeqNum": 0,
       "FacilityID": 1000104850,
       "SummaryText": "RISK MANAGEMENT PLAN EXECUTIVE SUMMARY \nBlacks Fork Gas Plant\nGreen River Processing, LLC (GRP)\nMPLX, LP\n  \nAccidental Release Prevention and Response Policies:\nMPLX and the Blacks Fork Gas Plant have a long standing commitment to worker and public safety. This commitment is demonstrated in the resources invested in accident prevention, such as training personnel as well as considering safety in the design, installation, operation, and maintenance of the facility. Additionally, the Blacks Fork Gas Plant encourages employees to participate in all facets of process safety management and accident prevention as well as ensures that all contractors are aware of the plant's safety procedures and accident prevention policy.\n\nMPLX's policy is to implement reasonable controls to prevent foreseeable releases of regulated substances. However, if a release does occur, plant personnel will respond to contain the release as necessary. MPLX's Blacks Fork Gas Plant has coordinated with the Lyman Fire Department for emergency response procedures.\n\nDescription of the Stationary Source and Regulated Substances:\nThe Blacks Fork Gas Plant is located approximately 5 miles southwest of the town of Granger, Wyoming, on the border between Uinta and Sweetwater Counties.\n\nThe Blacks Fork facility utilizes field gas that enters the facility and is then separated and routed into three (3) natural gas liquid (NGL) extraction units (BF1 Cryo, BF2 Cryo, and the JT Plant). After processing, the NGLs are sent to either a NGL pipeline or a fractionation unit (consisting of a deethanizer, depropanizer, debutanizer and a deisobutanizer). The fractionation products ( propane, butane, i-butane)  are condensed and sent to individual storage tanks on site. Each of the three NGL extraction units handle, manufacture, use, or store RMP-regulated substances above their respective threshold quantities, and are consider RMP covered processes.  MPLX has determined that the radius of impact from a worst-case relea"
+    },
+    {
+      "ESSeqNum": 1,
+      "FacilityID": 1000104850,
+      "SummaryText": "se from any of the three processes would not exceed 0.6 miles and does not include any population in that radius; however, there are industrial facilities with that radius that make the site qualify for RMP Program Level 3. The Blacks Fork Gas Plant does not use and/or process any regulated toxic substances above threshold quantities.\n\nFive Year Accident History:\nBlacks Fork Gas Plant has an excellent record of accident prevention over the past five (5) years. There have been no onsite or offsite accidents, as defined by EPA's General Guidance on Risk Management Programs.\n\nEmergency Response Program Information:\nThe Blacks Fork Gas Plant maintains a written Emergency Action Plan, which is in place to protect worker and public safety as well as the environment. The program consists of procedures for responding to a release of a regulated substance, including the possibility of a fire or explosion if a flammable substance is accidentally released. The procedures address the aspects of emergency response including first aid, evacuation plans and accounting for all personnel after an evacuation, notification of local emergency response agencies and the public if a release occurs, and the post incident clean up requirements.\n\nIn addition, the plant has procedures that address maintenance, inspection and testing of emergency response equipment as well as instructions that address the use of emergency response equipment.\n\nMPLX employees and contractors receive training in these procedures as necessary and have completed a safety plot plan with two (2) designated escape rendezvous areas in case of an onsite emergency.\n\nEmergency Action Plan is updated as needed and all employees are trained accordingly with each update to the ER Plan.\n\nPlanned Improvements - Latest PHA conducted 2/6/23 had 12 recommendations with latest completion date of 3/31/2026."
     }
   ]
 }
