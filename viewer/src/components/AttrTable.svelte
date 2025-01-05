@@ -67,9 +67,6 @@
   {#if Array.isArray(table) ? table.length : table}
     {#if key === "submission:_exec_summary"}
       <div class="exec-summary" hidden={collapsed}>
-        <div class="warning" style="margin-bottom: 1em;">
-          <em><strong>Note</strong>: The Executive Summary data provided by EPA appear to be missing internal quotation marks present in the original submissions. Please keep this in mind when interpreting the text below.</em>
-        </div>
         {#each table.sort((a, b) => a.ESSeqNum - b.ESSeqNum) as row}{row.SummaryText}{/each}
       </div>
     {:else}
