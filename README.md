@@ -21,7 +21,7 @@ Follow these instructions to run the converter yourself.
 #### Copy the main RMP SQLite files into `data/raw/`
 
 - If the `data/raw/` directory does not already exist, create it.
-- Download `RMPData.sqlite` and `RMPFac.sqlite` from [this Google Drive folder](https://drive.google.com/drive/folders/15mfQyTLvEywzQa_C0tBtWzrPE7ZawA7I).
+- Download `RMPData.sqlite` from [this Google Drive folder](https://drive.google.com/file/d/1FJ3--sZWhRF9-_MbMQpu_bf_QgeGRNgE/view?usp=drive_link).
 - Copy those two files into `data/raw/`.
 
 #### Install the Python requirements
