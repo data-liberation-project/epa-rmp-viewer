@@ -1,5 +1,6 @@
 <script>
-  export let item;
+export let item;
+const fmt_num = (x, prefix) => { return x === null ? "" : (prefix || "") + x.toLocaleString() };
 </script>
 
 <section id="facility">
@@ -86,10 +87,10 @@
       <td style="white-space: nowrap">{acc.date}</td>
       <td style="white-space: nowrap">{acc.time}</td>
       <td>{acc.chem}</td>
-      <td>{acc.deaths.toLocaleString()}</td>
-      <td>{acc.inj.toLocaleString()}</td>
-      <td>{acc.ev_shlt.toLocaleString()}</td>
-      <td>${acc.damg.toLocaleString()}</td>
+      <td>{fmt_num(acc.deaths)}</td>
+      <td>{fmt_num(acc.inj)}</td>
+      <td>{fmt_num(acc.ev_shlt)}</td>
+      <td>{fmt_num(acc.damg, "$")}</td>
     </tr>
     {/each}
   </table>
